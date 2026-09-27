@@ -13,3 +13,4 @@ class ShutubaSelector:
     AGE_NAR = ".Age"                # 地方競馬用
     AGE = ".Barei"                  # 中央競馬用
     HORSE_WEIGHT = ".Weight"
+    HORSE_LIST = "tr.HorseList"     # 出馬表テーブル

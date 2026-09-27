@@ -17,7 +17,7 @@ class ScraperRaceInfo:
     def __init__(self):
         self.client = NkClientSoup()
 
-    def get_shutuba_info(self, url: str) -> object:
+    def get_shutuba_race_info(self, url: str) -> object:
         soup = self.client.get_soup(url)
 
         race_data = {}
@@ -57,6 +57,70 @@ class ScraperRaceInfo:
         except Exception as e:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return race_data
+
+    def get_shutuba_horse_info(self, url: str) -> list:
+        """出馬表から出馬情報の取得"""
+        soup = self.client.get_soup(url)
+        
+        # 地方競馬(NAR)判定と年齢セレクタの切り替え[cite: 1]
+        is_nar = "nar.netkeiba.com" in url
+        age_selector = ShutubaSelector.AGE_NAR if is_nar else ShutubaSelector.AGE
+
+        # 出馬表テーブルの解析
+        rows = soup.select(ShutubaSelector.HORSE_LIST)
+        if not rows:
+            logger.info("※出馬表テーブルの解析に失敗したか、構造が異なります。")
+            return []
+
+        # データの抽出
+        results = []
+        for row in rows[0:-2]:
+            a_elem = row.find("a")
+            if a_elem and a_elem.has_attr("href"):
+                horse_url = a_elem["href"]
+            else:
+                horse_url = ""
+            data = {
+                "bracket_num": (
+                    row.select_one(ShutubaSelector.BRACKET_NUM).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.BRACKET_NUM)
+                    else ""
+                ),
+                "horse_num": (
+                    row.select_one(ShutubaSelector.HORSE_NUM).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.HORSE_NUM)
+                    else ""
+                ),
+                "horse_name": (
+                    row.select_one(ShutubaSelector.HORSE_NAME).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.HORSE_NAME)
+                    else ""
+                ),
+                "horse_age": (
+                    row.select_one(age_selector).get_text(strip=True)
+                    if row.select_one(age_selector)
+                    else ""
+                ),
+                "weight_carried": (
+                    row.select_one(ShutubaSelector.WEIGHT_CARRIED).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.WEIGHT_CARRIED)
+                    else ""
+                ),
+                "jockey": (
+                    row.select_one(ShutubaSelector.JOCKEY).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.JOCKEY)
+                    else ""
+                ),
+                "stable": (
+                    row.select_one(ShutubaSelector.STABLE).get_text(strip=True)
+                    if row.select_one(ShutubaSelector.STABLE)
+                    else ""
+                ),
+                "horse_id": horse_url.split("/")[-1],
+                "horse_url": horse_url,
+            }
+            results.append(data)
+        return results
 
     def _get_race_id(self, url: str) -> str:
         """レースIDの取得"""
