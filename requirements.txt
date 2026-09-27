@@ -1,0 +1,15 @@
+# 必要なライブラリ
+
+# --- テスト・開発 ---
+pytest
+pytest-cov
+
+# --- スクレイピング・ブラウザ操作 ---
+selenium
+webdriver-manager
+beautifulsoup4
+
+# --- データ解析・処理 ---
+pandas
+lxml            # pd.read_html の内部で使用
+html5lib        # pd.read_html のバックアップ用
