@@ -9,7 +9,7 @@ from urllib.parse import parse_qs, urlparse
 import logging
 logger = logging.getLogger(__name__)
 
-from src.constants.netkeibatag import ShutubaSelector
+from src.constants.netkeibatag import ShutubaSelector, ResultSelector
 from src.netkeiba_client import NkClientSoup
 
 
@@ -76,14 +76,13 @@ class ScraperRaceInfo:
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
             is_nar = "nar.netkeiba.com" in url
             horse_num_selector = "td[class='Num Waku']" if is_nar else "td[class='Num Txt_C']"
-            age_selector = ShutubaSelector.AGE_NAR if is_nar else ShutubaSelector.AGE
 
             # 結果表テーブルの解析
             rows = soup.select("tr")
             for row in rows:
                 # 馬名リンクがない場合は目的行ではないのでスキップ
-                h_tag = row.select(".Horse_Name")
-                r_tag = row.select(".Rank")
+                h_tag = row.select(ResultSelector.HORSE_NAME)
+                r_tag = row.select(ResultSelector.RANK)
                 if not h_tag or not r_tag:
                     continue
                 # HorseID と URL取得
@@ -100,8 +99,8 @@ class ScraperRaceInfo:
                 )
                 # 馬体重と差の取得
                 weight_text = (
-                    row.select_one(".Weight").get_text(strip=True)
-                    if row.select_one(".Weight")
+                    row.select_one(ResultSelector.HORSE_WEIGHT).get_text(strip=True)
+                    if row.select_one(ResultSelector.HORSE_WEIGHT)
                     else ""
                 )
                 weight_pattern = r"^(\d+)(?:\s*\(([+-]?\d+)\))?$"
@@ -116,8 +115,8 @@ class ScraperRaceInfo:
                 if not is_nar:
                     # JRAはそのままタグから取得
                     passing_order =  (
-                        row.select_one(".PassageRate").get_text(strip=True)
-                        if row.select_one(".PassageRate")
+                        row.select_one(ResultSelector.PASSING_ORDER).get_text(strip=True)
+                        if row.select_one(ResultSelector.PASSING_ORDER)
                         else ""
                     )
                 else:
@@ -126,64 +125,64 @@ class ScraperRaceInfo:
                     passing_order = pass_map.get(horse_num, "")
                 data = {
                     "rank": (
-                        row.select_one(".Rank").get_text(strip=True)
-                        if row.select_one(".Rank")
+                        row.select_one(ResultSelector.RANK).get_text(strip=True)
+                        if row.select_one(ResultSelector.RANK)
                         else ""
                     ),
                     "bracket_num": (
-                        row.select_one("td[class*='Waku']").get_text(strip=True)
-                        if row.select_one("td[class*='Waku']")
+                        row.select_one(ResultSelector.BRACKET_NUM).get_text(strip=True)
+                        if row.select_one(ResultSelector.BRACKET_NUM)
                         else ""
                     ),
                     "horse_num": horse_num,
                     "horse_name": (
-                        row.select_one(".Horse_Name").get_text(strip=True)
-                        if row.select_one(".Horse_Name")
+                        row.select_one(ResultSelector.HORSE_NAME).get_text(strip=True)
+                        if row.select_one(ResultSelector.HORSE_NAME)
                         else ""
                     ),
                     "horse_age": (
-                        row.select_one(".Horse_Info_Detail").get_text(strip=True)
-                        if row.select_one(".Horse_Info_Detail")
+                        row.select_one(ResultSelector.AGE).get_text(strip=True)
+                        if row.select_one(ResultSelector.AGE)
                         else ""
                     ),
                     "weight_carried": (
-                        row.select_one("td:nth-of-type(6)").get_text(strip=True)
-                        if row.select_one("td:nth-of-type(6)")
+                        row.select_one(ResultSelector.WEIGHT_CARRIED).get_text(strip=True)
+                        if row.select_one(ResultSelector.WEIGHT_CARRIED)
                         else ""
                     ),
                     "jockey": (
-                        row.select_one(".Jockey a").get_text(strip=True)
-                        if row.select_one(".Jockey a")
+                        row.select_one(ResultSelector.JOCKEY).get_text(strip=True)
+                        if row.select_one(ResultSelector.JOCKEY)
                         else ""
                     ),
                     "stable": (
-                        row.select_one(".Trainer").get_text(strip=True)
-                        if row.select_one(".Trainer")
+                        row.select_one(ResultSelector.STABLE).get_text(strip=True)
+                        if row.select_one(ResultSelector.STABLE)
                         else ""
                     ),
                     "time": (
-                        row.select_one(".Time").get_text(strip=True)
-                        if row.select_one(".Time")
+                        row.select_one(ResultSelector.TIME).get_text(strip=True)
+                        if row.select_one(ResultSelector.TIME)
                         else ""
                     ),
                     "margin": (
-                        row.select_one("td:nth-of-type(9)").get_text(strip=True)
-                        if row.select_one("td:nth-of-type(9)")
+                        row.select_one(ResultSelector.MARGIN).get_text(strip=True)
+                        if row.select_one(ResultSelector.MARGIN)
                         else ""
                     ),
                     "popularity": (
-                        row.select_one(".OddsPeople").get_text(strip=True)
-                        if row.select_one(".OddsPeople")
+                        row.select_one(ResultSelector.POPULARITY).get_text(strip=True)
+                        if row.select_one(ResultSelector.POPULARITY)
                         else ""
                     ),
                     "odds": (
-                        row.select_one("td[class='Odds Txt_R']").get_text(strip=True)
-                        if row.select_one("td[class='Odds Txt_R']")
+                        row.select_one(ResultSelector.ODDS).get_text(strip=True)
+                        if row.select_one(ResultSelector.ODDS)
                         else ""
                     ),
                     "last3f": (
-                        row.select_one("td:nth-of-type(12)").get_text(strip=True)
-                        if row.select_one("td:nth-of-type(12)")
+                        row.select_one(ResultSelector.LAST_3F).get_text(strip=True)
+                        if row.select_one(ResultSelector.LAST_3F)
                         else ""
                     ),
                     "passing_order":passing_order,

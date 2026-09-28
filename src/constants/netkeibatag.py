@@ -24,16 +24,15 @@ class ResultSelector:
     WEIGHT_CARRIED = "td:nth-of-type(6)"
     JOCKEY = ".Jockey a"
     STABLE = ".Trainer"
-    HORSE_NAME = ".HorseName a"
-    AGE_NAR = ".Age"                # 地方競馬用
-    AGE = ".Barei"                  # 中央競馬用
+    HORSE_NAME = ".Horse_Name"
+    AGE = ".Horse_Info_Detail"      # 中央・地方共通
     HORSE_WEIGHT = ".Weight"
     HORSE_LIST = "tr.HorseList"     # 出馬表テーブル
     RANK = ".Rank"
-    ODDS = ".Odds"
-    LAST_3F = ".Last_3F"
-    POPULARITY = ".Rank"
-    PASSING_ORDER = ".Passing"
-    MARGIN = ".Margin"
+    ODDS = "td[class='Odds Txt_R']"
+    LAST_3F = "td:nth-of-type(12)"
+    POPULARITY = ".OddsPeople"
+    PASSING_ORDER = ".PassageRate"  # 中央競馬のみ
+    MARGIN = "td:nth-of-type(9)"
     TIME = ".Time"
     WEIGHT_DIFF = ".WeightDiff"
