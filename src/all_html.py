@@ -2,7 +2,7 @@ import asyncio
 from playwright.async_api import async_playwright
 
 async def save_dynamic_html():
-    url = "https://nar.netkeiba.com/race/shutuba.html?race_id=202654092707"
+    url = "https://nar.netkeiba.com/race/result.html?race_id=202654092707"
     
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)

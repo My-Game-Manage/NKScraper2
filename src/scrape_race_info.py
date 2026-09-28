@@ -18,9 +18,13 @@ class ScraperRaceInfo:
         self.client = NkClientSoup()
 
     def get_shutuba_race_info(self, url: str) -> object:
-        soup = self.client.get_soup(url)
-
         race_data = {}
+
+        if not self._is_shutuba_page(url):
+            logger.error(f"invalid shutuba url: {url}")
+            return race_data
+        
+        soup = self.client.get_soup(url)
 
         try:
             # レースIDの取得
@@ -58,68 +62,206 @@ class ScraperRaceInfo:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return race_data
 
+    def get_race_result(self, url: str) -> list:
+        """レース結果の取得"""
+        results = []
+
+        if not self._is_result_page(url):
+            logger.error(f"Invalid result page url: {url}")
+            return results
+        
+        soup = self.client.get_soup(url)
+
+        try:
+            # 地方競馬(NAR)判定と年齢セレクタの切り替え
+            is_nar = "nar.netkeiba.com" in url
+            horse_num_selector = "td[class='Num Waku']" if is_nar else "td[class='Num Txt_C']"
+            age_selector = ShutubaSelector.AGE_NAR if is_nar else ShutubaSelector.AGE
+
+            # 結果表テーブルの解析
+            rows = soup.select("tr")
+            for row in rows:
+                # 馬名リンクがない場合は目的行ではないのでスキップ
+                h_tag = row.select(".Horse_Name")
+                r_tag = row.select(".Rank")
+                if not h_tag or not r_tag:
+                    continue
+                # HorseID と URL取得
+                a_elem = row.find("a")
+                if a_elem and a_elem.has_attr("href"):
+                    horse_url = a_elem["href"]
+                else:
+                    horse_url = ""
+                # 馬番取得
+                horse_num = (
+                    row.select_one(horse_num_selector).get_text(strip=True)
+                    if row.select_one(horse_num_selector)
+                    else ""
+                )
+                # 馬体重と差の取得
+                weight_text = (
+                    row.select_one(".Weight").get_text(strip=True)
+                    if row.select_one(".Weight")
+                    else ""
+                )
+                weight_pattern = r"^(\d+)(?:\s*\(([+-]?\d+)\))?$"
+                weight_match = re.search(weight_pattern, weight_text)
+                if weight_match:
+                    horse_weight = weight_match.group(1)
+                    weight_diff = weight_match.group(2) if weight_match.group(2) is not None else "0"
+                else:
+                    horse_weight = ""
+                    weight_diff = ""
+                # 通貨順の取得
+                if not is_nar:
+                    # JRAはそのままタグから取得
+                    passing_order =  (
+                        row.select_one(".PassageRate").get_text(strip=True)
+                        if row.select_one(".PassageRate")
+                        else ""
+                    )
+                else:
+                    # 地方馬は別の箇所記載なので関数で取得
+                    pass_map = self._get_horse_passing_orders_map(soup)
+                    passing_order = pass_map.get(horse_num, "")
+                data = {
+                    "rank": (
+                        row.select_one(".Rank").get_text(strip=True)
+                        if row.select_one(".Rank")
+                        else ""
+                    ),
+                    "bracket_num": (
+                        row.select_one("td[class*='Waku']").get_text(strip=True)
+                        if row.select_one("td[class*='Waku']")
+                        else ""
+                    ),
+                    "horse_num": horse_num,
+                    "horse_name": (
+                        row.select_one(".Horse_Name").get_text(strip=True)
+                        if row.select_one(".Horse_Name")
+                        else ""
+                    ),
+                    "horse_age": (
+                        row.select_one(".Horse_Info_Detail").get_text(strip=True)
+                        if row.select_one(".Horse_Info_Detail")
+                        else ""
+                    ),
+                    "weight_carried": (
+                        row.select_one("td:nth-of-type(6)").get_text(strip=True)
+                        if row.select_one("td:nth-of-type(6)")
+                        else ""
+                    ),
+                    "jockey": (
+                        row.select_one(".Jockey a").get_text(strip=True)
+                        if row.select_one(".Jockey a")
+                        else ""
+                    ),
+                    "stable": (
+                        row.select_one(".Trainer").get_text(strip=True)
+                        if row.select_one(".Trainer")
+                        else ""
+                    ),
+                    "time": (
+                        row.select_one(".Time").get_text(strip=True)
+                        if row.select_one(".Time")
+                        else ""
+                    ),
+                    "margin": (
+                        row.select_one("td:nth-of-type(9)").get_text(strip=True)
+                        if row.select_one("td:nth-of-type(9)")
+                        else ""
+                    ),
+                    "popularity": (
+                        row.select_one(".OddsPeople").get_text(strip=True)
+                        if row.select_one(".OddsPeople")
+                        else ""
+                    ),
+                    "odds": (
+                        row.select_one("td[class='Odds Txt_R']").get_text(strip=True)
+                        if row.select_one("td[class='Odds Txt_R']")
+                        else ""
+                    ),
+                    "last3f": (
+                        row.select_one("td:nth-of-type(12)").get_text(strip=True)
+                        if row.select_one("td:nth-of-type(12)")
+                        else ""
+                    ),
+                    "passing_order":passing_order,
+                    "horse_weight": horse_weight,
+                    "weight_diff": weight_diff,
+                    "horse_id": self._conv_horseid_from_url(horse_url),
+                    "horse_url": horse_url,
+                }
+                results.append(data)
+        except Exception as e:
+            logger.info(f'データ抽出中にエラーが発生しました: {e}')
+        return results
+
     def get_shutuba_horse_info(self, url: str) -> list:
         """出馬表から出馬情報の取得"""
         soup = self.client.get_soup(url)
-        
-        # 地方競馬(NAR)判定と年齢セレクタの切り替え[cite: 1]
-        is_nar = "nar.netkeiba.com" in url
-        age_selector = ShutubaSelector.AGE_NAR if is_nar else ShutubaSelector.AGE
-
-        # 出馬表テーブルの解析
-        rows = soup.select(ShutubaSelector.HORSE_LIST)
-        if not rows:
-            logger.info("※出馬表テーブルの解析に失敗したか、構造が異なります。")
-            return []
-
-        # データの抽出
         results = []
-        for row in rows[0:-2]:
-            a_elem = row.find("a")
-            if a_elem and a_elem.has_attr("href"):
-                horse_url = a_elem["href"]
-            else:
-                horse_url = ""
-            data = {
-                "bracket_num": (
-                    row.select_one(ShutubaSelector.BRACKET_NUM).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.BRACKET_NUM)
-                    else ""
-                ),
-                "horse_num": (
-                    row.select_one(ShutubaSelector.HORSE_NUM).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.HORSE_NUM)
-                    else ""
-                ),
-                "horse_name": (
-                    row.select_one(ShutubaSelector.HORSE_NAME).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.HORSE_NAME)
-                    else ""
-                ),
-                "horse_age": (
-                    row.select_one(age_selector).get_text(strip=True)
-                    if row.select_one(age_selector)
-                    else ""
-                ),
-                "weight_carried": (
-                    row.select_one(ShutubaSelector.WEIGHT_CARRIED).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.WEIGHT_CARRIED)
-                    else ""
-                ),
-                "jockey": (
-                    row.select_one(ShutubaSelector.JOCKEY).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.JOCKEY)
-                    else ""
-                ),
-                "stable": (
-                    row.select_one(ShutubaSelector.STABLE).get_text(strip=True)
-                    if row.select_one(ShutubaSelector.STABLE)
-                    else ""
-                ),
-                "horse_id": horse_url.split("/")[-1],
-                "horse_url": horse_url,
-            }
-            results.append(data)
+
+        try:        
+            # 地方競馬(NAR)判定と年齢セレクタの切り替え
+            is_nar = "nar.netkeiba.com" in url
+            age_selector = ShutubaSelector.AGE_NAR if is_nar else ShutubaSelector.AGE
+
+            # 出馬表テーブルの解析
+            rows = soup.select(ShutubaSelector.HORSE_LIST)
+            if not rows:
+                logger.info("※出馬表テーブルの解析に失敗したか、構造が異なります。")
+                return []
+
+            # データの抽出
+            for row in rows[0:-2]:
+                a_elem = row.find("a")
+                if a_elem and a_elem.has_attr("href"):
+                    horse_url = a_elem["href"]
+                else:
+                    horse_url = ""
+                data = {
+                    "bracket_num": (
+                        row.select_one(ShutubaSelector.BRACKET_NUM).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.BRACKET_NUM)
+                        else ""
+                    ),
+                    "horse_num": (
+                        row.select_one(ShutubaSelector.HORSE_NUM).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.HORSE_NUM)
+                        else ""
+                    ),
+                    "horse_name": (
+                        row.select_one(ShutubaSelector.HORSE_NAME).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.HORSE_NAME)
+                        else ""
+                    ),
+                    "horse_age": (
+                        row.select_one(age_selector).get_text(strip=True)
+                        if row.select_one(age_selector)
+                        else ""
+                    ),
+                    "weight_carried": (
+                        row.select_one(ShutubaSelector.WEIGHT_CARRIED).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.WEIGHT_CARRIED)
+                        else ""
+                    ),
+                    "jockey": (
+                        row.select_one(ShutubaSelector.JOCKEY).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.JOCKEY)
+                        else ""
+                    ),
+                    "stable": (
+                        row.select_one(ShutubaSelector.STABLE).get_text(strip=True)
+                        if row.select_one(ShutubaSelector.STABLE)
+                        else ""
+                    ),
+                    "horse_id": self._conv_horseid_from_url(horse_url),
+                    "horse_url": horse_url,
+                }
+                results.append(data)
+        except Exception as e:
+            logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
 
     def _get_race_id(self, url: str) -> str:
@@ -221,3 +363,60 @@ class ScraperRaceInfo:
         else:
             logger.info("パースに失敗しました")
         return r_infos
+
+    def _is_shutuba_page(self, url: str) -> bool:
+        return "shutuba" in url
+
+    def _is_result_page(self, url: str) -> bool:
+        return 'result.html' in url
+
+    def _conv_horseid_from_url(self, url: str) -> str:
+        return url.rstrip("/").split("/")[-1]
+    
+    def _get_horse_passing_orders_map(self, soup: BeautifulSoup) -> dict:
+        """
+        地方競馬のサイトは通過順が異なるので、こちらを使う
+        """
+        pass_map = {}
+        try:
+            # 指定されたクラスの行をすべて取得
+            corner_rows = soup.select(".RaceCommon_Table.Corner_Num tr")
+            temp_pass_data = {}
+            logger.debug(f"通過順： {corner_rows}")
+
+            for row in corner_rows:
+                th = row.find('th')
+                td = row.find('td')
+                th_text = th.get_text(strip=True) if td else ""
+                td_text = td.get_text(strip=True) if td else ""
+                if not th or not td:
+                    continue
+                
+                # 1. 「コーナー」という文字で分割して、右側の馬番リストを取得
+                if 'コーナー' in th_text:
+                    # 右側だけを取り出し、改行や余計な空白をすべて削除＞これ不要？
+                    order_raw = th_text
+
+                    # 2. カッコ「()」をカンマ「,」に置換して、すべてカンマ区切りのリストにする
+                    order_processed = td_text.replace('(', ',').replace(')', ',')
+                    # カンマで分割し、空要素を除去して純粋な馬番だけのリストにする
+                    order_list = [h.strip() for h in order_processed.split(',') if h.strip()]
+
+                    # 3. リストの並び順をそのまま「通過順位」として記録
+                    for rank_idx, h_num in enumerate(order_list):
+                        # 数字以外の記号があれば除去（馬番のみ抽出）
+                        h_num_clean = re.sub(r'\D', '', h_num)
+                        if h_num_clean:
+                            if h_num_clean not in temp_pass_data:
+                                temp_pass_data[h_num_clean] = []
+                            # その馬のこのコーナーでの位置(1番目なら"1")を記録
+                            temp_pass_data[h_num_clean].append(str(rank_idx + 1))
+
+            # 4. 全コーナー分を「1-1-2-2」形式の文字列に変換
+            for h_num, ranks in temp_pass_data.items():
+                pass_map[h_num] = "-".join(ranks)
+                logger.debug(f"pass_map: {pass_map}")
+            return pass_map
+        except Exception as e:
+            logger.warning(f"コーナー通過順の解析エラー: {e}")
+            return {}
