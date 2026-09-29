@@ -263,6 +263,82 @@ class ScraperRaceInfo:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
 
+    def get_horse_info(self, html_contents: str) -> object:
+        """馬個別の詳細情報の取得"""
+        results = {}
+
+        soup = self.client.get_soup_as_html(html_contents)
+
+        try:
+            # ヘッダー部分の情報取得
+            h_head = soup.select_one(".horse_title").get_text(strip=True)
+            if not h_head:
+                logger.info("※馬データのヘッダー部分の解析に失敗したか、構造が異なります。")
+                return []
+            pattern = r"^([^\x00-\x7F]+)([A-Za-z\s]+?)([牡牝セ]\d+歳)\s*(.+毛)$"
+            match = re.search(pattern, h_head)
+            if match:
+                results["horse_name"] = match.group(1)
+                results["horse_eng_name"] = match.group(2)
+                results["horse_age"] = match.group(3)
+                results["horse_type"] = match.group(4)
+            else:
+                logger.error("馬ヘッダー情報のパースに失敗しました")
+            # プロフィール部分の情報取得
+            prof_table = soup.find('table', class_='db_prof_table')
+            rows = prof_table.find_all('tr')
+            if not rows:
+                logger.info("※馬データのプロフィール部分の解析に失敗したか、構造が異なります。")
+                return []
+            for row in rows:
+                th = row.find('th')
+                td = row.find('td')
+                # th と td が両方存在する場合のみ処理
+                if th and td:
+                    # 項目名（例: "生年月日", "調教師"）から前後の空白や改行を削除
+                    key = th.get_text(strip=True)
+
+                    # 値（tdの中身）から不要なHTMLタグを除いたテキストを取得
+                    # .get_text(strip=True) を使うことで、<a>タグの中身なども綺麗にテキスト化されます
+                    value = td.get_text(strip=True)
+
+                    results[key] = value
+            # 血統表の取得
+            pedigree_list = []
+            blood_table = soup.find("table", class_="blood_table")
+            if not blood_table:
+                logger.info("※馬データの血統表部分の解析に失敗したか、構造が異なります。")
+                return []
+            # 2. 血統表内にあるすべての <a> タグを抽出する
+            a_tags = blood_table.find_all("a")
+            labels = [
+                "sire",  # 父馬
+                "sire_sire",  # 父父馬
+                "sire_dam",  # 父母馬
+                "dam",  # 母馬
+                "dam_sire",  # 母父馬
+                "dam_dam",  # 母母馬
+            ]
+            for i, a in enumerate(a_tags):
+                if i < len(labels):
+                    key = labels[i]
+                    name = a.get_text(strip=True)
+                    url = a.get("href")
+
+                    # 馬名とURLをセットで格納
+                    results[key] = {"name": name, "url": url}
+
+        except Exception as e:
+            logger.info(f'データ抽出中にエラーが発生しました: {e}')
+
+        return results
+    
+    def get_horse_history(self, url: str) -> list:
+        """馬個別の過去レースデータの取得"""
+        results = []
+
+        return results
+
     def _get_race_id(self, url: str) -> str:
         """レースIDの取得"""
         parsed_url = urlparse(url)
@@ -368,6 +444,9 @@ class ScraperRaceInfo:
 
     def _is_result_page(self, url: str) -> bool:
         return 'result.html' in url
+    
+    def _is_horse_page(self, url: str) -> bool:
+        return 'horse' in url
 
     def _conv_horseid_from_url(self, url: str) -> str:
         return url.rstrip("/").split("/")[-1]

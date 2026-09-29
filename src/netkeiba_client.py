@@ -7,7 +7,6 @@ import requests
 import logging
 logger = logging.getLogger(__name__)
 
-
 class NkClientSoup:
     def __init__(self):
         self.headers = {
@@ -17,7 +16,7 @@ class NkClientSoup:
             )
         }
 
-    def get_soup(self, url):
+    def get_soup(self, url: str) -> BeautifulSoup:
         try:
             response = requests.get(url, headers=self.headers)
             response.raise_for_status()
@@ -33,3 +32,7 @@ class NkClientSoup:
 
         return soup
 
+    def get_soup_as_html(self, html_contents: str) -> BeautifulSoup:
+       soup = BeautifulSoup(html_contents, 'html.parser')
+
+       return soup
