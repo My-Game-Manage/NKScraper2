@@ -274,7 +274,7 @@ class ScraperRaceInfo:
             h_head = soup.select_one(".horse_title").get_text(strip=True)
             if not h_head:
                 logger.info("※馬データのヘッダー部分の解析に失敗したか、構造が異なります。")
-                return []
+                return {}
             pattern = r"^([^\x00-\x7F]+)([A-Za-z\s]+?)([牡牝セ]\d+歳)\s*(.+毛)$"
             match = re.search(pattern, h_head)
             if match:
@@ -289,7 +289,7 @@ class ScraperRaceInfo:
             rows = prof_table.find_all('tr')
             if not rows:
                 logger.info("※馬データのプロフィール部分の解析に失敗したか、構造が異なります。")
-                return []
+                return {}
             for row in rows:
                 th = row.find('th')
                 td = row.find('td')
@@ -308,7 +308,7 @@ class ScraperRaceInfo:
             blood_table = soup.find("table", class_="blood_table")
             if not blood_table:
                 logger.info("※馬データの血統表部分の解析に失敗したか、構造が異なります。")
-                return []
+                return {}
             # 2. 血統表内にあるすべての <a> タグを抽出する
             a_tags = blood_table.find_all("a")
             labels = [
@@ -333,9 +333,31 @@ class ScraperRaceInfo:
 
         return results
     
-    def get_horse_history(self, url: str) -> list:
-        """馬個別の過去レースデータの取得"""
+    def get_horse_history(self, html_contents: str) -> list:
+        """馬個別の詳細情報の取得"""
         results = []
+
+        soup = self.client.get_soup_as_html(html_contents)
+
+        try:
+            # 1. 「競走成績」のsummary属性を持つテーブルを特定する
+            race_table = soup.find("table", class_="db_h_race_results")
+            if not race_table:
+                logger.info("※馬データの戦績部分の解析に失敗したか、構造が異なります。")
+                return []
+            # 2. テーブル内のすべての行（tr）を取得
+            rows = race_table.find_all("tr")
+            for row in rows:
+                # 3. 各行の中にあるセル（td または th）をすべて取得
+                cells = row.find_all(["td", "th"])
+                # 各セルのテキストを抽出し、前後の空白を除去してリスト化
+                cell_data = [cell.get_text(strip=True) for cell in cells]
+                # データが存在する場合のみリストに追加（空行などを除外）
+                if cell_data:
+                    results.append(cell_data)
+
+        except Exception as e:
+            logger.info(f'データ抽出中にエラーが発生しました: {e}')
 
         return results
 

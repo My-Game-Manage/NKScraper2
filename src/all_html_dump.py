@@ -9,12 +9,22 @@ async def fetch_horse_html(url):
     page = await browser.new_page()
 
     print(f"ページにアクセス中: {url}")
-    # ページへ移動（コンテンツの読み込み完了まで待機）
     await page.goto(url, wait_until="domcontentloaded")
 
-    # レンダリング済みのHTMLを取得
-    html_content = await page.content()
+    # 【ポイント】戦績テーブルや特定の要素が読み込まれるまで最大10秒待機する
+    # ※実際のページのテーブルのclass名やIDに合わせて調整してください（例: "table.db_h_race_results" など）
+    try:
+        await page.wait_for_selector(
+            "table.db_h_race_results", timeout=10000
+        )  # 例
+        print("戦績テーブルの読み込みを確認しました。")
+    except Exception as e:
+        print(
+            "指定したテーブルの読み込みを待機タイムアウトしました（またはセレクタが違います）: "
+            f"{e}"
+        )
 
+    # 描画完了後のHTMLを取得
+    html_content = await page.content()
     await browser.close()
-    print("HTMLの取得が完了しました。")
     return html_content
