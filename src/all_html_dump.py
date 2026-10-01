@@ -1,5 +1,9 @@
 from playwright.async_api import async_playwright
 
+# ロガー設定
+import logging
+logger = logging.getLogger(__name__)
+
 
 async def fetch_horse_html(url):
   """指定したURL（馬情報ページなど）からJavaScript実行後のHTMLを非同期で取得する"""
@@ -8,7 +12,7 @@ async def fetch_horse_html(url):
     browser = await p.chromium.launch(headless=True)
     page = await browser.new_page()
 
-    print(f"ページにアクセス中: {url}")
+    logger.info(f"ページにアクセス中: {url}")
     await page.goto(url, wait_until="domcontentloaded")
 
     # 【ポイント】戦績テーブルや特定の要素が読み込まれるまで最大10秒待機する
@@ -19,7 +23,7 @@ async def fetch_horse_html(url):
         )  # 例
         print("戦績テーブルの読み込みを確認しました。")
     except Exception as e:
-        print(
+        logger.error(
             "指定したテーブルの読み込みを待機タイムアウトしました（またはセレクタが違います）: "
             f"{e}"
         )
