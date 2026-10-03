@@ -11,11 +11,14 @@ from src.formatter import NkFormatter
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.all_html_dump import fetch_horse_html
 
+DEFAULT_BASE_DIR = "data"
+
 
 class NkScraper:
-    def __init__(self):
+    def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
         self.fetcher = NkFetcher()
         self.writer = NkWriter()
+        self.formatter = NkFormatter()
 
         # 基本設定
         self.base_dir = 'data'
@@ -38,7 +41,10 @@ class NkScraper:
             # レース情報
             race_info = self.fetch_race_info_by_id(race_id)
             # データの変換
+            markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
             # データの保存
+            filename = self.formatter.get_filename_from_race_info(race_info)
+            self.writer.save_as_markdown(target_date, filename, markdown)
 
 
     def scraping_results(self, input_date=None, course_filter=None, race_num_filter=None):
@@ -55,15 +61,18 @@ class NkScraper:
         # 2. レースID毎に処理していく
         for race_id in target_race_ids:
             # レース結果
-            race_result_info = self.fetch_race_result_by_id(race_id)
+            result_info = self.fetch_race_result_by_id(race_id)
             # データの変換
+            markdown = self.conv_race_result_data_to_markdown(result_info)
             # データの保存
+            filename = self.formatter.get_filename_from_race_info(result_info)
+            self.writer.save_as_markdown(target_date, filename, markdown)
 
-    def fetch_race_info_by_id(self, race_id: str) -> list:
+    def fetch_race_info_by_id(self, race_id: str) -> object:
         """
         レース出馬情報（レース情報、出馬情報、各馬のプロフィール、各馬の戦績リスト）の取得
         """
-        results = []
+        results = {}
 
         is_nar = self.is_nar_race_id(race_id)
 
@@ -71,27 +80,27 @@ class NkScraper:
         target_url = self.race_url_from_race_id(race_id, is_nar)
 
         # レース情報取得
-        race_info = self.fetcher.fetch_race_info(target_url)
+        results["race_info"] = self.fetcher.fetch_race_info(target_url)
         # 出走馬情報取得
-        shutuba_horses_list = self.fetcher.fetch_shutuba_horse_info(target_url)
+        results["shutuba_horses"] = self.fetcher.fetch_shutuba_horse_info(target_url)
         # リスト内包表記を使って horse_url だけを抽出する
         #horse_urls = [horse["horse_url"] for horse in shutuba_horses_list]
         horses_data = []
-        for horse_row in shutuba_horses_list:
+        for horse_row in results["shutuba_horses"]:
             data = {}
             horse_id = horse_row["horse_id"]
             horse_url = horse_row["horse_url"]
             # 馬のページ取得
             horse_html = fetch_horse_html(horse_url)
             # 馬のプロフィール取得
+            data["horse_id"] = horse_id
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
             data["horse_history"] = self.fetcher.fetch_horse_history(horse_html)
             horses_data.append(data)
+        results["horse_infos"] = horses_data
         return results
 
     def fetch_race_result_by_id(self, race_id: str) -> list:
-        results = []
-
         is_nar = self.is_nar_race_id(race_id)
 
         # レースIDからURL作成
@@ -101,6 +110,48 @@ class NkScraper:
         result = self.fetcher.fetch_race_result(target_url)
 
         return result
+
+    def conv_race_shutuba_data_to_markdown(self, target_date: str, race_info: list[dict]) -> str:
+        """レース出馬情報等をmarkdownに変換する"""
+        results = []
+
+        # レース基本情報
+        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info["race_info"])
+        results.append(race_base_info + "\n\n")
+        # 出馬情報
+        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info["shutuba_horses"])
+        results.append(shutuba_info + "\n\n")
+        # 馬のプロフィールと戦績
+        horse_infos = race_info["horse_infos"]
+        horse_ids = []
+        profiles = []
+        histories = []
+        for h_info in horse_infos:
+            h_id = h_info["horse_id"]
+            h_prof = h_info["horse_prof"]
+            h_hist = h_info["horse_history"]
+            # 馬のプロフィール
+            prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
+            history = self.formatter.conv_history_to_markdown(h_hist)
+            horse_ids.append(f"### 馬ID：{h_id}" + "\n\n")
+            profiles.append(prof + "\n\n")
+            histories.append(history + "\n\n")
+        results.append("## 3. 出走馬プロフィール\n\n")
+        for i, prof in enumerate(profiles):
+            results.append(horse_ids[i])
+            results.append(prof)
+        results.append("## 4. 各馬の過去戦績\n\n")
+        for i, hist in enumerate(histories):
+            results.append(horse_ids[i])
+            results.append(hist)
+
+        return "".join(results)
+
+    def conv_race_result_data_to_markdown(self, race_result: list[dict]) -> str:
+        """レース結果をmarkdownに変換する"""
+        results = []
+        # タイトル行
+        return "".join(results)
 
     def get_target_race_ids(self, date, course_filter, race_num_filter) -> list:
         """

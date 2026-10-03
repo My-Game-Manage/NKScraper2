@@ -47,7 +47,7 @@ class NkFetcher:
         # 2. 重複を除去し、昇順に並べ替えて返す
         return sorted(list(set(results)))
 
-    def fetch_race_info(self, url: str) -> object:
+    def fetch_race_info(self, url: str) -> dict:
         """
         レース情報を取得
         """
@@ -106,7 +106,7 @@ class NkFetcher:
 
         return results
 
-    def fetch_shutuba_horse_info(self, url: str) -> list:
+    def fetch_shutuba_horse_info(self, url: str) -> list[dict]:
         """
         出馬情報を取得
         """
@@ -143,7 +143,7 @@ class NkFetcher:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
 
-    def fetch_race_result(self, url: str) -> list:
+    def fetch_race_result(self, url: str) -> list[dict]:
         """
         レース結果を取得
         TODO: 払い戻しのテーブル情報を取得するように追加修正
@@ -200,7 +200,7 @@ class NkFetcher:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
 
-    def fetch_horse_profile(self, html_contents: str) -> object:
+    def fetch_horse_profile(self, html_contents: str) -> dict:
         """
         個別の馬の基本情報、プロフィール、血統を取得
         """
@@ -223,7 +223,7 @@ class NkFetcher:
 
         return results
 
-    def fetch_horse_history(self, html_contents: str) -> object:
+    def fetch_horse_history(self, html_contents: str) -> list[dict]:
         """
         個別の馬の過去レース戦績のリストを取得
         """

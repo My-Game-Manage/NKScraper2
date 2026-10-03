@@ -6,14 +6,14 @@ logger = logging.getLogger(__name__)
 
 class NkFormatter:
 
-    def conv_race_info_to_markdown(self, race_info: list[dict]) -> str:
+    def conv_race_info_to_markdown(self, target_date: str, race_info: list[dict]) -> str:
         """
         レース情報をマークダウンに変換する
         """
         """レース情報の辞書をGeminiが見やすいMarkdown形式のテキストに変換する"""
-        md_text = f"""# 【{race_info.get('race_course', '')}】第race_{race_info.get('race_num', '')}R: {race_info.get('race_name', '')}
+        md_text = f"""# {target_date} - 【{race_info.get('race_course', '')}】第race_{race_info.get('race_num', '')}R: {race_info.get('race_name', '')}
 
-## レース基本情報
+## 1. レース基本情報
 - **レースID**: `{race_info.get('race_id', '')}`
 - **発走時刻**: {race_info.get('start_time', '')}
 - **グレード**: {race_info.get('race_grade', '')}
@@ -28,6 +28,7 @@ class NkFormatter:
         """出馬表の辞書リストをMarkdown形式のテーブル文字列に変換する"""
         # ヘッダーと区切り線
         md_lines = [
+            "## 2. 出馬表\n\n",
             "| 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | 厩舎 | 馬ID |",
             "|---|---|---|---|---|---|---|---|",
         ]
@@ -46,6 +47,7 @@ class NkFormatter:
         """レース結果の辞書リストをMarkdown形式のテーブル文字列に変換する"""
         # ヘッダーと区切り線
         md_lines = [
+            "## 2. レース結果（着順）\n\n",
             "| 着順 | 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | タイム | 着差 | 人気 | オッズ | 上り | 通過 | 馬体重 | 厩舎 |",
             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
         ]
@@ -90,9 +92,8 @@ class NkFormatter:
         eng_name = data.get("horse_eng_name", "")
 
         md = [
-            f"# {name} ({eng_name})",
-            "",
-            "## 基本情報",
+            "#### 基本情報",
+            f"- **名前 / 英名** {name} ({eng_name})",
             f"- **性齢 / 毛色**: {data.get('horse_age', '')} / {data.get('horse_type', '')}",
             f"- **生年月日**: {data.get('生年月日', '')}",
             f"- **調教師**: {data.get('調教師', '')}",
@@ -101,13 +102,13 @@ class NkFormatter:
             f"- **募集情報**: {data.get('募集情報', '')}",
             f"- **セリ取引価格**: {data.get('セリ取引価格', '')}",
             "",
-            "## 成績・獲得賞金",
+            "#### 成績・獲得賞金",
             f"- **通算成績**: {data.get('通算成績', '')}",
             f"- **獲得賞金**: 地方 {data.get('獲得賞金 (地方)', '0万円')} / 中央 {data.get('獲得賞金 (中央)', '0万円')}",
             f"- **主な勝鞍**: {data.get('主な勝鞍', '')}",
             f"- **近親馬**: {data.get('近親馬', '')}",
             "",
-            "## 血統表（3代血統）",
+            "#### 血統表（3代血統）",
             "| 父 | 母父 |",
             "|---|---|",
             f"| **{make_ped_link(data.get('sire'))}** | **{make_ped_link(data.get('dam_sire'))}** |",
@@ -146,3 +147,6 @@ class NkFormatter:
             md_lines.append(row_line)
 
         return "\n".join(md_lines)
+
+    def get_filename_from_race_info(self, race_info: list[dict]) -> str:
+        return ""
