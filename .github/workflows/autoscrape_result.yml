@@ -1,0 +1,40 @@
+name: Scheduled Horse Racing Scraping (Result)
+
+on:
+  schedule:
+    - cron: '0 13 * * *' # 日本時間22:00：当日の結果(fetch_results.py)を取得
+  workflow_dispatch: # 手動実行ボタンも残しておく
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip' # pipのキャッシュを有効にして高速化
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install
+        
+      # 結果取得（当日分）
+      - name: Fetch Today's Results
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+          
+          # 構築した引数で実行
+          python main.py --result
+        
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git commit -m "Update race data & results $(date +%Y-%m-%d)" || exit 0
+          git push

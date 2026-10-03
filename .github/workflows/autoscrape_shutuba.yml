@@ -1,0 +1,49 @@
+name: Scheduled Horse Racing Scraping
+
+on:
+  schedule:
+    - cron: '0 10 * * *' # 日本時間19:00：翌日の出馬表(fetch_data.py)を取得
+  workflow_dispatch: # 手動実行ボタンも残しておく
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip' # pipのキャッシュを有効にして高速化
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install
+      # 日付取得
+      - name: 日付を取得して環境変数にセット
+        id: date_step
+        run: |
+          # 明日の日付を YYYYMMDD 形式で取得
+          # date -d "tomorrow" で明日を指定できます
+          # TZ=Asia/Tokyo を指定することで日本時間ベースで計算します
+          TOMORROW=$(TZ=Asia/Tokyo date -d "tomorrow" +%Y%m%d)
+          echo "TOMORROW_DATE=$TOMORROW" >> $GITHUB_ENV
+          
+      # 出馬表取得（翌日分）
+      - name: Fetch Tomorrow's Race Data
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+          echo "明日の日付は: ${{ env.TOMORROW_DATE }}"
+          # 構築した引数で実行
+          python main.py --date ${{ env.TOMORROW_DATE }}
+        
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git commit -m "Update race data & results $(date +%Y-%m-%d)" || exit 0
+          git push
