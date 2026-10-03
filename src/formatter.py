@@ -149,4 +149,11 @@ class NkFormatter:
         return "\n".join(md_lines)
 
     def get_filename_from_race_info(self, race_info: list[dict]) -> str:
-        return ""
+        info = race_info["race_info"]
+        race_id = info["race_id"]
+        race_course = info["race_course"]
+        race_num = info["race_num"]
+        return f"{race_id}-{race_course}{race_num}R.md"
+
+    def get_filename_from_race_result(self, race_id: str, race_course: str, race_num: str) -> str:
+        return f"{race_id}-result-{race_course}{race_num}R.md"
