@@ -131,6 +131,16 @@ def main():
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
         help='ログレベルを指定します (デフォルト: INFO)'
     )
+    args = parser.parse_args()
+    
+    # ログレベルの設定
+    # setup_loggerに引数から渡されたレベルをセット
+    # loggerの設定（プログラム全体で一度だけ設定）
+    logging.basicConfig(
+        level=args.log,
+        format='%(asctime)s [%(levelname)s][%(funcName)s][%(lineno)d] %(name)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
 
     # logger実行
     logging.debug("細かい計算過程を表示します（デバッグ用）")
