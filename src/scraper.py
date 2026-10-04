@@ -36,6 +36,8 @@ class NkScraper:
         target_date = self.determinate_target_date(input_date)
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
 
+        logger.info(f"target race ids: {target_race_ids}")
+
         # 2. レースID毎に処理していく
         for race_id in target_race_ids:
             # レース情報
