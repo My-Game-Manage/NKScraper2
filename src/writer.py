@@ -7,7 +7,8 @@ logger = logging.getLogger(__name__)
 
 class NkWriter:
     def __init__(self):
-        pass
+        base_dir = "data"
+        os.makedirs(base_dir, exist_ok=True)
 
     def save_as_markdown(self, target_date: str, filename: str, contents: str) -> str:
         """内容をmarkdownファイルとして指定の場所に指定のファイル名で保存する"""
