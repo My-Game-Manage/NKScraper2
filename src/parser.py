@@ -48,7 +48,7 @@ class NkParser:
 
     def get_race_grade(self, soup: BeautifulSoup) -> str:
         """グレードを取得する（存在する場合）"""
-        for selector in GradeSelector.selectors():
+        for selector in GradeSelector.get_selectors():
             # `select_one` を使うことで、`.Icon_GradeType1` のようなCSSセレクタとして検索可能
             elem = soup.select_one(selector)
             if elem:

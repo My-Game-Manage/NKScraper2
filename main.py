@@ -124,7 +124,15 @@ def main():
     )
     parser.set_defaults(only_race=False)
     
-    # 7. ログレベルの設定
+    # 7. 馬の過去履歴の取得スキップ
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        dest="test",
+        help="データ取得テスト用のフォルダにデータ保存"
+    )
+
+    # 8. ログレベルの設定
     parser.add_argument(
         '--log', 
         default='INFO', 
@@ -161,6 +169,7 @@ def main():
                 input_date=target_date,
                 course_filter=target_course_codes,
                 race_num_filter=args.race_num,
+                is_test=args.test,
             )
         else:
             # レース・出馬情報取得
@@ -168,6 +177,7 @@ def main():
                 input_date=target_date,
                 course_filter=target_course_codes,
                 race_num_filter=args.race_num,
+                is_test=args.test,
             )
     except KeyboardInterrupt:
         print("\nユーザーにより中断されました。")
