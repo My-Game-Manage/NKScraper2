@@ -158,14 +158,14 @@ def main():
         if args.result:
             # 結果取得
             scraper.scraping_results(
-                target_date=target_date,
+                input_date=target_date,
                 course_filter=target_course_codes,
                 race_num_filter=args.race_num,
             )
         else:
             # レース・出馬情報取得
             scraper.scraping_races(
-                target_date=target_date,
+                input_date=target_date,
                 course_filter=target_course_codes,
                 race_num_filter=args.race_num,
             )
