@@ -10,10 +10,11 @@ class NkWriter:
         base_dir = "data"
         os.makedirs(base_dir, exist_ok=True)
 
-    def save_as_markdown(self, target_date: str, filename: str, contents: str) -> str:
+    def save_as_markdown(self, target_date: str, filename: str, contents: str, is_test: bool=False) -> str:
         """内容をmarkdownファイルとして指定の場所に指定のファイル名で保存する"""
         # ディレクトリ／ファイル名作成
-        dir_path = os.path.join("data", target_date)
+        base_dir = "data_test" if is_test else "data"
+        dir_path = os.path.join(base_dir, target_date)
         os.makedirs(dir_path, exist_ok=True)
         
         file_path = os.path.join(dir_path, filename)

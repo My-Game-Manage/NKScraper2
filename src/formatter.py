@@ -11,16 +11,16 @@ class NkFormatter:
         レース情報をマークダウンに変換する
         """
         """レース情報の辞書をGeminiが見やすいMarkdown形式のテキストに変換する"""
-        md_text = f"""# {target_date} - 【{race_info.get('race_course', '')}】第race_{race_info.get('race_num', '')}R: {race_info.get('race_name', '')}
+        md_text = f"""# {target_date} - 【{race_info.get('race_track', '')}】第{race_info.get('race_num', '')}R: {race_info.get('race_name', '')}
 
 ## 1. レース基本情報
 - **レースID**: `{race_info.get('race_id', '')}`
 - **発走時刻**: {race_info.get('start_time', '')}
 - **グレード**: {race_info.get('race_grade', '')}
 - **条件**: {race_info.get('race_class', '')} （{race_info.get('horses_num', '')}）
-- **コース**: {race_info.get('race_course', '')} {race_info.get('distance', '')} {race_info.get('course', '')} / {race_info.get('race_type', '')}
+- **コース**: {race_info.get('race_course', '')} {race_info.get('race_distance', '')} {race_info.get('course', '')} / {race_info.get('race_type', '')}
 - **馬場・天候**: 天候: {race_info.get('weather', '')} / 馬場状態: {race_info.get('condition', '')}
-- **開催スケジュール**: {race_info.get('race_kai', '')} {race_info.get('race_course', '')} {race_info.get('race_days', '')}
+- **開催スケジュール**: {race_info.get('race_kai', '')} {race_info.get('race_track', '')} {race_info.get('race_days', '')}
 """
         return md_text
 
@@ -151,9 +151,9 @@ class NkFormatter:
     def get_filename_from_race_info(self, race_info: list[dict]) -> str:
         info = race_info["race_info"]
         race_id = info["race_id"]
-        race_course = info["race_course"]
+        race_course = info["race_track"]
         race_num = info["race_num"]
         return f"{race_id}-{race_course}{race_num}R.md"
 
-    def get_filename_from_race_result(self, race_id: str, race_course: str, race_num: str) -> str:
-        return f"{race_id}-result-{race_course}{race_num}R.md"
+    def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
+        return f"{race_id}-result-{race_track}{race_num}R.md"

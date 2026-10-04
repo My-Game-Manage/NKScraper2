@@ -27,7 +27,7 @@ class NkScraper:
         # ディレクトリがなければ作成
         os.makedirs(self.base_dir, exist_ok=True)
 
-    def scraping_races(self, input_date=None, course_filter=None, race_num_filter=None):
+    def scraping_races(self, input_date=None, course_filter=None, race_num_filter=None, is_test: bool=False):
         """
         レースデータのスクレイピング
         """
@@ -48,10 +48,10 @@ class NkScraper:
             markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
             # データの保存
             filename = self.formatter.get_filename_from_race_info(race_info)
-            self.writer.save_as_markdown(target_date, filename, markdown)
+            self.writer.save_as_markdown(target_date, filename, markdown, is_test)
 
 
-    def scraping_results(self, input_date=None, course_filter=None, race_num_filter=None):
+    def scraping_results(self, input_date=None, course_filter=None, race_num_filter=None, is_test: bool=False):
         """
         レース結果のスクレイピング
         """
@@ -69,10 +69,10 @@ class NkScraper:
             # データの変換
             markdown = self.conv_race_result_data_to_markdown(result_info)
             # データの保存
-            race_course = self.get_jyo_name(race_id)
+            race_track = self.get_jyo_name(race_id)
             race_num = self.get_race_num_from_id(race_id)
-            filename = self.formatter.get_filename_from_race_result(race_id, race_course, race_num)
-            self.writer.save_as_markdown(target_date, filename, markdown)
+            filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
+            self.writer.save_as_markdown(target_date, filename, markdown, is_test)
 
     def fetch_race_info_by_id(self, race_id: str) -> object:
         """
