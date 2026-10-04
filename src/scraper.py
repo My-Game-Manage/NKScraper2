@@ -165,6 +165,8 @@ class NkScraper:
         # 地方競馬、中央競馬、両方を回す
         for is_nar in [True, False]:
             results += self.get_kaisai_ids(date, is_nar)
+
+        logger.info(f"kaisai ids: {results}")
         # 指定がある場合はフィルタリングする
         if results and (course_filter or race_num_filter):
             filtered_ids = self.filtered_race_ids(results, course_filter, race_num_filter)
