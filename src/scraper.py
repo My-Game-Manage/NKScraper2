@@ -9,10 +9,12 @@ from src.fetcher import NkFetcher
 from src.writer import NkWriter
 from src.formatter import NkFormatter
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
-from src.all_html_dump import fetch_horse_html
+from src.all_html_dump import fetch_js_html
 
 DEFAULT_BASE_DIR = "data"
 
+SELECTOR_HORSE_DB = "table.db_h_race_results"
+SELECTOR_KAISAI_HP = ".RaceList_Date_Top"
 
 class NkScraper:
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
@@ -95,7 +97,7 @@ class NkScraper:
             horse_id = horse_row["horse_id"]
             horse_url = horse_row["horse_url"]
             # 馬のページ取得
-            horse_html = fetch_horse_html(horse_url)
+            horse_html = fetch_js_html(horse_url, SELECTOR_HORSE_DB)
             # 馬のプロフィール取得
             data["horse_id"] = horse_id
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
@@ -166,7 +168,6 @@ class NkScraper:
         for is_nar in [True, False]:
             results += self.get_kaisai_ids(date, is_nar)
 
-        logger.info(f"kaisai ids: {results}")
         # 指定がある場合はフィルタリングする
         if results and (course_filter or race_num_filter):
             filtered_ids = self.filtered_race_ids(results, course_filter, race_num_filter)
@@ -180,7 +181,10 @@ class NkScraper:
         """
         top_url = self.get_top_page_url(date, is_nar)
 
-        return self.fetcher.fetch_kaisai_race_ids(top_url)
+        # ページをDUMPする
+        html_contents = fetch_js_html(top_url, SELECTOR_KAISAI_HP)
+
+        return self.fetcher.fetch_kaisai_race_ids(top_url, html_contents)
 
     def filtered_race_ids(self, kaisai_ids: list, course_codes: list, race_nums: list):
         """

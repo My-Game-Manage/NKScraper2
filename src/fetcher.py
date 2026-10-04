@@ -19,7 +19,7 @@ class NkFetcher:
         self.client = NkClientSoup()
         self.parser = NkParser()
 
-    def fetch_kaisai_race_ids(self, url: str) -> list:
+    def fetch_kaisai_race_ids(self, url: str, html_contents: str) -> list:
         """
         レースの開催ページからレースIDを取得する
         """
@@ -27,7 +27,7 @@ class NkFetcher:
         if not self._is_kaisai_url(url):
             return results
 
-        soup = self.client.get_soup(url)
+        soup = self.client.get_soup_as_html(html_contents)
 
         try:
             # 開催ID取得
@@ -111,7 +111,7 @@ class NkFetcher:
         出馬情報を取得
         """
         results = []
-        if not self._is_result_url(url):
+        if not self._is_shutuba_url(url):
             logger.error(f"invalid result url: {url}")
             return results
 

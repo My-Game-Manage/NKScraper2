@@ -118,7 +118,7 @@ class NkFormatter:
 
         return "\n".join(md)
 
-    def conv_history_to_markdown(data_list: list[list]) -> str:
+    def conv_history_to_markdown(self, data_list: list[list]) -> str:
         """
         先頭行(data_list[0])がヘッダーとなっている2次元リストを
         Markdown形式のテーブル文字列に変換する
