@@ -36,3 +36,8 @@ class NkClientSoup:
        soup = BeautifulSoup(html_contents, 'html.parser')
 
        return soup
+        
+    def quit(self):
+        """quit（必要なら処理を書き込む）"""
+        logger.info("clientをquitしました")
+        return 1
