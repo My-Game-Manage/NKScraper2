@@ -1,0 +1,60 @@
+name: Fetch Horse Racing Result Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '取得日 (YYYYMMDD)'
+        required: true
+      course:
+        description: '会場名 (空なら全会場)'
+        required: false
+      race_num:
+        description: 'レース番号 (空なら全レース)'
+        required: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip' # pipのキャッシュを有効にして高速化
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install
+
+      # 出馬表取得（翌日分）
+      - name: Fetch Race Data
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+          
+          # 引数を構築する変数を用意
+          ARGS=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+          fi
+          if [ -n "${{ github.event.inputs.course }}" ]; then
+            ARGS="$ARGS --course ${{ github.event.inputs.course }}"
+          fi
+          if [ -n "${{ github.event.inputs.race_num }}" ]; then
+            ARGS="$ARGS --race_num ${{ github.event.inputs.race_num }}"
+          fi
+          
+          # 構築した引数で実行
+          python main.py $ARGS --result
+                
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git commit -m "Update race data $(date +%Y-%m-%d)" || exit 0
+          git push
