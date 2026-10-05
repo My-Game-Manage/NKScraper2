@@ -21,10 +21,12 @@ class NkWriter:
         
         file_path = os.path.join(dir_path, filename)
 
-        # 1. すでにファイルが存在する場合はスキップ（再実行・スクレイピング再開時に便利）
+        # 1. すでにファイルが存在する場合は上書き（デフォルト）
+        # TODO: 選択的スキップ（再実行・スクレイピング再開時に便利）できるように
         if os.path.exists(file_path):
-            logger.info(f"既に存在するので作成をスキップします: {file_path}")
-            return file_path
+            #logger.info(f"既に存在するので作成をスキップします: {file_path}")
+            #return file_path
+            logger.info(f"既に存在するので上書きします: {file_path}")
 
         # 2. 逐次保存
         with open(file_path, "w", encoding="utf-8") as f:

@@ -59,15 +59,17 @@ class NkScraper:
 
         # 1. 目的のレースIDを取得する
         # 取得日付を決定
-        target_date = self.determinate_target_date(input_date)
+        target_date = self.determinate_target_date(input_date) if input_date else self.get_yesterday_date()
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
+
+        logger.info(f"target race ids: {target_race_ids}")
 
         # 2. レースID毎に処理していく
         for race_id in target_race_ids:
             # レース結果
             result_info = self.fetch_race_result_by_id(race_id)
             # データの変換
-            markdown = self.conv_race_result_data_to_markdown(result_info)
+            markdown = self.conv_race_result_data_to_markdown(race_id, result_info)
             # データの保存
             race_track = self.get_jyo_name(race_id)
             race_num = self.get_race_num_from_id(race_id)
@@ -150,13 +152,24 @@ class NkScraper:
         for i, hist in enumerate(histories):
             results.append(horse_ids[i])
             results.append(hist)
-
+        
+        # データ結合
         return "".join(results)
 
-    def conv_race_result_data_to_markdown(self, race_result: list[dict]) -> str:
+    def conv_race_result_data_to_markdown(self, race_id: str, race_result: list[dict]) -> str:
         """レース結果をmarkdownに変換する"""
         results = []
+
+        jyo_name = self.get_jyo_name(race_id)
+        race_num = self.get_race_num_from_id(race_id)
         # タイトル行
+        results.append(f"# レースID：{race_id}\n\n")
+        results.append(f"## レース：{jyo_name} - {race_num}R\n\n")
+        # 結果ページ
+        race_result_md = self.formatter.conv_race_result_to_markdown(race_result)
+        results.append(race_result_md + "\n\n")
+
+        # データ結合
         return "".join(results)
 
     def get_target_race_ids(self, date, course_filter, race_num_filter) -> list:
@@ -330,3 +343,7 @@ class NkScraper:
         """レースIDからURL作成"""
         domain = self.netkeiba_domain_from(is_nar)
         return f"https://{domain}.netkeiba.com/race/result.html?race_id={race_id}"
+
+    def get_yesterday_date(self) -> str:
+        """現在時刻から昨日の日付を取得"""
+        return (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
