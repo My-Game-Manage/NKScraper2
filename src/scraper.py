@@ -1,5 +1,7 @@
 import os
 from datetime import datetime, timedelta, timezone
+import random
+import time
 
 # ロガー設定
 import logging
@@ -15,6 +17,7 @@ DEFAULT_BASE_DIR = "data"
 
 SELECTOR_HORSE_DB = "table.db_h_race_results"
 SELECTOR_KAISAI_HP = ".RaceList_Date_Top"
+SELECTOR_SHUTUBA_HP = ".RaceName"
 
 class NkScraper:
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
@@ -49,7 +52,8 @@ class NkScraper:
             # データの保存
             filename = self.formatter.get_filename_from_race_info(race_info)
             self.writer.save_as_markdown(target_date, filename, markdown, is_test)
-
+            # 次までのアイドルタイム
+            self.wait_idle_time()
 
     def scraping_results(self, input_date=None, course_filter=None, race_num_filter=None, is_test: bool=False):
         """
@@ -58,7 +62,7 @@ class NkScraper:
         logger.info("結果のスクレイピングを開始します")
 
         # 1. 目的のレースIDを取得する
-        # 取得日付を決定
+        # 取得日付を決定（基本は無指定で前日分）
         target_date = self.determinate_target_date(input_date) if input_date else self.get_yesterday_date()
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
 
@@ -75,6 +79,8 @@ class NkScraper:
             race_num = self.get_race_num_from_id(race_id)
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
             self.writer.save_as_markdown(target_date, filename, markdown, is_test)
+            # 次までのアイドルタイム
+            self.wait_idle_time()
 
     def fetch_race_info_by_id(self, race_id: str) -> object:
         """
@@ -87,10 +93,13 @@ class NkScraper:
         # レースIDからURL作成
         target_url = self.race_url_from_race_id(race_id, is_nar)
 
+        # html取得
+        html_contents = fetch_js_html(target_url, SELECTOR_SHUTUBA_HP)
+
         # レース情報取得
-        results["race_info"] = self.fetcher.fetch_race_info(target_url)
+        results["race_info"] = self.fetcher.fetch_race_info(target_url, html_contents)
         # 出走馬情報取得
-        results["shutuba_horses"] = self.fetcher.fetch_shutuba_horse_info(target_url)
+        results["shutuba_horses"] = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
         # リスト内包表記を使って horse_url だけを抽出する
         #horse_urls = [horse["horse_url"] for horse in shutuba_horses_list]
         horses_data = []
@@ -105,6 +114,8 @@ class NkScraper:
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
             data["horse_history"] = self.fetcher.fetch_horse_history(horse_html)
             horses_data.append(data)
+            # 次の取得までのアイドルタイム
+            self.wait_idle_time()
         results["horse_infos"] = horses_data
         return results
 
@@ -347,3 +358,7 @@ class NkScraper:
     def get_yesterday_date(self) -> str:
         """現在時刻から昨日の日付を取得"""
         return (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+
+    def wait_idle_time(self):
+        sleep_time = random.uniform(2.5, 5.0)
+        time.sleep(sleep_time)
