@@ -2,14 +2,15 @@ name: Scheduled Horse Racing Scraping (Result)
 
 on:
   schedule:
-    - cron: '0 13 * * *' # 日本時間22:00：当日の結果(fetch_results.py)を取得
+    - cron: '0 19 * * *' # 毎日 UTC 19:00 (JST 翌朝 4:00) に実行
   workflow_dispatch: # 手動実行ボタンも残しておく
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
       
       - name: Set up Python
         uses: actions/setup-python@v5

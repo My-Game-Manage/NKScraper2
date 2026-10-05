@@ -47,7 +47,7 @@ class NkFetcher:
         # 2. 重複を除去し、昇順に並べ替えて返す
         return sorted(list(set(results)))
 
-    def fetch_race_info(self, url: str) -> dict:
+    def fetch_race_info(self, url: str, html_contents: str) -> dict:
         """
         レース情報を取得
         """
@@ -56,7 +56,7 @@ class NkFetcher:
             logger.error(f"invalid shutuba url: {url}")
             return results
 
-        soup = self.client.get_soup(url)
+        soup = self.client.get_soup_as_html(html_contents)
 
         try:
             # 1. レース基本情報取得
@@ -106,7 +106,7 @@ class NkFetcher:
 
         return results
 
-    def fetch_shutuba_horse_info(self, url: str) -> list[dict]:
+    def fetch_shutuba_horse_info(self, url: str, html_contents: str) -> list[dict]:
         """
         出馬情報を取得
         """
@@ -115,7 +115,7 @@ class NkFetcher:
             logger.error(f"invalid result url: {url}")
             return results
 
-        soup = self.client.get_soup(url)
+        soup = self.client.get_soup_as_html(html_contents)
 
         try:
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
@@ -143,7 +143,7 @@ class NkFetcher:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
 
-    def fetch_race_result(self, url: str) -> list[dict]:
+    def fetch_race_result(self, url: str, html_contents: str) -> list[dict]:
         """
         レース結果を取得
         TODO: 払い戻しのテーブル情報を取得するように追加修正
@@ -152,7 +152,7 @@ class NkFetcher:
         if not self._is_result_url(url):
             logger.error(f"invalid result url: {url}")
         
-        soup = self.client.get_soup(url)
+        soup = self.client.get_soup_as_html(html_contents)
 
         try:
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
