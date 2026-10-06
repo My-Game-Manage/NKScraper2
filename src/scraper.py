@@ -18,6 +18,7 @@ DEFAULT_BASE_DIR = "data"
 SELECTOR_HORSE_DB = "table.db_h_race_results"
 SELECTOR_KAISAI_HP = ".RaceList_Date_Top"
 SELECTOR_SHUTUBA_HP = ".RaceName"
+SELECTOR_RESULT_HP = ".RaceTable01"
 
 class NkScraper:
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
@@ -60,6 +61,7 @@ class NkScraper:
         レース結果のスクレイピング
         """
         logger.info("結果のスクレイピングを開始します")
+        logger.info(f"date: {input_date}")
 
         # 1. 目的のレースIDを取得する
         # 取得日付を決定（基本は無指定で前日分）
@@ -125,8 +127,11 @@ class NkScraper:
         # レースIDからURL作成
         target_url = self.race_result_url_from_race_id(race_id, is_nar)
 
+        # html取得
+        html_contents = fetch_js_html(target_url, SELECTOR_RESULT_HP)
+
         # レース結果情報取得
-        result = self.fetcher.fetch_race_result(target_url)
+        result = self.fetcher.fetch_race_result(target_url, html_contents)
 
         return result
 
