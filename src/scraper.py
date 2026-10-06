@@ -197,6 +197,8 @@ class NkScraper:
         for is_nar in [True, False]:
             results += self.get_kaisai_ids(date, is_nar)
 
+        logger.info(f"check taget ids before: {results}")
+
         # 指定がある場合はフィルタリングする
         if results and (course_filter or race_num_filter):
             filtered_ids = self.filtered_race_ids(results, course_filter, race_num_filter)
