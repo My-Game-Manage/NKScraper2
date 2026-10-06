@@ -77,7 +77,7 @@ def main():
     parser.add_argument(
         "--date", 
         type=str, 
-        default=get_today_jst(),
+        default="",#get_today_jst(),
         help="対象日 (YYYYMMDD). デフォルトは今日の日本時間"
     )
 
