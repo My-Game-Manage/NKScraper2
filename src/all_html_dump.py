@@ -21,7 +21,7 @@ def fetch_js_html(url: str, selector: str):
         page.wait_for_selector(
             selector, timeout=10000
         )  # 例
-        print("戦績テーブルの読み込みを確認しました。")
+        logger.info("指定テーブルの読み込みを確認しました。")
     except Exception as e:
         logger.error(
             "指定したテーブルの読み込みを待機タイムアウトしました（またはセレクタが違います）: "
