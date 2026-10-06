@@ -16,7 +16,7 @@ from src.all_html_dump import fetch_js_html
 DEFAULT_BASE_DIR = "data"
 
 SELECTOR_HORSE_DB = "table.db_h_race_results"
-SELECTOR_KAISAI_HP = ".RaceList_Date_Top"
+SELECTOR_KAISAI_HP = ".RaceList_Body"
 SELECTOR_SHUTUBA_HP = ".RaceName"
 SELECTOR_RESULT_HP = ".RaceTable01"
 
@@ -214,7 +214,6 @@ class NkScraper:
 
         # ページをDUMPする
         html_contents = fetch_js_html(top_url, SELECTOR_KAISAI_HP)
-        logger.info(f"test check html in fetch kaisai ids: {html_contents}")
 
         return self.fetcher.fetch_kaisai_race_ids(top_url, html_contents)
 
