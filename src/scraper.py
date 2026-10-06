@@ -214,6 +214,7 @@ class NkScraper:
 
         # ページをDUMPする
         html_contents = fetch_js_html(top_url, SELECTOR_KAISAI_HP)
+        logger.info(f"test check html in fetch kaisai ids: {html_contents}")
 
         return self.fetcher.fetch_kaisai_race_ids(top_url, html_contents)
 
