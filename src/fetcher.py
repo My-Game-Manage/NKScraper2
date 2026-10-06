@@ -153,6 +153,7 @@ class NkFetcher:
             logger.error(f"invalid result url: {url}")
         
         soup = self.client.get_soup_as_html(html_contents)
+        logger.info(f"soup result contents: {soup}")
 
         try:
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
