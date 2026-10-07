@@ -364,7 +364,15 @@ class NkScraper:
 
     def get_yesterday_date(self) -> str:
         """現在時刻から昨日の日付を取得"""
-        return (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+        # 日本時間（JST: UTC+9）のタイムゾーンを定義
+        JST = timezone(timedelta(hours=9))
+
+        # 日本時間での「現在時刻」を取得
+        now_jst = datetime.now(JST)
+        # 日本時間ベースで「前日」の日付を計算
+        target_date = (now_jst - timedelta(days=1)).strftime("%Y%m%d")
+
+        return target_date
 
     def wait_idle_time(self):
         sleep_time = random.uniform(2.5, 5.0)

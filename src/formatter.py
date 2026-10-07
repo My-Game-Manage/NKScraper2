@@ -151,9 +151,9 @@ class NkFormatter:
     def get_filename_from_race_info(self, race_info: list[dict]) -> str:
         info = race_info["race_info"]
         race_id = info["race_id"]
-        race_course = info["race_track"]
+        race_track = info["race_track"]
         race_num = info["race_num"]
-        return f"{race_id}-{race_course}{race_num}R.md"
+        return f"{race_id}-{race_track}{race_num}R.md"
 
     def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
         return f"{race_id}-result-{race_track}{race_num}R.md"
