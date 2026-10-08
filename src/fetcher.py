@@ -102,7 +102,7 @@ class NkFetcher:
             # 出走頭数
             results["horses_num"] = held_info["horses_num"]
         except Exception as e:
-            logger.info(f'データ抽出中にエラーが発生しました: {e}')
+            logger.error(f'データ抽出中にエラーが発生しました: {e}')
 
         return results
 

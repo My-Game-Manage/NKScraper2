@@ -149,11 +149,13 @@ class NkFormatter:
         return "\n".join(md_lines)
 
     def get_filename_from_race_info(self, race_info: list[dict]) -> str:
+        if not "race_info" in race_info:
+            logger.error(f"race_info key が見つかりません：{info}")
+            return "no-name.md"
+        
         info = race_info["race_info"]
-        race_id = info["race_id"]
-        race_track = info["race_track"]
-        race_num = info["race_num"]
-        return f"{race_id}-{race_track}{race_num}R.md"
+
+        return f"{info.get('race_id', '')}-{info.get('race_track','')}{info.get('race_num','')}R.md"
 
     def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
         return f"{race_id}-result-{race_track}{race_num}R.md"
