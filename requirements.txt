@@ -14,3 +14,4 @@ playwright
 pandas
 lxml            # pd.read_html の内部で使用
 html5lib        # pd.read_html のバックアップ用
+tabulate        # to_markdown用
