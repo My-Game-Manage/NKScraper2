@@ -67,15 +67,16 @@ def classify_tactics(passing_str, total_horses):
 
 class NkAnalyzer:
 
-    def analyze_horse_history(self, race_track: str, race_distance: str, race_type: str, history: list[dict]) -> dict:
+    def analyze_horse_history(self, history: list[dict]) -> dict:
         """
         過去レースデータを分析し、必要な項目に集計、計算する
         """
         # DataFrame変換
-        df = pd.DataFrame(history)
+        df = pd.DataFrame(history[1:], columns=history[0])
 
         # 数値等に変換
-        norm_df = self.normalized_hist(df)
+        #norm_df = self.normalized_hist(df)
+        norm_df = safe_normalize_dataframe(df)
 
         # タイム別
         time_df = self.create_yearly_stats_summary(norm_df)
@@ -109,7 +110,7 @@ class NkAnalyzer:
         data = df.copy()
 
         # 日付から「年」を抽出
-        data["日付"] = pd.to_datetime(data["日付"])
+        data["日付"] = pd.to_datetime(data["日付"], format="mixed", errors="coerce")
         data["年"] = data["日付"].dt.year
 
         # 「距離」列（例: "ダ1900"）から種別と距離を抽出して結合（例: "ダート1900m"）
@@ -283,10 +284,31 @@ class NkAnalyzer:
 
     def normalized_hist(self, df: pd.DataFrame) -> pd.DataFrame:
         """必要な部分を数値や日付型に変換"""
+        # 1. 列名（カラム名）からすべての空白（半角 ' ' / 全角 ' ' / タブ等）を除去
+        df.columns = df.columns.str.replace(r'[\s\u3000]', '', regex=True)
+        # 2. (任意) 文字列型（object型）のデータ値に含まれる前後の余計な空白も除去
+        for col in df.select_dtypes(include=['object']).columns:
+            df[col] = df[col].astype(str).str.strip()
+        
         # 着順やRなどを数値型に変換（変換できない文字が入っている場合はNaNにする coerce を指定）
         df["着順"] = pd.to_numeric(df["着順"], errors="coerce")
         df["R"] = pd.to_numeric(df["R"], errors="coerce")
 
         # 日付文字列を datetime 型に変換
         df["日付"] = pd.to_datetime(df["日付"])
-    
+
+        return df
+
+def safe_normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+    data = df.copy()
+
+    # 1. 列名を文字列型に変換してから空白を除去（原因1の対策）
+    data.columns = (
+        data.columns.astype(str).str.replace(r'[\s\u3000]', '', regex=True)
+    )
+
+    # 2. 文字列型（object型）の列のみを対象にして前後の空白を除去（原因2の対策）
+    for col in data.select_dtypes(include=['object']).columns:
+        data[col] = data[col].astype(str).str.strip()
+
+    return data
