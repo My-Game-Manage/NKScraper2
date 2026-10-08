@@ -2,6 +2,7 @@ import os
 from datetime import datetime, timedelta, timezone
 import random
 import time
+import pandas as pd
 
 # ロガー設定
 import logging
@@ -10,6 +11,7 @@ logger = logging.getLogger(__name__)
 from src.fetcher import NkFetcher
 from src.writer import NkWriter
 from src.formatter import NkFormatter
+from src.analyzer import NkAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.all_html_dump import fetch_js_html
 
@@ -25,6 +27,7 @@ class NkScraper:
         self.fetcher = NkFetcher()
         self.writer = NkWriter()
         self.formatter = NkFormatter()
+        self.analyzer = NkAnalyzer()
 
         # 基本設定
         self.base_dir = 'data'
@@ -114,7 +117,15 @@ class NkScraper:
             # 馬のプロフィール取得
             data["horse_id"] = horse_id
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
-            data["horse_history"] = self.fetcher.fetch_horse_history(horse_html)
+            history = self.fetcher.fetch_horse_history(horse_html)
+            data["horse_history"] = history
+            # 馬のレースデータ分析
+            if history:
+                # タイム
+                analyzed_data = self.analyzer.analyze_horse_history(history)
+                data["analyzed_data"] = analyzed_data
+            else:
+                data["analyzed_data"] = "- 戦績データがない、または新馬です。\n\n"
             horses_data.append(data)
             # 次の取得までのアイドルタイム
             self.wait_idle_time()
@@ -150,21 +161,28 @@ class NkScraper:
         horse_ids = []
         profiles = []
         histories = []
+        analyzed = []
         for h_info in horse_infos:
             h_id = h_info["horse_id"]
             h_prof = h_info["horse_prof"]
             h_hist = h_info["horse_history"]
+            h_anal = h_info["analyzed_data"]
             # 馬のプロフィール
             prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
             history = self.formatter.conv_history_to_markdown(h_hist)
             horse_ids.append(f"### 馬ID：{h_id}" + "\n\n")
             profiles.append(prof + "\n\n")
             histories.append(history + "\n\n")
+            analyzed.append(h_anal + "\n\n")
         results.append("## 3. 出走馬プロフィール\n\n")
         for i, prof in enumerate(profiles):
             results.append(horse_ids[i])
             results.append(prof)
-        results.append("## 4. 各馬の過去戦績\n\n")
+        results.append("## 4. 各馬データ分析\n\n")
+        for i, anal in enumerate(analyzed):
+            results.append(horse_ids[i])
+            results.append(anal)
+        results.append("## 5. 各馬の過去戦績\n\n")
         for i, hist in enumerate(histories):
             results.append(horse_ids[i])
             results.append(hist)
