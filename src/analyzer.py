@@ -311,4 +311,7 @@ def safe_normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     for col in data.select_dtypes(include=['object']).columns:
         data[col] = data[col].astype(str).str.strip()
 
+    # 3. 開催の余分な数字を消す
+    data["開催"] = data["開催"].astype(str).str.replace(r"\d+", "", regex=True)
+
     return data

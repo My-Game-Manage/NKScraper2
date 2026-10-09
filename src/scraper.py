@@ -49,6 +49,7 @@ class NkScraper:
 
         # 2. レースID毎に処理していく
         for race_id in target_race_ids:
+            logger.info(f"race_id: {race_id} の解析開始")
             # レース情報
             race_info = self.fetch_race_info_by_id(race_id)
             # データの変換
@@ -102,12 +103,15 @@ class NkScraper:
         html_contents = fetch_js_html(target_url, SELECTOR_SHUTUBA_HP)
 
         # レース情報取得
+        logger.info("fetch race_info")
         results["race_info"] = self.fetcher.fetch_race_info(target_url, html_contents)
         # 出走馬情報取得
+        logger.info("fetch shutuba horses")
         results["shutuba_horses"] = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
         # リスト内包表記を使って horse_url だけを抽出する
         #horse_urls = [horse["horse_url"] for horse in shutuba_horses_list]
         horses_data = []
+        logger.info("fetch horses data")
         for horse_row in results["shutuba_horses"]:
             data = {}
             horse_id = horse_row["horse_id"]
@@ -242,6 +246,7 @@ class NkScraper:
         """
         フィルタリングしたレースIDを返す
         """
+        results = kaisai_ids
         # 開催会場でフィルタリング
         if course_codes:
             results = self.filter_race_ids_by_course(results, course_codes)
