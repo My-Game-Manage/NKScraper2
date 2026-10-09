@@ -215,6 +215,9 @@ class NkScraper:
         for is_nar in [True, False]:
             results += self.get_kaisai_ids(date, is_nar)
 
+        # ばんえい、不明は除外する
+        results = self.exclued_race_ids(results)
+
         logger.info(f"check taget ids before: {results}")
 
         # 指定がある場合はフィルタリングする
@@ -239,8 +242,6 @@ class NkScraper:
         """
         フィルタリングしたレースIDを返す
         """
-        # 帯広と不明は除外
-        results = self.exclued_race_ids(kaisai_ids)
         # 開催会場でフィルタリング
         if course_codes:
             results = self.filter_race_ids_by_course(results, course_codes)
