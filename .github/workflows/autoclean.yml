@@ -3,7 +3,6 @@ name: Cleanup Old Data Folders
 on:
   schedule:
     # 毎週月曜日の 12:00 JST に実行 (JST = UTC+9 のため、12 - 9 = 3 UTC)
-    # cron: '分 時 日 月 曜日(0:日曜, 1:月曜...)'
     - cron: '0 3 * * 1'
   
   # 手動でも実行できるようにする場合（デバッグ用）
@@ -11,31 +10,32 @@ on:
 
 jobs:
   cleanup:
-  runs-on: ubuntu-latest
-  
-  steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+    # 【修正】cleanupジョブの子要素になるようにインデントを追加しました
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-        cache: 'pip' # pipのキャッシュを有効にして高速化
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Run Cleanup Script
-      run: |
-        python src/cleaner.py
+      - name: Run Cleanup Script
+        run: |
+          python src/cleaner.py
 
-    - name: Commit and Push
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/
-        git commit -m "Clean and Removed race old data $(date +%Y-%m-%d)" || exit 0
-        git push
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git commit -m "Clean and Removed race old data $(date +%Y-%m-%d)" || exit 0
+          git push
