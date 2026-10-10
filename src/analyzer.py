@@ -161,7 +161,7 @@ class NkAnalyzer:
         # 年・開催・条件でグループ化して一括集計
         # ※ タイムは秒数が小さい方が「最速」、大きい方が「最低（ワースト）」
         grouped = (
-            data.groupby("年", "開催", "条件", "斤量表示")
+            data.groupby(["年", "開催", "条件", "斤量表示"])
             .agg(
                 出走数=("着順", "count"),
                 タイム最速_秒=("タイム_秒", "min"),
@@ -279,7 +279,7 @@ class NkAnalyzer:
         # --- 2. 脚質ごとの戦術割合・成績サマリー集計 ---
         total_races = len(data)
         summary = (
-            data.groupby("脚質")
+            data.groupby(["脚質"])
             .agg(
                 出走数=("着順", "count"),
                 勝利数=("is_win", "sum"),
@@ -339,7 +339,7 @@ class NkAnalyzer:
 
         # 騎手ごとにグループ化して集計
         summary = (
-            data.groupby("騎手")
+            data.groupby(["騎手"])
             .agg(
                 騎乗数=("着順", "count"),
                 勝利数=("is_win", "sum"),
@@ -407,7 +407,7 @@ class NkAnalyzer:
 
         # 人気帯ごとに集計
         summary = (
-            data.groupby("人気帯")
+            data.groupby(["人気帯"])
             .agg(
                 出走数=("着順", "count"),
                 平均着順=("着順", "mean"),
