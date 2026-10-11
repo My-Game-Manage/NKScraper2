@@ -55,7 +55,9 @@ class NkScraper:
             # データの変換
             markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
             # データの保存
-            filename = self.formatter.get_filename_from_race_info(race_info)
+            race_track = self.get_jyo_name(race_id)
+            race_num = self.get_race_num_from_id(race_id)
+            filename = self.formatter.get_filename_from_id_track_num(race_id, race_track, race_num)
             self.writer.save_as_markdown(target_date, filename, markdown, is_test)
             # 次までのアイドルタイム
             self.wait_idle_time()
