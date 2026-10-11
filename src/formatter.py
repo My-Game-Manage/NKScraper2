@@ -158,7 +158,7 @@ class NkFormatter:
         return f"{info.get('race_id', '')}-{info.get('race_track','')}{info.get('race_num','')}R.md"
 
     def get_filename_from_id_track_num(self, race_id: str, race_track: str, race_num: str) -> str:
-        return f"{race_track}/{race_id}-{race_track}{race_num}R.md"
+        return f"{race_id}-{race_track}{race_num}R.md"
 
     def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
-        return f"{race_track}/{race_id}-result-{race_track}{race_num}R.md"
+        return f"{race_id}-result-{race_track}{race_num}R.md"
