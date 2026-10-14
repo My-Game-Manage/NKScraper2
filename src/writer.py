@@ -21,6 +21,7 @@ class NkWriter:
         venue = track_name
 
         # 1. 保存先のディレクトリパスを組み立てる（data/20261011/中山）
+        #       結果の場合は（data/20261011/中山-results）
         save_dir = base_dir / date_dir / venue
 
         # 2. フォルダが存在しない場合は自動作成する（parents=Trueで日付と場所を一括作成）
