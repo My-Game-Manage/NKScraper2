@@ -86,7 +86,7 @@ class NkScraper:
             race_track = self.get_jyo_name(race_id)
             race_num = self.get_race_num_from_id(race_id)
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
-            self.writer.save_as_markdown(target_date, race_track, filename, markdown, is_test)
+            self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
             # 次までのアイドルタイム
             self.wait_idle_time()
 
