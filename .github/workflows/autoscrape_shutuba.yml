@@ -2,7 +2,8 @@ name: Scheduled Horse Racing Scraping
 
 on:
   schedule:
-    - cron: '0 8 * * *' # 日本時間19:00：翌日の出馬表(fetch_data.py)を取得
+#    - cron: '0 8 * * *' # 日本時間19:00：翌日の出馬表(fetch_data.py)を取得
+    - cron: '0 18 * * *' # 日本時間3:00：当日の出馬表(fetch_data.py)を取得
   workflow_dispatch: # 手動実行ボタンも残しておく
 
 jobs:
@@ -22,24 +23,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           playwright install --with-deps
-      # 日付取得
-      - name: 日付を取得して環境変数にセット
-        id: date_step
-        run: |
-          # 明日の日付を YYYYMMDD 形式で取得
-          # date -d "tomorrow" で明日を指定できます
-          # TZ=Asia/Tokyo を指定することで日本時間ベースで計算します
-          TOMORROW=$(TZ=Asia/Tokyo date -d "tomorrow" +%Y%m%d)
-          echo "TOMORROW_DATE=$TOMORROW" >> $GITHUB_ENV
+      # 日付取得（日付設定せずに当日分取得にしばらく修正）
+      #- name: 日付を取得して環境変数にセット
+      #  id: date_step
+      #  run: |
+      #    # 明日の日付を YYYYMMDD 形式で取得
+      #    # date -d "tomorrow" で明日を指定できます
+      #    # TZ=Asia/Tokyo を指定することで日本時間ベースで計算します
+      #    TOMORROW=$(TZ=Asia/Tokyo date -d "tomorrow" +%Y%m%d)
+      #    echo "TOMORROW_DATE=$TOMORROW" >> $GITHUB_ENV
           
       # 出馬表取得（翌日分）
       - name: Fetch Tomorrow's Race Data
         run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-          echo "明日の日付は: ${{ env.TOMORROW_DATE }}"
-          # 構築した引数で実行
-          python main.py --date ${{ env.TOMORROW_DATE }}
-        
+        #  export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+        #  echo "明日の日付は: ${{ env.TOMORROW_DATE }}"
+        #  # 構築した引数で実行
+        #  python main.py --date ${{ env.TOMORROW_DATE }}
+          python main.py
+
       - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
