@@ -25,6 +25,59 @@ def seconds_to_time(sec):
     s = sec % 60
     return f"{m}:{s:04.1f}"
 
+def dataframe_to_bullet_list(df: pd.DataFrame) -> str:
+    """DataFrameをLLM（Gemini等）が読みやすい箇条書きテキストに変換する関数
+
+    出力例:
+    - 年: 2026 | 開催: 門別 | 条件: ダート1700m重不 | 斤量: 57kg | 出走数: 1 | 最速タイム: 1:50.7 | 上り最速: 37.9
+    """
+    if df.empty:
+        return "- データなし\n"
+
+    lines = []
+    for _, row in df.iterrows():
+        items = []
+        for col in df.columns:
+            val = row[col]
+            # Na/NaN の場合は表示をスキップまたはハイフン表記
+            if pd.isna(val) or val is None or str(val) == "nan":
+                continue
+            # 日付型の整形（文字列化）
+            if isinstance(val, pd.Timestamp):
+                val = val.strftime("%Y/%m/%d")
+            items.append(f"{col}: {val}")
+
+        if items:
+            lines.append("- " + " | ".join(items))
+
+    return "\n".join(lines) + "\n\n"
+
+def sort_yearly_stats_summary(df: pd.DataFrame) -> pd.DataFrame:
+    """DataFrameを以下の優先順位でソートする関数
+
+    1. 年: 降順（新しい順）
+    2. 条件（距離の数値）: 降順（距離が長い順）
+    3. 条件（文字列全体）: 昇順（あるいは任意の順）
+    """
+    data = df.copy()
+
+    # 1. 「条件」列から距離の数値（例: "1800m" なら 1800）を抽出して一時的な数値カラムを作成
+    # 失敗した場合は 0 を設定
+    data["_距離数値"] = (
+        data["条件"].str.extract(r"(\d+)m").astype(float).fillna(0)
+    )
+
+    # 2. 並び替えの実行
+    # 優先順位: 「年」の降順(False) → 「_距離数値」の降順(False) → 「条件」自体の昇順(True)
+    sorted_df = data.sort_values(
+        by=["年", "_距離数値", "条件"], ascending=[False, False, True]
+    ).reset_index(drop=True)
+
+    # 3. 追加した一時的な内部用カラムを削除して綺麗に戻す
+    sorted_df = sorted_df.drop(columns=["_距離数値"])
+
+    return sorted_df
+
 def classify_tactics(passing_str, total_horses):
     """通過順文字列と頭数から脚質（戦術）を判定する関数"""
     if pd.isna(passing_str) or not isinstance(passing_str, str):
@@ -90,46 +143,47 @@ class NkAnalyzer:
         #norm_df = self.normalized_hist(df)
         norm_df = safe_normalize_dataframe(df)
 
-        # タイム別
+        # 各分析データの作成
         time_df = self.create_yearly_stats_summary(norm_df)
-        # 条件別勝利
         win_df = self.create_yearly_venue_dist_track_performance(norm_df)
-        # 騎手別勝利
         jockey_df = self.create_jockey_performance(norm_df)
-        # 戦術別
         tac_df, tac_rate_df = self.analyze_tactics_performance(norm_df)
-        # 人気・信頼度
         pop_df = self.create_popularity_performance(norm_df)
-        # 近走
         recent_df = self.create_recent_form_summary(norm_df)
 
-        # マークダウン変換
-        time_md = time_df.to_markdown()
-        win_md = win_df.to_markdown()
-        jockey_md = jockey_df.to_markdown()
-        tac_md = tac_df.to_markdown()
-        tac_rate_md = tac_rate_df.to_markdown()
-        pop_md = pop_df.to_markdown()
-        recent_md = recent_df.to_markdown()
+        # マークダウン変換（箇条書き化）
+        time_text = dataframe_to_bullet_list(time_df)
+        win_text = dataframe_to_bullet_list(win_df)
+        jockey_text = dataframe_to_bullet_list(jockey_df)
+        tac_text = dataframe_to_bullet_list(tac_df)
+        tac_rate_text = dataframe_to_bullet_list(tac_rate_df)
+        pop_text = dataframe_to_bullet_list(pop_df)
+        recent_text = dataframe_to_bullet_list(recent_df)
 
         result = []
 
-        # 整形
-        result.append(f"##### タイム分析\n\n")
-        result.append(time_md + "\n\n")
-        result.append(f"##### 勝利分析\n\n")
-        result.append(win_md + "\n\n")
-        result.append(f"##### 騎手別分析\n\n")
-        result.append(jockey_md + "\n\n")
-        result.append(f"##### 脚質分析\n\n")
-        result.append(tac_md + "\n\n")
-        result.append(f"##### 脚質割合\n\n")
-        result.append(tac_rate_md + "\n\n")
-        result.append(f"##### 人気オッズ・信頼度分析\n\n")
-        result.append(pop_md + "\n\n")
-        result.append(f"##### 近走パフォーマンス分析\n\n")
-        result.append(recent_md + "\n\n")
-        # 統合
+        # 整形（マークダウン文書の組み立て）
+        result.append("##### タイム分析\n\n")
+        result.append(time_text)
+
+        result.append("##### 勝利分析\n\n")
+        result.append(win_text)
+
+        result.append("##### 騎手別分析\n\n")
+        result.append(jockey_text)
+
+        result.append("##### 脚質分析\n\n")
+        result.append(tac_text)
+
+        result.append("##### 脚質割合\n\n")
+        result.append(tac_rate_text)
+
+        result.append("##### 人気オッズ・信頼度分析\n\n")
+        result.append(pop_text)
+
+        result.append("##### 近走パフォーマンス分析\n\n")
+        result.append(recent_text)
+
         return "".join(result)
 
     def create_yearly_stats_summary(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -204,8 +258,10 @@ class NkAnalyzer:
 
         # 見出しを「斤量」に変更したい場合はカラム名を変えることも可能です
         summary_df = summary_df.rename(columns={"斤量表示": "斤量"})
+        # 年順にソート（新しいレースが上に来るように降順に並び替え）
+        result_df = sort_yearly_stats_summary(summary_df)
 
-        return summary_df
+        return result_df
 
     def create_yearly_venue_dist_track_performance(self, df: pd.DataFrame) -> pd.DataFrame:
         """年・開催場所・条件（種別＆距離＋馬場状態）ごとに着順実績と各種割合を集計する"""
@@ -264,7 +320,10 @@ class NkAnalyzer:
             (summary["掲示板数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         )
 
-        return summary
+        # 年順にソート（新しいレースが上に来るように降順に並び替え）
+        result_df = sort_yearly_stats_summary(summary)
+
+        return result_df
 
     def analyze_tactics_performance(self, df: pd.DataFrame):
         data = df.copy()
