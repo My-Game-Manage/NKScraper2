@@ -171,7 +171,8 @@ class NkScraper:
             h_anal = h_info["analyzed_data"]
             # 各情報取得
             prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
-            history = self.formatter.conv_history_to_markdown(h_hist)
+            #history = self.formatter.conv_history_to_markdown(h_hist)
+            history = self.analyzer.refine_data_horse_history(h_hist)
             # データ整形してmarkdownにまとめる
             results.append(f"### 馬ID：{h_id}" + "\n\n")
             results.append(f"#### プロフィール\n\n")
