@@ -125,7 +125,7 @@ class NkFetcher:
             # データの抽出
             for row in rows:
                 # 馬名リンクがない場合は目的行ではないのでスキップ
-                if not self.parser.is_horse_result_data_line(row):
+                if not self.parser.is_horse_shutuba_data_line(row):
                     continue
                 # 馬URL取得
                 horse_url = self.parser.get_horse_url(row)
@@ -164,7 +164,7 @@ class NkFetcher:
             rows = soup.select("tr")
             for row in rows:
                 # 馬名リンクがない場合は目的行ではないのでスキップ
-                if not self.parser.is_horse_shutuba_data_line(row):
+                if not self.parser.is_horse_result_data_line(row):
                     continue
                 # HorseURL取得
                 horse_url = self.parser.get_horse_url(row)

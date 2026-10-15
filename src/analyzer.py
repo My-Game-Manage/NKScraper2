@@ -115,19 +115,19 @@ class NkAnalyzer:
         result = []
 
         # 整形
-        result.append(f"#### タイム分析\n\n")
+        result.append(f"##### タイム分析\n\n")
         result.append(time_md + "\n\n")
-        result.append(f"#### 勝利分析\n\n")
+        result.append(f"##### 勝利分析\n\n")
         result.append(win_md + "\n\n")
-        result.append(f"#### 騎手別分析\n\n")
+        result.append(f"##### 騎手別分析\n\n")
         result.append(jockey_md + "\n\n")
-        result.append(f"#### 脚質分析\n\n")
+        result.append(f"##### 脚質分析\n\n")
         result.append(tac_md + "\n\n")
-        result.append(f"#### 脚質割合\n\n")
+        result.append(f"##### 脚質割合\n\n")
         result.append(tac_rate_md + "\n\n")
-        result.append(f"#### 人気オッズ・信頼度分析\n\n")
+        result.append(f"##### 人気オッズ・信頼度分析\n\n")
         result.append(pop_md + "\n\n")
-        result.append(f"#### 近走パフォーマンス分析\n\n")
+        result.append(f"##### 近走パフォーマンス分析\n\n")
         result.append(recent_md + "\n\n")
         # 統合
         return "".join(result)
@@ -135,6 +135,11 @@ class NkAnalyzer:
     def create_yearly_stats_summary(self, df: pd.DataFrame) -> pd.DataFrame:
         # コピーを作成して前処理
         data = df.copy()
+
+        # 1. 日付順にソート（新しいレースが上に来るように降順に並び替え）
+        if "日付" in data.columns:
+            data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
+            data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
         # 日付から「年」を抽出
         data["日付"] = pd.to_datetime(data["日付"], format="mixed", errors="coerce")
@@ -205,6 +210,11 @@ class NkAnalyzer:
     def create_yearly_venue_dist_track_performance(self, df: pd.DataFrame) -> pd.DataFrame:
         """年・開催場所・条件（種別＆距離＋馬場状態）ごとに着順実績と各種割合を集計する"""
         data = df.copy()
+
+        # 1. 日付順にソート（新しいレースが上に来るように降順に並び替え）
+        if "日付" in data.columns:
+            data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
+            data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
         # 1. 前処理：日付から「年」を抽出し、着順を数値型に変換
         data["日付"] = pd.to_datetime(data["日付"])
