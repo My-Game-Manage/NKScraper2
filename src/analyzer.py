@@ -132,6 +132,68 @@ def simplify_track_condition(track_str):
 
 class NkAnalyzer:
 
+    def refine_data_horse_history(self, history: list[dict]) -> str:
+        """
+        過去戦績から余計な項目を除去する
+        """
+        # DataFrame変換
+        df = pd.DataFrame(history[1:], columns=history[0])
+
+        # 数値等に変換
+        #norm_df = self.normalized_hist(df)
+        norm_df = safe_normalize_dataframe(df)
+
+        # LLMが読みやすい箇条書きフォーマット（キー: 値 | ...）に変換する関数
+        # 1. 必要な項目の定義
+        target_columns = [
+            "日付",
+            "開催",
+            "天気",
+            "R",
+            "レース名",
+            "頭数",
+            "枠番",
+            "馬番",
+            "オッズ",
+            "人気",
+            "着順",
+            "騎手",
+            "斤量",
+            "距離",
+            "馬場",
+            "タイム",
+            "着差",
+            "通過",
+            "上り",
+            "馬体重",
+            "勝ち馬(2着馬)",
+            ]
+        # 2. DataFrameに存在する必要な列だけを安全に抽出（不要な列は自動で除外される）
+        existing_cols = [col for col in target_columns if col in df.columns]
+        filtered_df = df[existing_cols]
+
+        # 3. 各行を箇条書きテキストに変換
+        lines = []
+        for _, row in filtered_df.iterrows():
+            items = []
+            for col in filtered_df.columns:
+                val = row[col]
+                # 欠損値や空文字、nan、記号だけのものはスキップ
+                if (
+                    pd.isna(val)
+                    or val is None
+                    or str(val).strip() == ""
+                    or str(val).lower() == "nan"
+                ):
+                    continue
+                items.append(f"{col}: {str(val).strip()}")
+
+            if items:
+                lines.append("- " + " | ".join(items))
+
+        return "\n".join(lines)
+
+
     def analyze_horse_history(self, history: list[dict]) -> dict:
         """
         過去レースデータを分析し、必要な項目に集計、計算する
