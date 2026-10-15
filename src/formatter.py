@@ -1,7 +1,87 @@
 # ロガー設定
 import logging
 logger = logging.getLogger(__name__)
+import pandas as pd
 
+def history_nested_list_to_bullet_list(history: list[list]) -> str:
+    """list[list] 形式のデータ（[0]がヘッダー行）を、
+
+    LLMが誤読しにくい箇条書きテキストに変換する関数
+    """
+    if not history or len(history) <= 1:
+        return "- 戦績データなし\n"
+
+    headers = history[0]
+    data_rows = history[1:]
+
+    lines = []
+    for row in data_rows:
+        items = []
+        for col, val in zip(headers, row):
+            # 欠損値や空文字、意味のない記号・nanはスキップ
+            if (
+                pd.isna(val)
+                or val is None
+                or str(val).strip() == ""
+                or str(val).lower() == "nan"
+            ):
+                continue
+
+            col_clean = str(col).strip()
+            val_clean = str(val).strip()
+
+            # ノイズになりやすい項目を除外したい場合のフィルター（例: タイム指数）
+            if "タイム指数" in col_clean:
+                continue
+
+            items.append(f"{col_clean}: {val_clean}")
+
+        if items:
+            lines.append("- " + " | ".join(items))
+
+    return "\n".join(lines) + "\n\n"
+
+def history_list_to_bullet_list(history_list: list[dict]) -> str:
+    """戦績の list[dict] 形式データを、LLM（Gemini等）が誤読しにくい
+
+    箇条書きテキスト（キー: 値 | ...）に変換する関数
+    """
+    if not history_list or len(history_list) <= 1:
+        return "- 戦績データなし\n"
+
+    # 先頭がヘッダーやカラム名、2番目以降がデータの場合の安全な抽出
+    # もし単純な dict のリストであればそのままループします
+    headers = history_list[0]
+    data_rows = history_list[1:]
+
+    lines = []
+    for row in data_rows:
+        items = []
+        for col, val in row.items():
+            # 欠損値や空文字、意味のない記号列はスキップ
+            if (
+                pd.isna(val)
+                or val is None
+                or str(val).strip() == ""
+                or str(val).lower() == "nan"
+            ):
+                continue
+
+            # 余分な空白を除去
+            col_clean = str(col).strip()
+            val_clean = str(val).strip()
+
+            # 指数系や長すぎる項目、今回は不要な項目を間引きたい場合はここでフィルタリング可能
+            # 例: "ﾀｲﾑ指数" などノイズになりやすいものを除外する場合
+            if "タイム指数" in col_clean:
+                continue
+
+            items.append(f"{col_clean}: {val_clean}")
+
+        if items:
+            lines.append("- " + " | ".join(items))
+
+    return "\n".join(lines) + "\n\n"
 
 
 class NkFormatter:
@@ -126,27 +206,9 @@ class NkFormatter:
         if not data_list:
             return ""
 
-        # セル内のパイプ記号(|)や改行をエスケープ・整形するヘルパー関数
-        def format_cell(value) -> str:
-            if value is None:
-                return ""
-            s = str(value).replace("\n", " ").replace("|", "\\|")
-            return s.strip()
+        md = history_nested_list_to_bullet_list(data_list)
 
-        header = data_list[0]
-        rows = data_list[1:]
-
-        # 1. ヘッダー行と区切り線の生成
-        header_line = "| " + " | ".join(format_cell(h) for h in header) + " |"
-        separator_line = "| " + " | ".join(["---"] * len(header)) + " |"
-
-        # 2. 各データ行の生成
-        md_lines = [header_line, separator_line]
-        for row in rows:
-            row_line = "| " + " | ".join(format_cell(cell) for cell in row) + " |"
-            md_lines.append(row_line)
-
-        return "\n".join(md_lines)
+        return md
 
     def get_filename_from_race_info(self, race_info: list[dict]) -> str:
         if not "race_info" in race_info:
