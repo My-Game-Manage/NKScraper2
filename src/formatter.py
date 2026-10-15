@@ -92,7 +92,7 @@ class NkFormatter:
         eng_name = data.get("horse_eng_name", "")
 
         md = [
-            "#### 基本情報",
+            "##### 基本情報",
             f"- **名前 / 英名** {name} ({eng_name})",
             f"- **性齢 / 毛色**: {data.get('horse_age', '')} / {data.get('horse_type', '')}",
             f"- **生年月日**: {data.get('生年月日', '')}",
@@ -102,13 +102,13 @@ class NkFormatter:
             f"- **募集情報**: {data.get('募集情報', '')}",
             f"- **セリ取引価格**: {data.get('セリ取引価格', '')}",
             "",
-            "#### 成績・獲得賞金",
+            "##### 成績・獲得賞金",
             f"- **通算成績**: {data.get('通算成績', '')}",
             f"- **獲得賞金**: 地方 {data.get('獲得賞金 (地方)', '0万円')} / 中央 {data.get('獲得賞金 (中央)', '0万円')}",
             f"- **主な勝鞍**: {data.get('主な勝鞍', '')}",
             f"- **近親馬**: {data.get('近親馬', '')}",
             "",
-            "#### 血統表（3代血統）",
+            "##### 血統表（3代血統）",
             "| 父 | 母父 |",
             "|---|---|",
             f"| **{make_ped_link(data.get('sire'))}** | **{make_ped_link(data.get('dam_sire'))}** |",

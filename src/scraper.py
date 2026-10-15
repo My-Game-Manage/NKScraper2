@@ -164,34 +164,22 @@ class NkScraper:
         results.append(shutuba_info + "\n\n")
         # 馬のプロフィールと戦績
         horse_infos = race_info["horse_infos"]
-        horse_ids = []
-        profiles = []
-        histories = []
-        analyzed = []
         for h_info in horse_infos:
             h_id = h_info["horse_id"]
             h_prof = h_info["horse_prof"]
             h_hist = h_info["horse_history"]
             h_anal = h_info["analyzed_data"]
-            # 馬のプロフィール
+            # 各情報取得
             prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
             history = self.formatter.conv_history_to_markdown(h_hist)
-            horse_ids.append(f"### 馬ID：{h_id}" + "\n\n")
-            profiles.append(prof + "\n\n")
-            histories.append(history + "\n\n")
-            analyzed.append(h_anal + "\n\n")
-        results.append("## 3. 出走馬プロフィール\n\n")
-        for i, prof in enumerate(profiles):
-            results.append(horse_ids[i])
-            results.append(prof)
-        results.append("## 4. 各馬データ分析\n\n")
-        for i, anal in enumerate(analyzed):
-            results.append(horse_ids[i])
-            results.append(anal)
-        results.append("## 5. 各馬の過去戦績\n\n")
-        for i, hist in enumerate(histories):
-            results.append(horse_ids[i])
-            results.append(hist)
+            # データ整形してmarkdownにまとめる
+            results.append(f"### 馬ID：{h_id}" + "\n\n")
+            results.append(f"#### プロフィール\n\n")
+            results.append(prof + "\n\n")
+            results.append(f"#### 過去戦績\n\n")
+            results.append(history + "\n\n")
+            results.append(f"#### データ分析\n\n")
+            results.append(h_anal + "\n\n")
         
         # データ結合
         return "".join(results)
