@@ -147,6 +147,10 @@ class NkParser:
     def get_result_horse_num_selector(self, is_nar: bool) -> str:
         return ResultSelector.HORSE_NUM_NAR if is_nar else ResultSelector.HORSE_NUM
 
+    def is_horse_shutuba_data_line(self, row: object) -> bool:
+        h_tag = row.select(ShutubaSelector.HORSE_NAME)
+        return h_tag
+    
     def is_horse_result_data_line(self, row: object) -> bool:
         h_tag = row.select(ResultSelector.HORSE_NAME)
         r_tag = row.select(ResultSelector.RANK)
