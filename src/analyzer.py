@@ -136,6 +136,10 @@ class NkAnalyzer:
         """
         過去戦績から余計な項目を除去する
         """
+        # listチェック
+        if not history:
+            return "- 過去データはない、または新馬です。\n\n"
+        
         # DataFrame変換
         df = pd.DataFrame(history[1:], columns=history[0])
 
@@ -169,8 +173,8 @@ class NkAnalyzer:
             "勝ち馬(2着馬)",
             ]
         # 2. DataFrameに存在する必要な列だけを安全に抽出（不要な列は自動で除外される）
-        existing_cols = [col for col in target_columns if col in df.columns]
-        filtered_df = df[existing_cols]
+        existing_cols = [col for col in target_columns if col in norm_df.columns]
+        filtered_df = norm_df[existing_cols]
 
         # 3. 各行を箇条書きテキストに変換
         lines = []

@@ -118,10 +118,12 @@ class NkScraper:
             data = {}
             horse_id = horse_row["horse_id"]
             horse_url = horse_row["horse_url"]
+            horse_name = horse_row["horse_name"]
             # 馬のページ取得
             horse_html = fetch_js_html(horse_url, SELECTOR_HORSE_DB)
             # 馬のプロフィール取得
             data["horse_id"] = horse_id
+            data["horse_name"] = horse_name
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
             history = self.fetcher.fetch_horse_history(horse_html)
             data["horse_history"] = history
@@ -166,6 +168,7 @@ class NkScraper:
         horse_infos = race_info["horse_infos"]
         for h_info in horse_infos:
             h_id = h_info["horse_id"]
+            h_name = h_info["horse_name"]
             h_prof = h_info["horse_prof"]
             h_hist = h_info["horse_history"]
             h_anal = h_info["analyzed_data"]
@@ -174,7 +177,7 @@ class NkScraper:
             #history = self.formatter.conv_history_to_markdown(h_hist)
             history = self.analyzer.refine_data_horse_history(h_hist)
             # データ整形してmarkdownにまとめる
-            results.append(f"### 馬ID：{h_id}" + "\n\n")
+            results.append(f"### 馬ID：{h_id}／馬名：{h_name}" + "\n\n")
             results.append(f"#### プロフィール\n\n")
             results.append(prof + "\n\n")
             results.append(f"#### 過去戦績\n\n")
