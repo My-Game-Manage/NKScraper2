@@ -203,7 +203,7 @@ class NkFormatter:
         先頭行(data_list[0])がヘッダーとなっている2次元リストを
         Markdown形式のテーブル文字列に変換する
         """
-        if not data_list:
+        if not data_list or len(data_list) < 10:
             return ""
 
         md = history_nested_list_to_bullet_list(data_list)
