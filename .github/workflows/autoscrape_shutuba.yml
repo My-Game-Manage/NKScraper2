@@ -35,4 +35,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/
           git commit -m "Update race shutuba data $(date +%Y-%m-%d)" || exit 0
+
+          # ★ここを追加：リモートの最新変更を安全に取り込む（競合を防ぐ）
+          git pull origin main --rebase || echo "No rebase needed or already up-to-date"
+          
           git push
