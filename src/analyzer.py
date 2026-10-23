@@ -25,32 +25,44 @@ def seconds_to_time(sec):
     s = sec % 60
     return f"{m}:{s:04.1f}"
 
-def dataframe_to_bullet_list(df: pd.DataFrame) -> str:
-    """DataFrameをLLM（Gemini等）が読みやすい箇条書きテキストに変換する関数
-
-    出力例:
-    - 年: 2026 | 開催: 門別 | 条件: ダート1700m重不 | 斤量: 57kg | 出走数: 1 | 最速タイム: 1:50.7 | 上り最速: 37.9
-    """
+def dataframe_to_markdown_table(df: pd.DataFrame) -> str:
+    """DataFrameをAIが誤認しにくい厳格なMarkdownテーブルに変換し、ハルシネーション防止用の制約テキストを付与する関数"""
     if df.empty:
-        return "- データなし\n"
+        return (
+            "> **【制約事項】**\n"
+            "> 以下の表に記載されているデータがすべての情報です。表に存在しない事項や数値について、推測・補完して回答してはなりません。\n\n"
+            "| データなし |\n"
+            "|:---|\n"
+            "| データなし |\n\n"
+        )
 
-    lines = []
-    for _, row in df.iterrows():
-        items = []
-        for col in df.columns:
-            val = row[col]
-            # Na/NaN の場合は表示をスキップまたはハイフン表記
-            if pd.isna(val) or val is None or str(val) == "nan":
-                continue
-            # 日付型の整形（文字列化）
-            if isinstance(val, pd.Timestamp):
-                val = val.strftime("%Y/%m/%d")
-            items.append(f"{col}: {val}")
+    # 1. コピーを作成し、欠損値や空文字をすべて「データなし」に置換（AIの勝手な補完を防ぐ）
+    clean_df = df.copy()
+    clean_df = clean_df.fillna("データなし")
+    clean_df = clean_df.astype(str)
+    # 文字列としての 'nan', 'None', 空白のみのセルも「データなし」に統一
+    clean_df = clean_df.replace(r'^(nan|None|NaN|\s*)$', 'データなし', regex=True)
 
-        if items:
-            lines.append("- " + " | ".join(items))
+    # 2. Markdownテーブルのヘッダーとアラインメント行の作成
+    columns = list(clean_df.columns)
+    header = "| " + " | ".join(columns) + " |"
+    separator = "| " + " | ".join([":---" for _ in columns]) + " |"
 
-    return "\n".join(lines) + "\n\n"
+    # 3. 各行の構築
+    rows = []
+    for _, row in clean_df.iterrows():
+        row_vals = [str(val).strip() if str(val).strip() != "" else "データなし" for val in row]
+        rows.append("| " + " | ".join(row_vals) + " |")
+
+    table_str = "\n".join([header, separator] + rows)
+
+    # 4. 上下に強力なネガティブ制約（境界の明示）を付与
+    boxed_text = (
+        f"> **【制約事項】**\n"
+        f"> 以下の表に記載されているデータがすべての情報です。表に存在しない事項や数値について、推測・補完して回答してはなりません。\n\n"
+        f"{table_str}\n\n"
+    )
+    return boxed_text
 
 def sort_yearly_stats_summary(df: pd.DataFrame) -> pd.DataFrame:
     """DataFrameを以下の優先順位でソートする関数
@@ -62,13 +74,11 @@ def sort_yearly_stats_summary(df: pd.DataFrame) -> pd.DataFrame:
     data = df.copy()
 
     # 1. 「条件」列から距離の数値（例: "1800m" なら 1800）を抽出して一時的な数値カラムを作成
-    # 失敗した場合は 0 を設定
     data["_距離数値"] = (
         data["条件"].str.extract(r"(\d+)m").astype(float).fillna(0)
     )
 
     # 2. 並び替えの実行
-    # 優先順位: 「年」の降順(False) → 「_距離数値」の降順(False) → 「条件」自体の昇順(True)
     sorted_df = data.sort_values(
         by=["年", "_距離数値", "条件"], ascending=[False, False, True]
     ).reset_index(drop=True)
@@ -83,7 +93,6 @@ def classify_tactics(passing_str, total_horses):
     if pd.isna(passing_str) or not isinstance(passing_str, str):
         return "不明"
 
-    # "1-1-1-1" -> [1, 1, 1, 1] に変換
     try:
         positions = [int(p) for p in passing_str.split("-") if p.isdigit()]
     except ValueError:
@@ -97,19 +106,14 @@ def classify_tactics(passing_str, total_horses):
     max_pos = max(positions)  # 最悪位置
     pos_range = max_pos - min_pos  # 位置の変動幅
 
-    # 1. 自在の判定：道中の順位変動が激しい（例: 4番手→5番手→2番手→5番手など上下動が大きい）
     if len(positions) >= 3 and pos_range >= 3 and first_pos != 1:
-        # 途中で大きく押し上げたり後退したりした場合
         return "自在"
 
-    # 2. 逃げの判定：最初のコーナーが1番手、またはほぼ先頭キープ
     if first_pos == 1:
         return "逃げ"
 
-    # 3. 頭数に対する相対位置の算出（割合）
     relative_pos = first_pos / total_horses
 
-    # 4. 前半の位置取りによる分類
     if relative_pos <= 0.30:
         return "先行"
     elif relative_pos <= 0.65:
@@ -117,38 +121,29 @@ def classify_tactics(passing_str, total_horses):
     else:
         return "追込"
 
-# 馬場状態を 2分類（例: "良・稍" と "重・不"）にまとめる関数・ロジック例
 def simplify_track_condition(track_str):
-    # 欠損値（NaN）や空文字の場合はそのまま空文字を返す
     if pd.isna(track_str):
         return ""
     track_str = str(track_str).strip()
     if track_str in ["良", "稍"]:
-        return "良稍"  # または "良・稍"
+        return "良稍"
     elif track_str in ["重", "不"]:
-        return "重不"  # または "重・不"
-    return track_str  # 予期せぬ文字が入っている場合のフォールバック
+        return "重不"
+    return track_str
 
 
 class NkAnalyzer:
 
     def refine_data_horse_history(self, history: list[dict]) -> str:
         """
-        過去戦績から余計な項目を除去する
+        過去戦績から余計な項目を除去し、ハルシネーション防止策を施したテーブル形式で返す
         """
-        # listチェック
         if not history:
-            return "- 過去データはない、または新馬です。\n\n"
+            return "> **【制約事項】**\n> 過去データはありません。\n\n| データなし |\n|:---|\n| データなし |\n\n"
         
-        # DataFrame変換
         df = pd.DataFrame(history[1:], columns=history[0])
-
-        # 数値等に変換
-        #norm_df = self.normalized_hist(df)
         norm_df = safe_normalize_dataframe(df)
 
-        # LLMが読みやすい箇条書きフォーマット（キー: 値 | ...）に変換する関数
-        # 1. 必要な項目の定義
         target_columns = [
             "日付",
             "開催",
@@ -171,42 +166,18 @@ class NkAnalyzer:
             "上り",
             "馬体重",
             "勝ち馬(2着馬)",
-            ]
-        # 2. DataFrameに存在する必要な列だけを安全に抽出（不要な列は自動で除外される）
+        ]
         existing_cols = [col for col in target_columns if col in norm_df.columns]
         filtered_df = norm_df[existing_cols]
 
-        # 3. 各行を箇条書きテキストに変換
-        lines = []
-        for _, row in filtered_df.iterrows():
-            items = []
-            for col in filtered_df.columns:
-                val = row[col]
-                # 欠損値や空文字、nan、記号だけのものはスキップ
-                if (
-                    pd.isna(val)
-                    or val is None
-                    or str(val).strip() == ""
-                    or str(val).lower() == "nan"
-                ):
-                    continue
-                items.append(f"{col}: {str(val).strip()}")
-
-            if items:
-                lines.append("- " + " | ".join(items))
-
-        return "\n".join(lines)
-
+        # 共通のテーブル変換関数を使用
+        return dataframe_to_markdown_table(filtered_df)
 
     def analyze_horse_history(self, history: list[dict]) -> dict:
         """
-        過去レースデータを分析し、必要な項目に集計、計算する
+        過去レースデータを分析し、ハルシネーション防止策を施したテーブル形式のマークダウンを生成する
         """
-        # DataFrame変換
         df = pd.DataFrame(history[1:], columns=history[0])
-
-        # 数値等に変換
-        #norm_df = self.normalized_hist(df)
         norm_df = safe_normalize_dataframe(df)
 
         # 各分析データの作成
@@ -217,14 +188,14 @@ class NkAnalyzer:
         pop_df = self.create_popularity_performance(norm_df)
         recent_df = self.create_recent_form_summary(norm_df)
 
-        # マークダウン変換（箇条書き化）
-        time_text = dataframe_to_bullet_list(time_df)
-        win_text = dataframe_to_bullet_list(win_df)
-        jockey_text = dataframe_to_bullet_list(jockey_df)
-        tac_text = dataframe_to_bullet_list(tac_df)
-        tac_rate_text = dataframe_to_bullet_list(tac_rate_df)
-        pop_text = dataframe_to_bullet_list(pop_df)
-        recent_text = dataframe_to_bullet_list(recent_df)
+        # マークダウン変換（テーブル形式 ＋ ネガティブ制約付き）
+        time_text = dataframe_to_markdown_table(time_df)
+        win_text = dataframe_to_markdown_table(win_df)
+        jockey_text = dataframe_to_markdown_table(jockey_df)
+        tac_text = dataframe_to_markdown_table(tac_df)
+        tac_rate_text = dataframe_to_markdown_table(tac_rate_df)
+        pop_text = dataframe_to_markdown_table(pop_df)
+        recent_text = dataframe_to_markdown_table(recent_df)
 
         result = []
 
@@ -253,38 +224,28 @@ class NkAnalyzer:
         return "".join(result)
 
     def create_yearly_stats_summary(self, df: pd.DataFrame) -> pd.DataFrame:
-        # コピーを作成して前処理
         data = df.copy()
 
-        # 1. 日付順にソート（新しいレースが上に来るように降順に並び替え）
         if "日付" in data.columns:
             data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
             data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
-        # 日付から「年」を抽出
         data["日付"] = pd.to_datetime(data["日付"], format="mixed", errors="coerce")
         data["年"] = data["日付"].dt.year
 
-        # 「距離」列（例: "ダ1900"）から種別と距離を抽出して結合（例: "ダート1900m"）
         data["種別"] = (
             data["距離"].str.extract(r"([芝ダ])").replace({"ダ": "ダート", "芝": "芝"})
         )
         data["距離_数値"] = data["距離"].str.extract(r"(\d+)").astype(int).astype(str)
-        # 「馬場」状態を結合して「ダート1600m不」のような条件文字列を作成
         track_condition = data["馬場"].apply(simplify_track_condition)
         data["条件"] = data["種別"] + data["距離_数値"] + "m" + track_condition
 
-        # 斤量を数値化（あるいは文字列として整形。例: "55.0kg" やそのまま数値）
-        # データ内に "55" や "55.0" などで入っている想定で数値化し、表示用に整形またはそのまま保持
         data["斤量_数値"] = pd.to_numeric(data["斤量"], errors="coerce")
         data["斤量表示"] = data["斤量_数値"].apply(lambda x: f"{x:g}kg" if pd.notna(x) else "不明")
 
-        # 計算用カラム作成
         data["タイム_秒"] = data["タイム"].apply(time_to_seconds)
         data["上り"] = pd.to_numeric(data["上り"], errors="coerce")
 
-        # 年・開催・条件でグループ化して一括集計
-        # ※ タイムは秒数が小さい方が「最速」、大きい方が「最低（ワースト）」
         grouped = (
             data.groupby(["年", "開催", "条件", "斤量表示"])
             .agg(
@@ -299,15 +260,11 @@ class NkAnalyzer:
             .reset_index()
         )
 
-        # 秒数を表示用のタイムフォーマットに整形
         grouped["最速タイム"] = grouped["タイム最速_秒"].apply(seconds_to_time)
         grouped["平均タイム"] = grouped["タイム平均_秒"].apply(seconds_to_time)
         grouped["最低タイム"] = grouped["タイム最低_秒"].apply(seconds_to_time)
-
-        # 上り平均の小数点を1桁に丸める
         grouped["上り平均"] = grouped["上り平均"].round(1)
 
-        # 必要なカラム順に整理
         summary_df = grouped[[
             "年",
             "開催",
@@ -322,44 +279,35 @@ class NkAnalyzer:
             "上り最低",
         ]]
 
-        # 見出しを「斤量」に変更したい場合はカラム名を変えることも可能です
         summary_df = summary_df.rename(columns={"斤量表示": "斤量"})
-        # 年順にソート（新しいレースが上に来るように降順に並び替え）
         result_df = sort_yearly_stats_summary(summary_df)
 
         return result_df
 
     def create_yearly_venue_dist_track_performance(self, df: pd.DataFrame) -> pd.DataFrame:
-        """年・開催場所・条件（種別＆距離＋馬場状態）ごとに着順実績と各種割合を集計する"""
         data = df.copy()
 
-        # 1. 日付順にソート（新しいレースが上に来るように降順に並び替え）
         if "日付" in data.columns:
             data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
             data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
-        # 1. 前処理：日付から「年」を抽出し、着順を数値型に変換
         data["日付"] = pd.to_datetime(data["日付"])
         data["年"] = data["日付"].dt.year
         data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
 
-        # 「距離」列（例: "ダ1900"）から種別と距離を抽出
         data["種別"] = (
             data["距離"].str.extract(r"([芝ダ])").replace({"ダ": "ダート", "芝": "芝"})
         )
         data["距離_数値"] = data["距離"].str.extract(r"(\d+)").astype(int).astype(str)
 
-        # 「馬場」状態を結合して「ダート1600m不」のような条件文字列を作成
         track_condition = data["馬場"].apply(simplify_track_condition)
         data["条件"] = data["種別"] + data["距離_数値"] + "m" + track_condition
 
-        # 2. 条件判定フラグの作成
-        data["is_win"] = (data["着順"] == 1).astype(int)  # 1着
-        data["is_top2"] = (data["着順"] <= 2).astype(int)  # 2着以内
-        data["is_top3"] = (data["着順"] <= 3).astype(int)  # 3着以内
-        data["is_top5"] = (data["着順"] <= 5).astype(int)  # 5着以内（掲示板）
+        data["is_win"] = (data["着順"] == 1).astype(int)
+        data["is_top2"] = (data["着順"] <= 2).astype(int)
+        data["is_top3"] = (data["着順"] <= 3).astype(int)
+        data["is_top5"] = (data["着順"] <= 5).astype(int)
 
-        # 3. 年・開催・条件（馬場含む）でグループ化して集計
         summary = (
             data.groupby(["年", "開催", "条件"])
             .agg(
@@ -372,7 +320,6 @@ class NkAnalyzer:
             .reset_index()
         )
 
-        # 4. 各到達率（%）の計算
         summary["勝率"] = (
             (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         )
@@ -386,7 +333,6 @@ class NkAnalyzer:
             (summary["掲示板数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         )
 
-        # 年順にソート（新しいレースが上に来るように降順に並び替え）
         result_df = sort_yearly_stats_summary(summary)
 
         return result_df
@@ -394,24 +340,19 @@ class NkAnalyzer:
     def analyze_tactics_performance(self, df: pd.DataFrame):
         data = df.copy()
 
-        # 前処理：数値型への変換
         data["頭数"] = pd.to_numeric(data["頭数"], errors="coerce")
         data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
 
-        # 各レースの脚質を判定
         data["脚質"] = data.apply(
             lambda row: classify_tactics(row["通過"], row["頭数"]), axis=1
         )
 
-        # 着順フラグ
-        data["is_win"] = (data["着順"] == 1).astype(int)  # 1着
-        data["is_top2"] = (data["着順"] <= 2).astype(int)  # 2着以内（連対）
-        data["is_top3"] = (data["着順"] <= 3).astype(int)  # 3着以内（複勝圏内）
+        data["is_win"] = (data["着順"] == 1).astype(int)
+        data["is_top2"] = (data["着順"] <= 2).astype(int)
+        data["is_top3"] = (data["着順"] <= 3).astype(int)
 
-        # --- 1. レースごとの結果一覧表 ---
         race_list = data[["日付", "開催", "レース名", "頭数", "通過", "脚質", "着順"]]
 
-        # --- 2. 脚質ごとの戦術割合・成績サマリー集計 ---
         total_races = len(data)
         summary = (
             data.groupby(["脚質"])
@@ -424,10 +365,14 @@ class NkAnalyzer:
             .reset_index()
         )
 
-        # 戦術割合および各率の計算
-        summary["戦術割合"] = (
-            (summary["出走数"] / total_races * 100).round(1).astype(str) + "%"
-        )
+        # 0除算防止
+        if total_races > 0:
+            summary["戦術割合"] = (
+                (summary["出走数"] / total_races * 100).round(1).astype(str) + "%"
+            )
+        else:
+            summary["戦術割合"] = "0.0%"
+
         summary["勝率"] = (
             (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         )
@@ -438,7 +383,6 @@ class NkAnalyzer:
             (summary["複勝数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         )
 
-        # カラム順序の整理
         summary = summary[[
             "脚質",
             "出走数",
@@ -454,25 +398,18 @@ class NkAnalyzer:
         return race_list, summary
 
     def create_jockey_performance(self, df: pd.DataFrame) -> pd.DataFrame:
-        """騎手ごとの騎乗回数、勝利数、連対数、複勝数、および各種率を集計する"""
         data = df.copy()
-
-        # 前処理：着順を数値型に変換
         data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
 
-        # 騎手名の空白除去・欠損値対策
         if "騎手" not in data.columns:
-            # 騎手列がない場合のフォールバック
             return pd.DataFrame(columns=["騎手", "騎乗数", "勝利数", "勝率", "連対率", "複勝率"])
         
         data["騎手"] = data["騎手"].fillna("不明").astype(str).str.strip()
 
-        # 条件判定フラグの作成
-        data["is_win"] = (data["着順"] == 1).astype(int)   # 1着
-        data["is_top2"] = (data["着順"] <= 2).astype(int) # 2着以内（連対）
-        data["is_top3"] = (data["着順"] <= 3).astype(int) # 3着以内（複勝）
+        data["is_win"] = (data["着順"] == 1).astype(int)
+        data["is_top2"] = (data["着順"] <= 2).astype(int)
+        data["is_top3"] = (data["着順"] <= 3).astype(int)
 
-        # 騎手ごとにグループ化して集計
         summary = (
             data.groupby(["騎手"])
             .agg(
@@ -484,15 +421,12 @@ class NkAnalyzer:
             .reset_index()
         )
 
-        # 勝率・連対率・複勝率の計算（％表記）
         summary["勝率"] = (summary["勝利数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
         summary["連対率"] = (summary["連対数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
         summary["複勝率"] = (summary["複勝数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
 
-        # 騎乗数の多い順（または勝率順）に並び替えると見やすくなります
         summary = summary.sort_values(by="騎乗数", ascending=False).reset_index(drop=True)
 
-        # カラム順序の整理
         summary = summary[[
             "騎手",
             "騎乗数",
@@ -507,23 +441,18 @@ class NkAnalyzer:
         return summary
 
     def create_popularity_performance(self, df: pd.DataFrame) -> pd.DataFrame:
-        """単勝人気（オッズ関連）と着順のギャップ、人気帯別の成績を集計する"""
         data = df.copy()
 
-        # 必要な列が揃っているか確認し、数値型に変換
         if "人気" not in data.columns or "着順" not in data.columns:
             return pd.DataFrame(columns=["人気帯", "出走数", "平均着順", "勝利数", "勝率", "複勝率"])
 
         data["人気"] = pd.to_numeric(data["人気"], errors="coerce")
         data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
-
-        # 欠損値を除外
         data = data.dropna(subset=["人気", "着順"])
 
         if data.empty:
             return pd.DataFrame(columns=["人気帯", "出走数", "平均着順", "勝利数", "勝率", "複勝率"])
 
-        # 人気帯（カテゴリ）の分類関数
         def categorize_popularity(p):
             if p <= 3:
                 return "1〜3番人気 (上位)"
@@ -536,11 +465,9 @@ class NkAnalyzer:
 
         data["人気帯"] = data["人気"].apply(categorize_popularity)
 
-        # 判定フラグ
         data["is_win"] = (data["着順"] == 1).astype(int)
         data["is_top3"] = (data["着順"] <= 3).astype(int)
 
-        # 人気帯ごとに集計
         summary = (
             data.groupby(["人気帯"])
             .agg(
@@ -552,12 +479,10 @@ class NkAnalyzer:
             .reset_index()
         )
 
-        # 各種率と平均着順の丸め処理
         summary["平均着順"] = summary["平均着順"].round(1)
         summary["勝率"] = (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
         summary["複勝率"] = (summary["複勝数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
 
-        # カラムの並び順整理
         summary = summary[[
             "人気帯",
             "出走数",
@@ -571,21 +496,17 @@ class NkAnalyzer:
         return summary
 
     def create_recent_form_summary(self, df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
-        """直近 n走分のレース戦績を時系列（新しい順、または古い順）で抽出・整形する"""
         data = df.copy()
 
-        # 1. 日付順にソート（新しいレースが上に来るように降順に並び替え）
         if "日付" in data.columns:
             data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
             data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
-        # 2. 必要なカラムをピックアップ（存在するものだけを安全に選択）
         target_cols = ["日付", "開催", "レース名", "頭数", "着順", "着差", "上がり", "人気", "脚質"]
         available_cols = [col for col in target_cols if col in data.columns]
         
         recent_df = data[available_cols].head(n).copy()
 
-        # 3. 表示用の整形（着差や着順の見栄えを整える）
         if "着順" in recent_df.columns:
             recent_df["着順"] = pd.to_numeric(recent_df["着順"], errors="coerce").astype("Int64")
         if "人気" in recent_df.columns:
@@ -594,18 +515,12 @@ class NkAnalyzer:
         return recent_df
 
     def normalized_hist(self, df: pd.DataFrame) -> pd.DataFrame:
-        """必要な部分を数値や日付型に変換"""
-        # 1. 列名（カラム名）からすべての空白（半角 ' ' / 全角 ' ' / タブ等）を除去
         df.columns = df.columns.str.replace(r'[\s\u3000]', '', regex=True)
-        # 2. (任意) 文字列型（object型）のデータ値に含まれる前後の余計な空白も除去
         for col in df.select_dtypes(include=['object']).columns:
             df[col] = df[col].astype(str).str.strip()
         
-        # 着順やRなどを数値型に変換（変換できない文字が入っている場合はNaNにする coerce を指定）
         df["着順"] = pd.to_numeric(df["着順"], errors="coerce")
         df["R"] = pd.to_numeric(df["R"], errors="coerce")
-
-        # 日付文字列を datetime 型に変換
         df["日付"] = pd.to_datetime(df["日付"])
 
         return df
@@ -613,16 +528,13 @@ class NkAnalyzer:
 def safe_normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     data = df.copy()
 
-    # 1. 列名を文字列型に変換してから空白を除去（原因1の対策）
     data.columns = (
         data.columns.astype(str).str.replace(r'[\s\u3000]', '', regex=True)
     )
 
-    # 2. 文字列型（object型）の列のみを対象にして前後の空白を除去（原因2の対策）
     for col in data.select_dtypes(include=['object']).columns:
         data[col] = data[col].astype(str).str.strip()
 
-    # 3. 開催の余分な数字を消す
     data["開催"] = data["開催"].astype(str).str.replace(r"\d+", "", regex=True)
 
     return data
