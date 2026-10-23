@@ -52,13 +52,18 @@ class NkScraper:
             logger.info(f"race_id: {race_id} の解析開始")
             # レース情報
             race_info = self.fetch_race_info_by_id(race_id)
-            # データの変換
-            markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
-            # データの保存
+            # データの変換 -> 個別ファイル用に変換
+            #markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
+            shutuba_map = self.conv_race_shutuba_data_to_markdown_as_serapare(target_date, race_info)
+            # データの保存 -> 個別ファイルで保存
             race_track = self.get_jyo_name(race_id)
             race_num = self.get_race_num_from_id(race_id)
-            filename = self.formatter.get_filename_from_id_track_num(race_id, race_track, race_num)
-            self.writer.save_as_markdown(target_date, race_track, filename, markdown, is_test)
+            fname_prefix = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
+            # 各ファイルに分けて保存
+            for fname, content in shutuba_map.items():
+                save_filename = f"{fname_prefix}-{fname}"
+                venue_dir = f"{race_track}/{race_track}{race_num}"
+                self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
             # 次までのアイドルタイム
             self.wait_idle_time()
 
@@ -187,6 +192,52 @@ class NkScraper:
         
         # データ結合
         return "".join(results)
+
+    def conv_race_shutuba_data_to_markdown_as_serapare(self, target_date: str, race_info: dict) -> dict[str, str]:
+        """
+        レース出馬情報等をファイルごとに分割して保存しやすいよう、
+        {ファイル名: Markdown文字列} の辞書形式で返す。
+        """
+        files_dict = {}
+
+        # 1. レース概要ファイル（基本情報 ＋ 出馬表）
+        overview_results = []
+        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info["race_info"])
+        overview_results.append(race_base_info + "\n\n")
+    
+        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info["shutuba_horses"])
+        overview_results.append(shutuba_info + "\n\n")
+    
+        files_dict["00_race_overview.md"] = "".join(overview_results)
+
+        # 2. 各馬ごとの個別ファイル（1頭1ファイル構成）
+        horse_infos = race_info["horse_infos"]
+        for idx, h_info in enumerate(horse_infos, start=1):
+            h_id = h_info["horse_id"]
+            h_name = h_info["horse_name"]
+            h_prof = h_info["horse_prof"]
+            h_hist = h_info["horse_history"]
+            h_anal = h_info["analyzed_data"]
+
+            # 各情報取得
+            prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
+            history = self.analyzer.refine_data_horse_history(h_hist)
+
+            # 馬ごとのMarkdownを構築
+            horse_results = []
+            # 各ファイルのトップに見出しを置き、AIがどの馬のデータか即座に認識できるようにする
+            horse_results.append(f"# 馬番：{idx:02d}（馬ID：{h_id}）／馬名：{h_name}\n\n")
+            horse_results.append(f"## プロフィール\n\n{prof}\n\n")
+            horse_results.append(f"## 過去戦績\n\n{history}\n\n")
+            horse_results.append(f"## データ分析\n\n{h_anal}\n\n")
+
+            # ファイル名に馬番（ゼロ埋め）と馬名を含める（ファイルシステムで安全な形に置換）
+            safe_horse_name = h_name.replace("/", "_").replace(" ", "_")
+            filename = f"horse_{idx:02d}_{safe_horse_name}.md"
+
+            files_dict[filename] = "".join(horse_results)
+
+        return files_dict
 
     def conv_race_result_data_to_markdown(self, race_id: str, race_result: list[dict]) -> str:
         """レース結果をmarkdownに変換する"""

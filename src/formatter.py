@@ -222,5 +222,8 @@ class NkFormatter:
     def get_filename_from_id_track_num(self, race_id: str, race_track: str, race_num: str) -> str:
         return f"{race_id}-{race_track}{race_num}R.md"
 
+    def get_filename_prefix_from_id_track_num(self, race_id: str, race_track: str, race_num: str) -> str:
+        return f"{race_id}-{race_track}{race_num}"
+
     def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
         return f"{race_id}-result-{race_track}{race_num}R.md"
