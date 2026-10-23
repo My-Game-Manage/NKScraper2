@@ -37,11 +37,11 @@ def dataframe_to_markdown_table(df: pd.DataFrame) -> str:
         )
 
     # 1. コピーを作成し、欠損値や空文字をすべて「データなし」に置換（AIの勝手な補完を防ぐ）
-    clean_df = df.copy()
+    # 修正: 先に全体を文字列型に変換してから欠損値の置換を行う（Int64型のエラーを防ぐため）
+    clean_df = df.copy().astype(str)
+    # 文字列としての 'nan', 'None', '<NA>', 空白のみのセルも「データなし」に統一
+    clean_df = clean_df.replace(r'^(nan|None|NaN|<NA>|\s*)$', 'データなし', regex=True)
     clean_df = clean_df.fillna("データなし")
-    clean_df = clean_df.astype(str)
-    # 文字列としての 'nan', 'None', 空白のみのセルも「データなし」に統一
-    clean_df = clean_df.replace(r'^(nan|None|NaN|\s*)$', 'データなし', regex=True)
 
     # 2. Markdownテーブルのヘッダーとアラインメント行の作成
     columns = list(clean_df.columns)
@@ -507,9 +507,14 @@ class NkAnalyzer:
         
         recent_df = data[available_cols].head(n).copy()
 
+        # 「取消」や「除外」などの非数値文字列を事前に NaN / pd.NA に置換する
+        non_numeric_tokens = ["取", "除", "中", "失", "取消", "除外", "中止", "失格", "データなし", ""]
+
         if "着順" in recent_df.columns:
+            recent_df["着順"] = recent_df["着順"].replace(non_numeric_tokens, pd.NA)
             recent_df["着順"] = pd.to_numeric(recent_df["着順"], errors="coerce").astype("Int64")
         if "人気" in recent_df.columns:
+            recent_df["人気"] = recent_df["人気"].replace(non_numeric_tokens, pd.NA)
             recent_df["人気"] = pd.to_numeric(recent_df["人気"], errors="coerce").astype("Int64")
 
         return recent_df
