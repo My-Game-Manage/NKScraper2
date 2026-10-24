@@ -60,10 +60,17 @@ class NkScraper:
             race_num = self.get_race_num_from_id(race_id)
             fname_prefix = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
             # 各ファイルに分けて保存
+            comb_contents = []
             for fname, content in shutuba_map.items():
                 save_filename = f"{fname_prefix}-{fname}"
                 venue_dir = f"{race_track}/{race_track}{race_num}"
                 self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
+                comb_contents.append(content)
+                comb_contents.append(f"\n\n")
+            # 統合ファイルを保存
+            content = "".join(comb_contents)
+            comb_save_fname = f"{fname_prefix}.md"
+            self.writer.save_as_markdown(target_date, race_track, comb_save_fname, content, is_test)
             # 次までのアイドルタイム
             self.wait_idle_time()
 
