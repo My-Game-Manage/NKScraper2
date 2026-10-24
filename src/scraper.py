@@ -89,18 +89,27 @@ class NkScraper:
         logger.info(f"target race ids: {target_race_ids}")
 
         # 2. レースID毎に処理していく
+        results = {}
+        venue = ""
         for race_id in target_race_ids:
             # レース結果
             result_info = self.fetch_race_result_by_id(race_id)
+            race_num = self.get_race_num_from_id(race_id)
+            results[race_num] = result_info
             # データの変換
             markdown = self.conv_race_result_data_to_markdown(race_id, result_info)
             # データの保存
             race_track = self.get_jyo_name(race_id)
-            race_num = self.get_race_num_from_id(race_id)
+            venue = race_track
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
             self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
             # 次までのアイドルタイム
             self.wait_idle_time()
+
+        # 3. 結果からその日の馬場バイアス作成
+        bias_md = self.analyzer.generate_daily_bias_markdown(results, venue)
+        bias_filename = f"{target_date}-{venue}-bias.md"
+        self.writer.save_as_markdown(target_date, f"{venue}-results", bias_filename, bias_md, is_test)
 
     def fetch_race_info_by_id(self, race_id: str) -> object:
         """

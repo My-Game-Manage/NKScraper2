@@ -25,6 +25,15 @@ def seconds_to_time(sec):
     s = sec % 60
     return f"{m}:{s:04.1f}"
 
+def extract_last_corner_pos(passing_str):
+    """通過順文字列（例: "5-3-2", "4-4-5-3"）から4角（最終コーナー）通過順を抽出"""
+    if pd.isna(passing_str) or not isinstance(passing_str, str):
+        return None
+    positions = [int(p) for p in passing_str.split("-") if p.isdigit()]
+    if not positions:
+        return None
+    return positions[-1]  # 最後の数字が最終コーナー通過順
+
 def dataframe_to_markdown_table(df: pd.DataFrame) -> str:
     """DataFrameをAIが誤認しにくい厳格なMarkdownテーブルに変換し、ハルシネーション防止用の制約テキストを付与する関数"""
     if df.empty:
@@ -389,6 +398,184 @@ class NkAnalyzer:
         df["日付"] = pd.to_datetime(df["日付"])
 
         return df
+
+    def generate_daily_bias_markdown(self, all_races_data, race_date_str: str = "", venue_str: str = "") -> str:
+        """
+        全レース分のデータをまとめたものから当日バイアスを解析し、Markdownを生成する
+        """
+        if not all_races_data:
+            return "# 当日レース傾向・馬場バイアス分析データ\n\nデータが存在しません。"
+
+        # 辞書型（レース名ごとなど）で渡された場合を考慮し、フラットなリストに変換
+        if isinstance(all_races_data, dict):
+            flat_data = []
+            for race_key, race_list in all_races_data.items():
+                if isinstance(race_list, list):
+                    flat_data.extend(race_list)
+        else:
+            flat_data = all_races_data
+
+        if not flat_data:
+            return "# 当日レース傾向・馬場バイアス分析データ\n\n有効なデータが存在しません。"
+
+        df = pd.DataFrame(flat_data)
+
+        # 列名のクレンジング
+        df.columns = df.columns.astype(str).str.replace(r'[\s\u3000]', '', regex=True)
+
+        # =====================================================================
+        # 【追加】header.py を参考にした英語キーから日本語キーへのマッピング変換
+        # =====================================================================
+        column_mapping = {
+            "rank": "着順",
+            "bracket_num": "枠番",
+            "horse_num": "馬番",
+            "horse_name": "馬名",
+            "horse_age": "性齢",
+            "weight_carried": "斤量",
+            "jockey": "騎手",
+            "time": "タイム",
+            "margin": "着差",
+            "popularity": "人気",
+            "odds": "オッズ",
+            "last3f": "上り",
+            "passing_order": "通過",
+            "horse_weight": "馬体重",
+            "weight_diff": "馬体重増減",
+            "stable": "厩舎",
+        }
+        # DataFrameに英語の列名が存在すれば、日本語の列名にリネームする
+        df = df.rename(columns=column_mapping)
+
+        # データのクレンジングと型変換
+        non_numeric_tokens = ["取", "除", "中", "失", "取消", "除外", "中止", "失格", "データなし", ""]
+        
+        # 着順の数値化（安全策）
+        if "着順" in df.columns:
+            df["着順"] = df["着順"].replace(non_numeric_tokens, pd.NA)
+            df["着順"] = pd.to_numeric(df["着順"], errors="coerce")
+        
+        # 枠番の調整
+        if "枠" in df.columns and "枠番" not in df.columns:
+            df["枠番"] = df["枠"]
+        if "枠番" in df.columns:
+            df["枠番"] = pd.to_numeric(df["枠番"], errors="coerce")
+
+        if "人気" in df.columns:
+            df["人気"] = pd.to_numeric(df["人気"], errors="coerce")
+
+        # 勝率・連対率・複勝率計算用のフラグ（欠損値エラー対策済み）
+        df["is_win"] = (df["着順"] == 1).fillna(0).astype(int)
+        df["is_top2"] = (df["着順"].le(2)).fillna(0).astype(int)
+        df["is_top3"] = (df["着順"].le(3)).fillna(0).astype(int)
+
+        # -------------------------------------------------------------
+        # 1. 枠番・馬番別のバイアス集計
+        # -------------------------------------------------------------
+        draw_summary_df = pd.DataFrame()
+        if "枠番" in df.columns:
+            draw_grouped = df.groupby("枠番").agg(
+                出走頭数=("着順", "count"),
+                勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
+                複勝数=("is_top3", "sum"),
+            ).reset_index()
+
+            draw_grouped["勝率"] = (draw_grouped["勝利数"] / draw_grouped["出走頭数"] * 100).round(1).astype(str) + "%"
+            draw_grouped["連対率"] = (draw_grouped["連対数"] / draw_grouped["出走頭数"] * 100).round(1).astype(str) + "%"
+            draw_grouped["複勝率"] = (draw_grouped["複勝数"] / draw_grouped["出走頭数"] * 100).round(1).astype(str) + "%"
+            draw_summary_df = draw_grouped[["枠番", "出走頭数", "勝利数", "勝率", "連対数", "連対率", "複勝数", "複勝率"]]
+
+        # -------------------------------------------------------------
+        # 2. 脚質・4角ポジション別の残存率集計
+        # -------------------------------------------------------------
+        corner_summary_df = pd.DataFrame()
+        if "通過" in df.columns:
+            df["4角順位"] = df["通過"].apply(extract_last_corner_pos)
+
+            def categorize_4th_corner(pos):
+                if pd.isna(pos):
+                    return "不明"
+                if pos == 1:
+                    return "1番手 (逃げ)"
+                elif pos <= 3:
+                    return "2〜3番手 (好位・先行)"
+                elif pos <= 5:
+                    return "4〜5番手 (中団前)"
+                else:
+                    return "6番手以降 (中団後・追込)"
+
+            df["4角位置帯"] = df["4角順位"].apply(categorize_4th_corner)
+
+            corner_grouped = df.groupby("4角位置帯").agg(
+                該当頭数=("着順", "count"),
+                勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
+                複勝数=("is_top3", "sum"),
+            ).reset_index()
+
+            corner_grouped["勝率"] = (corner_grouped["勝利数"] / corner_grouped["該当頭数"] * 100).round(1).astype(str) + "%"
+            corner_grouped["連対率"] = (corner_grouped["連対数"] / corner_grouped["該当頭数"] * 100).round(1).astype(str) + "%"
+            corner_grouped["複勝率"] = (corner_grouped["複勝数"] / corner_grouped["該当頭数"] * 100).round(1).astype(str) + "%"
+            
+            category_order = ["1番手 (逃げ)", "2〜3番手 (好位・先行)", "4〜5番手 (中団前)", "6番手以降 (中団後・追込)", "不明"]
+            corner_grouped["sort_key"] = corner_grouped["4角位置帯"].apply(lambda x: category_order.index(x) if x in category_order else 99)
+            corner_grouped = corner_grouped.sort_values("sort_key").drop(columns=["sort_key"]).reset_index(drop=True)
+
+            corner_summary_df = corner_grouped[["4角位置帯", "該当頭数", "勝利数", "勝率", "連対数", "連対率", "複勝数", "複勝率"]]
+
+        # -------------------------------------------------------------
+        # 3. 騎手・厩舎の当日トレンド集計
+        # -------------------------------------------------------------
+        jockey_summary_df = pd.DataFrame()
+        if "騎手" in df.columns:
+            jockey_grouped = df.groupby("騎手").agg(
+                騎乗数=("着順", "count"),
+                勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
+                複勝数=("is_top3", "sum"),
+            ).reset_index()
+
+            jockey_grouped["勝率"] = (jockey_grouped["勝利数"] / jockey_grouped["騎乗数"] * 100).round(1).astype(str) + "%"
+            jockey_grouped["複勝率"] = (jockey_grouped["複勝数"] / jockey_grouped["騎乗数"] * 100).round(1).astype(str) + "%"
+            jockey_grouped = jockey_grouped.sort_values(by=["勝利数", "複勝数", "騎乗数"], ascending=[False, False, False]).reset_index(drop=True)
+            jockey_summary_df = jockey_grouped[["騎手", "騎乗数", "勝利数", "勝率", "連対数", "複勝数", "複勝率"]].head(10)
+
+        trainer_summary_df = pd.DataFrame()
+        if "厩舎" in df.columns:
+            trainer_grouped = df.groupby("厩舎").agg(
+                出走数=("着順", "count"),
+                勝利数=("is_win", "sum"),
+                複勝数=("is_top3", "sum"),
+            ).reset_index()
+
+            trainer_grouped["勝率"] = (trainer_grouped["勝利数"] / trainer_grouped["出走数"] * 100).round(1).astype(str) + "%"
+            trainer_grouped["複勝率"] = (trainer_grouped["複勝数"] / trainer_grouped["出走数"] * 100).round(1).astype(str) + "%"
+            trainer_grouped = trainer_grouped.sort_values(by=["勝利数", "複勝数", "出走数"], ascending=[False, False, False]).reset_index(drop=True)
+            trainer_summary_df = trainer_grouped[["厩舎", "出走数", "勝利数", "勝率", "複勝数", "複勝率"]].head(10)
+
+        # -------------------------------------------------------------
+        # Markdownの組み立て
+        # -------------------------------------------------------------
+        title_header = f"# 当日傾向・馬場バイアス解析レポート"
+        if race_date_str or venue_str:
+            title_header += f" ({venue_str} {race_date_str})"
+
+        md_output = [f"{title_header}\n"]
+
+        md_output.append("## 1. 枠番別バイアス分析\n")
+        md_output.append(dataframe_to_markdown_table(draw_summary_df))
+
+        md_output.append("## 2. 4角ポジション別残存率分析\n")
+        md_output.append(dataframe_to_markdown_table(corner_summary_df))
+
+        md_output.append("## 3. 当日騎手・厩舎トレンド分析\n")
+        md_output.append("### 【騎手成績】")
+        md_output.append(dataframe_to_markdown_table(jockey_summary_df))
+        md_output.append("### 【厩舎成績】")
+        md_output.append(dataframe_to_markdown_table(trainer_summary_df))
+
+        return "\n".join(md_output)
 
 def safe_normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     data = df.copy()
