@@ -36,8 +36,7 @@ def dataframe_to_markdown_table(df: pd.DataFrame) -> str:
             "| データなし |\n\n"
         )
 
-    # 1. コピーを作成し、欠損値や空文字をすべて「データなし」に置換（AIの勝手な補完を防ぐ）
-    # 修正: 先に全体を文字列型に変換してから欠損値の置換を行う（Int64型のエラーを防ぐため）
+    # 1. コピーを作成し、先に文字列型に変換してから欠損値の置換を行う（Int64型のエラーを防ぐため）
     clean_df = df.copy().astype(str)
     # 文字列としての 'nan', 'None', '<NA>', 空白のみのセルも「データなし」に統一
     clean_df = clean_df.replace(r'^(nan|None|NaN|<NA>|\s*)$', 'データなし', regex=True)
@@ -63,63 +62,6 @@ def dataframe_to_markdown_table(df: pd.DataFrame) -> str:
         f"{table_str}\n\n"
     )
     return boxed_text
-
-def sort_yearly_stats_summary(df: pd.DataFrame) -> pd.DataFrame:
-    """DataFrameを以下の優先順位でソートする関数
-
-    1. 年: 降順（新しい順）
-    2. 条件（距離の数値）: 降順（距離が長い順）
-    3. 条件（文字列全体）: 昇順（あるいは任意の順）
-    """
-    data = df.copy()
-
-    # 1. 「条件」列から距離の数値（例: "1800m" なら 1800）を抽出して一時的な数値カラムを作成
-    data["_距離数値"] = (
-        data["条件"].str.extract(r"(\d+)m").astype(float).fillna(0)
-    )
-
-    # 2. 並び替えの実行
-    sorted_df = data.sort_values(
-        by=["年", "_距離数値", "条件"], ascending=[False, False, True]
-    ).reset_index(drop=True)
-
-    # 3. 追加した一時的な内部用カラムを削除して綺麗に戻す
-    sorted_df = sorted_df.drop(columns=["_距離数値"])
-
-    return sorted_df
-
-def classify_tactics(passing_str, total_horses):
-    """通過順文字列と頭数から脚質（戦術）を判定する関数"""
-    if pd.isna(passing_str) or not isinstance(passing_str, str):
-        return "不明"
-
-    try:
-        positions = [int(p) for p in passing_str.split("-") if p.isdigit()]
-    except ValueError:
-        return "不明"
-
-    if not positions or pd.isna(total_horses) or total_horses <= 0:
-        return "不明"
-
-    first_pos = positions[0]  # 最初のコーナー通過順
-    min_pos = min(positions)  # 最前位置
-    max_pos = max(positions)  # 最悪位置
-    pos_range = max_pos - min_pos  # 位置の変動幅
-
-    if len(positions) >= 3 and pos_range >= 3 and first_pos != 1:
-        return "自在"
-
-    if first_pos == 1:
-        return "逃げ"
-
-    relative_pos = first_pos / total_horses
-
-    if relative_pos <= 0.30:
-        return "先行"
-    elif relative_pos <= 0.65:
-        return "差し"
-    else:
-        return "追込"
 
 def simplify_track_condition(track_str):
     if pd.isna(track_str):
@@ -170,344 +112,262 @@ class NkAnalyzer:
         existing_cols = [col for col in target_columns if col in norm_df.columns]
         filtered_df = norm_df[existing_cols]
 
-        # 共通のテーブル変換関数を使用
         return dataframe_to_markdown_table(filtered_df)
 
     def analyze_horse_history(self, history: list[dict]) -> dict:
         """
-        過去レースデータを分析し、ハルシネーション防止策を施したテーブル形式のマークダウンを生成する
+        過去レースデータを分析し、予想ロジックに特化した5大サマリーのマークダウンを生成する
         """
         df = pd.DataFrame(history[1:], columns=history[0])
         norm_df = safe_normalize_dataframe(df)
 
-        # 各分析データの作成
-        time_df = self.create_yearly_stats_summary(norm_df)
-        win_df = self.create_yearly_venue_dist_track_performance(norm_df)
-        jockey_df = self.create_jockey_performance(norm_df)
-        tac_df, tac_rate_df = self.analyze_tactics_performance(norm_df)
-        pop_df = self.create_popularity_performance(norm_df)
-        recent_df = self.create_recent_form_summary(norm_df)
+        # 5大分析サマリーの作成
+        corner_df = self.create_corner_position_summary(norm_df)                 # 1. コーナー位置取り力
+        venue_dist_df = self.create_venue_distance_performance_summary(norm_df)  # 2. コース・距離別実績
+        track_cond_df = self.create_track_condition_performance_summary(norm_df) # 3. 馬場状態別パフォーマンス
+        draw_bias_df = self.create_draw_bias_risk_summary(norm_df)               # 4. 枠番傾向＆包まれリスク
+        recent_form_df = self.create_recent_class_form_summary(norm_df)          # 5. 近走クラス＆着差信頼度
 
-        # マークダウン変換（テーブル形式 ＋ ネガティブ制約付き）
-        time_text = dataframe_to_markdown_table(time_df)
-        win_text = dataframe_to_markdown_table(win_df)
-        jockey_text = dataframe_to_markdown_table(jockey_df)
-        tac_text = dataframe_to_markdown_table(tac_df)
-        tac_rate_text = dataframe_to_markdown_table(tac_rate_df)
-        pop_text = dataframe_to_markdown_table(pop_df)
-        recent_text = dataframe_to_markdown_table(recent_df)
+        # マークダウンテーブル変換
+        corner_text = dataframe_to_markdown_table(corner_df)
+        venue_dist_text = dataframe_to_markdown_table(venue_dist_df)
+        track_cond_text = dataframe_to_markdown_table(track_cond_df)
+        draw_bias_text = dataframe_to_markdown_table(draw_bias_df)
+        recent_form_text = dataframe_to_markdown_table(recent_form_df)
 
         result = []
 
-        # 整形（マークダウン文書の組み立て）
-        result.append("##### タイム分析\n\n")
-        result.append(time_text)
+        # 整形（Markdown組み立て）
+        result.append("##### 1. コーナー位置取り力サマリー\n\n")
+        result.append(corner_text)
 
-        result.append("##### 勝利分析\n\n")
-        result.append(win_text)
+        result.append("##### 2. コース・距離別実績サマリー\n\n")
+        result.append(venue_dist_text)
 
-        result.append("##### 騎手別分析\n\n")
-        result.append(jockey_text)
+        result.append("##### 3. 馬場状態（良稍 vs 重不）別パフォーマンスサマリー\n\n")
+        result.append(track_cond_text)
 
-        result.append("##### 脚質分析\n\n")
-        result.append(tac_text)
+        result.append("##### 4. 枠番傾向＆包まれリスク・サマリー\n\n")
+        result.append(draw_bias_text)
 
-        result.append("##### 脚質割合\n\n")
-        result.append(tac_rate_text)
-
-        result.append("##### 人気オッズ・信頼度分析\n\n")
-        result.append(pop_text)
-
-        result.append("##### 近走パフォーマンス分析\n\n")
-        result.append(recent_text)
+        result.append("##### 5. 近走クラス・勝ち馬との着差＆人気信頼度サマリー\n\n")
+        result.append(recent_form_text)
 
         return "".join(result)
 
-    def create_yearly_stats_summary(self, df: pd.DataFrame) -> pd.DataFrame:
+    def create_corner_position_summary(self, df: pd.DataFrame) -> pd.DataFrame:
+        """1. コーナー位置取り力サマリーを作成する"""
+        data = df.copy()
+        
+        if "通過" not in data.columns:
+            return pd.DataFrame(columns=["コーナー", "対象レース数", "3番手以内率", "平均通過順位"])
+
+        records = []
+        for _, row in data.iterrows():
+            passing_str = row["通過"]
+            if pd.isna(passing_str) or not isinstance(passing_str, str):
+                continue
+            positions = [int(p) for p in passing_str.split("-") if p.isdigit()]
+            if not positions:
+                continue
+            records.append(positions)
+
+        if not records:
+            return pd.DataFrame(columns=["コーナー", "対象レース数", "3番手以内率", "平均通過順位"])
+
+        corner_stats = {1: [], 2: [], 3: [], 4: []}
+        for pos_list in records:
+            for i, pos in enumerate(pos_list[:4], start=1):
+                corner_stats[i].append(pos)
+
+        summary_rows = []
+        corner_names = {1: "1角", 2: "2角", 3: "3角", 4: "4角"}
+        
+        for c_num, pos_list in corner_stats.items():
+            if not pos_list:
+                continue
+            total = len(pos_list)
+            top3_count = sum(1 for p in pos_list if p <= 3)
+            top3_rate = round(top3_count / total * 100, 1)
+            avg_pos = round(sum(pos_list) / total, 1)
+            
+            summary_rows.append({
+                "コーナー": corner_names[c_num],
+                "対象レース数": total,
+                "3番手以内率": f"{top3_rate}%",
+                "平均通過順位": f"{avg_pos}番手"
+            })
+
+        return pd.DataFrame(summary_rows)
+
+    def create_venue_distance_performance_summary(self, df: pd.DataFrame) -> pd.DataFrame:
+        """2. コース・距離別実績サマリーを作成する"""
         data = df.copy()
 
-        if "日付" in data.columns:
-            data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
-            data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
+        if "開催" not in data.columns or "距離" not in data.columns or "着順" not in data.columns:
+            return pd.DataFrame(columns=["競馬場・距離", "出走数", "勝利数", "連対数", "複勝数", "勝率", "連対率", "複勝率", "最速タイム", "平均タイム"])
 
-        data["日付"] = pd.to_datetime(data["日付"], format="mixed", errors="coerce")
-        data["年"] = data["日付"].dt.year
-
-        data["種別"] = (
-            data["距離"].str.extract(r"([芝ダ])").replace({"ダ": "ダート", "芝": "芝"})
-        )
-        data["距離_数値"] = data["距離"].str.extract(r"(\d+)").astype(int).astype(str)
-        track_condition = data["馬場"].apply(simplify_track_condition)
-        data["条件"] = data["種別"] + data["距離_数値"] + "m" + track_condition
-
-        data["斤量_数値"] = pd.to_numeric(data["斤量"], errors="coerce")
-        data["斤量表示"] = data["斤量_数値"].apply(lambda x: f"{x:g}kg" if pd.notna(x) else "不明")
-
+        data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
         data["タイム_秒"] = data["タイム"].apply(time_to_seconds)
-        data["上り"] = pd.to_numeric(data["上り"], errors="coerce")
+
+        data["場・距離"] = data["開催"].astype(str) + data["距離"].astype(str)
+
+        data["is_win"] = (data["着順"] == 1).astype(int)
+        data["is_top2"] = (data["着順"] <= 2).astype(int)
+        data["is_top3"] = (data["着順"] <= 3).astype(int)
 
         grouped = (
-            data.groupby(["年", "開催", "条件", "斤量表示"])
+            data.groupby("場・距離")
             .agg(
                 出走数=("着順", "count"),
-                タイム最速_秒=("タイム_秒", "min"),
-                タイム平均_秒=("タイム_秒", "mean"),
-                タイム最低_秒=("タイム_秒", "max"),
-                上り最速=("上り", "min"),
-                上り平均=("上り", "mean"),
-                上り最低=("上り", "max"),
+                勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
+                複勝数=("is_top3", "sum"),
+                最速秒=("タイム_秒", "min"),
+                平均秒=("タイム_秒", "mean"),
             )
             .reset_index()
         )
 
-        grouped["最速タイム"] = grouped["タイム最速_秒"].apply(seconds_to_time)
-        grouped["平均タイム"] = grouped["タイム平均_秒"].apply(seconds_to_time)
-        grouped["最低タイム"] = grouped["タイム最低_秒"].apply(seconds_to_time)
-        grouped["上り平均"] = grouped["上り平均"].round(1)
+        grouped["勝率"] = (grouped["勝利数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["連対率"] = (grouped["連対数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["複勝率"] = (grouped["複勝数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
 
-        summary_df = grouped[[
-            "年",
-            "開催",
-            "条件",
-            "斤量表示",
+        grouped["最速タイム"] = grouped["最速秒"].apply(seconds_to_time)
+        grouped["平均タイム"] = grouped["平均秒"].apply(seconds_to_time)
+
+        grouped = grouped.sort_values(by="出走数", ascending=False).reset_index(drop=True)
+
+        result_df = grouped[[
+            "場・距離",
             "出走数",
+            "勝利数",
+            "連対数",
+            "複勝数",
+            "勝率",
+            "連対率",
+            "複勝率",
             "最速タイム",
             "平均タイム",
-            "最低タイム",
-            "上り最速",
-            "上り平均",
-            "上り最低",
         ]]
-
-        summary_df = summary_df.rename(columns={"斤量表示": "斤量"})
-        result_df = sort_yearly_stats_summary(summary_df)
+        result_df = result_df.rename(columns={"場・距離": "競馬場・距離"})
 
         return result_df
 
-    def create_yearly_venue_dist_track_performance(self, df: pd.DataFrame) -> pd.DataFrame:
+    def create_track_condition_performance_summary(self, df: pd.DataFrame) -> pd.DataFrame:
+        """3. 【馬場バイアス対応】馬場状態（良稍 vs 重不）別パフォーマンスサマリー"""
         data = df.copy()
+        if "馬場" not in data.columns or "着順" not in data.columns:
+            return pd.DataFrame(columns=["馬場コンディション", "出走数", "平均着順", "勝利数", "勝率", "連対数", "連対率", "複勝数", "複勝率"])
 
-        if "日付" in data.columns:
-            data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
-            data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
-
-        data["日付"] = pd.to_datetime(data["日付"])
-        data["年"] = data["日付"].dt.year
         data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
-
-        data["種別"] = (
-            data["距離"].str.extract(r"([芝ダ])").replace({"ダ": "ダート", "芝": "芝"})
-        )
-        data["距離_数値"] = data["距離"].str.extract(r"(\d+)").astype(int).astype(str)
-
-        track_condition = data["馬場"].apply(simplify_track_condition)
-        data["条件"] = data["種別"] + data["距離_数値"] + "m" + track_condition
-
-        data["is_win"] = (data["着順"] == 1).astype(int)
-        data["is_top2"] = (data["着順"] <= 2).astype(int)
-        data["is_top3"] = (data["着順"] <= 3).astype(int)
-        data["is_top5"] = (data["着順"] <= 5).astype(int)
-
-        summary = (
-            data.groupby(["年", "開催", "条件"])
-            .agg(
-                出走数=("着順", "count"),
-                勝利数=("is_win", "sum"),
-                連対数=("is_top2", "sum"),
-                複勝圏内数=("is_top3", "sum"),
-                掲示板数=("is_top5", "sum"),
-            )
-            .reset_index()
-        )
-
-        summary["勝率"] = (
-            (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-        summary["連対率"] = (
-            (summary["連対数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-        summary["複勝率"] = (
-            (summary["複勝圏内数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-        summary["掲示板率"] = (
-            (summary["掲示板数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-
-        result_df = sort_yearly_stats_summary(summary)
-
-        return result_df
-
-    def analyze_tactics_performance(self, df: pd.DataFrame):
-        data = df.copy()
-
-        data["頭数"] = pd.to_numeric(data["頭数"], errors="coerce")
-        data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
-
-        data["脚質"] = data.apply(
-            lambda row: classify_tactics(row["通過"], row["頭数"]), axis=1
-        )
+        data["馬場区分"] = data["馬場"].apply(simplify_track_condition)
+        data["馬場区分"] = data["馬場区分"].replace("", "不明")
 
         data["is_win"] = (data["着順"] == 1).astype(int)
         data["is_top2"] = (data["着順"] <= 2).astype(int)
         data["is_top3"] = (data["着順"] <= 3).astype(int)
 
-        race_list = data[["日付", "開催", "レース名", "頭数", "通過", "脚質", "着順"]]
-
-        total_races = len(data)
-        summary = (
-            data.groupby(["脚質"])
-            .agg(
-                出走数=("着順", "count"),
-                勝利数=("is_win", "sum"),
-                連対数=("is_top2", "sum"),
-                複勝数=("is_top3", "sum"),
-            )
-            .reset_index()
-        )
-
-        # 0除算防止
-        if total_races > 0:
-            summary["戦術割合"] = (
-                (summary["出走数"] / total_races * 100).round(1).astype(str) + "%"
-            )
-        else:
-            summary["戦術割合"] = "0.0%"
-
-        summary["勝率"] = (
-            (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-        summary["連対率"] = (
-            (summary["連対数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-        summary["複勝率"] = (
-            (summary["複勝数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        )
-
-        summary = summary[[
-            "脚質",
-            "出走数",
-            "戦術割合",
-            "勝利数",
-            "勝率",
-            "連対数",
-            "連対率",
-            "複勝数",
-            "複勝率",
-        ]]
-
-        return race_list, summary
-
-    def create_jockey_performance(self, df: pd.DataFrame) -> pd.DataFrame:
-        data = df.copy()
-        data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
-
-        if "騎手" not in data.columns:
-            return pd.DataFrame(columns=["騎手", "騎乗数", "勝利数", "勝率", "連対率", "複勝率"])
-        
-        data["騎手"] = data["騎手"].fillna("不明").astype(str).str.strip()
-
-        data["is_win"] = (data["着順"] == 1).astype(int)
-        data["is_top2"] = (data["着順"] <= 2).astype(int)
-        data["is_top3"] = (data["着順"] <= 3).astype(int)
-
-        summary = (
-            data.groupby(["騎手"])
-            .agg(
-                騎乗数=("着順", "count"),
-                勝利数=("is_win", "sum"),
-                連対数=("is_top2", "sum"),
-                複勝数=("is_top3", "sum"),
-            )
-            .reset_index()
-        )
-
-        summary["勝率"] = (summary["勝利数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
-        summary["連対率"] = (summary["連対数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
-        summary["複勝率"] = (summary["複勝数"] / summary["騎乗数"] * 100).round(1).astype(str) + "%"
-
-        summary = summary.sort_values(by="騎乗数", ascending=False).reset_index(drop=True)
-
-        summary = summary[[
-            "騎手",
-            "騎乗数",
-            "勝利数",
-            "勝率",
-            "連対数",
-            "連対率",
-            "複勝数",
-            "複勝率",
-        ]]
-
-        return summary
-
-    def create_popularity_performance(self, df: pd.DataFrame) -> pd.DataFrame:
-        data = df.copy()
-
-        if "人気" not in data.columns or "着順" not in data.columns:
-            return pd.DataFrame(columns=["人気帯", "出走数", "平均着順", "勝利数", "勝率", "複勝率"])
-
-        data["人気"] = pd.to_numeric(data["人気"], errors="coerce")
-        data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
-        data = data.dropna(subset=["人気", "着順"])
-
-        if data.empty:
-            return pd.DataFrame(columns=["人気帯", "出走数", "平均着順", "勝利数", "勝率", "複勝率"])
-
-        def categorize_popularity(p):
-            if p <= 3:
-                return "1〜3番人気 (上位)"
-            elif p <= 6:
-                return "4〜6番人気 (中位)"
-            elif p <= 10:
-                return "7〜10番人気 (下位)"
-            else:
-                return "11番人気以上 (穴)"
-
-        data["人気帯"] = data["人気"].apply(categorize_popularity)
-
-        data["is_win"] = (data["着順"] == 1).astype(int)
-        data["is_top3"] = (data["着順"] <= 3).astype(int)
-
-        summary = (
-            data.groupby(["人気帯"])
+        grouped = (
+            data.groupby("馬場区分")
             .agg(
                 出走数=("着順", "count"),
                 平均着順=("着順", "mean"),
                 勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
                 複勝数=("is_top3", "sum"),
             )
             .reset_index()
         )
 
-        summary["平均着順"] = summary["平均着順"].round(1)
-        summary["勝率"] = (summary["勝利数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
-        summary["複勝率"] = (summary["複勝数"] / summary["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["平均着順"] = grouped["平均着順"].round(1)
+        grouped["勝率"] = (grouped["勝利数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["連対率"] = (grouped["連対数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["複勝率"] = (grouped["複勝数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
 
-        summary = summary[[
-            "人気帯",
+        result_df = grouped[[
+            "馬場区分",
             "出走数",
             "平均着順",
             "勝利数",
             "勝率",
+            "連対数",
+            "連対率",
             "複勝数",
             "複勝率",
-        ]]
+        ]].rename(columns={"馬場区分": "馬場コンディション"})
 
-        return summary
+        return result_df
 
-    def create_recent_form_summary(self, df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
+    def create_draw_bias_risk_summary(self, df: pd.DataFrame) -> pd.DataFrame:
+        """4. 【枠番バイアス対応】枠番傾向＆包まれリスク・サマリー"""
+        data = df.copy()
+        if "枠番" not in data.columns or "着順" not in data.columns:
+            return pd.DataFrame(columns=["枠番傾向", "出走数", "平均着順", "勝利数", "勝率", "連対数", "連対率", "複勝数", "複勝率"])
+
+        data["着順"] = pd.to_numeric(data["着順"], errors="coerce")
+        data["枠番_数値"] = pd.to_numeric(data["枠番"], errors="coerce")
+
+        def categorize_draw(w):
+            if pd.isna(w):
+                return "不明"
+            if w <= 2:
+                return "内枠 (1〜2枠)"
+            elif w <= 5:
+                return "中枠 (3〜5枠)"
+            else:
+                return "外枠 (6〜8枠)"
+
+        data["枠番カテゴリ"] = data["枠番_数値"].apply(categorize_draw)
+
+        data["is_win"] = (data["着順"] == 1).astype(int)
+        data["is_top2"] = (data["着順"] <= 2).astype(int)
+        data["is_top3"] = (data["着順"] <= 3).astype(int)
+
+        grouped = (
+            data.groupby("枠番カテゴリ")
+            .agg(
+                出走数=("着順", "count"),
+                平均着順=("着順", "mean"),
+                勝利数=("is_win", "sum"),
+                連対数=("is_top2", "sum"),
+                複勝数=("is_top3", "sum"),
+            )
+            .reset_index()
+        )
+
+        grouped["平均着順"] = grouped["平均着順"].round(1)
+        grouped["勝率"] = (grouped["勝利数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["連対率"] = (grouped["連対数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+        grouped["複勝率"] = (grouped["複勝数"] / grouped["出走数"] * 100).round(1).astype(str) + "%"
+
+        result_df = grouped[[
+            "枠番カテゴリ",
+            "出走数",
+            "平均着順",
+            "勝利数",
+            "勝率",
+            "連対数",
+            "連対率",
+            "複勝数",
+            "複勝率",
+        ]].rename(columns={"枠番カテゴリ": "枠番傾向"})
+
+        return result_df
+
+    def create_recent_class_form_summary(self, df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
+        """5. 【近走格付け】近走クラス・勝ち馬との着差＆人気信頼度サマリー"""
         data = df.copy()
 
         if "日付" in data.columns:
             data["日付_dt"] = pd.to_datetime(data["日付"], errors="coerce")
             data = data.sort_values(by="日付_dt", ascending=False).reset_index(drop=True)
 
-        target_cols = ["日付", "開催", "レース名", "頭数", "着順", "着差", "上がり", "人気", "脚質"]
+        target_cols = ["日付", "開催", "レース名", "頭数", "人気", "着順", "着差", "勝ち馬(2着馬)"]
         available_cols = [col for col in target_cols if col in data.columns]
         
         recent_df = data[available_cols].head(n).copy()
 
-        # 「取消」や「除外」などの非数値文字列を事前に NaN / pd.NA に置換する
         non_numeric_tokens = ["取", "除", "中", "失", "取消", "除外", "中止", "失格", "データなし", ""]
 
         if "着順" in recent_df.columns:
