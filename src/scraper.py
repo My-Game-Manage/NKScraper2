@@ -14,6 +14,7 @@ from src.formatter import NkFormatter
 from src.analyzer import NkAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.all_html_dump import fetch_js_html
+from src.generate_personnel_report import generate_daily_personnel_reports
 
 DEFAULT_BASE_DIR = "data"
 
@@ -82,25 +83,27 @@ class NkScraper:
         logger.info(f"date: {input_date}")
 
         # 1. 目的のレースIDを取得する
-        # 取得日付を決定（基本は無指定で前日分）
         target_date = self.determinate_target_date(input_date) if input_date else self.get_yesterday_date()
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
 
         logger.info(f"target race ids: {target_race_ids}")
 
-        # 2. レースID毎に処理していく
-        results = {}
-        venue = ""
+        # 2. レースID毎に処理していく（会場ごとに結果をグループ化する構造に変更）
+        results_by_venue = {}
         for race_id in target_race_ids:
             # レース結果
             result_info = self.fetch_race_result_by_id(race_id)
             race_num = self.get_race_num_from_id(race_id)
-            results[race_num] = result_info
+            race_track = self.get_jyo_name(race_id)
+
+            # 会場ごとに結果を蓄積する
+            if race_track not in results_by_venue:
+                results_by_venue[race_track] = {}
+            results_by_venue[race_track][race_num] = result_info
+
             # データの変換
             markdown = self.conv_race_result_data_to_markdown(race_id, result_info)
             # データの保存
-            race_track = self.get_jyo_name(race_id)
-            venue = race_track
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
             self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
             # 生データも別に保存
@@ -108,10 +111,16 @@ class NkScraper:
             # 次までのアイドルタイム
             self.wait_idle_time()
 
-        # 3. 結果からその日の馬場バイアス作成
-        bias_md = self.analyzer.generate_daily_bias_markdown(results, venue)
-        bias_filename = f"{target_date}-{venue}-bias.md"
-        self.writer.save_as_markdown(target_date, f"{venue}-results", bias_filename, bias_md, is_test)
+        # 3. 開催会場毎に結果からその日の馬場バイアス作成
+        for venue, venue_results in results_by_venue.items():
+            # 会場ごとのデータ、日付、会場名を渡してバイアスMarkdownを生成
+            bias_md = self.analyzer.generate_daily_bias_markdown(venue_results, target_date, venue)
+            bias_filename = f"{target_date}-{venue}-bias.md"
+            self.writer.save_as_markdown(target_date, f"{venue}-results", bias_filename, bias_md, is_test)
+
+        # 4. 騎手と厩舎リポート作成
+        # （※保存された全場のJSONファイル群から集計するため、そのままで全場分のデータが網羅されます）
+        generate_daily_personnel_reports(target_date, is_test)
 
     def fetch_race_info_by_id(self, race_id: str) -> object:
         """
