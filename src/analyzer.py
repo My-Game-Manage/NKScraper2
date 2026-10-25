@@ -446,7 +446,6 @@ class NkAnalyzer:
         }
         # DataFrameに英語の列名が存在すれば、日本語の列名にリネームする
         df = df.rename(columns=column_mapping)
-        logger.info(f"df: {df}")
 
         # データのクレンジングと型変換
         non_numeric_tokens = ["取", "除", "中", "失", "取消", "除外", "中止", "失格", "データなし", ""]
@@ -554,7 +553,6 @@ class NkAnalyzer:
             trainer_grouped["複勝率"] = (trainer_grouped["複勝数"] / trainer_grouped["出走数"] * 100).round(1).astype(str) + "%"
             trainer_grouped = trainer_grouped.sort_values(by=["勝利数", "複勝数", "出走数"], ascending=[False, False, False]).reset_index(drop=True)
             trainer_summary_df = trainer_grouped[["厩舎", "出走数", "勝利数", "勝率", "複勝数", "複勝率"]].head(10)
-
         # -------------------------------------------------------------
         # Markdownの組み立て
         # -------------------------------------------------------------
@@ -617,11 +615,11 @@ class NkAnalyzer:
 
         jockey_tactics["複勝率_num"] = (jockey_tactics["複勝数"] / jockey_tactics["騎乗数"] * 100).round(1)
 
-        # 騎手ごとの「最も得意な脚質」と「最も不得意な脚質」を特定（5騎乗以上）
+        # 騎手ごとの「最も得意な脚質」と「最も不得意な脚質」を特定（※1日分なら条件を緩和して 1騎乗以上 にする）
         results = []
         for jockey, group in jockey_tactics.groupby("騎手"):
             total_mounts = group["騎乗数"].sum()
-            if total_mounts < 5:  # 最小サンプル数
+            if total_mounts < 1:  # 1回以上の騎乗があれば対象にする
                 continue
             
             total_wins = df[df["騎手"] == jockey]["is_win"].sum()
@@ -629,7 +627,7 @@ class NkAnalyzer:
             overall_top3_rate = f"{round(total_top3 / total_mounts * 100, 1)}%"
 
             # 得意脚質（複勝率最高）
-            valid_group = group[group["騎乗数"] >= 2]
+            valid_group = group[group["騎乗数"] >= 1]
             if not valid_group.empty:
                 best_row = valid_group.loc[valid_group["複勝率_num"].idxmax()]
                 best_style = f"{best_row['展開脚質']} (複勝率:{best_row['複勝率_num']}%)"
@@ -664,8 +662,12 @@ class NkAnalyzer:
         Gemini Notebook用Markdownを出力する
         """
         df = self._prepare_flat_dataframe(all_history_data)
-        if df.empty or "厩舎" not in df.columns or "開催" not in df.columns:
+        if df.empty or "厩舎" not in df.columns:
             return "# 厩舎バイタル・会場適性分析プロファイル\n\nデータが存在しません。"
+
+        # 【修正】開催列がない場合はダミーの「開催」列を付与してエラーを防ぐ
+        if "開催" not in df.columns:
+            df["開催"] = "当日開催"
 
         df["着順_num"] = pd.to_numeric(df["着順"], errors="coerce")
         df["is_win"] = (df["着順_num"] == 1).fillna(0).astype(int)
@@ -683,14 +685,13 @@ class NkAnalyzer:
         results = []
         for trainer, group in trainer_venue.groupby("厩舎"):
             total_runs = group["出走数"].sum()
-            if total_runs < 3:
+            if total_runs < 1:  # 1回以上の出走があれば対象にする
                 continue
 
             total_top3 = df[df["厩舎"] == trainer]["is_top3"].sum()
             overall_top3_rate = f"{round(total_top3 / total_runs * 100, 1)}%"
 
-            # 最も得意な競馬場（出走2回以上）
-            valid_group = group[group["出走数"] >= 2]
+            valid_group = group[group["出走数"] >= 1]
             if not valid_group.empty:
                 best_row = valid_group.loc[valid_group["複勝率_num"].idxmax()]
                 best_venue = f"{best_row['開催']} (複勝率:{best_row['複勝率_num']}%)"
@@ -717,7 +718,7 @@ class NkAnalyzer:
         table_text = dataframe_to_markdown_table(res_df)
 
         return f"# 厩舎バイタル・会場適性分析プロファイル\n\n{table_text}"
-    
+
     def _prepare_flat_dataframe(self, all_races_data) -> pd.DataFrame:
         """入力データをフラットなDataFrameに正規化し、英語キーを日本語キーにマッピングする内部関数"""
         if not all_races_data:
@@ -738,6 +739,7 @@ class NkAnalyzer:
         df.columns = df.columns.astype(str).str.replace(r'[\s\u3000]', '', regex=True)
 
         column_mapping = {
+            "race_track": "開催",
             "rank": "着順", "bracket_num": "枠番", "horse_num": "馬番",
             "horse_name": "馬名", "horse_age": "性齢", "weight_carried": "斤量",
             "jockey": "騎手", "time": "タイム", "margin": "着差",

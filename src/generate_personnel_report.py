@@ -14,7 +14,7 @@ def generate_daily_personnel_reports(target_date: str, is_test: bool = False):
     
     Parameters:
     - target_date: 対象日付（例: "20260504"）
-    - output_dir: Markdownの出力先ディレクトリ（デフォルト: "data/analysis"）
+    - is_test: テスト環境かどうか
     """
     base_dir = Path("data_test/results") if is_test else Path("data/results")
     output_dir = "data_test/analysis" if is_test else "data/analysis"
@@ -45,10 +45,18 @@ def generate_daily_personnel_reports(target_date: str, is_test: bool = False):
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 payload = json.load(f)
-                # JSON内の "results" キーから各馬の成績リストを取得して結合
+                
+                # ルートにある開催会場名（例: "新潟"）を取得
+                race_track = payload.get("race_track", "不明")
+                
+                # JSON内の "results" キーから各馬の成績リストを取得
                 results = payload.get("results", [])
                 if isinstance(results, list):
-                    all_races_flat_data.extend(results)
+                    # 各馬の辞書データにルートの "race_track" を "開催" キーとして追加する
+                    for horse_result in results:
+                        if isinstance(horse_result, dict):
+                            horse_result["開催"] = race_track
+                        all_races_flat_data.append(horse_result)
         except Exception as e:
             logger.error(f"ファイル読み込みエラー ({file_path}): {e}")
 
@@ -60,7 +68,6 @@ def generate_daily_personnel_reports(target_date: str, is_test: bool = False):
     analyzer = NkAnalyzer()
 
     # 5. 騎手データ・厩舎データのMarkdown文字列を生成
-    # （※より詳細なスタイル適性版や会場適性版を出力したい場合は、メソッドを切り替えてください）
     jockey_md = analyzer.generate_jockey_style_aptitude_markdown(all_races_flat_data)
     trainer_md = analyzer.generate_trainer_venue_aptitude_markdown(all_races_flat_data)
 
@@ -80,7 +87,6 @@ def generate_daily_personnel_reports(target_date: str, is_test: bool = False):
 
     logger.info(f"✅ 騎手データを出力しました: {jockey_file}")
     logger.info(f"✅ 厩舎データを出力しました: {trainer_file}")
-
 
 if __name__ == "__main__":
     # 実行例: 2026年5月4日の保存済みJSONからレポートを生成する場合
