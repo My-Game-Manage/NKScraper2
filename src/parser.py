@@ -201,6 +201,10 @@ class NkParser:
                     if row.select_one(ResultSelector.PASSING_ORDER)
                     else ""
             )
+            # ない場合は地方競馬と同じ取得方法
+            if result == "":
+                pass_map = self.get_horse_passing_orders_map(soup)
+                result = pass_map.get(horse_num, "")
         else:
             # 地方馬は別の箇所記載なので関数で取得
             pass_map = self.get_horse_passing_orders_map(soup)

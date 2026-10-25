@@ -553,7 +553,6 @@ class NkAnalyzer:
             trainer_grouped["複勝率"] = (trainer_grouped["複勝数"] / trainer_grouped["出走数"] * 100).round(1).astype(str) + "%"
             trainer_grouped = trainer_grouped.sort_values(by=["勝利数", "複勝数", "出走数"], ascending=[False, False, False]).reset_index(drop=True)
             trainer_summary_df = trainer_grouped[["厩舎", "出走数", "勝利数", "勝率", "複勝数", "複勝率"]].head(10)
-
         # -------------------------------------------------------------
         # Markdownの組み立て
         # -------------------------------------------------------------
@@ -576,7 +575,181 @@ class NkAnalyzer:
         md_output.append(dataframe_to_markdown_table(trainer_summary_df))
 
         return "\n".join(md_output)
+    
+    def generate_jockey_style_aptitude_markdown(self, all_history_data: list[dict]) -> str:
+        """
+        蓄積されたレース結果データから「騎手の得意・不得意コース＆得意脚質」を分析し、
+        Gemini Notebook用Markdownを出力する
+        """
+        df = self._prepare_flat_dataframe(all_history_data)
+        if df.empty or "騎手" not in df.columns:
+            return "# 騎手特性・得意スタイル分析プロファイル\n\nデータが存在しません。"
 
+        # 数値前処理
+        df["着順_num"] = pd.to_numeric(df["着順"], errors="coerce")
+        df["人気_num"] = pd.to_numeric(df["人気"], errors="coerce")
+        
+        # フラグ作成
+        df["is_win"] = (df["着順_num"] == 1).fillna(0).astype(int)
+        df["is_top3"] = (df["着順_num"] <= 3).fillna(0).astype(int)
+
+        # 4角通過順位から脚質判定
+        def get_tactics(passing_str):
+            if pd.isna(passing_str) or not isinstance(passing_str, str):
+                return "不明"
+            pos = [int(p) for p in passing_str.split("-") if p.isdigit()]
+            if not pos: return "不明"
+            last_pos = pos[-1]
+            if last_pos == 1: return "逃げ"
+            elif last_pos <= 4: return "先行"
+            elif last_pos <= 8: return "差し"
+            else: return "追込"
+
+        df["展開脚質"] = df["通過"].apply(get_tactics)
+
+        # 騎手×脚質別の集計
+        jockey_tactics = df.groupby(["騎手", "展開脚質"]).agg(
+            騎乗数=("着順_num", "count"),
+            複勝数=("is_top3", "sum")
+        ).reset_index()
+
+        jockey_tactics["複勝率_num"] = (jockey_tactics["複勝数"] / jockey_tactics["騎乗数"] * 100).round(1)
+
+        # 騎手ごとの「最も得意な脚質」と「最も不得意な脚質」を特定（※1日分なら条件を緩和して 1騎乗以上 にする）
+        results = []
+        for jockey, group in jockey_tactics.groupby("騎手"):
+            total_mounts = group["騎乗数"].sum()
+            if total_mounts < 1:  # 1回以上の騎乗があれば対象にする
+                continue
+            
+            total_wins = df[df["騎手"] == jockey]["is_win"].sum()
+            total_top3 = df[df["騎手"] == jockey]["is_top3"].sum()
+            overall_top3_rate = f"{round(total_top3 / total_mounts * 100, 1)}%"
+
+            # 得意脚質（複勝率最高）
+            valid_group = group[group["騎乗数"] >= 1]
+            if not valid_group.empty:
+                best_row = valid_group.loc[valid_group["複勝率_num"].idxmax()]
+                best_style = f"{best_row['展開脚質']} (複勝率:{best_row['複勝率_num']}%)"
+                
+                worst_row = valid_group.loc[valid_group["複勝率_num"].idxmin()]
+                worst_style = f"{worst_row['展開脚質']} (複勝率:{worst_row['複勝率_num']}%)"
+            else:
+                best_style = "データ不足"
+                worst_style = "データ不足"
+
+            results.append({
+                "騎手": jockey,
+                "総騎乗数": total_mounts,
+                "通算勝率": f"{round(total_wins / total_mounts * 100, 1)}%",
+                "通算複勝率": overall_top3_rate,
+                "得意脚質スタイル": best_style,
+                "苦手脚質スタイル": worst_style,
+            })
+
+        res_df = pd.DataFrame(results)
+        if res_df.empty:
+            return "# 騎手特性・得意スタイル分析プロファイル\n\n条件に合うデータがありません。"
+
+        res_df = res_df.sort_values(by="総騎乗数", ascending=False).reset_index(drop=True)
+        table_text = dataframe_to_markdown_table(res_df)
+
+        return f"# 騎手特性・得意スタイル分析プロファイル\n\n{table_text}"
+
+    def generate_trainer_venue_aptitude_markdown(self, all_history_data: list[dict]) -> str:
+        """
+        蓄積されたレース結果データから「厩舎の会場別・輸送適性＆得意コース」を分析し、
+        Gemini Notebook用Markdownを出力する
+        """
+        df = self._prepare_flat_dataframe(all_history_data)
+        if df.empty or "厩舎" not in df.columns:
+            return "# 厩舎バイタル・会場適性分析プロファイル\n\nデータが存在しません。"
+
+        # 【修正】開催列がない場合はダミーの「開催」列を付与してエラーを防ぐ
+        if "開催" not in df.columns:
+            df["開催"] = "当日開催"
+
+        df["着順_num"] = pd.to_numeric(df["着順"], errors="coerce")
+        df["is_win"] = (df["着順_num"] == 1).fillna(0).astype(int)
+        df["is_top3"] = (df["着順_num"] <= 3).fillna(0).astype(int)
+
+        # 厩舎×開催場ごとの集計
+        trainer_venue = df.groupby(["厩舎", "開催"]).agg(
+            出走数=("着順_num", "count"),
+            勝利数=("is_win", "sum"),
+            複勝数=("is_top3", "sum"),
+        ).reset_index()
+
+        trainer_venue["複勝率_num"] = (trainer_venue["複勝数"] / trainer_venue["出走数"] * 100).round(1)
+
+        results = []
+        for trainer, group in trainer_venue.groupby("厩舎"):
+            total_runs = group["出走数"].sum()
+            if total_runs < 1:  # 1回以上の出走があれば対象にする
+                continue
+
+            total_top3 = df[df["厩舎"] == trainer]["is_top3"].sum()
+            overall_top3_rate = f"{round(total_top3 / total_runs * 100, 1)}%"
+
+            valid_group = group[group["出走数"] >= 1]
+            if not valid_group.empty:
+                best_row = valid_group.loc[valid_group["複勝率_num"].idxmax()]
+                best_venue = f"{best_row['開催']} (複勝率:{best_row['複勝率_num']}%)"
+                
+                worst_row = valid_group.loc[valid_group["複勝率_num"].idxmin()]
+                worst_venue = f"{worst_row['開催']} (複勝率:{worst_row['複勝率_num']}%)"
+            else:
+                best_venue = "データ不足"
+                worst_venue = "データ不足"
+
+            results.append({
+                "厩舎": trainer,
+                "総出走数": total_runs,
+                "通算複勝率": overall_top3_rate,
+                "得意競馬場（輸送・コース適性）": best_venue,
+                "苦手競馬場（遠征苦戦等）": worst_venue,
+            })
+
+        res_df = pd.DataFrame(results)
+        if res_df.empty:
+            return "# 厩舎バイタル・会場適性分析プロファイル\n\n条件に合うデータがありません。"
+
+        res_df = res_df.sort_values(by="総出走数", ascending=False).reset_index(drop=True)
+        table_text = dataframe_to_markdown_table(res_df)
+
+        return f"# 厩舎バイタル・会場適性分析プロファイル\n\n{table_text}"
+
+    def _prepare_flat_dataframe(self, all_races_data) -> pd.DataFrame:
+        """入力データをフラットなDataFrameに正規化し、英語キーを日本語キーにマッピングする内部関数"""
+        if not all_races_data:
+            return pd.DataFrame()
+
+        if isinstance(all_races_data, dict):
+            flat_data = []
+            for race_key, race_list in all_races_data.items():
+                if isinstance(race_list, list):
+                    flat_data.extend(race_list)
+        else:
+            flat_data = all_races_data
+
+        if not flat_data:
+            return pd.DataFrame()
+
+        df = pd.DataFrame(flat_data)
+        df.columns = df.columns.astype(str).str.replace(r'[\s\u3000]', '', regex=True)
+
+        column_mapping = {
+            "race_track": "開催",
+            "rank": "着順", "bracket_num": "枠番", "horse_num": "馬番",
+            "horse_name": "馬名", "horse_age": "性齢", "weight_carried": "斤量",
+            "jockey": "騎手", "time": "タイム", "margin": "着差",
+            "popularity": "人気", "odds": "オッズ", "last3f": "上り",
+            "passing_order": "通過", "horse_weight": "馬体重",
+            "weight_diff": "馬体重増減", "stable": "厩舎",
+        }
+        df = df.rename(columns=column_mapping)
+        return df
+        
 def safe_normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     data = df.copy()
 
