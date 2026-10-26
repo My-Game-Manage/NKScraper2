@@ -46,16 +46,26 @@ def generate_daily_personnel_reports(target_date: str, is_test: bool = False):
             with open(file_path, "r", encoding="utf-8") as f:
                 payload = json.load(f)
                 
-                # ルートにある開催会場名（例: "新潟"）を取得
                 race_track = payload.get("race_track", "不明")
+                race_type = payload.get("race_type", payload.get("タイプ", ""))
+                race_distance = payload.get("race_distance", payload.get("距離", ""))
                 
-                # JSON内の "results" キーから各馬の成績リストを取得
                 results = payload.get("results", [])
                 if isinstance(results, list):
-                    # 各馬の辞書データにルートの "race_track" を "開催" キーとして追加する
                     for horse_result in results:
                         if isinstance(horse_result, dict):
                             horse_result["開催"] = race_track
+                            if "タイプ" not in horse_result and race_type:
+                                horse_result["タイプ"] = race_type
+                            if "距離" not in horse_result and race_distance:
+                                horse_result["距離"] = race_distance
+                            
+                            # IDキーが欠損している場合のフォールバック（必要に応じて）
+                            if "jockey_id" not in horse_result:
+                                horse_result["jockey_id"] = horse_result.get("jockey", "unknown")
+                            if "stable_id" not in horse_result:
+                                horse_result["stable_id"] = horse_result.get("stable", "unknown")
+                                
                         all_races_flat_data.append(horse_result)
         except Exception as e:
             logger.error(f"ファイル読み込みエラー ({file_path}): {e}")

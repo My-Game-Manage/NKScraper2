@@ -129,6 +129,10 @@ class NkFetcher:
                     continue
                 # 馬URL取得
                 horse_url = self.parser.get_horse_url(row)
+                # JockeyURL
+                jockey_url = self.parser.get_jockey_url(row)
+                # StableURL
+                stable_url = self.parser.get_stable_url(row)
                 data = {
                     "bracket_num": self.parser.get_bracket_num(row),
                     "horse_num": self.parser.get_horse_num(row),
@@ -136,7 +140,9 @@ class NkFetcher:
                     "horse_age": self.parser.get_horse_age(row, is_nar),
                     "weight_carried": self.parser.get_horse_weight_carried(row),
                     "jockey": self.parser.get_horse_jockey(row),
+                    "jockey_id": self.parser.conv_jockey_id_from_url(jockey_url),
                     "stable": self.parser.get_stable(row),
+                    "stable_id": self.parser.conv_stable_id_from_url(stable_url),
                     "horse_id": self.parser.conv_horse_id_from_url(horse_url),
                     "horse_url": horse_url,
                 }
@@ -158,6 +164,54 @@ class NkFetcher:
         soup = self.client.get_soup_as_html(html_contents)
 
         try:
+            # 1. 先にレース情報の取得（内容はfetch_race_infoまま）
+            race_info = {}
+            # 1. レース基本情報取得
+            # レースID取得
+            race_info["race_id"] = self.parser.get_race_id(url)
+            # レース番号取得
+            race_info["race_num"] = self.parser.get_race_num(url)
+            # レース名取得
+            race_info["race_name"] = self.parser.get_race_name(soup)
+
+            # 2. 各種項目取得
+            race_info_line1 = self.parser.get_race_info_line1(soup)
+            # レース時刻
+            race_info["start_time"] = self.parser.get_race_time(race_info_line1)
+            # レースグレード
+            grade = self.parser.get_race_grade(soup)
+            if not grade:
+                grade = self.parser.get_race_grade_in_title(race_info["race_name"])
+            race_info["race_grade"] = grade
+            # レース種別
+            r_types = self.parser.get_race_types(race_info_line1)
+            race_info["race_type"] = r_types["race_type"]
+            # 距離
+            race_info["race_distance"] = r_types["distance"]
+            # コース
+            race_info["race_course"] = r_types["course"]
+            # 天候
+            race_info["weather"] = self.parser.get_race_weahter(race_info_line1)
+            # 馬場
+            race_info["condition"] = self.parser.get_race_condition(race_info_line1)
+
+            # 3. 開催情報
+            race_info_line2 = self.parser.get_race_info_line2(soup)
+            held_info = self.parser.get_race_held_info(race_info_line2)
+            # 開催回数
+            race_info["race_held_times"] = held_info["race_kai"]
+            # 開催場
+            race_info["race_track"] = held_info["race_track"]
+            # 開催日数
+            race_info["race_days"] = held_info["race_days"]
+            # 出走クラス
+            race_info["race_class"] = held_info["race_class"]
+            # 出走頭数
+            race_info["horses_num"] = held_info["horses_num"]
+
+            results.append(race_info)
+
+            # 2. 結果テーブルから情報取得
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
             is_nar = self.parser.is_nar(url)
             # 結果表テーブルの解析
@@ -168,6 +222,10 @@ class NkFetcher:
                     continue
                 # HorseURL取得
                 horse_url = self.parser.get_horse_url(row)
+                # JockeyURL取得
+                jockey_url = self.parser.get_jockey_url(row)
+                # StableURL取得
+                stable_url = self.parser.get_stable_url(row)
                 # 馬番取得
                 horse_num = self.parser.get_horse_num_as_result(row, is_nar)
                 # 馬体重と差の取得
@@ -185,7 +243,9 @@ class NkFetcher:
                     "horse_age": self.parser.get_horse_age_as_result(row),
                     "weight_carried": self.parser.get_horse_weight_carried_as_result(row),
                     "jockey": self.parser.get_horse_jockey_as_result(row),
+                    "jockey_id": self.parser.conv_jockey_id_from_url(jockey_url),
                     "stable": self.parser.get_stable_as_result(row),
+                    "stable_id": self.parser.conv_stable_id_from_url(stable_url),
                     "time": self.parser.get_finished_time(row),
                     "margin": self.parser.get_finished_margin(row),
                     "popularity": self.parser.get_popularity(row),
