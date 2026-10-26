@@ -578,7 +578,7 @@ class NkAnalyzer:
     
     def generate_jockey_style_aptitude_markdown(self, all_history_data: list[dict]) -> str:
         """
-        蓄積されたレース結果データから「騎手の得意・不得意コース＆得意脚質」を分析し、
+        蓄積されたレース結果データから「騎手の得意・不得意コース＆得意脚質・芝/ダート別得意距離」を分析し、
         Gemini Notebook用Markdownを出力する
         """
         df = self._prepare_flat_dataframe(all_history_data)
@@ -592,6 +592,20 @@ class NkAnalyzer:
         # フラグ作成
         df["is_win"] = (df["着順_num"] == 1).fillna(0).astype(int)
         df["is_top3"] = (df["着順_num"] <= 3).fillna(0).astype(int)
+
+        # タイプ（芝・ダート）の正規化関数（不明・空欄・障などは「不明」として弾く）
+        def normalize_track_type(t):
+            if pd.isna(t):
+                return "不明"
+            t_str = str(t).strip()
+            if "芝" in t_str:
+                return "芝"
+            elif "ダ" in t_str or "ダート" in t_str:
+                return "ダート"
+            else:
+                return "不明"
+
+        df["タイプ_norm"] = df["タイプ"].apply(normalize_track_type) if "タイプ" in df.columns else "不明"
 
         # 4角通過順位から脚質判定
         def get_tactics(passing_str):
@@ -607,36 +621,67 @@ class NkAnalyzer:
 
         df["展開脚質"] = df["通過"].apply(get_tactics)
 
-        # 騎手×脚質別の集計
+        # 1. 騎手×脚質別の集計
         jockey_tactics = df.groupby(["騎手", "展開脚質"]).agg(
             騎乗数=("着順_num", "count"),
             複勝数=("is_top3", "sum")
         ).reset_index()
-
         jockey_tactics["複勝率_num"] = (jockey_tactics["複勝数"] / jockey_tactics["騎乗数"] * 100).round(1)
 
-        # 騎手ごとの「最も得意な脚質」と「最も不得意な脚質」を特定（※1日分なら条件を緩和して 1騎乗以上 にする）
+        # 2. 騎手×タイプ×距離別の集計（芝・ダート別）
+        jockey_dist_type = pd.DataFrame()
+        if "距離" in df.columns:
+            # 芝とダートのみを抽出対象にする
+            df_filtered = df[df["タイプ_norm"].isin(["芝", "ダート"])]
+            if not df_filtered.empty:
+                jockey_dist_type = df_filtered.groupby(["騎手", "タイプ_norm", "距離"]).agg(
+                    騎乗数=("着順_num", "count"),
+                    複勝数=("is_top3", "sum")
+                ).reset_index()
+                jockey_dist_type["複勝率_num"] = (jockey_dist_type["複勝数"] / jockey_dist_type["騎乗数"] * 100).round(1)
+
         results = []
-        for jockey, group in jockey_tactics.groupby("騎手"):
-            total_mounts = group["騎乗数"].sum()
-            if total_mounts < 1:  # 1回以上の騎乗があれば対象にする
+        for jockey, group in df.groupby("騎手"):
+            total_mounts = len(group)
+            if total_mounts < 1:  
                 continue
             
-            total_wins = df[df["騎手"] == jockey]["is_win"].sum()
-            total_top3 = df[df["騎手"] == jockey]["is_top3"].sum()
+            total_wins = group["is_win"].sum()
+            total_top3 = group["is_top3"].sum()
             overall_top3_rate = f"{round(total_top3 / total_mounts * 100, 1)}%"
 
-            # 得意脚質（複勝率最高）
-            valid_group = group[group["騎乗数"] >= 1]
-            if not valid_group.empty:
-                best_row = valid_group.loc[valid_group["複勝率_num"].idxmax()]
+            # 得意・苦手脚質の特定
+            tactic_group = jockey_tactics[jockey_tactics["騎手"] == jockey]
+            if not tactic_group.empty:
+                best_row = tactic_group.loc[tactic_group["複勝率_num"].idxmax()]
                 best_style = f"{best_row['展開脚質']} (複勝率:{best_row['複勝率_num']}%)"
                 
-                worst_row = valid_group.loc[valid_group["複勝率_num"].idxmin()]
+                worst_row = tactic_group.loc[tactic_group["複勝率_num"].idxmin()]
                 worst_style = f"{worst_row['展開脚質']} (複勝率:{worst_row['複勝率_num']}%)"
             else:
                 best_style = "データ不足"
                 worst_style = "データ不足"
+
+            # 芝・ダート別の得意・苦手距離の特定
+            best_turf_dist, worst_turf_dist = "データなし", "データなし"
+            best_dirt_dist, worst_dirt_dist = "データなし", "データなし"
+
+            if not jockey_dist_type.empty:
+                # 芝の距離適性
+                turf_group = jockey_dist_type[(jockey_dist_type["騎手"] == jockey) & (jockey_dist_type["タイプ_norm"] == "芝")]
+                if not turf_group.empty:
+                    b_row = turf_group.loc[turf_group["複勝率_num"].idxmax()]
+                    best_turf_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
+                    w_row = turf_group.loc[turf_group["複勝率_num"].idxmin()]
+                    worst_turf_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
+
+                # ダートの距離適性
+                dirt_group = jockey_dist_type[(jockey_dist_type["騎手"] == jockey) & (jockey_dist_type["タイプ_norm"] == "ダート")]
+                if not dirt_group.empty:
+                    b_row = dirt_group.loc[dirt_group["複勝率_num"].idxmax()]
+                    best_dirt_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
+                    w_row = dirt_group.loc[dirt_group["複勝率_num"].idxmin()]
+                    worst_dirt_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
 
             results.append({
                 "騎手": jockey,
@@ -645,6 +690,10 @@ class NkAnalyzer:
                 "通算複勝率": overall_top3_rate,
                 "得意脚質スタイル": best_style,
                 "苦手脚質スタイル": worst_style,
+                "芝・得意距離": best_turf_dist,
+                "芝・苦手距離": worst_turf_dist,
+                "ダート・得意距離": best_dirt_dist,
+                "ダート・苦手距離": worst_dirt_dist,
             })
 
         res_df = pd.DataFrame(results)
@@ -746,6 +795,7 @@ class NkAnalyzer:
             "popularity": "人気", "odds": "オッズ", "last3f": "上り",
             "passing_order": "通過", "horse_weight": "馬体重",
             "weight_diff": "馬体重増減", "stable": "厩舎",
+            "race_type": "タイプ", "race_distance": "距離",
         }
         df = df.rename(columns=column_mapping)
         return df

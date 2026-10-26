@@ -83,12 +83,20 @@ class NkWriter:
         file_path = save_dir / json_filename
 
         # 4. 保存するデータの構造化（メタデータと結果のリストをラップ）
+        race_info = data_list[0]
         payload = {
             "race_id": race_id,
             "race_track": race_track,
             "race_num": race_num,
             "target_date": target_date,
-            "results": data_list
+            "race_name": race_info.get("race_name", ""),
+            "race_grade": race_info.get("race_grade", ""),
+            "race_type": race_info.get("race_type", ""),
+            "race_distance": race_info.get("race_distance", ""),
+            "weather": race_info.get("weather", ""),
+            "condition": race_info.get("condition", ""),
+            "race_class": race_info.get("race_class", ""),
+            "results": data_list[1:],
         }
 
         # 5. JSONファイルとして書き出し
