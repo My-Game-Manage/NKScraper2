@@ -114,7 +114,7 @@ class NkScraper:
         # 3. 開催会場毎に結果からその日の馬場バイアス作成
         for venue, venue_results in results_by_venue.items():
             # 会場ごとのデータ、日付、会場名を渡してバイアスMarkdownを生成
-            bias_md = self.analyzer.generate_daily_bias_markdown(venue_results, target_date, venue)
+            bias_md = self.analyzer.generate_daily_bias_markdown(target_date, venue_results, target_date, venue)
             bias_filename = f"{target_date}-{venue}-bias.md"
             self.writer.save_as_markdown(target_date, f"{venue}-results", bias_filename, bias_md, is_test)
 
