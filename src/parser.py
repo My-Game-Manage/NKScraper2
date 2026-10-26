@@ -159,12 +159,34 @@ class NkParser:
     def get_horse_url(self, row: object) -> str:
         a_elem = row.find("a")
         if a_elem and a_elem.has_attr("href"):
-            horse_url = a_elem["href"]
+            url = a_elem["href"]
         else:
-            horse_url = ""
-        return horse_url
+            url = ""
+        return url
+
+    def get_jockey_url(self, row: object) -> str:
+        jockey_a = row.select_one("td.Jockey a")
+        if jockey_a and jockey_a.has_attr("href"):
+            url = jockey_a["href"]
+        else:
+            url = ""
+        return url
+
+    def get_stable_url(self, row: object) -> str:
+        trainer_a = row.select_one("td.Trainer a")
+        if trainer_a and trainer_a.has_attr("href"):
+            url = trainer_a["href"]
+        else:
+            url = ""
+        return url
 
     def conv_horse_id_from_url(self, url: str) -> str:
+        return url.rstrip("/").split("/")[-1]
+
+    def conv_jockey_id_from_url(self, url: str) -> str:
+        return url.rstrip("/").split("/")[-1]
+
+    def conv_stable_id_from_url(self, url: str) -> str:
         return url.rstrip("/").split("/")[-1]
 
     def get_horse_num_as_result(self, row: object, is_nar: bool) -> str:

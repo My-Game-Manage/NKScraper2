@@ -129,6 +129,10 @@ class NkFetcher:
                     continue
                 # 馬URL取得
                 horse_url = self.parser.get_horse_url(row)
+                # JockeyURL
+                jockey_url = self.parser.get_jockey_url(row)
+                # StableURL
+                stable_url = self.parser.get_stable_url(row)
                 data = {
                     "bracket_num": self.parser.get_bracket_num(row),
                     "horse_num": self.parser.get_horse_num(row),
@@ -136,7 +140,9 @@ class NkFetcher:
                     "horse_age": self.parser.get_horse_age(row, is_nar),
                     "weight_carried": self.parser.get_horse_weight_carried(row),
                     "jockey": self.parser.get_horse_jockey(row),
+                    "jockey_id": self.parser.conv_jockey_id_from_url(jockey_url),
                     "stable": self.parser.get_stable(row),
+                    "stable_id": self.parser.conv_stable_id_from_url(stable_url),
                     "horse_id": self.parser.conv_horse_id_from_url(horse_url),
                     "horse_url": horse_url,
                 }
@@ -216,6 +222,10 @@ class NkFetcher:
                     continue
                 # HorseURL取得
                 horse_url = self.parser.get_horse_url(row)
+                # JockeyURL取得
+                jockey_url = self.parser.get_jockey_url(row)
+                # StableURL取得
+                stable_url = self.parser.get_stable_url(row)
                 # 馬番取得
                 horse_num = self.parser.get_horse_num_as_result(row, is_nar)
                 # 馬体重と差の取得
@@ -233,7 +243,9 @@ class NkFetcher:
                     "horse_age": self.parser.get_horse_age_as_result(row),
                     "weight_carried": self.parser.get_horse_weight_carried_as_result(row),
                     "jockey": self.parser.get_horse_jockey_as_result(row),
+                    "jockey_id": self.parser.conv_jockey_id_from_url(jockey_url),
                     "stable": self.parser.get_stable_as_result(row),
+                    "stable_id": self.parser.conv_stable_id_from_url(stable_url),
                     "time": self.parser.get_finished_time(row),
                     "margin": self.parser.get_finished_margin(row),
                     "popularity": self.parser.get_popularity(row),

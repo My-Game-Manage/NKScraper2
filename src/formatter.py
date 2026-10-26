@@ -109,8 +109,8 @@ class NkFormatter:
         # ヘッダーと区切り線
         md_lines = [
             "## 2. 出馬表\n\n",
-            "| 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | 厩舎 | 馬ID |",
-            "|---|---|---|---|---|---|---|---|",
+            "| 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | 厩舎 | 馬ID | 騎手ID | 厩舎ID |",
+            "|---|---|---|---|---|---|---|---|---|---|",
         ]
 
         for item in data_list:
@@ -118,7 +118,7 @@ class NkFormatter:
             horse_link = f"[{item['horse_name']}]({item['horse_url']})"
 
             # 行の生成
-            row = f"| {item['bracket_num']} | {item['horse_num']} | {horse_link} | {item['horse_age']} | {item['weight_carried']} | {item['jockey']} | {item['stable']} | {item['horse_id']} |"
+            row = f"| {item['bracket_num']} | {item['horse_num']} | {horse_link} | {item['horse_age']} | {item['weight_carried']} | {item['jockey']} | {item['stable']} | {item['horse_id']} | {item['jockey_id']} | {item['stable_id']} |"
             md_lines.append(row)
 
         return "\n".join(md_lines)
@@ -134,8 +134,8 @@ class NkFormatter:
         md_lines = [
             f"{race_info_txt}\n\n",
             "## 2. レース結果（着順）\n\n",
-            "| 着順 | 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | タイム | 着差 | 人気 | オッズ | 上り | 通過 | 馬体重 | 厩舎 |",
-            "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
+            "| 着順 | 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | タイム | 着差 | 人気 | オッズ | 上り | 通過 | 馬体重 | 厩舎 | 騎手ID | 厩舎ID |",
+            "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
         ]
 
         for item in data_list[1:]:
@@ -158,7 +158,7 @@ class NkFormatter:
                 f"{horse_link} | {item['horse_age']} | {item['weight_carried']} | "
                 f"{item['jockey']} | {item['time']} | {item['margin']} | "
                 f"{item['popularity']} | {item['odds']} | {item['last3f']} | "
-                f"{item['passing_order']} | {weight_str} | {item['stable']} |"
+                f"{item['passing_order']} | {weight_str} | {item['stable']} | {item['jockey_id']} | {item['stable_id']} |"
             )
             md_lines.append(row)
 
