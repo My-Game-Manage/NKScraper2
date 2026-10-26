@@ -86,7 +86,7 @@ def history_list_to_bullet_list(history_list: list[dict]) -> str:
 
 class NkFormatter:
 
-    def conv_race_info_to_markdown(self, target_date: str, race_info: list[dict]) -> str:
+    def conv_race_info_to_markdown(self, target_date: str, race_info: dict) -> str:
         """
         レース情報をマークダウンに変換する
         """
@@ -123,16 +123,22 @@ class NkFormatter:
 
         return "\n".join(md_lines)
 
-    def conv_race_result_to_markdown(self, data_list: list[dict]) -> str:
+    def conv_race_result_to_markdown(self, target_date: str, data_list: list[dict]) -> str:
         """レース結果の辞書リストをMarkdown形式のテーブル文字列に変換する"""
+        # 1. レース情報部分の処理
+        race_info = data_list[0]
+
+        race_info_txt = self.conv_race_info_to_markdown(target_date, race_info)
+
         # ヘッダーと区切り線
         md_lines = [
+            f"{race_info_txt}\n\n",
             "## 2. レース結果（着順）\n\n",
             "| 着順 | 枠 | 馬番 | 馬名 | 性齢 | 斤量 | 騎手 | タイム | 着差 | 人気 | オッズ | 上り | 通過 | 馬体重 | 厩舎 |",
             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
         ]
 
-        for item in data_list:
+        for item in data_list[1:]:
             # 馬名にURLのハイパーリンクを設定
             horse_link = f"[{item['horse_name']}]({item['horse_url']})"
 

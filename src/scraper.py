@@ -102,7 +102,7 @@ class NkScraper:
             results_by_venue[race_track][race_num] = result_info
 
             # データの変換
-            markdown = self.conv_race_result_data_to_markdown(race_id, result_info)
+            markdown = self.conv_race_result_data_to_markdown(target_date, race_id, result_info)
             # データの保存
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
             self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
@@ -266,7 +266,7 @@ class NkScraper:
 
         return files_dict
 
-    def conv_race_result_data_to_markdown(self, race_id: str, race_result: list[dict]) -> str:
+    def conv_race_result_data_to_markdown(self, target_date: str, race_id: str, race_result: list[dict]) -> str:
         """レース結果をmarkdownに変換する"""
         results = []
 
@@ -276,7 +276,7 @@ class NkScraper:
         results.append(f"# レースID：{race_id}\n\n")
         results.append(f"## レース：{jyo_name} - {race_num}R\n\n")
         # 結果ページ
-        race_result_md = self.formatter.conv_race_result_to_markdown(race_result)
+        race_result_md = self.formatter.conv_race_result_to_markdown(target_date, race_result)
         results.append(race_result_md + "\n\n")
 
         # データ結合
