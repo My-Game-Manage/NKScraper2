@@ -84,6 +84,7 @@ class NkWriter:
 
         # 4. 保存するデータの構造化（メタデータと結果のリストをラップ）
         race_info = data_list[0]
+        payouts_info = data_list[1]
         payload = {
             "race_id": race_id,
             "race_track": race_track,
@@ -96,7 +97,8 @@ class NkWriter:
             "weather": race_info.get("weather", ""),
             "condition": race_info.get("condition", ""),
             "race_class": race_info.get("race_class", ""),
-            "results": data_list[1:],
+            "results": data_list[2:],
+            "payouts": payouts_info,
         }
 
         # 5. JSONファイルとして書き出し
