@@ -3,6 +3,13 @@
   "race_track": "新潟",
   "race_num": "12",
   "target_date": "20261025",
+  "race_name": "3歳以上1勝クラス",
+  "race_grade": "3歳以上1勝クラス",
+  "race_type": "ダ",
+  "race_distance": "1200m",
+  "weather": "雨",
+  "condition": "不",
+  "race_class": "サラ系３歳以上１勝クラス(混)[指]定量",
   "results": [
     {
       "rank": "1",
@@ -12,7 +19,9 @@
       "horse_age": "牝5",
       "weight_carried": "56.0",
       "jockey": "小沢",
+      "jockey_id": "01185",
       "stable": "栗東岡田",
+      "stable_id": "01066",
       "time": "1:10.9",
       "margin": "",
       "popularity": "11",
@@ -32,7 +41,9 @@
       "horse_age": "牡5",
       "weight_carried": "56.0",
       "jockey": "◇永島",
+      "jockey_id": "01187",
       "stable": "栗東中竹",
+      "stable_id": "01039",
       "time": "1:11.0",
       "margin": "3/4",
       "popularity": "9",
@@ -52,13 +63,15 @@
       "horse_age": "牝4",
       "weight_carried": "56.0",
       "jockey": "吉村",
+      "jockey_id": "01216",
       "stable": "栗東田中克",
+      "stable_id": "01180",
       "time": "1:11.4",
       "margin": "2",
       "popularity": "4",
       "odds": "7.5",
       "last3f": "36.5",
-      "passing_order": "4-5",
+      "passing_order": "3-4",
       "horse_weight": "470",
       "weight_diff": "-10",
       "horse_id": "2022110082",
@@ -72,13 +85,15 @@
       "horse_age": "牡4",
       "weight_carried": "58.0",
       "jockey": "西塚",
+      "jockey_id": "01200",
       "stable": "栗東藤原",
+      "stable_id": "01055",
       "time": "1:11.4",
-      "margin": "同着",
+      "margin": "2",
       "popularity": "1",
       "odds": "3.2",
       "last3f": "36.6",
-      "passing_order": "5-3",
+      "passing_order": "3-3",
       "horse_weight": "534",
       "weight_diff": "-2",
       "horse_id": "2022110104",
@@ -92,7 +107,9 @@
       "horse_age": "牡4",
       "weight_carried": "58.0",
       "jockey": "富田",
+      "jockey_id": "01168",
       "stable": "栗東浜田",
+      "stable_id": "01138",
       "time": "1:11.4",
       "margin": "クビ",
       "popularity": "5",
@@ -112,7 +129,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "松本",
+      "jockey_id": "01191",
       "stable": "栗東森秀",
+      "stable_id": "00427",
       "time": "1:11.6",
       "margin": "1.1/4",
       "popularity": "3",
@@ -132,7 +151,9 @@
       "horse_age": "牝4",
       "weight_carried": "54.0",
       "jockey": "△柴田裕",
+      "jockey_id": "01212",
       "stable": "栗東河嶋",
+      "stable_id": "01198",
       "time": "1:11.7",
       "margin": "クビ",
       "popularity": "8",
@@ -152,13 +173,15 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "斎藤",
+      "jockey_id": "01178",
       "stable": "栗東茶木",
+      "stable_id": "01181",
       "time": "1:11.7",
       "margin": "アタマ",
       "popularity": "6",
       "odds": "11.8",
       "last3f": "36.2",
-      "passing_order": "10-10",
+      "passing_order": "9-10",
       "horse_weight": "476",
       "weight_diff": "+2",
       "horse_id": "2023104050",
@@ -172,7 +195,9 @@
       "horse_age": "牡5",
       "weight_carried": "58.0",
       "jockey": "亀田",
+      "jockey_id": "01176",
       "stable": "美浦久保田",
+      "stable_id": "01067",
       "time": "1:11.7",
       "margin": "クビ",
       "popularity": "10",
@@ -192,7 +217,9 @@
       "horse_age": "牡3",
       "weight_carried": "55.0",
       "jockey": "◇小林美",
+      "jockey_id": "01206",
       "stable": "美浦田島",
+      "stable_id": "01112",
       "time": "1:11.8",
       "margin": "クビ",
       "popularity": "2",
@@ -212,13 +239,15 @@
       "horse_age": "牡6",
       "weight_carried": "56.0",
       "jockey": "△石田",
+      "jockey_id": "01203",
       "stable": "美浦本間",
+      "stable_id": "01056",
       "time": "1:11.8",
       "margin": "クビ",
       "popularity": "12",
       "odds": "166.8",
       "last3f": "36.0",
-      "passing_order": "12-12",
+      "passing_order": "11-11",
       "horse_weight": "502",
       "weight_diff": "+10",
       "horse_id": "2020100555",
@@ -232,17 +261,152 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "菊沢",
+      "jockey_id": "01161",
       "stable": "美浦高柳瑞",
+      "stable_id": "01118",
       "time": "1:12.2",
       "margin": "2.1/2",
       "popularity": "7",
       "odds": "17.2",
       "last3f": "37.1",
-      "passing_order": "6-7",
+      "passing_order": "6-6",
       "horse_weight": "444",
       "weight_diff": "-2",
       "horse_id": "2023103657",
       "horse_url": "https://db.netkeiba.com/horse/2023103657"
     }
-  ]
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "6"
+      ],
+      "payouts": [
+        "6,800円"
+      ],
+      "popularity": [
+        "11人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "6",
+        "7",
+        "2",
+        "10"
+      ],
+      "payouts": [
+        "620円",
+        "520円",
+        "180円",
+        "130円"
+      ],
+      "popularity": [
+        "11人気",
+        "10人気",
+        "4人気",
+        "1人気"
+      ]
+    },
+    "枠連": {
+      "results": [
+        "5",
+        "6"
+      ],
+      "payouts": [
+        "2,540円"
+      ],
+      "popularity": [
+        "11人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "6",
+        "7"
+      ],
+      "payouts": [
+        "63,270円"
+      ],
+      "popularity": [
+        "60人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "6",
+        "7",
+        "2",
+        "6",
+        "6",
+        "10",
+        "2",
+        "7",
+        "7",
+        "10"
+      ],
+      "payouts": [
+        "7,860円",
+        "3,680円",
+        "1,530円",
+        "2,350円",
+        "1,110円"
+      ],
+      "popularity": [
+        "58人気",
+        "46人気",
+        "27人気",
+        "37人気",
+        "18人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "6",
+        "7"
+      ],
+      "payouts": [
+        "109,670円"
+      ],
+      "popularity": [
+        "115人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "2",
+        "6",
+        "7",
+        "6",
+        "7",
+        "10"
+      ],
+      "payouts": [
+        "64,180円",
+        "28,060円"
+      ],
+      "popularity": [
+        "166人気",
+        "124人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "6",
+        "7",
+        "2",
+        "6",
+        "7",
+        "10"
+      ],
+      "payouts": [
+        "525,920円",
+        "363,930円"
+      ],
+      "popularity": [
+        "1,040人気",
+        "952人気"
+      ]
+    }
+  }
 }

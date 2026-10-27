@@ -3,6 +3,13 @@
   "race_track": "金沢",
   "race_num": "02",
   "target_date": "20261025",
+  "race_name": "暁水栞結婚記念(C2)",
+  "race_grade": "C2",
+  "race_type": "ダ",
+  "race_distance": "1400m",
+  "weather": "雨",
+  "condition": "不",
+  "race_class": "サラ系一般 C",
   "results": [
     {
       "rank": "1",
@@ -12,7 +19,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "魚住謙心",
+      "jockey_id": "05604",
       "stable": "金沢金田一昌",
+      "stable_id": "05235",
       "time": "1:31.3",
       "margin": "",
       "popularity": "1",
@@ -32,7 +41,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "中島龍也",
+      "jockey_id": "a02dc",
       "stable": "金沢加藤和宏",
+      "stable_id": "05610",
       "time": "1:32.6",
       "margin": "6",
       "popularity": "4",
@@ -52,7 +63,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "青柳正義",
+      "jockey_id": "a01e5",
       "stable": "金沢池田敦",
+      "stable_id": "a05f8",
       "time": "1:33.3",
       "margin": "3",
       "popularity": "6",
@@ -72,7 +85,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "吉田晃浩",
+      "jockey_id": "05301",
       "stable": "金沢佐藤茂",
+      "stable_id": "05160",
       "time": "1:33.3",
       "margin": "ハナ",
       "popularity": "2",
@@ -92,7 +107,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "田知弘久",
+      "jockey_id": "a0205",
       "stable": "金沢佐藤茂",
+      "stable_id": "05160",
       "time": "1:33.9",
       "margin": "3",
       "popularity": "5",
@@ -112,7 +129,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "柴田勇真",
+      "jockey_id": "a02fb",
       "stable": "金沢金田一昌",
+      "stable_id": "05235",
       "time": "1:35.2",
       "margin": "6",
       "popularity": "3",
@@ -132,7 +151,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "栗原大河",
+      "jockey_id": "05556",
       "stable": "金沢菅原欣也",
+      "stable_id": "05319",
       "time": "1:35.7",
       "margin": "2.1/2",
       "popularity": "7",
@@ -152,7 +173,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "沖静男",
+      "jockey_id": "a0034",
       "stable": "金沢川添明弘",
+      "stable_id": "a02f5",
       "time": "1:36.1",
       "margin": "2",
       "popularity": "8",
@@ -172,7 +195,9 @@
       "horse_age": "牡4",
       "weight_carried": "57.0",
       "jockey": "服部大地",
+      "jockey_id": "a0199",
       "stable": "金沢川添明弘",
+      "stable_id": "a02f5",
       "time": "1:37.5",
       "margin": "7",
       "popularity": "9",
@@ -184,5 +209,129 @@
       "horse_id": "2022110024",
       "horse_url": "https://db.netkeiba.com/horse/2022110024/"
     }
-  ]
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "6"
+      ],
+      "payouts": [
+        "330円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "6",
+        "5",
+        "4"
+      ],
+      "payouts": [
+        "110円",
+        "120円",
+        "160円"
+      ],
+      "popularity": [
+        "1人気",
+        "2人気",
+        "4人気"
+      ]
+    },
+    "枠連": {
+      "results": [
+        "5",
+        "6"
+      ],
+      "payouts": [
+        "630円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "5",
+        "6"
+      ],
+      "payouts": [
+        "730円"
+      ],
+      "popularity": [
+        "3人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "5",
+        "6",
+        "4",
+        "6",
+        "4",
+        "5"
+      ],
+      "payouts": [
+        "290円",
+        "560円",
+        "790円"
+      ],
+      "popularity": [
+        "3人気",
+        "11人気",
+        "13人気"
+      ]
+    },
+    "枠単": {
+      "results": [
+        "6",
+        "5"
+      ],
+      "payouts": [
+        "1,370円"
+      ],
+      "popularity": [
+        "4人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "6",
+        "5"
+      ],
+      "payouts": [
+        "1,250円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "4",
+        "5",
+        "6"
+      ],
+      "payouts": [
+        "1,420円"
+      ],
+      "popularity": [
+        "8人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "6",
+        "5",
+        "4"
+      ],
+      "payouts": [
+        "5,380円"
+      ],
+      "popularity": [
+        "11人気"
+      ]
+    }
+  }
 }

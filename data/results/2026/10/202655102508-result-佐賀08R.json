@@ -3,6 +3,13 @@
   "race_track": "佐賀",
   "race_num": "08",
   "target_date": "20261025",
+  "race_name": "SAGAリベンジャーズダッシュ(C2)",
+  "race_grade": "C2",
+  "race_type": "ダ",
+  "race_distance": "900m",
+  "weather": "雨",
+  "condition": "不",
+  "race_class": "サラ系一般 C",
   "results": [
     {
       "rank": "1",
@@ -12,7 +19,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "飛田愛斗",
+      "jockey_id": "05609",
       "stable": "佐賀鮫島克也",
+      "stable_id": "05771",
       "time": "0:55.6",
       "margin": "",
       "popularity": "3",
@@ -32,7 +41,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "青海大樹",
+      "jockey_id": "05658",
       "stable": "佐賀矢野久美",
+      "stable_id": "05333",
       "time": "0:55.6",
       "margin": "アタマ",
       "popularity": "7",
@@ -52,7 +63,9 @@
       "horse_age": "牝4",
       "weight_carried": "51.0",
       "jockey": "▲後藤武蔵",
+      "jockey_id": "a06ca",
       "stable": "佐賀柳井宏之",
+      "stable_id": "a0259",
       "time": "0:55.7",
       "margin": "1/2",
       "popularity": "8",
@@ -72,7 +85,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "石川慎将",
+      "jockey_id": "05478",
       "stable": "佐賀真島元徳",
+      "stable_id": "05106",
       "time": "0:55.8",
       "margin": "3/4",
       "popularity": "1",
@@ -92,7 +107,9 @@
       "horse_age": "セ5",
       "weight_carried": "56.0",
       "jockey": "田中純",
+      "jockey_id": "05456",
       "stable": "佐賀濱田一夫",
+      "stable_id": "05360",
       "time": "0:55.9",
       "margin": "クビ",
       "popularity": "2",
@@ -112,7 +129,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "山口勲",
+      "jockey_id": "05229",
       "stable": "佐賀濱田一夫",
+      "stable_id": "05360",
       "time": "0:56.1",
       "margin": "3/4",
       "popularity": "6",
@@ -132,7 +151,9 @@
       "horse_age": "牝4",
       "weight_carried": "54.0",
       "jockey": "長田進仁",
+      "jockey_id": "05147",
       "stable": "佐賀大島静夫",
+      "stable_id": "05059",
       "time": "0:56.2",
       "margin": "1/2",
       "popularity": "9",
@@ -152,7 +173,9 @@
       "horse_age": "牝5",
       "weight_carried": "54.0",
       "jockey": "中山蓮王",
+      "jockey_id": "05656",
       "stable": "佐賀矢野久美",
+      "stable_id": "05333",
       "time": "0:56.3",
       "margin": "1/2",
       "popularity": "5",
@@ -172,7 +195,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "長谷川蓮",
+      "jockey_id": "05692",
       "stable": "佐賀東眞市",
+      "stable_id": "05601",
       "time": "0:56.6",
       "margin": "1.1/2",
       "popularity": "4",
@@ -192,7 +217,9 @@
       "horse_age": "牝5",
       "weight_carried": "54.0",
       "jockey": "加茂飛翔",
+      "jockey_id": "05633",
       "stable": "佐賀大島静夫",
+      "stable_id": "05059",
       "time": "0:56.8",
       "margin": "1.1/4",
       "popularity": "11",
@@ -212,7 +239,9 @@
       "horse_age": "牝6",
       "weight_carried": "54.0",
       "jockey": "小松丈二",
+      "jockey_id": "05587",
       "stable": "佐賀柳井宏之",
+      "stable_id": "a0259",
       "time": "0:57.2",
       "margin": "2",
       "popularity": "12",
@@ -232,7 +261,9 @@
       "horse_age": "牝3",
       "weight_carried": "54.0",
       "jockey": "山田義貴",
+      "jockey_id": "05654",
       "stable": "佐賀松島壽",
+      "stable_id": "05690",
       "time": "0:57.4",
       "margin": "1.1/4",
       "popularity": "10",
@@ -244,5 +275,117 @@
       "horse_id": "2023106678",
       "horse_url": "https://db.netkeiba.com/horse/2023106678/"
     }
-  ]
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "10"
+      ],
+      "payouts": [
+        "360円"
+      ],
+      "popularity": [
+        "3人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "10",
+        "8",
+        "12"
+      ],
+      "payouts": [
+        "230円",
+        "710円",
+        "1,170円"
+      ],
+      "popularity": [
+        "4人気",
+        "7人気",
+        "8人気"
+      ]
+    },
+    "枠連": {
+      "results": [
+        "6",
+        "7"
+      ],
+      "payouts": [
+        "4,410円"
+      ],
+      "popularity": [
+        "15人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "8",
+        "10"
+      ],
+      "payouts": [
+        "6,980円"
+      ],
+      "popularity": [
+        "16人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "8",
+        "10",
+        "10",
+        "12",
+        "8",
+        "12"
+      ],
+      "payouts": [
+        "2,400円",
+        "2,840円",
+        "12,530円"
+      ],
+      "popularity": [
+        "20人気",
+        "24人気",
+        "45人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "10",
+        "8"
+      ],
+      "payouts": [
+        "8,570円"
+      ],
+      "popularity": [
+        "25人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "8",
+        "10",
+        "12"
+      ],
+      "payouts": [
+        "37,490円"
+      ],
+      "popularity": [
+        "71人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "10",
+        "8",
+        "12"
+      ],
+      "payouts": [
+        "150,340円"
+      ],
+      "popularity": [
+        "295人気"
+      ]
+    }
+  }
 }

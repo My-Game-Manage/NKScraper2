@@ -3,6 +3,13 @@
   "race_track": "高知",
   "race_num": "08",
   "target_date": "20261025",
+  "race_name": "Aー3",
+  "race_grade": "Aー3",
+  "race_type": "ダ",
+  "race_distance": "1400m",
+  "weather": "曇",
+  "condition": "不",
+  "race_class": "サラ系一般 A",
   "results": [
     {
       "rank": "1",
@@ -12,7 +19,9 @@
       "horse_age": "牡6",
       "weight_carried": "57.0",
       "jockey": "山崎雅由",
+      "jockey_id": "a0258",
       "stable": "高知西山裕貴",
+      "stable_id": "a030b",
       "time": "1:28.5",
       "margin": "",
       "popularity": "2",
@@ -32,7 +41,9 @@
       "horse_age": "牡10",
       "weight_carried": "57.0",
       "jockey": "岡村卓弥",
+      "jockey_id": "a0270",
       "stable": "高知目迫大輔",
+      "stable_id": "a02d3",
       "time": "1:28.7",
       "margin": "1",
       "popularity": "6",
@@ -52,7 +63,9 @@
       "horse_age": "牡8",
       "weight_carried": "57.0",
       "jockey": "岡遼太郎",
+      "jockey_id": "05610",
       "stable": "高知中西達也",
+      "stable_id": "a035f",
       "time": "1:29.0",
       "margin": "1.1/2",
       "popularity": "3",
@@ -72,7 +85,9 @@
       "horse_age": "セ9",
       "weight_carried": "57.0",
       "jockey": "新庄海誠",
+      "jockey_id": "05670",
       "stable": "高知田中守",
+      "stable_id": "05580",
       "time": "1:29.2",
       "margin": "1",
       "popularity": "1",
@@ -92,7 +107,9 @@
       "horse_age": "牡5",
       "weight_carried": "57.0",
       "jockey": "吉原寛人",
+      "jockey_id": "05299",
       "stable": "高知国澤輝幸",
+      "stable_id": "a01c8",
       "time": "1:29.8",
       "margin": "3",
       "popularity": "4",
@@ -112,7 +129,9 @@
       "horse_age": "牡7",
       "weight_carried": "57.0",
       "jockey": "木村直輝",
+      "jockey_id": "05564",
       "stable": "高知雑賀正光",
+      "stable_id": "a0043",
       "time": "1:30.3",
       "margin": "2.1/2",
       "popularity": "8",
@@ -132,7 +151,9 @@
       "horse_age": "牡6",
       "weight_carried": "57.0",
       "jockey": "井上瑛太",
+      "jockey_id": "05615",
       "stable": "高知別府真司",
+      "stable_id": "05663",
       "time": "1:30.5",
       "margin": "1",
       "popularity": "5",
@@ -152,7 +173,9 @@
       "horse_age": "牡10",
       "weight_carried": "57.0",
       "jockey": "城野慈尚",
+      "jockey_id": "05689",
       "stable": "高知西川敏弘",
+      "stable_id": "a048e",
       "time": "1:31.1",
       "margin": "3",
       "popularity": "7",
@@ -164,5 +187,105 @@
       "horse_id": "2016104510",
       "horse_url": "https://db.netkeiba.com/horse/2016104510/"
     }
-  ]
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "8"
+      ],
+      "payouts": [
+        "390円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "8",
+        "3",
+        "7"
+      ],
+      "payouts": [
+        "140円",
+        "180円",
+        "170円"
+      ],
+      "popularity": [
+        "2人気",
+        "5人気",
+        "4人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "3",
+        "8"
+      ],
+      "payouts": [
+        "1,180円"
+      ],
+      "popularity": [
+        "7人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "3",
+        "8",
+        "7",
+        "8",
+        "3",
+        "7"
+      ],
+      "payouts": [
+        "420円",
+        "430円",
+        "540円"
+      ],
+      "popularity": [
+        "7人気",
+        "6人気",
+        "11人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "8",
+        "3"
+      ],
+      "payouts": [
+        "2,040円"
+      ],
+      "popularity": [
+        "9人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "3",
+        "7",
+        "8"
+      ],
+      "payouts": [
+        "1,720円"
+      ],
+      "popularity": [
+        "9人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "8",
+        "3",
+        "7"
+      ],
+      "payouts": [
+        "8,900円"
+      ],
+      "popularity": [
+        "34人気"
+      ]
+    }
+  }
 }

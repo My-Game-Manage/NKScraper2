@@ -3,6 +3,13 @@
   "race_track": "高知",
   "race_num": "04",
   "target_date": "20261025",
+  "race_name": "C3ー15",
+  "race_grade": "C3ー15",
+  "race_type": "ダ",
+  "race_distance": "1400m",
+  "weather": "雨",
+  "condition": "不",
+  "race_class": "サラ系一般 C",
   "results": [
     {
       "rank": "1",
@@ -12,7 +19,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "多田羅誠",
+      "jockey_id": "a03e2",
       "stable": "高知田中譲二",
+      "stable_id": "a00ed",
       "time": "1:30.4",
       "margin": "",
       "popularity": "1",
@@ -32,7 +41,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "山崎雅由",
+      "jockey_id": "a0258",
       "stable": "高知田中守",
+      "stable_id": "05580",
       "time": "1:31.2",
       "margin": "4",
       "popularity": "2",
@@ -52,7 +63,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "宮川実",
+      "jockey_id": "05640",
       "stable": "高知嬉勝則",
+      "stable_id": "a065b",
       "time": "1:32.0",
       "margin": "4",
       "popularity": "3",
@@ -72,7 +85,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "永森大智",
+      "jockey_id": "05536",
       "stable": "高知工藤真司",
+      "stable_id": "05785",
       "time": "1:32.5",
       "margin": "2.1/2",
       "popularity": "6",
@@ -92,7 +107,9 @@
       "horse_age": "牝3",
       "weight_carried": "52.0",
       "jockey": "▲塚本直之",
+      "jockey_id": "a06c9",
       "stable": "高知目迫大輔",
+      "stable_id": "a02d3",
       "time": "1:33.2",
       "margin": "3",
       "popularity": "4",
@@ -112,7 +129,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "井上瑛太",
+      "jockey_id": "05615",
       "stable": "高知宮路洋一",
+      "stable_id": "a003f",
       "time": "1:34.3",
       "margin": "5",
       "popularity": "8",
@@ -132,7 +151,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "畑中信司",
+      "jockey_id": "a01bb",
       "stable": "高知田中伸一",
+      "stable_id": "a0232",
       "time": "1:34.7",
       "margin": "2",
       "popularity": "11",
@@ -152,7 +173,9 @@
       "horse_age": "セ3",
       "weight_carried": "57.0",
       "jockey": "大澤誠志",
+      "jockey_id": "a023d",
       "stable": "高知胡本友晴",
+      "stable_id": "a020e",
       "time": "1:35.0",
       "margin": "1.1/2",
       "popularity": "12",
@@ -172,7 +195,9 @@
       "horse_age": "牝4",
       "weight_carried": "55.0",
       "jockey": "岡遼太郎",
+      "jockey_id": "05610",
       "stable": "高知国澤輝幸",
+      "stable_id": "a01c8",
       "time": "1:36.2",
       "margin": "6",
       "popularity": "9",
@@ -192,7 +217,9 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "郷間勇太",
+      "jockey_id": "05496",
       "stable": "高知別府真司",
+      "stable_id": "05663",
       "time": "1:37.1",
       "margin": "4",
       "popularity": "5",
@@ -212,7 +239,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "岡村卓弥",
+      "jockey_id": "a0270",
       "stable": "高知国澤輝幸",
+      "stable_id": "a01c8",
       "time": "1:38.1",
       "margin": "5",
       "popularity": "10",
@@ -232,7 +261,9 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "木村直輝",
+      "jockey_id": "05564",
       "stable": "高知田中伸一",
+      "stable_id": "a0232",
       "time": "1:38.1",
       "margin": "ハナ",
       "popularity": "7",
@@ -244,5 +275,117 @@
       "horse_id": "2023105432",
       "horse_url": "https://db.netkeiba.com/horse/2023105432/"
     }
-  ]
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "7"
+      ],
+      "payouts": [
+        "200円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "7",
+        "3",
+        "12"
+      ],
+      "payouts": [
+        "100円",
+        "110円",
+        "100円"
+      ],
+      "popularity": [
+        "1人気",
+        "3人気",
+        "2人気"
+      ]
+    },
+    "枠連": {
+      "results": [
+        "3",
+        "6"
+      ],
+      "payouts": [
+        "270円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "3",
+        "7"
+      ],
+      "payouts": [
+        "260円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "3",
+        "7",
+        "7",
+        "12",
+        "3",
+        "12"
+      ],
+      "payouts": [
+        "160円",
+        "200円",
+        "190円"
+      ],
+      "popularity": [
+        "1人気",
+        "3人気",
+        "2人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "7",
+        "3"
+      ],
+      "payouts": [
+        "410円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "3",
+        "7",
+        "12"
+      ],
+      "payouts": [
+        "290円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "7",
+        "3",
+        "12"
+      ],
+      "payouts": [
+        "990円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    }
+  }
 }
