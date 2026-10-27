@@ -96,12 +96,21 @@ class NkParser:
 
     def get_race_types(self, info_text: str) -> object:
         line_type_strs = info_text.split('/')
-        r_match = re.search(r"^([芝ダ障])(\d+m)(\(.*\))$", line_type_strs[1])
+        
+        if len(line_type_strs) < 2:
+            logger.info('パースに失敗しました: フォーマットが不正です')
+            return {}
+            
+        # 前後の空白を除去
+        target_str = line_type_strs[1].strip()
+        
+        # 修正: 距離(\d+m)の直後にスペースや括弧がなくても、残りの文字列をすべてコース情報としてキャプチャする
+        r_match = re.search(r"^([芝ダ障])(\d+m)(.*)$", target_str)
         race_types = {}
         if r_match:
             race_types['race_type'] = r_match.group(1)
             race_types['distance'] = r_match.group(2)
-            race_types['course'] = r_match.group(3)
+            race_types['course'] = r_match.group(3).strip() # 余分な空白や括弧周りを整える
         else:
             logger.info('パースに失敗しました')
         return race_types

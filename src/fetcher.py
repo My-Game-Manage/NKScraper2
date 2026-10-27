@@ -57,6 +57,8 @@ class NkFetcher:
             return results
 
         soup = self.client.get_soup_as_html(html_contents)
+        # 地方競馬と中央競馬の判定
+        is_nar = self.parser.is_nar(url)
 
         try:
             # 1. レース基本情報取得
@@ -83,10 +85,17 @@ class NkFetcher:
             results["race_distance"] = r_types["distance"]
             # コース
             results["race_course"] = r_types["course"]
-            # 天候
-            results["weather"] = self.parser.get_race_weahter(race_info_line1)
-            # 馬場
-            results["condition"] = self.parser.get_race_condition(race_info_line1)
+            # 中央競馬と地方競馬は異なるので分ける
+            if is_nar:
+                # 天候
+                results["weather"] = self.parser.get_race_weahter(race_info_line1)
+                # 馬場
+                results["condition"] = self.parser.get_race_condition(race_info_line1)
+            else:
+                # 中央競馬はsoupを使って取得
+                info_w_c = self.fetch_weather_conditon_as_jra(soup)
+                results["weather"] = info_w_c["weather"]
+                results["condition"] = info_w_c["condition"]
 
             # 3. 開催情報
             race_info_line2 = self.parser.get_race_info_line2(soup)
@@ -162,6 +171,8 @@ class NkFetcher:
             logger.error(f"invalid result url: {url}")
         
         soup = self.client.get_soup_as_html(html_contents)
+        # 地方競馬と中央競馬の判定
+        is_nar = self.parser.is_nar(url)
 
         try:
             # 1. 先にレース情報の取得（内容はfetch_race_infoまま）
@@ -190,10 +201,17 @@ class NkFetcher:
             race_info["race_distance"] = r_types["distance"]
             # コース
             race_info["race_course"] = r_types["course"]
-            # 天候
-            race_info["weather"] = self.parser.get_race_weahter(race_info_line1)
-            # 馬場
-            race_info["condition"] = self.parser.get_race_condition(race_info_line1)
+            # 中央競馬と地方競馬は異なるので分ける
+            if is_nar:
+                # 天候
+                race_info["weather"] = self.parser.get_race_weahter(race_info_line1)
+                # 馬場
+                race_info["condition"] = self.parser.get_race_condition(race_info_line1)
+            else:
+                # 中央競馬はsoupを使って取得
+                info_w_c = self.fetch_weather_conditon_as_jra(soup)
+                race_info["weather"] = info_w_c["weather"]
+                race_info["condition"] = info_w_c["condition"]
 
             # 3. 開催情報
             race_info_line2 = self.parser.get_race_info_line2(soup)
@@ -262,6 +280,21 @@ class NkFetcher:
         except Exception as e:
             logger.info(f'データ抽出中にエラーが発生しました: {e}')
         return results
+
+    def fetch_weather_conditon_as_jra(self, soup: BeautifulSoup) -> dict:
+        race_data_div = soup.select_one("div.RaceData01")
+        weather = ""
+        condition = ""
+        if race_data_div:
+            # 1. 天候の取得（class名に "Icon_Weather" を含む span タグの title 属性を狙う）
+            weather_span = race_data_div.select_one("span[class*='Icon_Weather']")
+            weather = weather_span.get("title") if weather_span else "不明"
+            # ※ title がない場合は aria-label を使うこともできます: weather_span.get("aria-label")
+
+            # 2. 馬場の取得（class="Item04" の span タグからテキストを抜き、前後の空白を削除）
+            condition_span = race_data_div.select_one("span.Item04")
+            condition = condition_span.text.strip() if condition_span else "不明"
+        return {"weather": weather, "condition": condition}
 
     def fetch_horse_profile(self, html_contents: str) -> dict:
         """
