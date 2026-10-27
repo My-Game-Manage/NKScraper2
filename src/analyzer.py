@@ -598,21 +598,32 @@ class NkAnalyzer:
         if df.empty or "騎手ID" not in df.columns:
             return "# 騎手特性・得意スタイル分析プロファイル\n\nデータが存在しません。"
 
+        # 数値前処理
         df["着順_num"] = pd.to_numeric(df["着順"], errors="coerce")
+        df["人気_num"] = pd.to_numeric(df["人気"], errors="coerce")
+        
+        # フラグ作成
         df["is_win"] = (df["着順_num"] == 1).fillna(0).astype(int)
         df["is_top3"] = (df["着順_num"] <= 3).fillna(0).astype(int)
 
+        # タイプ（芝・ダート）の正規化関数（不明・空欄・障などは「不明」として弾く）
         def normalize_track_type(t):
-            if pd.isna(t): return "不明"
+            if pd.isna(t):
+                return "不明"
             t_str = str(t).strip()
-            if "芝" in t_str: return "芝"
-            elif "ダ" in t_str or "ダート" in t_str: return "ダート"
-            else: return "不明"
+            if "芝" in t_str:
+                return "芝"
+            elif "ダ" in t_str or "ダート" in t_str:
+                return "ダート"
+            else:
+                return "不明"
 
         df["タイプ_norm"] = df["タイプ"].apply(normalize_track_type) if "タイプ" in df.columns else "不明"
 
+        # 4角通過順位から脚質判定
         def get_tactics(passing_str):
-            if pd.isna(passing_str) or not isinstance(passing_str, str): return "不明"
+            if pd.isna(passing_str) or not isinstance(passing_str, str):
+                return "不明"
             pos = [int(p) for p in passing_str.split("-") if p.isdigit()]
             if not pos: return "不明"
             last_pos = pos[-1]
@@ -623,14 +634,14 @@ class NkAnalyzer:
 
         df["展開脚質"] = df["通過"].apply(get_tactics)
 
-        # 騎手ID × 脚質別集計
+        # 1. 騎手ID × 脚質別の集計
         jockey_tactics = df.groupby(["騎手ID", "展開脚質"]).agg(
             騎乗数=("着順_num", "count"),
             複勝数=("is_top3", "sum")
         ).reset_index()
         jockey_tactics["複勝率_num"] = (jockey_tactics["複勝数"] / jockey_tactics["騎乗数"] * 100).round(1)
 
-        # 騎手ID × タイプ × 距離別集計
+        # 2. 騎手ID × タイプ × 距離別の集計（芝・ダート別）
         jockey_dist_type = pd.DataFrame()
         if "距離" in df.columns:
             df_filtered = df[df["タイプ_norm"].isin(["芝", "ダート"])]
@@ -642,44 +653,52 @@ class NkAnalyzer:
                 jockey_dist_type["複勝率_num"] = (jockey_dist_type["複勝数"] / jockey_dist_type["騎乗数"] * 100).round(1)
 
         results = []
-        # 騎手ID単位でループ
         for j_id, group in df.groupby("騎手ID"):
             total_mounts = len(group)
-            if total_mounts < 1: continue
+            if total_mounts < 1:  
+                continue
             
-            # 表記ゆれ防止のため、直近（または最も出現する）の騎手名を採用
             jockey_name = group["騎手"].mode()[0] if "騎手" in group.columns and not group["騎手"].mode().empty else str(j_id)
 
             total_wins = group["is_win"].sum()
             total_top3 = group["is_top3"].sum()
             overall_top3_rate = f"{round(total_top3 / total_mounts * 100, 1)}%"
 
+            # --- 脚質の集計（安全ガード付き） ---
+            best_style, worst_style = "データ不足", "データ不足"
             tactic_group = jockey_tactics[jockey_tactics["騎手ID"] == j_id]
             if not tactic_group.empty:
-                best_row = tactic_group.loc[tactic_group["複勝率_num"].idxmax()]
-                best_style = f"{best_row['展開脚質']} (複勝率:{best_row['複勝率_num']}%)"
-                worst_row = tactic_group.loc[tactic_group["複勝率_num"].idxmin()]
-                worst_style = f"{worst_row['展開脚質']} (複勝率:{worst_row['複勝率_num']}%)"
-            else:
-                best_style, worst_style = "データ不足", "データ不足"
+                tactic_valid = tactic_group.dropna(subset=["複勝率_num"])
+                if not tactic_valid.empty:
+                    best_row = tactic_valid.loc[tactic_valid["複勝率_num"].idxmax()]
+                    best_style = f"{best_row['展開脚質']} (複勝率:{best_row['複勝率_num']}%)"
+                    worst_row = tactic_valid.loc[tactic_valid["複勝率_num"].idxmin()]
+                    worst_style = f"{worst_row['展開脚質']} (複勝率:{worst_row['複勝率_num']}%)"
 
+            # --- 芝・ダート別の得意・苦手距離の特定（安全ガード付き） ---
             best_turf_dist, worst_turf_dist = "データなし", "データなし"
             best_dirt_dist, worst_dirt_dist = "データなし", "データなし"
 
             if not jockey_dist_type.empty:
+                # 芝の距離適性
                 turf_group = jockey_dist_type[(jockey_dist_type["騎手ID"] == j_id) & (jockey_dist_type["タイプ_norm"] == "芝")]
                 if not turf_group.empty:
-                    b_row = turf_group.loc[turf_group["複勝率_num"].idxmax()]
-                    best_turf_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
-                    w_row = turf_group.loc[turf_group["複勝率_num"].idxmin()]
-                    worst_turf_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
+                    turf_valid = turf_group.dropna(subset=["複勝率_num"])
+                    if not turf_valid.empty:
+                        b_row = turf_valid.loc[turf_valid["複勝率_num"].idxmax()]
+                        best_turf_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
+                        w_row = turf_valid.loc[turf_valid["複勝率_num"].idxmin()]
+                        worst_turf_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
 
+                # ダートの距離適性
                 dirt_group = jockey_dist_type[(jockey_dist_type["騎手ID"] == j_id) & (jockey_dist_type["タイプ_norm"] == "ダート")]
                 if not dirt_group.empty:
-                    b_row = dirt_group.loc[dirt_group["複勝率_num"].idxmax()]
-                    best_dirt_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
-                    w_row = dirt_group.loc[dirt_group["複勝率_num"].idxmin()]
-                    worst_dirt_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
+                    dirt_valid = dirt_group.dropna(subset=["複勝率_num"])
+                    if not dirt_valid.empty:
+                        b_row = dirt_valid.loc[dirt_valid["複勝率_num"].idxmax()]
+                        best_dirt_dist = f"{b_row['距離']} (複勝率:{b_row['複勝率_num']}%)"
+                        w_row = dirt_valid.loc[dirt_valid["複勝率_num"].idxmin()]
+                        worst_dirt_dist = f"{w_row['距離']} (複勝率:{w_row['複勝率_num']}%)"
 
             results.append({
                 "騎手ID": j_id,

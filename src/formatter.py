@@ -130,6 +130,10 @@ class NkFormatter:
 
         race_info_txt = self.conv_race_info_to_markdown(target_date, race_info)
 
+        # 2. レース払い戻し
+        payouts_info = data_list[1]
+        payouts_txt = self.payout_dict_to_markdown(payouts_info)
+
         # ヘッダーと区切り線
         md_lines = [
             f"{race_info_txt}\n\n",
@@ -138,7 +142,7 @@ class NkFormatter:
             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
         ]
 
-        for item in data_list[1:]:
+        for item in data_list[2:]:
             # 馬名にURLのハイパーリンクを設定
             horse_link = f"[{item['horse_name']}]({item['horse_url']})"
 
@@ -161,6 +165,9 @@ class NkFormatter:
                 f"{item['passing_order']} | {weight_str} | {item['stable']} | {item['jockey_id']} | {item['stable_id']} |"
             )
             md_lines.append(row)
+
+        md_lines.append("## 3. レース払い戻し\n\n")
+        md_lines.append(f"{payouts_txt}\n\n")
 
         return "\n".join(md_lines)
 
@@ -233,3 +240,53 @@ class NkFormatter:
 
     def get_filename_from_race_result(self, race_id: str, race_track: str, race_num: str) -> str:
         return f"{race_id}-result-{race_track}{race_num}R.md"
+
+    def payout_dict_to_markdown(self, payout_data: dict) -> str:
+        """
+        パースした払い戻し辞書データ（payout_data）を、
+        見やすいMarkdownの表形式（文字列）に変換する関数
+        """
+        if not payout_data:
+            return "> **【払戻情報】**\n> 払い戻しデータはありません。\n"
+
+        rows = []
+        for bet_type, info in payout_data.items():
+            results = info.get("results", [])
+            payouts = info.get("payouts", [])
+            ninkis = info.get("popularity", [])
+
+            # 賭式に応じて馬番・組合せの表示形式を整える
+            formatted_results = ""
+            if bet_type in ["ワイド", "馬連", "馬単", "枠連"]:
+                # 2頭（枠）ずつのペアに結合する（例: 13-16）
+                pairs = [f"{results[i]}-{results[i+1]}" for i in range(0, len(results) - 1, 2)] if len(results) >= 2 else results
+                formatted_results = "<br>".join(pairs)
+            elif bet_type == "3連複":
+                # 3頭ずつの組み合わせにする（例: 11-13-16）
+                triplets = [f"{results[i]}-{results[i+1]}-{results[i+2]}" for i in range(0, len(results) - 2, 3)] if len(results) >= 3 else results
+                formatted_results = "<br>".join(triplets)
+            elif bet_type == "3連単":
+                # 3頭ずつの着順通りにする（例: 16→13→11）
+                triplets = [f"{results[i]}→{results[i+1]}→{results[i+2]}" for i in range(0, len(results) - 2, 3)] if len(results) >= 3 else results
+                formatted_results = "<br>".join(triplets)
+            else:
+                # 単勝・複勝など
+                formatted_results = "<br>".join(results)
+
+            # 払戻金と人気も複数ある場合は改行で繋ぐ
+            payout_str = "<br>".join(payouts) if payouts else "データなし"
+            ninki_str = "<br>".join(ninkis) if ninkis else "データなし"
+
+            rows.append(f"| {bet_type} | {formatted_results} | {payout_str} | {ninki_str} |")
+
+        # Markdownテーブルのヘッダーとボディの構築
+        table_header = "| 賭式 | 組合せ | 払戻金 | 人気 |\n|:---:|:---:|:---:|:---:|"
+        table_body = "\n".join(rows)
+
+        markdown_output = (
+            f"### 払い戻し情報\n\n"
+            f"{table_header}\n"
+            f"{table_body}\n"
+        )
+
+        return markdown_output

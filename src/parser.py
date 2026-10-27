@@ -521,3 +521,45 @@ class NkParser:
             if cell_data:
                 results.append(cell_data)
         return results
+
+    def parse_payouts(self, soup: BeautifulSoup) -> dict:
+        """
+        レース結果のHTMLから払い戻し情報をパースして辞書で返す関数
+        """
+        payout_data = {}
+
+        # 払い戻しテーブルのすべての行（tr）を取得
+        rows = soup.select("table.Payout_Detail_Table tr")
+    
+        for row in rows:
+            # 賭式名（例: 単勝, 複勝, 馬連など）を取得
+            th = row.select_one("th")
+            if not th:
+                continue
+            bet_type = th.get_text(strip=True)
+        
+            # 払い戻し金を取得（<br>で複数ある場合も考慮し、リストまたはカンマ区切りにする）
+            payout_td = row.select_one("td.Payout")
+            payouts = list(payout_td.stripped_strings) if payout_td else []
+            # まとめて文字列にする場合は ", ".join(payouts) など
+        
+            # 人気を取得
+            ninki_td = row.select_one("td.Ninki")
+            ninkis = list(ninki_td.stripped_strings) if ninki_td else []
+        
+            # 結果（馬番など）の取得
+            result_td = row.select_one("td.Result")
+            results = []
+            if result_td:
+                # 構造によって span や li の中身を安全に回収する
+                # 空のタグを除外してテキストがあるものだけ取得
+                results = [span.get_text(strip=True) for span in result_td.select("span") if span.get_text(strip=True)]
+
+            # データを構造化して格納
+            payout_data[bet_type] = {
+                "results": results,     # 該当馬番（組み合わせ）のリスト
+                "payouts": payouts,     # 払戻金のリスト
+                "popularity": ninkis    # 人気のリスト
+            }
+        
+        return payout_data

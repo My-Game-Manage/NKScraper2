@@ -229,7 +229,11 @@ class NkFetcher:
 
             results.append(race_info)
 
-            # 2. 結果テーブルから情報取得
+            # 2. 払い戻しテーブルから情報取得
+            payouts_info = self.parser.parse_payouts(soup)
+            results.append(payouts_info)
+
+            # 3. 結果テーブルから情報取得
             # 地方競馬(NAR)判定と年齢セレクタの切り替え
             is_nar = self.parser.is_nar(url)
             # 結果表テーブルの解析
