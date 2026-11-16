@@ -1,0 +1,222 @@
+{
+  "race_id": "202646111612",
+  "race_track": "金沢",
+  "race_num": "12",
+  "target_date": "20261116",
+  "race_name": "楽天競馬で馬券を買おう!楽天競馬特別(A1)",
+  "race_grade": "A1",
+  "race_type": "ダ",
+  "race_distance": "1700m",
+  "weather": "曇",
+  "condition": "不",
+  "race_class": "サラ系一般 A",
+  "results": [
+    {
+      "rank": "1",
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シンリミテス",
+      "horse_age": "牡7",
+      "weight_carried": "58.0",
+      "jockey": "吉原寛人",
+      "jockey_id": "05299",
+      "stable": "金沢加藤和義",
+      "stable_id": "05731",
+      "time": "1:49.1",
+      "margin": "",
+      "popularity": "2",
+      "odds": "1.9",
+      "last3f": "37.9",
+      "passing_order": "1-1-1-1",
+      "horse_weight": "510",
+      "weight_diff": "+15",
+      "horse_id": "2019106148",
+      "horse_url": "https://db.netkeiba.com/horse/2019106148/"
+    },
+    {
+      "rank": "2",
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ルージュミラージュ",
+      "horse_age": "牝4",
+      "weight_carried": "56.0",
+      "jockey": "栗原大河",
+      "jockey_id": "05556",
+      "stable": "金沢佐藤茂",
+      "stable_id": "05160",
+      "time": "1:50.6",
+      "margin": "7",
+      "popularity": "1",
+      "odds": "1.6",
+      "last3f": "39.4",
+      "passing_order": "2-2",
+      "horse_weight": "472",
+      "weight_diff": "-6",
+      "horse_id": "2022102435",
+      "horse_url": "https://db.netkeiba.com/horse/2022102435/"
+    },
+    {
+      "rank": "3",
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ドライブアウェイ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "▲浅野登生",
+      "jockey_id": "a06c5",
+      "stable": "金沢藤田弘治",
+      "stable_id": "a0562",
+      "time": "1:51.2",
+      "margin": "3",
+      "popularity": "4",
+      "odds": "28.1",
+      "last3f": "38.7",
+      "passing_order": "",
+      "horse_weight": "443",
+      "weight_diff": "-3",
+      "horse_id": "2022104517",
+      "horse_url": "https://db.netkeiba.com/horse/2022104517/"
+    },
+    {
+      "rank": "4",
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "デルマアートマン",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "田知弘久",
+      "jockey_id": "a0205",
+      "stable": "金沢堀場裕充",
+      "stable_id": "a05f9",
+      "time": "1:52.4",
+      "margin": "6",
+      "popularity": "5",
+      "odds": "31.5",
+      "last3f": "39.7",
+      "passing_order": "",
+      "horse_weight": "492",
+      "weight_diff": "-3",
+      "horse_id": "2021104992",
+      "horse_url": "https://db.netkeiba.com/horse/2021104992/"
+    },
+    {
+      "rank": "5",
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ロードランヴェルセ",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "jockey_id": "a0034",
+      "stable": "金沢川添明弘",
+      "stable_id": "a02f5",
+      "time": "1:52.6",
+      "margin": "1.1/2",
+      "popularity": "3",
+      "odds": "24.3",
+      "last3f": "41.0",
+      "passing_order": "",
+      "horse_weight": "471",
+      "weight_diff": "-5",
+      "horse_id": "2019103025",
+      "horse_url": "https://db.netkeiba.com/horse/2019103025/"
+    }
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "2"
+      ],
+      "payouts": [
+        "190円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "2",
+        "3"
+      ],
+      "payouts": [
+        "130円",
+        "110円"
+      ],
+      "popularity": [
+        "2人気",
+        "1人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "2",
+        "3"
+      ],
+      "payouts": [
+        "120円"
+      ],
+      "popularity": [
+        "1人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "2",
+        "3",
+        "1",
+        "2",
+        "1",
+        "3"
+      ],
+      "payouts": [
+        "100円",
+        "130円",
+        "170円"
+      ],
+      "popularity": [
+        "1人気",
+        "2人気",
+        "3人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "2",
+        "3"
+      ],
+      "payouts": [
+        "210円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "1",
+        "2",
+        "3"
+      ],
+      "payouts": [
+        "260円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "2",
+        "3",
+        "1"
+      ],
+      "payouts": [
+        "570円"
+      ],
+      "popularity": [
+        "2人気"
+      ]
+    }
+  }
+}
