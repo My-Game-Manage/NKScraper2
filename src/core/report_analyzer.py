@@ -7,7 +7,7 @@ import logging
 import pandas as pd
 from typing import Union, List, Dict, Any
 
-from text_utils import (
+from src.utils.text_utils import (
     dataframe_to_markdown_table,
     extract_last_corner_pos,
     get_tactics,

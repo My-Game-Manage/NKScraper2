@@ -3,16 +3,16 @@ import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from date_utils import extract_year_month, normalize_date_format
+from src.utils.date_utils import extract_year_month, normalize_date_format
 
 # リファクタリング済みのレポート分析クラスを使用（フォールバック付き）
 try:
-    from report_analyzer import NkReportAnalyzer
+    from src.core.report_analyzer import NkReportAnalyzer
 except ImportError:
     try:
-        from analyzer import NkAnalyzer as NkReportAnalyzer
+        from src.core.analyzer import NkAnalyzer as NkReportAnalyzer
     except ImportError:
-        from src.analyzer import NkAnalyzer as NkReportAnalyzer
+        from src.core.analyzer import NkAnalyzer as NkReportAnalyzer
 
 logger = logging.getLogger(__name__)
 

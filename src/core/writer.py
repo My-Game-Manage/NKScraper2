@@ -13,7 +13,7 @@ from typing import List, Dict, Any, Optional, Union
 
 # date_utils から年月抽出ヘルパーをインポート
 try:
-    from date_utils import extract_year_month
+    from src.utils.date_utils import extract_year_month
 except ImportError:
     try:
         from src.utils.date_utils import extract_year_month

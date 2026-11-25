@@ -7,7 +7,7 @@ import logging
 import pandas as pd
 from typing import Union, List, Dict, Any, Optional
 
-from text_utils import (
+from src.utils.text_utils import (
     time_to_seconds,
     seconds_to_time,
     dataframe_to_markdown_table,

@@ -4,13 +4,13 @@ import time
 import logging
 from typing import List, Dict, Optional, Any, Union
 
-from src.fetcher import NkFetcher
-from src.writer import NkWriter
-from src.formatter import NkFormatter
-from src.analyzer import NkAnalyzer
+from src.core.fetcher import NkFetcher
+from src.core.writer import NkWriter
+from src.core.formatter import NkFormatter
+from src.core.analyzer import NkAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
-from src.all_html_dump import fetch_js_html
-from src.generate_personnel_report import generate_daily_personnel_reports
+from src.client.all_html_dump import fetch_js_html
+from src.core.generate_personnel_report import generate_daily_personnel_reports
 
 from src.utils.date_utils import (
     get_today_jst,

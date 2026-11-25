@@ -10,8 +10,8 @@ from typing import List, Dict, Any, Optional
 from bs4 import BeautifulSoup
 
 from src.constants.netkeibatag import ShutubaSelector, ResultSelector
-from src.netkeiba_client import NkClientSoup
-from src.parser import NkParser
+from src.client.netkeiba_client import NkClientSoup
+from src.core.parser import NkParser
 
 # ロガー設定
 logger = logging.getLogger(__name__)
