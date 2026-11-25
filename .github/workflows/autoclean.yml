@@ -1,9 +1,10 @@
 name: Cleanup Old Data Folders
 
 on:
-  schedule:
+  schedule:  
     # 毎週月曜日の 12:00 JST に実行 (JST = UTC+9 のため、12 - 9 = 3 UTC)
-    - cron: '0 3 * * 1'
+    # うまく動かないし、一旦停止
+    #- cron: '0 3 * * 1'
   
   # 手動でも実行できるようにする場合（デバッグ用）
   workflow_dispatch:
