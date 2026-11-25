@@ -1,475 +1,423 @@
 import os
-from datetime import datetime, timedelta, timezone
 import random
 import time
-import pandas as pd
-
-# ロガー設定
 import logging
-logger = logging.getLogger(__name__)
+from typing import List, Dict, Optional, Any, Union
 
 from src.core.fetcher import NkFetcher
 from src.core.writer import NkWriter
 from src.core.formatter import NkFormatter
 from src.core.analyzer import NkAnalyzer
+from src.core.report_analyzer import NkReportAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.client.all_html_dump import fetch_js_html
 from src.core.generate_personnel_report import generate_daily_personnel_reports
 
-DEFAULT_BASE_DIR = "data"
+from src.utils.date_utils import (
+    get_today_jst,
+    get_yesterday_date,
+    normalize_date_format,
+    determine_target_date,
+)
+from src.utils.text_utils import (
+    get_race_num_from_id,
+    get_course_code_from_id,
+    is_nar_race_id,
+)
 
+logger = logging.getLogger(__name__)
+
+DEFAULT_BASE_DIR = "data"
 SELECTOR_HORSE_DB = "table.db_h_race_results"
 SELECTOR_KAISAI_HP = ".RaceList_Body"
 SELECTOR_SHUTUBA_HP = ".RaceName"
-SELECTOR_RESULT_HP = ".RaceTable01"
+SELECTOR_RESULT_HP = ".ResultTableFrame"
+
 
 class NkScraper:
+    """
+    競馬スクレイピング・分析処理を統制するオーケストレータークラス
+    """
+
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
         self.fetcher = NkFetcher()
         self.writer = NkWriter()
         self.formatter = NkFormatter()
         self.analyzer = NkAnalyzer()
-
-        # 基本設定
-        self.base_dir = 'data'
-        # ディレクトリがなければ作成
+        self.headless = headless
+        self.base_dir = base_dir
         os.makedirs(self.base_dir, exist_ok=True)
 
-    def scraping_races(self, input_date=None, course_filter=None, race_num_filter=None, is_test: bool=False):
+    def scraping_races(
+        self,
+        input_date: Optional[str] = None,
+        course_filter: Optional[List[Union[str, int]]] = None,
+        race_num_filter: Optional[List[Union[str, int]]] = None,
+        is_test: bool = False,
+    ) -> None:
         """
-        レースデータのスクレイピング
+        出馬表データのスクレイピングおよび解析メイン処理
         """
-        logger.info("スクレイピングを開始します")
-
-        # 1. 目的のレースIDを取得する
-        # 取得日付を決定
-        target_date = self.determinate_target_date(input_date)
+        logger.info("出馬表のスクレイピングを開始します")
+        target_date = self.determine_target_date(input_date)
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
 
-        logger.info(f"target race ids: {target_race_ids}")
+        logger.info(f"対象レースID ({len(target_race_ids)}件): {target_race_ids}")
 
-        # 2. レースID毎に処理していく
         for race_id in target_race_ids:
             logger.info(f"race_id: {race_id} の解析開始")
-            # レース情報
             race_info = self.fetch_race_info_by_id(race_id)
-            # データの変換 -> 個別ファイル用に変換
-            #markdown = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
-            shutuba_map = self.conv_race_shutuba_data_to_markdown_as_serapare(target_date, race_info)
-            # データの保存 -> 個別ファイルで保存
-            race_track = self.get_jyo_name(race_id)
-            race_num = self.get_race_num_from_id(race_id)
-            fname_prefix = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
-            # 各ファイルに分けて保存
-            comb_contents = []
-            for fname, content in shutuba_map.items():
-                save_filename = f"{fname_prefix}-{fname}"
+            if not race_info or not race_info.get("race_info"):
+                continue
+
+            info = race_info["race_info"]
+            race_track = info.get("race_track", self.get_jyo_name(race_id))
+            race_num = info.get("race_num", self.get_race_num_from_id(race_id))
+
+            # 1. 分割Markdown保存（00_race_overview.md, horse_01_...md 等）
+            shutuba_map = self.conv_race_shutuba_data_to_markdown_as_separate(target_date, race_info)
+            prefix_filename = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
+
+            for key, content in shutuba_map.items():
+                if not content:
+                    continue
+                save_filename = f"{prefix_filename}-{key}"
                 venue_dir = f"{race_track}/{race_track}{race_num}"
                 self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
-                comb_contents.append(content)
-                comb_contents.append(f"\n\n")
-            # 統合ファイルを保存
-            content = "".join(comb_contents)
-            comb_save_fname = f"{fname_prefix}.md"
-            self.writer.save_as_markdown(target_date, race_track, comb_save_fname, content, is_test)
-            # 次までのアイドルタイム
+
+            # 2. 統合Markdown保存
+            comb_content = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
+            comb_save_fname = f"{prefix_filename}.md"
+            self.writer.save_as_markdown(target_date, race_track, comb_save_fname, comb_content, is_test)
+
+            # 3. 個別馬データのJSON保存 (data/horses/YYYY/MM/{horse_id}.json)
+            horse_infos = race_info.get("horse_infos", [])
+            for h_info in horse_infos:
+                h_id = h_info.get("horse_id", "")
+                if h_id:
+                    self.writer.save_horse_to_json(
+                        horse_data=h_info,
+                        horse_id=h_id,
+                        target_date=target_date,
+                        is_test=is_test,
+                    )
+
             self.wait_idle_time()
 
-    def scraping_results(self, input_date=None, course_filter=None, race_num_filter=None, is_test: bool=False):
+    def scraping_results(
+        self,
+        input_date: Optional[str] = None,
+        course_filter: Optional[List[Union[str, int]]] = None,
+        race_num_filter: Optional[List[Union[str, int]]] = None,
+        is_test: bool = False,
+    ) -> None:
         """
-        レース結果のスクレイピング
+        レース結果のスクレイピング・分析レポート生成メイン処理
         """
-        logger.info("結果のスクレイピングを開始します")
-        logger.info(f"date: {input_date}")
-
-        # 1. 目的のレースIDを取得する
-        target_date = self.determinate_target_date(input_date) if input_date else self.get_yesterday_date()
+        logger.info("レース結果のスクレイピングを開始します")
+        target_date = self.determine_target_date(input_date) if input_date else get_yesterday_date()
         target_race_ids = self.get_target_race_ids(target_date, course_filter, race_num_filter)
 
-        logger.info(f"target race ids: {target_race_ids}")
+        logger.info(f"対象レースID ({len(target_race_ids)}件): {target_race_ids}")
 
-        # 2. レースID毎に処理していく（会場ごとに結果をグループ化する構造に変更）
-        results_by_venue = {}
+        results_by_venue: Dict[str, Dict[str, Any]] = {}
+        daily_venue_results: Dict[str, List[Dict[str, Any]]] = {}
+
         for race_id in target_race_ids:
-            # レース結果
             result_info = self.fetch_race_result_by_id(race_id)
-            race_num = self.get_race_num_from_id(race_id)
-            race_track = self.get_jyo_name(race_id)
+            if not result_info or len(result_info) < 3:
+                continue
 
-            # 会場ごとに結果を蓄積する
+            race_track = self.get_jyo_name(race_id)
+            race_num = self.get_race_num_from_id(race_id)
+
             if race_track not in results_by_venue:
                 results_by_venue[race_track] = {}
-            results_by_venue[race_track][race_num] = result_info
+                daily_venue_results[race_track] = []
 
-            # データの変換
+            results_by_venue[race_track][race_num] = result_info
+            daily_venue_results[race_track].extend(result_info[2:])
+
             markdown = self.conv_race_result_data_to_markdown(target_date, race_id, result_info)
-            # データの保存
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
+
             self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
-            # 生データも別に保存
             self.writer.save_race_result_to_json(result_info, race_id, race_track, race_num, target_date, filename, is_test)
-            # 次までのアイドルタイム
+
             self.wait_idle_time()
 
-        # 3. 開催会場毎に結果からその日の馬場バイアス作成
+        # 当日バイアスレポートの生成
         for venue, venue_results in results_by_venue.items():
-            # 会場ごとのデータ、日付、会場名を渡してバイアスMarkdownを生成
+            logger.info(f"【馬場バイアス解析】{venue} の当日傾向レポートを作成中...")
             bias_md = self.analyzer.generate_daily_bias_markdown(target_date, venue_results, target_date, venue)
             bias_filename = f"{target_date}-{venue}-bias.md"
             self.writer.save_as_markdown(target_date, f"{venue}-results", bias_filename, bias_md, is_test)
 
-        # 4. 騎手と厩舎リポート作成
-        # （※保存された全場のJSONファイル群から集計するため、そのままで全場分のデータが網羅されます）
+        # 騎手・厩舎レポート作成
+        logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
 
-    def fetch_race_info_by_id(self, race_id: str) -> object:
+    def fetch_race_info_by_id(self, race_id: str) -> Dict[str, Any]:
         """
-        レース出馬情報（レース情報、出馬情報、各馬のプロフィール、各馬の戦績リスト）の取得
+        指定レースIDの出馬表・過去戦績・分析データを一括取得
         """
-        results = {}
-
+        results: Dict[str, Any] = {}
         is_nar = self.is_nar_race_id(race_id)
-
-        # レースIDからURL作成
         target_url = self.race_url_from_race_id(race_id, is_nar)
 
-        # html取得
         html_contents = fetch_js_html(target_url, SELECTOR_SHUTUBA_HP)
 
-        # レース情報取得
-        logger.info("fetch race_info")
-        results["race_info"] = self.fetcher.fetch_race_info(target_url, html_contents)
-        # 出走馬情報取得
+        logger.info(f"fetch race_info: {race_id}")
+        race_info = self.fetcher.fetch_race_info(target_url, html_contents)
+        results["race_info"] = race_info
+
         logger.info("fetch shutuba horses")
-        results["shutuba_horses"] = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
-        # リスト内包表記を使って horse_url だけを抽出する
-        #horse_urls = [horse["horse_url"] for horse in shutuba_horses_list]
+        shutuba_horses = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
+        results["shutuba_horses"] = shutuba_horses
+
         horses_data = []
-        logger.info("fetch horses data")
-        for horse_row in results["shutuba_horses"]:
-            data = {}
-            horse_id = horse_row["horse_id"]
-            horse_url = horse_row["horse_url"]
-            horse_name = horse_row["horse_name"]
-            # 馬のページ取得
+        logger.info("fetch horses detailed profiles & history")
+
+        for horse_row in shutuba_horses:
+            data: Dict[str, Any] = {}
+            horse_id = horse_row.get("horse_id", "")
+            horse_url = horse_row.get("horse_url", "")
+            horse_name = horse_row.get("horse_name", "")
+
+            if not horse_url:
+                continue
+
             horse_html = fetch_js_html(horse_url, SELECTOR_HORSE_DB)
-            # 馬のプロフィール取得
             data["horse_id"] = horse_id
             data["horse_name"] = horse_name
             data["horse_prof"] = self.fetcher.fetch_horse_profile(horse_html)
+
             history = self.fetcher.fetch_horse_history(horse_html)
             data["horse_history"] = history
-            # 馬のレースデータ分析
+
             if history:
-                # タイム
-                analyzed_data = self.analyzer.analyze_horse_history(history)
-                data["analyzed_data"] = analyzed_data
+                data["analyzed_data"] = self.analyzer.analyze_horse_history(history)
+                data["refine_history"] = self.analyzer.refine_data_horse_history(history)
             else:
                 data["analyzed_data"] = "- 戦績データがない、または新馬です。\n\n"
+                data["refine_history"] = "> データなし\n\n"
+
             horses_data.append(data)
-            # 次の取得までのアイドルタイム
             self.wait_idle_time()
+
         results["horse_infos"] = horses_data
         return results
 
-    def fetch_race_result_by_id(self, race_id: str) -> list:
+    def fetch_race_result_by_id(self, race_id: str) -> List[Dict[str, Any]]:
+        """
+        指定レースIDの結果HTMLを取得してパース
+        """
         is_nar = self.is_nar_race_id(race_id)
-
-        # レースIDからURL作成
         target_url = self.race_result_url_from_race_id(race_id, is_nar)
 
-        # html取得
         html_contents = fetch_js_html(target_url, SELECTOR_RESULT_HP)
+        return self.fetcher.fetch_race_result(target_url, html_contents)
 
-        # レース結果情報取得
-        result = self.fetcher.fetch_race_result(target_url, html_contents)
-
-        return result
-
-    def conv_race_shutuba_data_to_markdown(self, target_date: str, race_info: list[dict]) -> str:
-        """レース出馬情報等をmarkdownに変換する"""
+    def conv_race_shutuba_data_to_markdown(self, target_date: str, race_info: Dict[str, Any]) -> str:
+        """
+        出走馬全頭のデータを1つのMarkdownに統合
+        """
         results = []
-
-        # レース基本情報
-        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info["race_info"])
+        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info.get("race_info", {}))
         results.append(race_base_info + "\n\n")
-        # 出馬情報
-        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info["shutuba_horses"])
+
+        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info.get("shutuba_horses", []))
         results.append(shutuba_info + "\n\n")
-        # 馬のプロフィールと戦績
-        horse_infos = race_info["horse_infos"]
+
+        horse_infos = race_info.get("horse_infos", [])
         for h_info in horse_infos:
-            h_id = h_info["horse_id"]
-            h_name = h_info["horse_name"]
-            h_prof = h_info["horse_prof"]
-            h_hist = h_info["horse_history"]
-            h_anal = h_info["analyzed_data"]
-            # 各情報取得
+            h_id = h_info.get("horse_id", "")
+            h_name = h_info.get("horse_name", "")
+            h_prof = h_info.get("horse_prof", {})
+            h_hist = h_info.get("horse_history", [])
+            h_anal = h_info.get("analyzed_data", "")
+
             prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
-            #history = self.formatter.conv_history_to_markdown(h_hist)
-            history = self.analyzer.refine_data_horse_history(h_hist)
-            # データ整形してmarkdownにまとめる
-            results.append(f"### 馬ID：{h_id}／馬名：{h_name}" + "\n\n")
-            results.append(f"#### プロフィール\n\n")
-            results.append(prof + "\n\n")
-            results.append(f"#### 過去戦績\n\n")
-            results.append(history + "\n\n")
-            results.append(f"#### データ分析\n\n")
-            results.append(h_anal + "\n\n")
-        
-        # データ結合
+            history = self.analyzer.refine_data_horse_history(h_hist) if h_hist else h_info.get("refine_history", "")
+
+            results.append(f"### 馬ID：{h_id}／馬名：{h_name}\n\n")
+            results.append("#### プロフィール\n\n" + prof + "\n\n")
+            results.append("#### 過去戦績\n\n" + history + "\n\n")
+            results.append("#### データ分析\n\n" + h_anal + "\n\n")
+
         return "".join(results)
 
-    def conv_race_shutuba_data_to_markdown_as_serapare(self, target_date: str, race_info: dict) -> dict[str, str]:
+    def conv_race_shutuba_data_to_markdown_as_separate(self, target_date: str, race_info: Dict[str, Any]) -> Dict[str, str]:
         """
-        レース出馬情報等をファイルごとに分割して保存しやすいよう、
-        {ファイル名: Markdown文字列} の辞書形式で返す。
+        出走馬データを個別ファイル（辞書形式）に分割
         """
         files_dict = {}
 
-        # 1. レース概要ファイル（基本情報 ＋ 出馬表）
         overview_results = []
-        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info["race_info"])
+        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info.get("race_info", {}))
         overview_results.append(race_base_info + "\n\n")
-    
-        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info["shutuba_horses"])
+
+        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info.get("shutuba_horses", []))
         overview_results.append(shutuba_info + "\n\n")
-    
+
         files_dict["00_race_overview.md"] = "".join(overview_results)
 
-        # 2. 各馬ごとの個別ファイル（1頭1ファイル構成）
-        horse_infos = race_info["horse_infos"]
+        horse_infos = race_info.get("horse_infos", [])
         for idx, h_info in enumerate(horse_infos, start=1):
-            h_id = h_info["horse_id"]
-            h_name = h_info["horse_name"]
-            h_prof = h_info["horse_prof"]
-            h_hist = h_info["horse_history"]
-            h_anal = h_info["analyzed_data"]
+            h_id = h_info.get("horse_id", "")
+            h_name = h_info.get("horse_name", "")
+            h_prof = h_info.get("horse_prof", {})
+            h_hist = h_info.get("horse_history", [])
+            h_anal = h_info.get("analyzed_data", "")
 
-            # 各情報取得
             prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
-            history = self.analyzer.refine_data_horse_history(h_hist)
+            history = self.analyzer.refine_data_horse_history(h_hist) if h_hist else h_info.get("refine_history", "")
 
-            # 馬ごとのMarkdownを構築
-            horse_results = []
-            # 各ファイルのトップに見出しを置き、AIがどの馬のデータか即座に認識できるようにする
-            horse_results.append(f"# 馬番：{idx:02d}（馬ID：{h_id}）／馬名：{h_name}\n\n")
-            horse_results.append(f"## プロフィール\n\n{prof}\n\n")
-            horse_results.append(f"## 過去戦績\n\n{history}\n\n")
-            horse_results.append(f"## データ分析\n\n{h_anal}\n\n")
+            horse_results = [
+                f"# 馬番：{idx:02d}（馬ID：{h_id}）／馬名：{h_name}\n\n",
+                f"## プロフィール\n\n{prof}\n\n",
+                f"## 過去戦績\n\n{history}\n\n",
+                f"## データ分析\n\n{h_anal}\n\n",
+            ]
 
-            # ファイル名に馬番（ゼロ埋め）と馬名を含める（ファイルシステムで安全な形に置換）
             safe_horse_name = h_name.replace("/", "_").replace(" ", "_")
             filename = f"horse_{idx:02d}_{safe_horse_name}.md"
-
             files_dict[filename] = "".join(horse_results)
 
         return files_dict
 
-    def conv_race_result_data_to_markdown(self, target_date: str, race_id: str, race_result: list[dict]) -> str:
-        """レース結果をmarkdownに変換する"""
-        results = []
+    # タイポ互換用エイリアス
+    conv_race_shutuba_data_to_markdown_as_serapare = conv_race_shutuba_data_to_markdown_as_separate
 
+    def conv_race_result_data_to_markdown(self, target_date: str, race_id: str, race_result: List[Dict[str, Any]]) -> str:
+        """
+        レース結果データをMarkdownテキストに変換
+        """
         jyo_name = self.get_jyo_name(race_id)
         race_num = self.get_race_num_from_id(race_id)
-        # タイトル行
-        results.append(f"# レースID：{race_id}\n\n")
-        results.append(f"## レース：{jyo_name} - {race_num}R\n\n")
-        # 結果ページ
-        race_result_md = self.formatter.conv_race_result_to_markdown(target_date, race_result)
-        results.append(race_result_md + "\n\n")
 
-        # データ結合
+        results = [
+            f"# レースID：{race_id}\n\n",
+            f"## レース：{jyo_name} - {race_num}R\n\n",
+            self.formatter.conv_race_result_to_markdown(target_date, race_result) + "\n\n",
+        ]
         return "".join(results)
 
-    def get_target_race_ids(self, date, course_filter, race_num_filter) -> list:
+    def get_target_race_ids(
+        self,
+        date: str,
+        course_filter: Optional[List[Union[str, int]]] = None,
+        race_num_filter: Optional[List[Union[str, int]]] = None,
+    ) -> List[str]:
         """
-        目的のレースIDリストを返す
+        指定条件でフィルタリングしたレースIDリストを取得
         """
         results = []
-        # 地方競馬、中央競馬、両方を回す
         for is_nar in [True, False]:
-            results += self.get_kaisai_ids(date, is_nar)
+            results.extend(self.get_kaisai_ids(date, is_nar))
 
-        # ばんえい、不明は除外する
-        results = self.exclued_race_ids(results)
+        results = self.exclude_race_ids(results)
 
-        logger.info(f"check taget ids before: {results}")
-
-        # 指定がある場合はフィルタリングする
         if results and (course_filter or race_num_filter):
-            filtered_ids = self.filtered_race_ids(results, course_filter, race_num_filter)
-            return filtered_ids
-        else:
-            return results
+            return self.filtered_race_ids(results, course_filter, race_num_filter)
+        return results
 
-    def get_kaisai_ids(self, date: str, is_nar: bool):
+    def get_kaisai_ids(self, date: str, is_nar: bool) -> List[str]:
         """
-        指定日の開催IDリスト（10桁）を取得
+        指定日の開催IDリストを取得
         """
         top_url = self.get_top_page_url(date, is_nar)
-
-        # ページをDUMPする
         html_contents = fetch_js_html(top_url, SELECTOR_KAISAI_HP)
-
         return self.fetcher.fetch_kaisai_race_ids(top_url, html_contents)
 
-    def filtered_race_ids(self, kaisai_ids: list, course_codes: list, race_nums: list):
+    def filtered_race_ids(
+        self,
+        kaisai_ids: List[str],
+        course_codes: Optional[List[Union[str, int]]],
+        race_nums: Optional[List[Union[str, int]]],
+    ) -> List[str]:
         """
-        フィルタリングしたレースIDを返す
+        レースIDリストを会場コードおよびレース番号でフィルタリング
         """
         results = kaisai_ids
-        # 開催会場でフィルタリング
         if course_codes:
             results = self.filter_race_ids_by_course(results, course_codes)
-        # レース番号でフィルタリング
         if race_nums:
             results = self.filter_race_ids_by_number(results, race_nums)
         return results
 
     def get_top_page_url(self, target_date: str, is_nar: bool = True) -> str:
-        """日付から開催トップページのURLを生成する"""
         domain = self.netkeiba_domain_from(is_nar)
         return f"https://{domain}.netkeiba.com/top/race_list.html?kaisai_date={target_date}"
 
     def netkeiba_domain_from(self, is_nar: bool) -> str:
-        return 'nar' if is_nar else 'race'
+        return "nar" if is_nar else "race"
 
-    def determinate_target_date(self, input_date: str) -> str:
-        """
-        取得する日付の決定
-        - 指定がある場合>>指定日を返す
-        - 指定がない場合>>nowの日付を返す
-        """
-        return self.normalize_date_format(input_date if input_date else self.get_today_jst())
+    def determine_target_date(self, input_date: Optional[str]) -> str:
+        return determine_target_date(input_date)
+
+    # タイポ互換用エイリアス
+    determinate_target_date = determine_target_date
 
     def get_today_jst(self) -> str:
-        """現在の日本時間を 'YYYYMMDD' 形式で返す"""
-        # UTC+9時間（日本時間）のタイムゾーンを定義
-        # 現在時刻をJSTで取得
-        return datetime.now(timezone(timedelta(hours=9), 'JST')).strftime('%Y%m%d')
+        return get_today_jst()
 
-    def normalize_date_format(self, date_val) -> str:
-        """あらゆる日付形式を 8桁の文字列ID 'YYYYMMDD' に変換する"""
-        if not date_val:
-            return ""
+    def get_yesterday_date(self) -> str:
+        return get_yesterday_date()
 
-        # すでに 20260327 形式の文字列ならそのまま返す
-        if isinstance(date_val, str) and len(date_val) == 8 and date_val.isdigit():
-            return date_val
-
-        # datetimeオブジェクトの場合
-        if isinstance(date_val, datetime):
-            return date_val.strftime('%Y%m%d')
-
-        # それ以外（ハイフンあり文字列など）
-        date_str = str(date_val).strip()
-        # 数字だけを抽出
-        normalized = "".join(filter(str.isdigit, date_str))
-    
-        return normalized
+    def normalize_date_format(self, date_val: Any) -> str:
+        return normalize_date_format(date_val)
 
     def get_jyo_name(self, kaisai_id: str) -> str:
-        """10桁または12桁のIDから会場名を特定"""
-        if not kaisai_id or len(kaisai_id) < 6:
+        if not kaisai_id or len(str(kaisai_id)) < 6:
             return "不明"
-            
-        code = kaisai_id[4:6]
-        # 定数から取得。なければ "不明" を返す
+        code = str(kaisai_id)[4:6]
         return JYO_NAME_MAP.get(code, "不明")
 
     def get_race_num_from_id(self, race_id: str) -> str:
-        """レースIDからレース番号を取得"""
-        return str(race_id)[-2:]
+        return get_race_num_from_id(race_id)
 
-    def exclued_race_ids(self, kaisai_ids: list) -> list:
-        """レースIDリストから、除外対象を取り除く"""
+    def exclude_race_ids(self, kaisai_ids: List[str]) -> List[str]:
+        """
+        除外対象コース（ばんえい等）のレースIDを取り除く
+        """
         valid_ids_list = []
         for k_id in kaisai_ids:
             actual_course = self.get_jyo_name(k_id)
-        
             if actual_course in EXCLUDE_COURSES:
                 logger.info(f"スキップ中: {actual_course}({k_id}) は取得対象外です。")
                 continue
             valid_ids_list.append(k_id)
         return valid_ids_list
 
-    def filter_race_ids_by_course(self, race_ids: list, target_course_codes: list) -> list:
-        """
-        レースIDリストの中から、指定した会場コードに合致するものだけを抽出する
-    
-        Args:
-            race_ids (list): IDのリスト
-            target_course_codes (list): ['44', '54'] のような場所コードのリスト
-    
-        Returns:
-            list: フィルタリングされたレースIDリスト
-        """
+    # タイポ互換用エイリアス
+    exclued_race_ids = exclude_race_ids
+
+    def filter_race_ids_by_course(self, race_ids: List[str], target_course_codes: List[Union[str, int]]) -> List[str]:
         if not race_ids:
             return []
-    
-        # 文字列として比較するために正規化 (54 -> "54")
         target_codes = [str(c).zfill(2) for c in target_course_codes]
-    
-        # IDの5-6文字目が場所コード
-        filtered = [
-            rid for rid in race_ids 
-            if str(rid)[4:6] in target_codes
-        ]
-    
+        filtered = [rid for rid in race_ids if get_course_code_from_id(rid) in target_codes]
         return sorted(filtered)
 
     def is_nar_race_id(self, race_id: str) -> bool:
-        """レースIDから開催場所がNARかJRAか判別する"""
-        return int(str(race_id)[4:6]) > JRA_MAX_COURSE_CODE
+        return is_nar_race_id(race_id)
 
-    def filter_race_ids_by_number(self, race_ids: list, target_nums: list) -> list:
-        """
-        レースIDリストの中から、指定したレース番号に合致するものだけを抽出する
-    
-        Args:
-            race_ids (list): ['202654032801', '202654032802', ...] のようなIDリスト
-            target_nums (list): [1, 11] のような取得したいレース番号のリスト
-    
-        Returns:
-            list: フィルタリングされたレースIDリスト
-        """
+    def filter_race_ids_by_number(self, race_ids: List[str], target_nums: List[Union[str, int]]) -> List[str]:
         if not race_ids:
             return []
-    
-        # 比較用にターゲット番号を文字列の2桁ゼロ埋めに変換しておく (1 -> "01")
         target_str_list = [str(n).zfill(2) for n in target_nums]
-    
-        # 末尾2桁がターゲットに含まれるものだけを抽出
-        filtered = [
-            rid for rid in race_ids 
-            if str(rid)[-2:] in target_str_list
-        ]
-    
+        filtered = [rid for rid in race_ids if get_race_num_from_id(rid) in target_str_list]
         return sorted(filtered)
 
     def race_url_from_race_id(self, race_id: str, is_nar: bool) -> str:
-        """レースIDからURL作成"""
         domain = self.netkeiba_domain_from(is_nar)
         return f"https://{domain}.netkeiba.com/race/shutuba.html?race_id={race_id}"
-    
+
     def race_result_url_from_race_id(self, race_id: str, is_nar: bool) -> str:
-        """レースIDからURL作成"""
         domain = self.netkeiba_domain_from(is_nar)
         return f"https://{domain}.netkeiba.com/race/result.html?race_id={race_id}"
 
-    def get_yesterday_date(self) -> str:
-        """現在時刻から昨日の日付を取得"""
-        # 日本時間（JST: UTC+9）のタイムゾーンを定義
-        JST = timezone(timedelta(hours=9))
-
-        # 日本時間での「現在時刻」を取得
-        now_jst = datetime.now(JST)
-        # 日本時間ベースで「前日」の日付を計算
-        target_date = (now_jst - timedelta(days=1)).strftime("%Y%m%d")
-
-        return target_date
-
-    def wait_idle_time(self):
+    def wait_idle_time(self) -> None:
         sleep_time = random.uniform(2.5, 5.0)
         time.sleep(sleep_time)

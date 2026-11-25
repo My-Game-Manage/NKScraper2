@@ -143,3 +143,47 @@ class NkWriter:
             raise e
 
         return file_path
+
+    def save_horse_to_json(
+        self,
+        horse_data: Dict[str, Any],
+        horse_id: str,
+        target_date: str = "",
+        is_test: bool = False,
+    ) -> Path:
+        """
+        個別の馬データを日付によらない汎用フォルダ data/horses/ 配下に {horse_id}.json として直接保存（上書き更新）する
+
+        Args:
+            horse_data (Dict[str, Any]): 馬のデータ辞書 (horse_name, horse_prof, horse_history, analyzed_data など)
+            horse_id (str): 馬ID (例: "2021104567")
+            target_date (str): 取得・更新日付 (例: "20261011")
+            is_test (bool): テスト環境フラグ (Trueの場合 data_test 配下に保存)
+
+        Returns:
+            Path: 保存されたJSONファイルのパス
+        """
+        base_dir = Path("data_test/horses") if is_test else Path("data/horses")
+        base_dir.mkdir(parents=True, exist_ok=True)
+
+        file_path = base_dir / f"{horse_id}.json"
+
+        payload = {
+            "horse_id": horse_id,
+            "horse_name": horse_data.get("horse_name", ""),
+            "updated_at": target_date,
+            "horse_prof": horse_data.get("horse_prof", {}),
+            "horse_history": horse_data.get("horse_history", []),
+            "analyzed_data": horse_data.get("analyzed_data", ""),
+            "refine_history": horse_data.get("refine_history", ""),
+        }
+
+        try:
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            logger.info(f"馬データのJSON保存に成功しました: {file_path}")
+        except Exception as e:
+            logger.error(f"馬データのJSON保存に失敗しました ({file_path}): {e}")
+            raise e
+
+        return file_path
