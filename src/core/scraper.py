@@ -8,6 +8,7 @@ from src.core.fetcher import NkFetcher
 from src.core.writer import NkWriter
 from src.core.formatter import NkFormatter
 from src.core.analyzer import NkAnalyzer
+from src.core.report_analyzer import NkReportAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.client.all_html_dump import fetch_js_html
 from src.core.generate_personnel_report import generate_daily_personnel_reports

@@ -13,7 +13,7 @@ from src.utils.text_utils import (
     dataframe_to_markdown_table,
     simplify_track_condition,
 )
-from report_analyzer import NkReportAnalyzer, prepare_flat_dataframe
+from src.core.report_analyzer import NkReportAnalyzer, prepare_flat_dataframe
 
 logger = logging.getLogger(__name__)
 
