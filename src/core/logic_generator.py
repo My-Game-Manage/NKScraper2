@@ -3,7 +3,7 @@ logic_generator.py - 会場別プロトコルおよび自動検出パッチ対�
 
 simulator.py の VenueRuleFinder / ParameterOptimizer で算出された
 会場別最適化パラメータおよび統計的特例パッチ（重馬場補正、枠順リスク等）を読み込み、
-Gemini Notebook が解釈可能な統合予想プロトコル Markdown (logic-{venue}-v1.8.md) を自動作成します。
+Gemini Notebook が解釈可能な統合予想プロトコル Markdown を自動作成します。
 """
 
 import logging
@@ -150,34 +150,23 @@ class NkLogicGenerator:
         target_venue: str = "全場共通",
         backtest_stats: Optional[Dict[str, Any]] = None,
         detected_patches: Optional[List[Dict[str, Any]]] = None,
-        target_date: str = "20261125",
+        target_date: str = "20261126",
+        save_latest_copy: bool = True,
         is_test: bool = False,
-    ) -> Path:
-        """Markdownプロトコルをファイルとして保存"""
+    ) -> List[Path]:
+        """Markdownプロトコルをファイルとして保存する"""
         content = self.generate_markdown_protocol(config, version, target_venue, backtest_stats, detected_patches)
-        filename = f"logic-{target_venue.lower()}-{version}.md"
-        return self.writer.save_as_markdown(target_date, "protocols", filename, content, is_test)
+        saved_paths = []
+        
+        # 1. 日付/バージョン指定ファイル名 (例: logic-浦和-v1.8-20261126.md または logic-浦和-20261126.md)
+        filename = f"logic-{target_venue}-{version}-{target_date}.md" if target_date else f"logic-{target_venue}-{version}.md"
+        path = self.writer.save_as_markdown(target_date or "protocols", f"protocols/{target_venue}", filename, content, is_test)
+        saved_paths.append(path)
 
+        # 2. 最新参照用固定ファイル名 (例: logic-浦和-latest.md)
+        if save_latest_copy:
+            latest_filename = f"logic-{target_venue}-latest.md"
+            latest_path = self.writer.save_as_markdown(target_date or "protocols", f"protocols/{target_venue}", latest_filename, content, is_test)
+            saved_paths.append(latest_path)
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    generator = NkLogicGenerator()
-    dummy_config = SimulationConfig()
-    dummy_patches = [
-        {
-            "rule_id": "BAD_TRACK_FRONT_RUNNER_BOOST",
-            "title": "【自動検出パッチ】大井・重/不良馬場における前残り・ポジション倍率強化",
-            "condition": "馬場状態が『重』または『不良』の開催日",
-            "effect_description": "4角3番手以内の展開想定馬に対し、ポジションスコアを 1.25倍〜1.3倍（+5〜8点）へ自動増幅",
-            "score_delta": 6.0
-        }
-    ]
-    md = generator.generate_markdown_protocol(
-        config=dummy_config,
-        version="v1.8",
-        target_venue="大井",
-        backtest_stats={"total_races": 45, "recovery_rate": 118.4, "hit_rate": 31.1},
-        detected_patches=dummy_patches
-    )
-    print("=== 生成テスト ===")
-    print(md[:600])
+        return saved_paths
