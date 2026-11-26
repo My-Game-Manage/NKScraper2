@@ -12,6 +12,8 @@ from src.core.report_analyzer import NkReportAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.client.all_html_dump import fetch_js_html
 from src.core.generate_personnel_report import generate_daily_personnel_reports
+from src.core.simulator import SimulationEngine, VenueRuleFinder
+from src.core.logic_generator import NkLogicGenerator
 
 from src.utils.date_utils import (
     get_today_jst,
@@ -48,6 +50,67 @@ class NkScraper:
         self.base_dir = base_dir
         os.makedirs(self.base_dir, exist_ok=True)
 
+    def update_logic_protocols(
+        self,
+        target_date: Optional[str] = None,
+        is_test: bool = False,
+        save_latest_copy: bool = True,
+    ) -> Dict[str, Any]:
+        """
+        蓄積されたレース結果JSONと馬データから会場別の最適パラメータ・特例パッチを自動抽出し、
+        日付スタンプ付き (例: logic-浦和-20261126.md) および 最新参照用 (logic-浦和-latest.md)
+        の両形式で予想プロトコルMarkdownを自動更新・保存する
+        """
+        date_str = self.normalize_date_format(target_date) if target_date else get_today_jst()
+        results_dir = "data_test/results" if is_test else "data/results"
+        horses_dir = "data_test/horses" if is_test else "data/horses"
+
+        sim_engine = SimulationEngine(results_dir=results_dir, horses_dir=horses_dir)
+        finder = VenueRuleFinder(sim_engine)
+        venue_results = finder.analyze_all_venues()
+
+        generator = NkLogicGenerator(writer=self.writer)
+        saved_paths = {}
+
+        for venue_name, data in venue_results.items():
+            if data.get("race_count", 0) == 0:
+                continue
+
+            md_content = generator.generate_markdown_protocol(
+                config=data["best_config"],
+                version=f"v1.8-{date_str}",
+                target_venue=venue_name,
+                backtest_stats=data["best_stats"],
+                detected_patches=data["patches"],
+            )
+
+            # 1. 日付スタンプ付きファイル名 (例: logic-浦和-20261126.md)
+            date_filename = f"logic-{venue_name}-{date_str}.md"
+            venue_dir = f"protocols/{venue_name}"
+            saved_date_path = self.writer.save_as_markdown(
+                target_date=date_str,
+                track_name=venue_dir,
+                filename=date_filename,
+                contents=md_content,
+                is_test=is_test,
+            )
+
+            # 2. 最新参照用固定ファイル名 (例: logic-浦和-latest.md)
+            if save_latest_copy:
+                latest_filename = f"logic-{venue_name}-latest.md"
+                self.writer.save_as_markdown(
+                    target_date="latest",
+                    track_name=venue_dir,
+                    filename=latest_filename,
+                    contents=md_content,
+                    is_test=is_test,
+                )
+
+            saved_paths[venue_name] = saved_date_path
+            logger.info(f"【プロトコル更新完了】{venue_name}: {saved_date_path}")
+
+        return saved_paths
+
     def scraping_races(
         self,
         input_date: Optional[str] = None,
@@ -74,7 +137,7 @@ class NkScraper:
             race_track = info.get("race_track", self.get_jyo_name(race_id))
             race_num = info.get("race_num", self.get_race_num_from_id(race_id))
 
-            # 1. 分割Markdown保存（00_race_overview.md, horse_01_...md 等）
+            # 分割保存
             shutuba_map = self.conv_race_shutuba_data_to_markdown_as_separate(target_date, race_info)
             prefix_filename = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
 
@@ -85,12 +148,12 @@ class NkScraper:
                 venue_dir = f"{race_track}/{race_track}{race_num}"
                 self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
 
-            # 2. 統合Markdown保存
+            # 統合ファイル保存
             comb_content = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
             comb_save_fname = f"{prefix_filename}.md"
             self.writer.save_as_markdown(target_date, race_track, comb_save_fname, comb_content, is_test)
 
-            # 3. 個別馬データのJSON保存 (data/horses/YYYY/MM/{horse_id}.json)
+            # 個別馬データJSON保存
             horse_infos = race_info.get("horse_infos", [])
             for h_info in horse_infos:
                 h_id = h_info.get("horse_id", "")
@@ -157,27 +220,23 @@ class NkScraper:
         logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
 
+        # 最新蓄積データに基づく会場別プロトコルの自動更新
+        logger.info("【プロトコル自動更新】最新結果データに基づく会場別プロトコルを更新中...")
+        self.update_logic_protocols(target_date=target_date, is_test=is_test)
+
     def fetch_race_info_by_id(self, race_id: str) -> Dict[str, Any]:
-        """
-        指定レースIDの出馬表・過去戦績・分析データを一括取得
-        """
         results: Dict[str, Any] = {}
         is_nar = self.is_nar_race_id(race_id)
         target_url = self.race_url_from_race_id(race_id, is_nar)
-
         html_contents = fetch_js_html(target_url, SELECTOR_SHUTUBA_HP)
 
-        logger.info(f"fetch race_info: {race_id}")
         race_info = self.fetcher.fetch_race_info(target_url, html_contents)
         results["race_info"] = race_info
 
-        logger.info("fetch shutuba horses")
         shutuba_horses = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
         results["shutuba_horses"] = shutuba_horses
 
         horses_data = []
-        logger.info("fetch horses detailed profiles & history")
-
         for horse_row in shutuba_horses:
             data: Dict[str, Any] = {}
             horse_id = horse_row.get("horse_id", "")
@@ -209,19 +268,12 @@ class NkScraper:
         return results
 
     def fetch_race_result_by_id(self, race_id: str) -> List[Dict[str, Any]]:
-        """
-        指定レースIDの結果HTMLを取得してパース
-        """
         is_nar = self.is_nar_race_id(race_id)
         target_url = self.race_result_url_from_race_id(race_id, is_nar)
-
         html_contents = fetch_js_html(target_url, SELECTOR_RESULT_HP)
         return self.fetcher.fetch_race_result(target_url, html_contents)
 
     def conv_race_shutuba_data_to_markdown(self, target_date: str, race_info: Dict[str, Any]) -> str:
-        """
-        出走馬全頭のデータを1つのMarkdownに統合
-        """
         results = []
         race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info.get("race_info", {}))
         results.append(race_base_info + "\n\n")
@@ -248,9 +300,6 @@ class NkScraper:
         return "".join(results)
 
     def conv_race_shutuba_data_to_markdown_as_separate(self, target_date: str, race_info: Dict[str, Any]) -> Dict[str, str]:
-        """
-        出走馬データを個別ファイル（辞書形式）に分割
-        """
         files_dict = {}
 
         overview_results = []
@@ -286,13 +335,7 @@ class NkScraper:
 
         return files_dict
 
-    # タイポ互換用エイリアス
-    conv_race_shutuba_data_to_markdown_as_serapare = conv_race_shutuba_data_to_markdown_as_separate
-
     def conv_race_result_data_to_markdown(self, target_date: str, race_id: str, race_result: List[Dict[str, Any]]) -> str:
-        """
-        レース結果データをMarkdownテキストに変換
-        """
         jyo_name = self.get_jyo_name(race_id)
         race_num = self.get_race_num_from_id(race_id)
 
@@ -309,9 +352,6 @@ class NkScraper:
         course_filter: Optional[List[Union[str, int]]] = None,
         race_num_filter: Optional[List[Union[str, int]]] = None,
     ) -> List[str]:
-        """
-        指定条件でフィルタリングしたレースIDリストを取得
-        """
         results = []
         for is_nar in [True, False]:
             results.extend(self.get_kaisai_ids(date, is_nar))
@@ -323,9 +363,6 @@ class NkScraper:
         return results
 
     def get_kaisai_ids(self, date: str, is_nar: bool) -> List[str]:
-        """
-        指定日の開催IDリストを取得
-        """
         top_url = self.get_top_page_url(date, is_nar)
         html_contents = fetch_js_html(top_url, SELECTOR_KAISAI_HP)
         return self.fetcher.fetch_kaisai_race_ids(top_url, html_contents)
@@ -336,9 +373,6 @@ class NkScraper:
         course_codes: Optional[List[Union[str, int]]],
         race_nums: Optional[List[Union[str, int]]],
     ) -> List[str]:
-        """
-        レースIDリストを会場コードおよびレース番号でフィルタリング
-        """
         results = kaisai_ids
         if course_codes:
             results = self.filter_race_ids_by_course(results, course_codes)
@@ -355,9 +389,6 @@ class NkScraper:
 
     def determine_target_date(self, input_date: Optional[str]) -> str:
         return determine_target_date(input_date)
-
-    # タイポ互換用エイリアス
-    determinate_target_date = determine_target_date
 
     def get_today_jst(self) -> str:
         return get_today_jst()
@@ -378,9 +409,6 @@ class NkScraper:
         return get_race_num_from_id(race_id)
 
     def exclude_race_ids(self, kaisai_ids: List[str]) -> List[str]:
-        """
-        除外対象コース（ばんえい等）のレースIDを取り除く
-        """
         valid_ids_list = []
         for k_id in kaisai_ids:
             actual_course = self.get_jyo_name(k_id)
@@ -389,9 +417,6 @@ class NkScraper:
                 continue
             valid_ids_list.append(k_id)
         return valid_ids_list
-
-    # タイポ互換用エイリアス
-    exclued_race_ids = exclude_race_ids
 
     def filter_race_ids_by_course(self, race_ids: List[str], target_course_codes: List[Union[str, int]]) -> List[str]:
         if not race_ids:
