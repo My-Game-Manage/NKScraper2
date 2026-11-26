@@ -12,6 +12,8 @@ from src.core.report_analyzer import NkReportAnalyzer
 from src.constants.netkeibatag import JYO_NAME_MAP, EXCLUDE_COURSES, JRA_MAX_COURSE_CODE
 from src.client.all_html_dump import fetch_js_html
 from src.core.generate_personnel_report import generate_daily_personnel_reports
+from src.core.simulator import SimulationEngine, VenueRuleFinder
+from src.core.logic_generator import NkLogicGenerator
 
 from src.utils.date_utils import (
     get_today_jst,
@@ -156,6 +158,10 @@ class NkScraper:
         # 騎手・厩舎レポート作成
         logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
+
+        # 【追加】最新蓄積データに基づく会場別プロトコルの自動更新
+        logger.info("【プロトコル自動更新】会場別予想プロトコルを更新中...")
+        self.update_logic_protocols(is_test=is_test)
 
     def fetch_race_info_by_id(self, race_id: str) -> Dict[str, Any]:
         """
@@ -421,3 +427,44 @@ class NkScraper:
     def wait_idle_time(self) -> None:
         sleep_time = random.uniform(2.5, 5.0)
         time.sleep(sleep_time)
+
+    def update_logic_protocols(self, is_test: bool = False) -> Dict[str, Any]:
+        """
+        蓄積されたレース結果JSONと馬データから会場別の最適パラメータ・特例パッチを自動抽出し、
+        Gemini Notebook用の予想プロトコルMarkdown（logic-{venue}-v1.8.md）を自動更新・保存する
+        """
+        results_dir = "data_test/results" if is_test else "data/results"
+        horses_dir = "data_test/horses" if is_test else "data/horses"
+
+        sim_engine = SimulationEngine(results_dir=results_dir, horses_dir=horses_dir)
+        finder = VenueRuleFinder(sim_engine)
+        venue_results = finder.analyze_all_venues()
+
+        generator = NkLogicGenerator(writer=self.writer)
+        saved_paths = {}
+
+        for venue_name, data in venue_results.items():
+            if data.get("race_count", 0) == 0:
+                continue
+
+            md_content = generator.generate_markdown_protocol(
+                config=data["best_config"],
+                version="v1.8",
+                target_venue=venue_name,
+                backtest_stats=data["best_stats"],
+                detected_patches=data["patches"],
+            )
+
+            filename = f"logic-{venue_name}-v1.8.md"
+            # data/protocols/{venue_name}/logic-{venue_name}-v1.8.md に保存
+            saved_path = self.writer.save_as_markdown(
+                target_date="protocols",
+                track_name=venue_name,
+                filename=filename,
+                contents=md_content,
+                is_test=is_test,
+            )
+            saved_paths[venue_name] = saved_path
+            logger.info(f"【プロトコル更新完了】{venue_name}: {saved_path}")
+
+        return saved_paths
