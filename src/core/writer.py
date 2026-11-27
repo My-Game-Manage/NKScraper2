@@ -77,7 +77,7 @@ class NkWriter:
         race_num: str,
         target_date: str = "",
         is_test: bool = False,
-    ) -> Path:
+    ) -> Optional[Path]:
         """
         出馬表データを data/shutuba/YYYY/MM/ 階層に構造化JSONとして保存する
 
@@ -90,8 +90,16 @@ class NkWriter:
             is_test (bool): テスト環境フラグ
 
         Returns:
-            Path: 保存されたJSONファイルのパス
+            Optional[Path]: 保存されたJSONファイルのパス (空データ・不完全データの場合は None)
         """
+        info = race_info_dict.get("race_info", {}) if isinstance(race_info_dict, dict) else {}
+        shutuba_horses = race_info_dict.get("shutuba_horses", []) if isinstance(race_info_dict, dict) else []
+
+        # タイムアウト等で出走馬データがない・または空データの場合はファイルを生成しない
+        if not shutuba_horses:
+            logger.warning(f"⚠️ 出走馬データ(shutuba_horses)が空のため、出馬表JSONの保存をスキップします: race_id={race_id}")
+            return None
+
         base_dir = Path("data_test/shutuba") if is_test else Path("data/shutuba")
 
         if target_date:
@@ -105,9 +113,6 @@ class NkWriter:
         formatted_rnum = str(race_num).zfill(2)
         json_filename = f"{target_date}-{race_track}{formatted_rnum}R.json" if target_date and race_track else f"{race_id}.json"
         file_path = save_dir / json_filename
-
-        info = race_info_dict.get("race_info", {})
-        shutuba_horses = race_info_dict.get("shutuba_horses", [])
 
         payload = {
             "race_id": race_id,
@@ -144,10 +149,15 @@ class NkWriter:
         target_date: str = "",
         filename: str = "",
         is_test: bool = False,
-    ) -> Path:
+    ) -> Optional[Path]:
         """
         レース結果データを data/results/YYYY/MM/ 階層に構造化JSONとして保存する
         """
+        results_list = data_list[2:] if len(data_list) > 2 else []
+        if not results_list:
+            logger.warning(f"⚠️ レース結果データが空のため、JSONの保存をスキップします: race_id={race_id}")
+            return None
+
         base_dir = Path("data_test/results") if is_test else Path("data/results")
 
         if target_date:
@@ -164,7 +174,6 @@ class NkWriter:
 
         race_info = data_list[0] if len(data_list) > 0 and isinstance(data_list[0], dict) else {}
         payouts_info = data_list[1] if len(data_list) > 1 and isinstance(data_list[1], dict) else {}
-        results_list = data_list[2:] if len(data_list) > 2 else []
 
         payload = {
             "race_id": race_id,

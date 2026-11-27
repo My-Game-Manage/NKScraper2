@@ -1,3 +1,7 @@
+"""
+scraper.py - 競馬スクレイピング・分析処理統制オーケストレータークラス
+"""
+
 import os
 import random
 import time
@@ -39,7 +43,7 @@ SELECTOR_RESULT_HP = ".ResultTableFrame"
 
 class NkScraper:
     """
-    競馬スクレイピング・分析処理を統制するオーケストレータークラス (JSONデータ管理・note成果物のみMD化)
+    競馬スクレイピング・分析処理を統制するオーケストレータークラス
     """
 
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
@@ -129,7 +133,8 @@ class NkScraper:
         for race_id in target_race_ids:
             logger.info(f"race_id: {race_id} の解析開始")
             race_info = self.fetch_race_info_by_id(race_id)
-            if not race_info or not race_info.get("race_info"):
+            if not race_info or not race_info.get("race_info") or not race_info.get("shutuba_horses"):
+                logger.warning(f"race_id: {race_id} の出馬表データ取得不全のため保存をスキップします")
                 continue
 
             info = race_info["race_info"]
@@ -211,14 +216,16 @@ class NkScraper:
         logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
 
-        # 予想検証レポート作成 (事前予想が存在する場合)
-        logger.info(f"【予想検証レポート作成】{target_date} の予想・結果整合性レポートを作成中...")
+        # 予想検証レポート作成 (JRA / NAR 別)
+        logger.info(f"【予想検証レポート作成】{target_date} の予想・結果整合性レポート(JRA/NAR別)を作成中...")
         verifier = NkPredictionVerifier(base_dir=self.base_dir, test_base_dir="data_test")
-        verification_md = verifier.generate_verification_report(target_date, is_test=is_test)
-        if "⚠️" not in verification_md:
-            verif_filename = f"prediction_verification_{target_date}.md"
-            self.writer.save_as_markdown(target_date, "reports", verif_filename, verification_md, is_test)
-            logger.info(f"✅ 予想検証レポートを作成しました: {verif_filename}")
+
+        for cat in ["JRA", "NAR"]:
+            verification_md = verifier.generate_verification_report(target_date, category=cat, is_test=is_test)
+            if "⚠️" not in verification_md:
+                verif_filename = f"prediction_verification_{cat}_{target_date}.md"
+                self.writer.save_as_markdown(target_date, "reports", verif_filename, verification_md, is_test)
+                logger.info(f"✅ 予想検証レポート({cat})を作成しました: {verif_filename}")
 
         # 最新蓄積データに基づく会場別プロトコルの自動更新
         logger.info("【プロトコル自動更新】最新結果データに基づく会場別プロトコルを更新中...")
@@ -234,6 +241,10 @@ class NkScraper:
         results["race_info"] = race_info
 
         shutuba_horses = self.fetcher.fetch_shutuba_horse_info(target_url, html_contents)
+        if not shutuba_horses:
+            logger.warning(f"race_id: {race_id} の出走馬一覧が取得できませんでした (HTML空/タイムアウト)")
+            return {}
+
         results["shutuba_horses"] = shutuba_horses
 
         horses_data = []
