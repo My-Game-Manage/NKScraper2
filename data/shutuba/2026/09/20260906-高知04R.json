@@ -1,0 +1,217 @@
+{
+  "race_id": "202654090604",
+  "race_track": "高知",
+  "race_num": "4",
+  "target_date": "20260906",
+  "race_name": "C3ー3",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランパリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021100708"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ルージュブラゾン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2019104685"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ポッドコンティ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知西川敏弘",
+      "horse_id": "2021100573"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ナバロン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中譲二",
+      "horse_id": "2019102456"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アタリマエ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知工藤真司",
+      "horse_id": "2022105948"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グリントリッター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知倉兼育康",
+      "horse_id": "2021100328"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グッドフェイス",
+      "horse_age": "牡7",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2019106852"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アンダーザスター",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2017105815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウインイメル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知打越勇児",
+      "horse_id": "2021106213"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランパリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021100708"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ルージュブラゾン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2019104685"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ポッドコンティ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知西川敏弘",
+      "horse_id": "2021100573"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ナバロン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中譲二",
+      "horse_id": "2019102456"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アタリマエ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知工藤真司",
+      "horse_id": "2022105948"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グリントリッター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知倉兼育康",
+      "horse_id": "2021100328"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グッドフェイス",
+      "horse_age": "牡7",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2019106852"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アンダーザスター",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2017105815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウインイメル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知打越勇児",
+      "horse_id": "2021106213"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    }
+  ]
+}

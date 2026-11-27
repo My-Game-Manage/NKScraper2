@@ -1,0 +1,177 @@
+{
+  "race_id": "202654092003",
+  "race_track": "高知",
+  "race_num": "3",
+  "target_date": "20260920",
+  "race_name": "グルス特別(2歳)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リザードキング",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2024104284"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グリットロード",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知目迫大輔",
+      "horse_id": "2024105421"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トサノリンドウ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2024105509"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "メイジョウプラチナ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2024103981"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ヤマシュウ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "近藤翔月",
+      "stable": "高知田中譲二",
+      "horse_id": "2024103494"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マオノセーリング",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2024104254"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "カバチタレ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2024107410"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "スリースカーレット",
+      "horse_age": "牝2",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2024101954"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リザードキング",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2024104284"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グリットロード",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知目迫大輔",
+      "horse_id": "2024105421"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トサノリンドウ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2024105509"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "メイジョウプラチナ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2024103981"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ヤマシュウ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "近藤翔月",
+      "stable": "高知田中譲二",
+      "horse_id": "2024103494"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マオノセーリング",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2024104254"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "カバチタレ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2024107410"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "スリースカーレット",
+      "horse_age": "牝2",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2024101954"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "race_id": "202650090312",
+  "race_track": "園田",
+  "race_num": "12",
+  "target_date": "20260903",
+  "race_name": "C2一",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イーグルチョイス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫森澤友貴",
+      "horse_id": "2023102672"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エイシンディーヴァ",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2023105501"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シェナスカイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "小牧太",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2023100261"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "リケアクスクス",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023102595"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "デルタフォー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫藤川純",
+      "horse_id": "2022101651"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "スマートキングダム",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫永島太郎",
+      "horse_id": "2019102528"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ウィスピースノー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2021100648"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ブラッドショー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫雑賀伸一",
+      "horse_id": "2021103696"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エリザベスタウン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023106545"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "チェリータイム",
+      "horse_age": "牡5",
+      "weight_carried": "54.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫西川進也",
+      "horse_id": "2021100860"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ピエナフェリーチェ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫玉垣光章",
+      "horse_id": "2021105179"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ミルトコルサ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "板野央",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2021106345"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イーグルチョイス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫森澤友貴",
+      "horse_id": "2023102672"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エイシンディーヴァ",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2023105501"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シェナスカイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "小牧太",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2023100261"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "リケアクスクス",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023102595"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "デルタフォー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫藤川純",
+      "horse_id": "2022101651"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "スマートキングダム",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫永島太郎",
+      "horse_id": "2019102528"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ウィスピースノー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2021100648"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ブラッドショー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫雑賀伸一",
+      "horse_id": "2021103696"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エリザベスタウン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023106545"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "チェリータイム",
+      "horse_age": "牡5",
+      "weight_carried": "54.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫西川進也",
+      "horse_id": "2021100860"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ピエナフェリーチェ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫玉垣光章",
+      "horse_id": "2021105179"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ミルトコルサ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "板野央",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2021106345"
+    }
+  ]
+}

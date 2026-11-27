@@ -1,0 +1,237 @@
+{
+  "race_id": "202646101808",
+  "race_track": "金沢",
+  "race_num": "8",
+  "target_date": "20261018",
+  "race_name": "B28",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "タケウチビー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023100053"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イサムダイヤモンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022106098"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ランドシュール",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021102660"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハクサンアンタレス",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022100233"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "プロスペロ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2017103386"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リュウジンオー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022103234"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ロット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106586"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ナックステート",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023104437"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ラストヨンマル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2022106015"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "モーモークローム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101836"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リプレット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021105046"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "タケウチビー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023100053"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イサムダイヤモンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022106098"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ランドシュール",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021102660"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハクサンアンタレス",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022100233"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "プロスペロ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2017103386"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リュウジンオー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022103234"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ロット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106586"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ナックステート",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023104437"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ラストヨンマル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2022106015"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "モーモークローム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101836"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リプレット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021105046"
+    }
+  ]
+}

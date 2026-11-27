@@ -1,0 +1,197 @@
+{
+  "race_id": "202654100303",
+  "race_track": "高知",
+  "race_num": "3",
+  "target_date": "20261003",
+  "race_name": "C3ー4",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ドンカルロ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2020104089"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズシューター",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2022102852"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ノアファラオ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知川野勇馬",
+      "horse_id": "2021104358"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "エメラルハッピー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知平和人",
+      "horse_id": "2022102765"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ナギサノジョジョ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2022103423"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラージフィールド",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知田中伸一",
+      "horse_id": "2020106620"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ハピアーザンエバー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2021106854"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ツマヤ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021102707"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ヴィクトリーナイト",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知東原己俊",
+      "horse_id": "2017101679"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ドンカルロ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2020104089"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズシューター",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2022102852"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ノアファラオ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知川野勇馬",
+      "horse_id": "2021104358"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "エメラルハッピー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知平和人",
+      "horse_id": "2022102765"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ナギサノジョジョ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2022103423"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラージフィールド",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知田中伸一",
+      "horse_id": "2020106620"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ハピアーザンエバー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2021106854"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ツマヤ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021102707"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ヴィクトリーナイト",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知東原己俊",
+      "horse_id": "2017101679"
+    }
+  ]
+}

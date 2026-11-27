@@ -1,0 +1,257 @@
+{
+  "race_id": "202644091807",
+  "race_track": "大井",
+  "race_num": "7",
+  "target_date": "20260918",
+  "race_name": "3歳選抜牝馬",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エスクラス",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井栗田裕光",
+      "horse_id": "2023105607"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンブリッジグレイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "達城龍次",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023105085"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クリノエーデル",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "中山遥人",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2023102983"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラブリーネイティブ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井中道啓二",
+      "horse_id": "2023101520"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハヤマデイズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井穂刈隆志",
+      "horse_id": "2023106676"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ニジイロピカール",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "谷内貫太",
+      "stable": "大井森下淳平",
+      "horse_id": "2023101567"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ステイフリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023100441"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "スズノアリマール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2023102136"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ワイルドチャーム",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023105350"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スクラッチクラッチ",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "高橋優",
+      "stable": "大井佐野謙二",
+      "horse_id": "2023101536"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ボンヴィアッジョ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井阪本一栄",
+      "horse_id": "2023103134"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ローズプリンセス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102985"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エスクラス",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井栗田裕光",
+      "horse_id": "2023105607"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンブリッジグレイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "達城龍次",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023105085"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クリノエーデル",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "中山遥人",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2023102983"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラブリーネイティブ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井中道啓二",
+      "horse_id": "2023101520"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハヤマデイズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井穂刈隆志",
+      "horse_id": "2023106676"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ニジイロピカール",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "谷内貫太",
+      "stable": "大井森下淳平",
+      "horse_id": "2023101567"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ステイフリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023100441"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "スズノアリマール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2023102136"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ワイルドチャーム",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023105350"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スクラッチクラッチ",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "高橋優",
+      "stable": "大井佐野謙二",
+      "horse_id": "2023101536"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ボンヴィアッジョ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井阪本一栄",
+      "horse_id": "2023103134"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ローズプリンセス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102985"
+    }
+  ]
+}

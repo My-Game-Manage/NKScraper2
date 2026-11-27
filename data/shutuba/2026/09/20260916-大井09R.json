@@ -1,0 +1,217 @@
+{
+  "race_id": "202644091609",
+  "race_track": "大井",
+  "race_num": "9",
+  "target_date": "20260916",
+  "race_name": "キンモクセイ特別競走(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラストラブラブ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "藤田凌",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023101222"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ディアモアー",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "達城龍次",
+      "stable": "大井納谷和玖",
+      "horse_id": "2023100821"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ハボタン",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "千田洋",
+      "stable": "大井大宮和也",
+      "horse_id": "2023100128"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ユーヒナタ",
+      "horse_age": "牝6",
+      "weight_carried": "51.0",
+      "jockey": "木澤奨",
+      "stable": "大井村上頼章",
+      "horse_id": "2020105078"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ティアード",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "鷹見陸",
+      "stable": "大井須田和伸",
+      "horse_id": "2021105597"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アシャニンカ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井米田英世",
+      "horse_id": "2021102930"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "デルマウチガケ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2020102933"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "バズッチ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井月岡健二",
+      "horse_id": "2020102142"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウータンビート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井村上頼章",
+      "horse_id": "2022102342"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "バイアホーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "大井月岡健二",
+      "horse_id": "2022105480"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラストラブラブ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "藤田凌",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023101222"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ディアモアー",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "達城龍次",
+      "stable": "大井納谷和玖",
+      "horse_id": "2023100821"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ハボタン",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "千田洋",
+      "stable": "大井大宮和也",
+      "horse_id": "2023100128"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ユーヒナタ",
+      "horse_age": "牝6",
+      "weight_carried": "51.0",
+      "jockey": "木澤奨",
+      "stable": "大井村上頼章",
+      "horse_id": "2020105078"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ティアード",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "鷹見陸",
+      "stable": "大井須田和伸",
+      "horse_id": "2021105597"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アシャニンカ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井米田英世",
+      "horse_id": "2021102930"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "デルマウチガケ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2020102933"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "バズッチ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井月岡健二",
+      "horse_id": "2020102142"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウータンビート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井村上頼章",
+      "horse_id": "2022102342"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "バイアホーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "大井月岡健二",
+      "horse_id": "2022105480"
+    }
+  ]
+}

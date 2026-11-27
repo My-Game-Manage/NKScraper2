@@ -1,0 +1,217 @@
+{
+  "race_id": "202654090607",
+  "race_track": "高知",
+  "race_num": "7",
+  "target_date": "20260906",
+  "race_name": "C2ー6",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ブリックバーン",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021105495"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワキノクイーン",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知別府真司",
+      "horse_id": "2018103636"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トラストエムシー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中譲二",
+      "horse_id": "2020103502"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ベルヴィオレット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2022100786"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カノンウッドテール",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "永森大智",
+      "stable": "高知雑賀正光",
+      "horse_id": "2021100023"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "スティーヴバローズ",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2022104201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ニコラウス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知田中譲二",
+      "horse_id": "2021104908"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ダニエラハニー",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知細川忠義",
+      "horse_id": "2019105674"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エクトゥシュタール",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知雑賀正光",
+      "horse_id": "2020100206"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アルマリカシバ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022101248"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ブリックバーン",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021105495"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワキノクイーン",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知別府真司",
+      "horse_id": "2018103636"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トラストエムシー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中譲二",
+      "horse_id": "2020103502"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ベルヴィオレット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2022100786"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カノンウッドテール",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "永森大智",
+      "stable": "高知雑賀正光",
+      "horse_id": "2021100023"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "スティーヴバローズ",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2022104201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ニコラウス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知田中譲二",
+      "horse_id": "2021104908"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ダニエラハニー",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知細川忠義",
+      "horse_id": "2019105674"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エクトゥシュタール",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知雑賀正光",
+      "horse_id": "2020100206"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アルマリカシバ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022101248"
+    }
+  ]
+}

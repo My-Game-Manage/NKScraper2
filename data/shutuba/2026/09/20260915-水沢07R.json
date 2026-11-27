@@ -1,0 +1,217 @@
+{
+  "race_id": "202636091507",
+  "race_track": "水沢",
+  "race_num": "7",
+  "target_date": "20260915",
+  "race_name": "C1",
+  "race_grade": "",
+  "race_type": "(右) 850m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エイカイソフィア",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022102345"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "タイコネン",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手櫻田康二",
+      "horse_id": "2019101484"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウミザオ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2019105864"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハイプボーイ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2021101806"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ディフューズ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手新田守",
+      "horse_id": "2022101087"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グレコ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2022106836"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エーデルムート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2022101092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ロードトワイライト",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手関本浩司",
+      "horse_id": "2021100147"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フエルテテソーロ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2020104730"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レーニス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手関本浩司",
+      "horse_id": "2022109114"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エイカイソフィア",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022102345"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "タイコネン",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手櫻田康二",
+      "horse_id": "2019101484"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウミザオ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2019105864"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハイプボーイ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2021101806"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ディフューズ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手新田守",
+      "horse_id": "2022101087"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グレコ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2022106836"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エーデルムート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2022101092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ロードトワイライト",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手関本浩司",
+      "horse_id": "2021100147"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フエルテテソーロ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2020104730"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レーニス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手関本浩司",
+      "horse_id": "2022109114"
+    }
+  ]
+}

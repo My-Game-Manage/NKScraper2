@@ -1,0 +1,177 @@
+{
+  "race_id": "202642112701",
+  "race_track": "浦和",
+  "race_num": "1",
+  "target_date": "20261127",
+  "race_name": "2歳五",
+  "race_grade": "",
+  "race_type": "(左) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シルフマスター",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和小林真治",
+      "horse_id": "2024100085"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カラフルハート",
+      "horse_age": "牝2",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2024101089"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カズトラ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "岡村健司",
+      "stable": "浦和平山真希",
+      "horse_id": "2024105259"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "デューンディライト",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鈴木勝文",
+      "horse_id": "2024104471"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラグーンデザイアー",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和川村守男",
+      "horse_id": "2024101489"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "オーシンワイルド",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "野畑凌",
+      "stable": "浦和小久保智",
+      "horse_id": "2024102616"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エムワンチーコ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2024101035"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "オサケノオトモニ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "阿部龍",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2024100051"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シルフマスター",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和小林真治",
+      "horse_id": "2024100085"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カラフルハート",
+      "horse_age": "牝2",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2024101089"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カズトラ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "岡村健司",
+      "stable": "浦和平山真希",
+      "horse_id": "2024105259"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "デューンディライト",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鈴木勝文",
+      "horse_id": "2024104471"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラグーンデザイアー",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和川村守男",
+      "horse_id": "2024101489"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "オーシンワイルド",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "野畑凌",
+      "stable": "浦和小久保智",
+      "horse_id": "2024102616"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エムワンチーコ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2024101035"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "オサケノオトモニ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "阿部龍",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2024100051"
+    }
+  ]
+}

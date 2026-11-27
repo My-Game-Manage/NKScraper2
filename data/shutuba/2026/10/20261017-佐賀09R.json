@@ -1,0 +1,237 @@
+{
+  "race_id": "202655101709",
+  "race_track": "佐賀",
+  "race_num": "9",
+  "target_date": "20261017",
+  "race_name": "AIパッカル賞(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シュリーデービー",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2018101935"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "セイブルーアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀鮫島克也",
+      "horse_id": "2023107481"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユイアヴェニール",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023109105"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "モリノカーニバル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2023104278"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ギャレットルレーヴ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀井樋明正",
+      "horse_id": "2020107128"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "イェルマーク",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "川島拓",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2021110117"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "カシノハンゾウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島正徳",
+      "horse_id": "2023109129"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "シズリ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山口勲",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2023102772"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ロードレアル",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀頼本盛行",
+      "horse_id": "2019103015"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "グエムル",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2021105966"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ミナミジュウジセイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2022106876"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シュリーデービー",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2018101935"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "セイブルーアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀鮫島克也",
+      "horse_id": "2023107481"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユイアヴェニール",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023109105"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "モリノカーニバル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2023104278"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ギャレットルレーヴ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀井樋明正",
+      "horse_id": "2020107128"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "イェルマーク",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "川島拓",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2021110117"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "カシノハンゾウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島正徳",
+      "horse_id": "2023109129"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "シズリ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山口勲",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2023102772"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ロードレアル",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀頼本盛行",
+      "horse_id": "2019103015"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "グエムル",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2021105966"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ミナミジュウジセイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2022106876"
+    }
+  ]
+}

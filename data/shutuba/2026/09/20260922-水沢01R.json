@@ -1,0 +1,217 @@
+{
+  "race_id": "202636092201",
+  "race_track": "水沢",
+  "race_num": "1",
+  "target_date": "20260922",
+  "race_name": "C2",
+  "race_grade": "",
+  "race_type": "(右) 850m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ゴーゴーオンリー",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2020104094"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジュレヴァー",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2021101320"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フオメンタ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手橘友和",
+      "horse_id": "2022103377"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ファイストス",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2021105324"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マローディープ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2020103654"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "エイシンチョンパ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手石川栄",
+      "horse_id": "2021109174"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アンズビジン",
+      "horse_age": "牝9",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手佐藤雅彦",
+      "horse_id": "2017105759"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリノサクセス",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手高橋純",
+      "horse_id": "2020102354"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フークレグルス",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手関本浩司",
+      "horse_id": "2020104815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴァンクールシチー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "岩本怜",
+      "stable": "岩手三野宮通",
+      "horse_id": "2019105918"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ゴーゴーオンリー",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2020104094"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジュレヴァー",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2021101320"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フオメンタ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手橘友和",
+      "horse_id": "2022103377"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ファイストス",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2021105324"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マローディープ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2020103654"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "エイシンチョンパ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手石川栄",
+      "horse_id": "2021109174"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アンズビジン",
+      "horse_age": "牝9",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手佐藤雅彦",
+      "horse_id": "2017105759"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリノサクセス",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手高橋純",
+      "horse_id": "2020102354"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フークレグルス",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手関本浩司",
+      "horse_id": "2020104815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴァンクールシチー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "岩本怜",
+      "stable": "岩手三野宮通",
+      "horse_id": "2019105918"
+    }
+  ]
+}

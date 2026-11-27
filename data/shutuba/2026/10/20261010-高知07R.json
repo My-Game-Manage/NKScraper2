@@ -1,0 +1,197 @@
+{
+  "race_id": "202654101007",
+  "race_track": "高知",
+  "race_num": "7",
+  "target_date": "20261010",
+  "race_name": "C3ー9",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "チュラウェーブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018104135"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヨシュア",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2021102253"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "グロリアスヒーロー",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "上田将司",
+      "stable": "高知嬉勝則",
+      "horse_id": "2019105755"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "セントキルダ",
+      "horse_age": "牡5",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021105175"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "クワッドマリニン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2023103187"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ハチャプリ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2022103481"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "トーケンタカハール",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知東原己俊",
+      "horse_id": "2021102251"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マサハヤアン",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "大澤誠志",
+      "stable": "高知細川忠義",
+      "horse_id": "2017104890"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "チュウワロンドン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2022107397"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "チュラウェーブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018104135"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヨシュア",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2021102253"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "グロリアスヒーロー",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "上田将司",
+      "stable": "高知嬉勝則",
+      "horse_id": "2019105755"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "セントキルダ",
+      "horse_age": "牡5",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021105175"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "クワッドマリニン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2023103187"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ハチャプリ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2022103481"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "トーケンタカハール",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知東原己俊",
+      "horse_id": "2021102251"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マサハヤアン",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "大澤誠志",
+      "stable": "高知細川忠義",
+      "horse_id": "2017104890"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "チュウワロンドン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2022107397"
+    }
+  ]
+}

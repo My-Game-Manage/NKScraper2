@@ -1,0 +1,237 @@
+{
+  "race_id": "202647092306",
+  "race_track": "笠松",
+  "race_num": "6",
+  "target_date": "20260923",
+  "race_name": "いつでも全力疾走波多カップ(B)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コスモフィネス",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松柴田高志",
+      "horse_id": "2022101084"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ダブルブラック",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "阿部基嗣",
+      "stable": "笠松藤田正治",
+      "horse_id": "2021102133"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ルークピオーネ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2022109066"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プリュムドランジュ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2020103864"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "フローズンキス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "森島貴之",
+      "stable": "笠松水野善太",
+      "horse_id": "2022100472"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レッドスウィング",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大原浩司",
+      "stable": "笠松森山英雄",
+      "horse_id": "2021105130"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒルノガリシア",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2022103815"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "コンヴェックス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2022100175"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エンブレイスメント",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松後藤正義",
+      "horse_id": "2022105410"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アルマヘクトール",
+      "horse_age": "牡11",
+      "weight_carried": "57.0",
+      "jockey": "馬渕繁治",
+      "stable": "笠松森山英雄",
+      "horse_id": "2015103623"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ウィステリアベル",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2022103022"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コスモフィネス",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松柴田高志",
+      "horse_id": "2022101084"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ダブルブラック",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "阿部基嗣",
+      "stable": "笠松藤田正治",
+      "horse_id": "2021102133"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ルークピオーネ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2022109066"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プリュムドランジュ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2020103864"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "フローズンキス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "森島貴之",
+      "stable": "笠松水野善太",
+      "horse_id": "2022100472"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レッドスウィング",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大原浩司",
+      "stable": "笠松森山英雄",
+      "horse_id": "2021105130"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒルノガリシア",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2022103815"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "コンヴェックス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2022100175"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エンブレイスメント",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松後藤正義",
+      "horse_id": "2022105410"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アルマヘクトール",
+      "horse_age": "牡11",
+      "weight_carried": "57.0",
+      "jockey": "馬渕繁治",
+      "stable": "笠松森山英雄",
+      "horse_id": "2015103623"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ウィステリアベル",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2022103022"
+    }
+  ]
+}

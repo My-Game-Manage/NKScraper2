@@ -1,0 +1,237 @@
+{
+  "race_id": "202642102303",
+  "race_track": "浦和",
+  "race_num": "3",
+  "target_date": "20261023",
+  "race_name": "3歳四選抜馬ア",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "オールインアリス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "山本大翔",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2023107491"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロイヤルオルレアン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "浦和小久保智",
+      "horse_id": "2023101345"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユウユウスター",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "椿聡太",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2023102044"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キャッスルギフト",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "小杉亮",
+      "stable": "船橋長谷川剛",
+      "horse_id": "2023102787"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "デアトゥノウ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "浦和藤原智行",
+      "horse_id": "2023107522"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ミツゲツ",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋佐々木清",
+      "horse_id": "2023105072"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "エムワンシゲル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山口達弥",
+      "stable": "船橋林正人",
+      "horse_id": "2023100146"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ルージュシャラポワ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "船橋林幻",
+      "horse_id": "2023103442"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "コンバットイズモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023104779"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アイディンラヴァー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笠野雄大",
+      "stable": "船橋田中力",
+      "horse_id": "2023104749"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サキノクローバー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "船橋林幻",
+      "horse_id": "2023102093"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "オールインアリス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "山本大翔",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2023107491"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロイヤルオルレアン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "浦和小久保智",
+      "horse_id": "2023101345"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユウユウスター",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "椿聡太",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2023102044"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キャッスルギフト",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "小杉亮",
+      "stable": "船橋長谷川剛",
+      "horse_id": "2023102787"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "デアトゥノウ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "浦和藤原智行",
+      "horse_id": "2023107522"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ミツゲツ",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋佐々木清",
+      "horse_id": "2023105072"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "エムワンシゲル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山口達弥",
+      "stable": "船橋林正人",
+      "horse_id": "2023100146"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ルージュシャラポワ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "船橋林幻",
+      "horse_id": "2023103442"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "コンバットイズモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023104779"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アイディンラヴァー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笠野雄大",
+      "stable": "船橋田中力",
+      "horse_id": "2023104749"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サキノクローバー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "船橋林幻",
+      "horse_id": "2023102093"
+    }
+  ]
+}

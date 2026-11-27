@@ -1,0 +1,237 @@
+{
+  "race_id": "202635101104",
+  "race_track": "盛岡",
+  "race_num": "4",
+  "target_date": "20261011",
+  "race_name": "C2十組",
+  "race_grade": "",
+  "race_type": "(左) 1200m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アッセクシー",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手関本浩司",
+      "horse_id": "2023102214"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カンフーヒーロー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023101482"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サムライタイム",
+      "horse_age": "牝3",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023106663"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クロノレガリス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手畠山信一",
+      "horse_id": "2023101599"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "キタノボニータ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手佐々木由",
+      "horse_id": "2023102840"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フィオーレグリーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023102155"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ポイントバック",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "南郷家全",
+      "stable": "岩手櫻田浩樹",
+      "horse_id": "2020100041"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スカーレットジーン",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2023103465"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "コスモシュンライ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023100171"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ホウオウスカイハイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手木村暁",
+      "horse_id": "2023103255"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ミノホタテ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2023104850"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アッセクシー",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手関本浩司",
+      "horse_id": "2023102214"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カンフーヒーロー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023101482"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サムライタイム",
+      "horse_age": "牝3",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023106663"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クロノレガリス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手畠山信一",
+      "horse_id": "2023101599"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "キタノボニータ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手佐々木由",
+      "horse_id": "2023102840"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フィオーレグリーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023102155"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ポイントバック",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "南郷家全",
+      "stable": "岩手櫻田浩樹",
+      "horse_id": "2020100041"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スカーレットジーン",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2023103465"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "コスモシュンライ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023100171"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ホウオウスカイハイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手木村暁",
+      "horse_id": "2023103255"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ミノホタテ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2023104850"
+    }
+  ]
+}

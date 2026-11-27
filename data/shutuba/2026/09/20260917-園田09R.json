@@ -1,0 +1,197 @@
+{
+  "race_id": "202650091709",
+  "race_track": "園田",
+  "race_num": "9",
+  "target_date": "20260917",
+  "race_name": "C1一",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サチノメグミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "川原正一",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2023100869"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "インパルスベラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫長倉功",
+      "horse_id": "2023106097"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モイル",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2020107076"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ウルティモ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫尾林幸二",
+      "horse_id": "2021101209"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アンデルマット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022105193"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レイナボニータ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫藤川純",
+      "horse_id": "2022107170"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ファイアボルト",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫木村健",
+      "horse_id": "2020101450"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ニシノベニトアイト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022100917"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "テイケイウル",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2022106356"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サチノメグミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "川原正一",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2023100869"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "インパルスベラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫長倉功",
+      "horse_id": "2023106097"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モイル",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2020107076"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ウルティモ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫尾林幸二",
+      "horse_id": "2021101209"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アンデルマット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022105193"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レイナボニータ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫藤川純",
+      "horse_id": "2022107170"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ファイアボルト",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫木村健",
+      "horse_id": "2020101450"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ニシノベニトアイト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022100917"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "テイケイウル",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2022106356"
+    }
+  ]
+}

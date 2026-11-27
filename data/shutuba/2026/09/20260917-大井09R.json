@@ -1,0 +1,237 @@
+{
+  "race_id": "202644091709",
+  "race_track": "大井",
+  "race_num": "9",
+  "target_date": "20260917",
+  "race_name": "C2二三四(C2三)",
+  "race_grade": "",
+  "race_type": "(右) 1200m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "パールペンダント",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井遠藤茂",
+      "horse_id": "2022103879"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "キタノマティーニ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井田中正人",
+      "horse_id": "2021101035"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナックレガーロ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "高橋昭平",
+      "stable": "大井立花伸",
+      "horse_id": "2022101371"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "モンサンヴデット",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022101460"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グリューネベルグ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2022106581"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フレーズボンボン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井小野寺晋",
+      "horse_id": "2022102352"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ビックバンブー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井立花伸",
+      "horse_id": "2020106087"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ケイコウギュウゴ",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "大井栗田裕光",
+      "horse_id": "2022101357"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "リコーモーラー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2022105222"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "イマーシブ",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "木澤奨",
+      "stable": "大井的場直之",
+      "horse_id": "2022103428"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アダラズプレイヤー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井高橋清顕",
+      "horse_id": "2022106402"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "パールペンダント",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井遠藤茂",
+      "horse_id": "2022103879"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "キタノマティーニ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井田中正人",
+      "horse_id": "2021101035"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナックレガーロ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "高橋昭平",
+      "stable": "大井立花伸",
+      "horse_id": "2022101371"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "モンサンヴデット",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "和田譲治",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022101460"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グリューネベルグ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2022106581"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フレーズボンボン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井小野寺晋",
+      "horse_id": "2022102352"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ビックバンブー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井立花伸",
+      "horse_id": "2020106087"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ケイコウギュウゴ",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "大井栗田裕光",
+      "horse_id": "2022101357"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "リコーモーラー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2022105222"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "イマーシブ",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "木澤奨",
+      "stable": "大井的場直之",
+      "horse_id": "2022103428"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アダラズプレイヤー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井高橋清顕",
+      "horse_id": "2022106402"
+    }
+  ]
+}

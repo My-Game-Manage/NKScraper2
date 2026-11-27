@@ -1,0 +1,197 @@
+{
+  "race_id": "202646112607",
+  "race_track": "金沢",
+  "race_num": "7",
+  "target_date": "20261126",
+  "race_name": "C24",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サノノサンダー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023101420"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ファントムグレース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2023102458"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジャスミンカーラ",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2019105251"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジェッディンデデン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ナムラダリウス",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢室井眞文",
+      "horse_id": "2020101949"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラルクアンレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2023101575"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "チャリティチャリス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023103473"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "エイシンセラフィム",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "服部大地",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2020106261"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マイネルイグザルト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2022106807"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サノノサンダー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023101420"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ファントムグレース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2023102458"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジャスミンカーラ",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2019105251"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジェッディンデデン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ナムラダリウス",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢室井眞文",
+      "horse_id": "2020101949"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラルクアンレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2023101575"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "チャリティチャリス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023103473"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "エイシンセラフィム",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "服部大地",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2020106261"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マイネルイグザルト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2022106807"
+    }
+  ]
+}

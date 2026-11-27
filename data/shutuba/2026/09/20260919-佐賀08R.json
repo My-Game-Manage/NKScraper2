@@ -1,0 +1,217 @@
+{
+  "race_id": "202655091908",
+  "race_track": "佐賀",
+  "race_num": "8",
+  "target_date": "20260919",
+  "race_name": "長崎街道神埼宿特選(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スペシャルホリデー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2022101556"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ラピダッシュ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022106953"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タケノライコウ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "青海大樹",
+      "stable": "佐賀北村欣也",
+      "horse_id": "2020100087"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バウンドトゥウィン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "川島拓",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2021104628"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "タイガーミノル",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀渡辺博文",
+      "horse_id": "2020104161"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ルーメン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022100771"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ビーチボーイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2022104087"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クレドール",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2022105653"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "パームビーチ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022102234"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "チカポコ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田中直人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2020102537"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スペシャルホリデー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2022101556"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ラピダッシュ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022106953"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タケノライコウ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "青海大樹",
+      "stable": "佐賀北村欣也",
+      "horse_id": "2020100087"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バウンドトゥウィン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "川島拓",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2021104628"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "タイガーミノル",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀渡辺博文",
+      "horse_id": "2020104161"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ルーメン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022100771"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ビーチボーイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2022104087"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クレドール",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2022105653"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "パームビーチ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2022102234"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "チカポコ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田中直人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2020102537"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "race_id": "202645101306",
+  "race_track": "川崎",
+  "race_num": "6",
+  "target_date": "20261013",
+  "race_name": "雪ノ下賞(C2)",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベセル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2023103048"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シェナベスト",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎山田正実",
+      "horse_id": "2021102006"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キイチマイルス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田紀忠",
+      "stable": "川崎武井和実",
+      "horse_id": "2023102655"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヒソカ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2022104334"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モンゲータイム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "田中涼",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2023102264"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "カナールレイナ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "伊藤裕人",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2023102597"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ニジイロピカール",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "加藤雄真",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2023101567"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "アドバンテスロード",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋坂本昇",
+      "horse_id": "2022104306"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "インフェルレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎田島寿一",
+      "horse_id": "2023100897"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベセル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2023103048"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シェナベスト",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎山田正実",
+      "horse_id": "2021102006"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キイチマイルス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田紀忠",
+      "stable": "川崎武井和実",
+      "horse_id": "2023102655"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヒソカ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2022104334"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モンゲータイム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "田中涼",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2023102264"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "カナールレイナ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "伊藤裕人",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2023102597"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ニジイロピカール",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "加藤雄真",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2023101567"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "アドバンテスロード",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋坂本昇",
+      "horse_id": "2022104306"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "インフェルレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎田島寿一",
+      "horse_id": "2023100897"
+    }
+  ]
+}

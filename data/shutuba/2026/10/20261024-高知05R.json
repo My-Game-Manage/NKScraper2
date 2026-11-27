@@ -1,0 +1,237 @@
+{
+  "race_id": "202654102405",
+  "race_track": "高知",
+  "race_num": "5",
+  "target_date": "20261024",
+  "race_name": "C3ー8",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マサハヤアン",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知細川忠義",
+      "horse_id": "2017104890"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モトサン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡遼太郎",
+      "stable": "高知東原己俊",
+      "horse_id": "2020100576"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スクーバー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知目迫大輔",
+      "horse_id": "2020102565"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "サイモンソーラン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "上田将司",
+      "stable": "高知別府真司",
+      "horse_id": "2019102341"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グリエールキック",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023102049"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "チュラウェーブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018104135"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ペイシャプレイ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2023100493"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マイネルトレマーズ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2023105363"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エムティパブロ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知細川忠義",
+      "horse_id": "2022104348"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "リゼレインボー",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知別府真司",
+      "horse_id": "2019102676"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ローメット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023106653"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マサハヤアン",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知細川忠義",
+      "horse_id": "2017104890"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モトサン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡遼太郎",
+      "stable": "高知東原己俊",
+      "horse_id": "2020100576"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スクーバー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知目迫大輔",
+      "horse_id": "2020102565"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "サイモンソーラン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "上田将司",
+      "stable": "高知別府真司",
+      "horse_id": "2019102341"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グリエールキック",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023102049"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "チュラウェーブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018104135"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ペイシャプレイ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2023100493"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マイネルトレマーズ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2023105363"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エムティパブロ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知細川忠義",
+      "horse_id": "2022104348"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "リゼレインボー",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知別府真司",
+      "horse_id": "2019102676"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ローメット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023106653"
+    }
+  ]
+}

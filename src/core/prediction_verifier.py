@@ -1,5 +1,5 @@
 """
-prediction_verifier.py - レース結果と自動予想の整合性・的中率・回収率検証レポート生成モジュール
+prediction_verifier.py - レース結果と自動予想の整合性・的中率・回収率検証レポート生成モジュール (JRA / NAR カテゴリ別対応版)
 """
 
 import os
@@ -13,11 +13,17 @@ logger = logging.getLogger(__name__)
 
 
 class NkPredictionVerifier:
-    """レース結果と事前予想データ(Markdown/JSON)を自動照合し、note掲載用の検証レポートを生成するクラス"""
+    """レース結果と事前予想データ(Markdown/JSON)を自動照合し、note掲載用の検証レポート(JRA/NAR区分)を生成するクラス"""
+
+    JRA_TRACKS = {"東京", "中山", "阪神", "京都", "小倉", "福島", "中京", "札幌", "函館", "新潟"}
 
     def __init__(self, base_dir: Union[str, Path] = "data", test_base_dir: Union[str, Path] = "data_test"):
         self.base_dir = Path(base_dir)
         self.test_base_dir = Path(test_base_dir)
+
+    def is_jra_track(self, track_name: str) -> bool:
+        """会場名からJRA（中央競馬）かどうか判定"""
+        return any(jt in str(track_name) for jt in self.JRA_TRACKS)
 
     def parse_prediction_markdown(self, md_content: str) -> Dict[str, Any]:
         """
@@ -271,18 +277,38 @@ class NkPredictionVerifier:
             "bet_summary": bet_summary
         }
 
-    def generate_verification_report(self, target_date: str, is_test: bool = False) -> str:
+    def generate_verification_report(self, target_date: str, category: str = "ALL", is_test: bool = False) -> str:
         """
         指定日付の予想と結果を照合し、note記事投稿用の検証レポートMarkdownを出力する
+        Args:
+            target_date (str): 対象日付 (YYYYMMDD)
+            category (str): カテゴリ指定 ("ALL", "JRA", "NAR")
+            is_test (bool): テスト環境フラグ
         """
         pred_map = self.load_predictions(target_date, is_test=is_test)
         results = self.load_results(target_date, is_test=is_test)
 
+        category_label = f" ({category})" if category in ["JRA", "NAR"] else ""
+
         if not pred_map or not results:
-            return f"# ⚠️ 【予想検証レポート】{target_date}\n\n対象日付 ({target_date}) の予想データまたはレース結果データが見つかりませんでした。"
+            return f"# ⚠️ 【予想検証レポート{category_label}】{target_date}\n\n対象日付 ({target_date}) の予想データまたはレース結果データが見つかりませんでした。"
+
+        # カテゴリによるフィルタリング
+        filtered_results = []
+        for r_json in results:
+            track = str(r_json.get("race_track", ""))
+            is_jra = self.is_jra_track(track)
+            if category == "JRA" and not is_jra:
+                continue
+            if category == "NAR" and is_jra:
+                continue
+            filtered_results.append(r_json)
+
+        if not filtered_results:
+            return f"# ⚠️ 【予想検証レポート{category_label}】{target_date}\n\n対象カテゴリ ({category}) のレース結果データが見つかりませんでした。"
 
         verified_races = []
-        for r_json in results:
+        for r_json in filtered_results:
             track = str(r_json.get("race_track", ""))
             raw_r_num = str(r_json.get("race_num", ""))
             try:
@@ -297,9 +323,9 @@ class NkPredictionVerifier:
                 verified_races.append(v_res)
 
         if not verified_races:
-            return f"# ⚠️ 【予想検証レポート】{target_date}\n\n照合可能な予想・結果ペアが見つかりませんでした。"
+            return f"# ⚠️ 【予想検証レポート{category_label}】{target_date}\n\n照合可能な予想・結果ペアが見つかりませんでした。"
 
-        # 会場名 ＞ レース番号（数値昇順） の順でソート
+        # 会場名 ＞ レース番号順（数値昇順）にソート
         def get_sort_key(vr):
             t_name = str(vr.get("race_track", ""))
             r_str = str(vr.get("race_num", "0"))
@@ -371,7 +397,7 @@ class NkPredictionVerifier:
         anama_fukusho = (mark_stats['☆']['1st'] + mark_stats['☆']['2nd'] + mark_stats['☆']['3rd']) / max(1, mark_stats['☆']['count']) * 100.0
 
         lines = [
-            f"# 📊【予想結果検証レポート】{target_date} 競走結果・印整合性＆収支レビュー",
+            f"# 📊【予想結果検証レポート{category_label}】{target_date} 競走結果・印整合性＆収支レビュー",
             "",
             "## 🎯 1. 当日総合収支・的中率サマリー",
             "",

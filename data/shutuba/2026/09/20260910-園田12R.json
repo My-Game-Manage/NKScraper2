@@ -1,0 +1,217 @@
+{
+  "race_id": "202650091012",
+  "race_track": "園田",
+  "race_num": "12",
+  "target_date": "20260910",
+  "race_name": "C3一",
+  "race_grade": "",
+  "race_type": "(右) 1230m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スマルト",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2020102248"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ファルコンエース",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2022100034"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウサザナミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松木大地",
+      "stable": "兵庫飯田良弘",
+      "horse_id": "2023105206"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "トレジャーブルー",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫野田忍",
+      "horse_id": "2022104067"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シェナホープ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2017106106"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "サンピラーゴールド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022106579"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロサバンクシア",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022100573"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "モンサンヴェロニカ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫森澤友貴",
+      "horse_id": "2023101581"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マリーナサンライズ",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "塩津璃菜",
+      "stable": "兵庫田村彰啓",
+      "horse_id": "2021103142"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ドリームハーモニー",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2023103210"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スマルト",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2020102248"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ファルコンエース",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2022100034"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウサザナミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松木大地",
+      "stable": "兵庫飯田良弘",
+      "horse_id": "2023105206"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "トレジャーブルー",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫野田忍",
+      "horse_id": "2022104067"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シェナホープ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2017106106"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "サンピラーゴールド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022106579"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロサバンクシア",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022100573"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "モンサンヴェロニカ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫森澤友貴",
+      "horse_id": "2023101581"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マリーナサンライズ",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "塩津璃菜",
+      "stable": "兵庫田村彰啓",
+      "horse_id": "2021103142"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ドリームハーモニー",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2023103210"
+    }
+  ]
+}

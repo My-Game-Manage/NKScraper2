@@ -1,0 +1,217 @@
+{
+  "race_id": "202644091712",
+  "race_track": "大井",
+  "race_num": "12",
+  "target_date": "20260917",
+  "race_name": "ペルセウス賞競走(B1B2)",
+  "race_grade": "",
+  "race_type": "(左) 1650m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ドラケン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西啓太",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2020100696"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ポッドフェスタ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井的場直之",
+      "horse_id": "2023105078"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ソルベット",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井真島大輔",
+      "horse_id": "2021103813"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スリーレジェンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "笹川翼",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2022103602"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "サブノハクタカ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "藤本現暉",
+      "stable": "大井鷹見浩",
+      "horse_id": "2018104301"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レベリオス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2021100554"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ベイビーザロック",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "鷹見陸",
+      "stable": "大井田中正人",
+      "horse_id": "2023100680"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "タッチウッド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "御神本訓",
+      "stable": "大井須田和伸",
+      "horse_id": "2020105998"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マイネルボンバー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "福原杏",
+      "stable": "大井阪本一栄",
+      "horse_id": "2020104653"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "パレルモ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "野畑凌",
+      "stable": "大井米田英世",
+      "horse_id": "2020106572"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ドラケン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西啓太",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2020100696"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ポッドフェスタ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井的場直之",
+      "horse_id": "2023105078"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ソルベット",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井真島大輔",
+      "horse_id": "2021103813"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スリーレジェンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "笹川翼",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2022103602"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "サブノハクタカ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "藤本現暉",
+      "stable": "大井鷹見浩",
+      "horse_id": "2018104301"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レベリオス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2021100554"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ベイビーザロック",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "鷹見陸",
+      "stable": "大井田中正人",
+      "horse_id": "2023100680"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "タッチウッド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "御神本訓",
+      "stable": "大井須田和伸",
+      "horse_id": "2020105998"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "マイネルボンバー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "福原杏",
+      "stable": "大井阪本一栄",
+      "horse_id": "2020104653"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "パレルモ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "野畑凌",
+      "stable": "大井米田英世",
+      "horse_id": "2020106572"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "race_id": "202642092209",
+  "race_track": "浦和",
+  "race_num": "9",
+  "target_date": "20260922",
+  "race_name": "秋晴特別(C2)",
+  "race_grade": "",
+  "race_type": "(左) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ディルブランド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2022107121"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ペプチドシナノ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "篠谷葵",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2022101958"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スタークイック",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "保園翔也",
+      "stable": "浦和川村守男",
+      "horse_id": "2022104449"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イッポンミチ",
+      "horse_age": "セ5",
+      "weight_carried": "54.0",
+      "jockey": "中島良美",
+      "stable": "浦和川村守男",
+      "horse_id": "2021102795"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レモンアイカー",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "仲野光馬",
+      "stable": "船橋長谷川剛",
+      "horse_id": "2020104873"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ラインアルテミス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2022106875"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "トーセンアデレード",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和小久保智",
+      "horse_id": "2022105662"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "サージ",
+      "horse_age": "セ4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和宇野木博",
+      "horse_id": "2022100095"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "オリエンタルマック",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "岡村健司",
+      "stable": "浦和酒井一則",
+      "horse_id": "2022106145"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ロワゾブルーチヌ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "本橋孝太",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022104140"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "インファンタ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "浦和入口由美",
+      "horse_id": "2021101225"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "メイショウサノサ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "浦和入口由美",
+      "horse_id": "2022101472"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ディルブランド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2022107121"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ペプチドシナノ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "篠谷葵",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2022101958"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スタークイック",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "保園翔也",
+      "stable": "浦和川村守男",
+      "horse_id": "2022104449"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イッポンミチ",
+      "horse_age": "セ5",
+      "weight_carried": "54.0",
+      "jockey": "中島良美",
+      "stable": "浦和川村守男",
+      "horse_id": "2021102795"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レモンアイカー",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "仲野光馬",
+      "stable": "船橋長谷川剛",
+      "horse_id": "2020104873"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ラインアルテミス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2022106875"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "トーセンアデレード",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和小久保智",
+      "horse_id": "2022105662"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "サージ",
+      "horse_age": "セ4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和宇野木博",
+      "horse_id": "2022100095"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "オリエンタルマック",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "岡村健司",
+      "stable": "浦和酒井一則",
+      "horse_id": "2022106145"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ロワゾブルーチヌ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "本橋孝太",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022104140"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "インファンタ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "浦和入口由美",
+      "horse_id": "2021101225"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "メイショウサノサ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "浦和入口由美",
+      "horse_id": "2022101472"
+    }
+  ]
+}

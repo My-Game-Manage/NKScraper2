@@ -1,0 +1,177 @@
+{
+  "race_id": "202650112003",
+  "race_track": "園田",
+  "race_num": "3",
+  "target_date": "20261120",
+  "race_name": "C3",
+  "race_grade": "",
+  "race_type": "(右) 1700m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アビル",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2023103904"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トランセンデンタル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫小村正也",
+      "horse_id": "2018106651"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カイリ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫藤川純",
+      "horse_id": "2023101511"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "コパノキャスター",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2019106459"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "フィフスドア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2023109052"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホワイトジェイド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2023106483"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロミヒ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022103741"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マイネルトラキア",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫南弘樹",
+      "horse_id": "2022106797"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アビル",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2023103904"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トランセンデンタル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫小村正也",
+      "horse_id": "2018106651"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カイリ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫藤川純",
+      "horse_id": "2023101511"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "コパノキャスター",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2019106459"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "フィフスドア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2023109052"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホワイトジェイド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2023106483"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロミヒ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2022103741"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マイネルトラキア",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫南弘樹",
+      "horse_id": "2022106797"
+    }
+  ]
+}

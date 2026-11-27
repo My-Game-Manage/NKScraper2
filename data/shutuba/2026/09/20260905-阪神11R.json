@@ -1,0 +1,257 @@
+{
+  "race_id": "202609040111",
+  "race_track": "阪神",
+  "race_num": "11",
+  "target_date": "20260905",
+  "race_name": "エニフS",
+  "race_grade": "",
+  "race_type": "右 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "タイセイブレイズ",
+      "horse_age": "牡8",
+      "weight_carried": "55.0",
+      "jockey": "国分恭",
+      "stable": "栗東牧浦",
+      "horse_id": "2018102969"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ノーブルロジャー",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "岩田望",
+      "stable": "栗東吉岡",
+      "horse_id": "2021110148"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フェルヴェンテ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "秋山稔",
+      "stable": "栗東宮",
+      "horse_id": "2020102045"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ゴッドブルービー",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東角田",
+      "horse_id": "2020106063"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マニバドラ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西村淳",
+      "stable": "栗東森秀",
+      "horse_id": "2020110105"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ペイシャケイプ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "横山典",
+      "stable": "栗東高橋康",
+      "horse_id": "2022104219"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "グランキングオー",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "幸",
+      "stable": "栗東高橋康",
+      "horse_id": "2022100664"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トリリオンボーイ",
+      "horse_age": "セ4",
+      "weight_carried": "54.0",
+      "jockey": "中井",
+      "stable": "美浦武井",
+      "horse_id": "2022102493"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エスカル",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東森秀",
+      "horse_id": "2021110069"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ルークススペイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "美浦伊藤圭",
+      "horse_id": "2022101543"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リジル",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "団野",
+      "stable": "栗東奥村豊",
+      "horse_id": "2021101457"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ムイ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "富田",
+      "stable": "栗東笹田",
+      "horse_id": "2022102408"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "タイセイブレイズ",
+      "horse_age": "牡8",
+      "weight_carried": "55.0",
+      "jockey": "国分恭",
+      "stable": "栗東牧浦",
+      "horse_id": "2018102969"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ノーブルロジャー",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "岩田望",
+      "stable": "栗東吉岡",
+      "horse_id": "2021110148"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フェルヴェンテ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "秋山稔",
+      "stable": "栗東宮",
+      "horse_id": "2020102045"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ゴッドブルービー",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東角田",
+      "horse_id": "2020106063"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マニバドラ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西村淳",
+      "stable": "栗東森秀",
+      "horse_id": "2020110105"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ペイシャケイプ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "横山典",
+      "stable": "栗東高橋康",
+      "horse_id": "2022104219"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "グランキングオー",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "幸",
+      "stable": "栗東高橋康",
+      "horse_id": "2022100664"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トリリオンボーイ",
+      "horse_age": "セ4",
+      "weight_carried": "54.0",
+      "jockey": "中井",
+      "stable": "美浦武井",
+      "horse_id": "2022102493"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エスカル",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東森秀",
+      "horse_id": "2021110069"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ルークススペイ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "美浦伊藤圭",
+      "horse_id": "2022101543"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リジル",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "団野",
+      "stable": "栗東奥村豊",
+      "horse_id": "2021101457"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ムイ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "富田",
+      "stable": "栗東笹田",
+      "horse_id": "2022102408"
+    }
+  ]
+}

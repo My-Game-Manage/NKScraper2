@@ -1,0 +1,257 @@
+{
+  "race_id": "202608040509",
+  "race_track": "京都",
+  "race_num": "9",
+  "target_date": "20261012",
+  "race_name": "蹴上特別",
+  "race_grade": "",
+  "race_type": "右 1800m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イプシロンナンバー",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松若",
+      "stable": "栗東小崎",
+      "horse_id": "2022107301"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードソルスティス",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "横山琉",
+      "stable": "美浦斎藤誠",
+      "horse_id": "2022100650"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クロノスバレット",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松山",
+      "stable": "栗東吉村",
+      "horse_id": "2022110123"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ソルチェリア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "栗東大根田",
+      "horse_id": "2023102075"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ゼンエスポワール",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "横山典",
+      "stable": "栗東飯田",
+      "horse_id": "2022110135"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "マシン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "坂井",
+      "stable": "栗東石坂",
+      "horse_id": "2023105387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "トゥーザムーン",
+      "horse_age": "牝4",
+      "weight_carried": "56.0",
+      "jockey": "菅原明",
+      "stable": "美浦辻",
+      "horse_id": "2022102700"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シグムンド",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "藤懸",
+      "stable": "美浦岩戸",
+      "horse_id": "2021106353"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "サザンウォリアー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "秋山稔",
+      "stable": "美浦加藤和",
+      "horse_id": "2023101542"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ニホンピロデヴィン",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "田口",
+      "stable": "栗東緒方",
+      "horse_id": "2022104214"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "レッドボブ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "亀田",
+      "stable": "栗東田中克",
+      "horse_id": "2022105055"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "テイエムサンレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鮫島良",
+      "stable": "栗東河嶋",
+      "horse_id": "2023102576"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イプシロンナンバー",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松若",
+      "stable": "栗東小崎",
+      "horse_id": "2022107301"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードソルスティス",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "横山琉",
+      "stable": "美浦斎藤誠",
+      "horse_id": "2022100650"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クロノスバレット",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松山",
+      "stable": "栗東吉村",
+      "horse_id": "2022110123"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ソルチェリア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "栗東大根田",
+      "horse_id": "2023102075"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ゼンエスポワール",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "横山典",
+      "stable": "栗東飯田",
+      "horse_id": "2022110135"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "マシン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "坂井",
+      "stable": "栗東石坂",
+      "horse_id": "2023105387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "トゥーザムーン",
+      "horse_age": "牝4",
+      "weight_carried": "56.0",
+      "jockey": "菅原明",
+      "stable": "美浦辻",
+      "horse_id": "2022102700"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シグムンド",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "藤懸",
+      "stable": "美浦岩戸",
+      "horse_id": "2021106353"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "サザンウォリアー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "秋山稔",
+      "stable": "美浦加藤和",
+      "horse_id": "2023101542"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ニホンピロデヴィン",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "田口",
+      "stable": "栗東緒方",
+      "horse_id": "2022104214"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "レッドボブ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "亀田",
+      "stable": "栗東田中克",
+      "horse_id": "2022105055"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "テイエムサンレーヴ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鮫島良",
+      "stable": "栗東河嶋",
+      "horse_id": "2023102576"
+    }
+  ]
+}

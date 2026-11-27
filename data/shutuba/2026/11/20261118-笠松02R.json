@@ -1,0 +1,217 @@
+{
+  "race_id": "202647111802",
+  "race_track": "笠松",
+  "race_num": "2",
+  "target_date": "20261118",
+  "race_name": "C18組",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンマルオブウォー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "東川慎",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023103278"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンヴァルト",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "高木健",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023101692"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シンプウミホノ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "森島貴之",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2023104641"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハナノクロコ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2021109017"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シファル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023106513"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アルミーラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023102085"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クリノジルバ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "阿部基嗣",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2020105135"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ミスフレンド",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "横川怜央",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2021102492"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "プリンセスリッカ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023109175"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマイリングキング",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "向山牧",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2022104058"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンマルオブウォー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "東川慎",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023103278"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンヴァルト",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "高木健",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023101692"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シンプウミホノ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "森島貴之",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2023104641"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハナノクロコ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2021109017"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シファル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023106513"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アルミーラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023102085"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クリノジルバ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "阿部基嗣",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2020105135"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ミスフレンド",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "横川怜央",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2021102492"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "プリンセスリッカ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023109175"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマイリングキング",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "向山牧",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2022104058"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "race_id": "202650090307",
+  "race_track": "園田",
+  "race_num": "7",
+  "target_date": "20260903",
+  "race_name": "C3一",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フィフスドア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2023109052"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イヤーズストレイト",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2018105101"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タスマンハイウェイ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "永井孝典",
+      "stable": "兵庫大塚信次",
+      "horse_id": "2018105036"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アークリオーソ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2018100803"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スマートキャノン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "松木大地",
+      "stable": "兵庫尾林幸二",
+      "horse_id": "2019102200"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "クリノアチーバー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫渡瀬寛彰",
+      "horse_id": "2021106572"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ランボーリープ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2020101311"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "シマノダイヤモンド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫山元博徳",
+      "horse_id": "2020106619"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "アロンジカフェ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫高本友芳",
+      "horse_id": "2022106256"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フィフスドア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2023109052"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イヤーズストレイト",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2018105101"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タスマンハイウェイ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "永井孝典",
+      "stable": "兵庫大塚信次",
+      "horse_id": "2018105036"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アークリオーソ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2018100803"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スマートキャノン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "松木大地",
+      "stable": "兵庫尾林幸二",
+      "horse_id": "2019102200"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "クリノアチーバー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫渡瀬寛彰",
+      "horse_id": "2021106572"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ランボーリープ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2020101311"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "シマノダイヤモンド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫山元博徳",
+      "horse_id": "2020106619"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "アロンジカフェ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫高本友芳",
+      "horse_id": "2022106256"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    }
+  ]
+}

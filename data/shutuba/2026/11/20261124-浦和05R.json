@@ -1,0 +1,237 @@
+{
+  "race_id": "202642112405",
+  "race_track": "浦和",
+  "race_num": "5",
+  "target_date": "20261124",
+  "race_name": "3歳一",
+  "race_grade": "",
+  "race_type": "(左) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ナムラシンジロー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "櫻井光輔",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2023100672"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "テンザンパパ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎内田勝義",
+      "horse_id": "2023100350"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "パッションローザ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "加藤雄真",
+      "stable": "川崎山崎尋美",
+      "horse_id": "2023104298"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カシノユメミヅキ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2023109103"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レイランディ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和宇野木博",
+      "horse_id": "2023103506"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ノベンバーベイズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和吉田正美",
+      "horse_id": "2023102900"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "コンバットステート",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023104299"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "センチュリーラヴ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "浦和入口由美",
+      "horse_id": "2023100295"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フリーダムスタイル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "杉山海波",
+      "stable": "浦和吉田正美",
+      "horse_id": "2023105836"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "マッキュラシオン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2023102732"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "センプレヴェルデ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和箕輪武",
+      "horse_id": "2023103969"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ナムラシンジロー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "櫻井光輔",
+      "stable": "浦和海馬澤司",
+      "horse_id": "2023100672"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "テンザンパパ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎内田勝義",
+      "horse_id": "2023100350"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "パッションローザ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "加藤雄真",
+      "stable": "川崎山崎尋美",
+      "horse_id": "2023104298"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カシノユメミヅキ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2023109103"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レイランディ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和宇野木博",
+      "horse_id": "2023103506"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ノベンバーベイズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和吉田正美",
+      "horse_id": "2023102900"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "コンバットステート",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023104299"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "センチュリーラヴ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "浦和入口由美",
+      "horse_id": "2023100295"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フリーダムスタイル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "杉山海波",
+      "stable": "浦和吉田正美",
+      "horse_id": "2023105836"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "マッキュラシオン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2023102732"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "センプレヴェルデ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和箕輪武",
+      "horse_id": "2023103969"
+    }
+  ]
+}

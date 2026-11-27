@@ -1,0 +1,257 @@
+{
+  "race_id": "202654101807",
+  "race_track": "高知",
+  "race_num": "7",
+  "target_date": "20261018",
+  "race_name": "C3ー2",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メイショウフジタカ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2018105860"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グランパリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021100708"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビッグショータイム",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中守",
+      "horse_id": "2021100626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スノークルーズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2022104699"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "サノノビスケッツ",
+      "horse_age": "牡6",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100801"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーアグッドラック",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022105906"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "コンジャンクション",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105182"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ララハカランダ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023100201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "セキショウイダイ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知田中伸一",
+      "horse_id": "2022106037"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アークオブライフ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知田中譲二",
+      "horse_id": "2023105551"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アウゲンブリック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知那俄性哲",
+      "horse_id": "2019101531"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メイショウフジタカ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2018105860"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グランパリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2021100708"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビッグショータイム",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中守",
+      "horse_id": "2021100626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スノークルーズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2022104699"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "サノノビスケッツ",
+      "horse_age": "牡6",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100801"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーアグッドラック",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022105906"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "コンジャンクション",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105182"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ララハカランダ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023100201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "セキショウイダイ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知田中伸一",
+      "horse_id": "2022106037"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アークオブライフ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知田中譲二",
+      "horse_id": "2023105551"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アウゲンブリック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知那俄性哲",
+      "horse_id": "2019101531"
+    }
+  ]
+}

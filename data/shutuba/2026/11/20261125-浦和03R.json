@@ -1,0 +1,257 @@
+{
+  "race_id": "202642112503",
+  "race_track": "浦和",
+  "race_num": "3",
+  "target_date": "20261125",
+  "race_name": "2歳三",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ニエリカ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "町田直希",
+      "stable": "浦和繁田健一",
+      "horse_id": "2024107209"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "フルールバトル",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "浦和藤原智行",
+      "horse_id": "2024104864"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ウィズボンド",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "本田正重",
+      "stable": "浦和箕輪武",
+      "horse_id": "2024103031"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オンブラドーロ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和宇野木博",
+      "horse_id": "2024105069"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ツガノヤマト",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "阿部龍",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2024104703"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "スモモサンジョ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和小林真治",
+      "horse_id": "2024107138"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ユウユウヒレシュ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和川村守男",
+      "horse_id": "2024107110"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ノーブルフリージア",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和水野貴史",
+      "horse_id": "2024102092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ジーティーマルーン",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "落合玄太",
+      "stable": "浦和小久保智",
+      "horse_id": "2024104832"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "トーケンジンバック",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "福原杏",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2024101434"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シナノダムール",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2024103890"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "タカイチイーロン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2024102732"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ニエリカ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "町田直希",
+      "stable": "浦和繁田健一",
+      "horse_id": "2024107209"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "フルールバトル",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "浦和藤原智行",
+      "horse_id": "2024104864"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ウィズボンド",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "本田正重",
+      "stable": "浦和箕輪武",
+      "horse_id": "2024103031"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オンブラドーロ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和宇野木博",
+      "horse_id": "2024105069"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ツガノヤマト",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "阿部龍",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2024104703"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "スモモサンジョ",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和小林真治",
+      "horse_id": "2024107138"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ユウユウヒレシュ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和川村守男",
+      "horse_id": "2024107110"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ノーブルフリージア",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和水野貴史",
+      "horse_id": "2024102092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ジーティーマルーン",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "落合玄太",
+      "stable": "浦和小久保智",
+      "horse_id": "2024104832"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "トーケンジンバック",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "福原杏",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2024101434"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シナノダムール",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2024103890"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "タカイチイーロン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2024102732"
+    }
+  ]
+}

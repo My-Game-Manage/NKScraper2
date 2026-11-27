@@ -1,0 +1,237 @@
+{
+  "race_id": "202648101303",
+  "race_track": "名古屋",
+  "race_num": "3",
+  "target_date": "20261013",
+  "race_name": "C32組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イベリスアマラ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023106870"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ココプレミア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2023105569"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ダゴベルト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹下直人",
+      "horse_id": "2023106946"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カイキアス",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2023106882"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アンヌグロース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知植松則幸",
+      "horse_id": "2023105244"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ソパデアホ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知安部幸夫",
+      "horse_id": "2023101870"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "アイゼンハイム",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤誓二",
+      "stable": "愛知荒巻透",
+      "horse_id": "2023100020"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "グリニッジローズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸山真一",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2023102038"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ソブリンズオーブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知地辺幸一",
+      "horse_id": "2023103785"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "メイショウケンゴウ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "細川智史",
+      "stable": "愛知坂口義幸",
+      "horse_id": "2023105091"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アメジストブリエ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知今津勝之",
+      "horse_id": "2023105040"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イベリスアマラ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023106870"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ココプレミア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2023105569"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ダゴベルト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹下直人",
+      "horse_id": "2023106946"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カイキアス",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2023106882"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アンヌグロース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知植松則幸",
+      "horse_id": "2023105244"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ソパデアホ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知安部幸夫",
+      "horse_id": "2023101870"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "アイゼンハイム",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤誓二",
+      "stable": "愛知荒巻透",
+      "horse_id": "2023100020"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "グリニッジローズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸山真一",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2023102038"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ソブリンズオーブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知地辺幸一",
+      "horse_id": "2023103785"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "メイショウケンゴウ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "細川智史",
+      "stable": "愛知坂口義幸",
+      "horse_id": "2023105091"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アメジストブリエ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知今津勝之",
+      "horse_id": "2023105040"
+    }
+  ]
+}

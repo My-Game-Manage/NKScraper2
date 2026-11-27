@@ -1,0 +1,257 @@
+{
+  "race_id": "202609040408",
+  "race_track": "阪神",
+  "race_num": "8",
+  "target_date": "20260913",
+  "race_name": "3歳以上1勝クラス",
+  "race_grade": "",
+  "race_type": "右 1800m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ガイストライヒ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "西村淳",
+      "stable": "栗東高柳大",
+      "horse_id": "2023106948"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ココロヅヨサ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "浜中",
+      "stable": "栗東田中克",
+      "horse_id": "2023105041"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アスクガンバーレ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "ルメール",
+      "stable": "栗東福永",
+      "horse_id": "2022102300"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "レッドホット",
+      "horse_age": "セ3",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東河嶋",
+      "horse_id": "2023104395"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウソウテン",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "田口",
+      "stable": "栗東鈴木孝",
+      "horse_id": "2023103180"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "グランドスウェル",
+      "horse_age": "セ3",
+      "weight_carried": "55.0",
+      "jockey": "西塚",
+      "stable": "美浦畠山",
+      "horse_id": "2023102833"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "マーベリックシチー",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "国分恭",
+      "stable": "栗東岡田",
+      "horse_id": "2021100387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "アビラーシャ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "中井",
+      "stable": "栗東武幸",
+      "horse_id": "2023107017"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイショウクモイ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "☆田山",
+      "stable": "栗東飯田",
+      "horse_id": "2020106922"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ラッキーベイ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松若",
+      "stable": "栗東今野",
+      "horse_id": "2022105209"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サンライズオスカー",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "藤懸",
+      "stable": "栗東石坂",
+      "horse_id": "2023106129"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ブルーストレイル",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "城戸",
+      "stable": "栗東荒川",
+      "horse_id": "2021106078"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ガイストライヒ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "西村淳",
+      "stable": "栗東高柳大",
+      "horse_id": "2023106948"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ココロヅヨサ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "浜中",
+      "stable": "栗東田中克",
+      "horse_id": "2023105041"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アスクガンバーレ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "ルメール",
+      "stable": "栗東福永",
+      "horse_id": "2022102300"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "レッドホット",
+      "horse_age": "セ3",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東河嶋",
+      "horse_id": "2023104395"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウソウテン",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "田口",
+      "stable": "栗東鈴木孝",
+      "horse_id": "2023103180"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "グランドスウェル",
+      "horse_age": "セ3",
+      "weight_carried": "55.0",
+      "jockey": "西塚",
+      "stable": "美浦畠山",
+      "horse_id": "2023102833"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "マーベリックシチー",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "国分恭",
+      "stable": "栗東岡田",
+      "horse_id": "2021100387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "アビラーシャ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "中井",
+      "stable": "栗東武幸",
+      "horse_id": "2023107017"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイショウクモイ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "☆田山",
+      "stable": "栗東飯田",
+      "horse_id": "2020106922"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ラッキーベイ",
+      "horse_age": "牡4",
+      "weight_carried": "58.0",
+      "jockey": "松若",
+      "stable": "栗東今野",
+      "horse_id": "2022105209"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サンライズオスカー",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "藤懸",
+      "stable": "栗東石坂",
+      "horse_id": "2023106129"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ブルーストレイル",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "城戸",
+      "stable": "栗東荒川",
+      "horse_id": "2021106078"
+    }
+  ]
+}

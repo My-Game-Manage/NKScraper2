@@ -1,0 +1,217 @@
+{
+  "race_id": "202644100607",
+  "race_track": "大井",
+  "race_num": "7",
+  "target_date": "20261006",
+  "race_name": "C2121314(C213)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ウエノマルサンダー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "本村直樹",
+      "stable": "大井井上弘之",
+      "horse_id": "2022103069"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "マサノエターナル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井月岡健二",
+      "horse_id": "2023104207"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フローラルデザイン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2022105308"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジャスティンロング",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022100537"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ジュアルエリモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "千田洋",
+      "stable": "大井村上頼章",
+      "horse_id": "2023101902"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "コウフウセイゲツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井田中正人",
+      "horse_id": "2022105409"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "キミオウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉井章",
+      "stable": "大井立花伸",
+      "horse_id": "2023102097"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ルトラセ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "江里口裕",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2020102538"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "キングパッション",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023100103"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "フェアクラウド",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井高橋清顕",
+      "horse_id": "2021103497"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ウエノマルサンダー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "本村直樹",
+      "stable": "大井井上弘之",
+      "horse_id": "2022103069"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "マサノエターナル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井月岡健二",
+      "horse_id": "2023104207"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フローラルデザイン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井鈴木啓之",
+      "horse_id": "2022105308"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジャスティンロング",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022100537"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ジュアルエリモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "千田洋",
+      "stable": "大井村上頼章",
+      "horse_id": "2023101902"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "コウフウセイゲツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井田中正人",
+      "horse_id": "2022105409"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "キミオウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉井章",
+      "stable": "大井立花伸",
+      "horse_id": "2023102097"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ルトラセ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "江里口裕",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2020102538"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "キングパッション",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023100103"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "フェアクラウド",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井高橋清顕",
+      "horse_id": "2021103497"
+    }
+  ]
+}

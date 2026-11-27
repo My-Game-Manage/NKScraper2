@@ -1,0 +1,237 @@
+{
+  "race_id": "202646101301",
+  "race_track": "金沢",
+  "race_num": "1",
+  "target_date": "20261013",
+  "race_name": "C28",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ファインブルー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢高橋優子",
+      "horse_id": "2023104469"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リュシエル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023104153"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ルールオーヴァー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023101886"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラルス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢高橋優子",
+      "horse_id": "2023102035"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スギノダイナミック",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023106647"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "モルトカリーナ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101674"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ブラックエンペラー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022105621"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マハラージャ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023109065"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "レディアグレッサー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023103219"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クツワエターナル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2023106293"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ブルースプレイヤー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢野田幸雄",
+      "horse_id": "2023103432"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ファインブルー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢高橋優子",
+      "horse_id": "2023104469"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リュシエル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023104153"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ルールオーヴァー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023101886"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラルス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢高橋優子",
+      "horse_id": "2023102035"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スギノダイナミック",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023106647"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "モルトカリーナ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101674"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ブラックエンペラー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022105621"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マハラージャ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023109065"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "レディアグレッサー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023103219"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クツワエターナル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2023106293"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ブルースプレイヤー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢野田幸雄",
+      "horse_id": "2023103432"
+    }
+  ]
+}

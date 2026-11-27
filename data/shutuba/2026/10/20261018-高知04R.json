@@ -1,0 +1,197 @@
+{
+  "race_id": "202654101804",
+  "race_track": "高知",
+  "race_num": "4",
+  "target_date": "20261018",
+  "race_name": "C2ー6",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フリントロック",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020103844"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ビッグバンド",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2017101499"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "チャンピオンリボン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022102964"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イカホ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021101817"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウハボマイ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022102841"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ダイシンゲキ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知宮路洋一",
+      "horse_id": "2022100942"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "リバティフレイム",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022101645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "グリントリッター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2021100328"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "トーケンクミー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022102177"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フリントロック",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020103844"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ビッグバンド",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2017101499"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "チャンピオンリボン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022102964"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イカホ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021101817"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウハボマイ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西山裕貴",
+      "horse_id": "2022102841"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ダイシンゲキ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知宮路洋一",
+      "horse_id": "2022100942"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "リバティフレイム",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022101645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "グリントリッター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知倉兼育康",
+      "horse_id": "2021100328"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "トーケンクミー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022102177"
+    }
+  ]
+}

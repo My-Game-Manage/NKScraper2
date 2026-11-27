@@ -1,0 +1,197 @@
+{
+  "race_id": "202646090805",
+  "race_track": "金沢",
+  "race_num": "5",
+  "target_date": "20260908",
+  "race_name": "C17",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クツワファミリー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2020104626"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "スーパーナニー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021103382"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トーアエデン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "服部大地",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022105902"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ビーラブドウィッチ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022104017"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ブリックス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2021100024"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フミマーズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "米倉知",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022106154"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ミスキャサリン",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢中川雅之",
+      "horse_id": "2021102155"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "アポロリリー",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢室井眞文",
+      "horse_id": "2017100034"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ブルートレーラー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2022103975"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クツワファミリー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2020104626"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "スーパーナニー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021103382"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トーアエデン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "服部大地",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022105902"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ビーラブドウィッチ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022104017"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ブリックス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2021100024"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "フミマーズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "米倉知",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022106154"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ミスキャサリン",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢中川雅之",
+      "horse_id": "2021102155"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "アポロリリー",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢室井眞文",
+      "horse_id": "2017100034"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ブルートレーラー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2022103975"
+    }
+  ]
+}

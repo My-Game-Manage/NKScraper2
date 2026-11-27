@@ -1,0 +1,237 @@
+{
+  "race_id": "202644090402",
+  "race_track": "大井",
+  "race_num": "2",
+  "target_date": "20260904",
+  "race_name": "3歳一二三(3歳二)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コブラツイスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023105538"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "タケゾウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田正重",
+      "stable": "大井佐野謙二",
+      "horse_id": "2023101340"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サイカンサンユウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井坂井英光",
+      "horse_id": "2023100616"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "シンプウエース",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "達城龍次",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023103027"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "プレイバック",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "杉山海波",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100029"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リトルデビル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023106111"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "サヨノグッドデイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井藤田輝信",
+      "horse_id": "2023101309"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ローズプリンセス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "藤田凌",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102985"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "グラスリッキー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2023104251"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レンソイス",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "木澤奨",
+      "stable": "大井朝倉実",
+      "horse_id": "2023101764"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ピルゴスアイトス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "中村尚平",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100274"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コブラツイスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023105538"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "タケゾウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田正重",
+      "stable": "大井佐野謙二",
+      "horse_id": "2023101340"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サイカンサンユウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井坂井英光",
+      "horse_id": "2023100616"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "シンプウエース",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "達城龍次",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023103027"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "プレイバック",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "杉山海波",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100029"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リトルデビル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井荒山勝徳",
+      "horse_id": "2023106111"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "サヨノグッドデイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井藤田輝信",
+      "horse_id": "2023101309"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ローズプリンセス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "藤田凌",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102985"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "グラスリッキー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2023104251"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レンソイス",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "木澤奨",
+      "stable": "大井朝倉実",
+      "horse_id": "2023101764"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ピルゴスアイトス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "中村尚平",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100274"
+    }
+  ]
+}

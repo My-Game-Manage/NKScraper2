@@ -1,0 +1,237 @@
+{
+  "race_id": "202644100801",
+  "race_track": "大井",
+  "race_num": "1",
+  "target_date": "20261008",
+  "race_name": "3歳一二",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マツリ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023106215"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロイヤルドリーム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023100994"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ピッタンヌンムル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "大井市村誠",
+      "horse_id": "2023104819"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アリハム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井坂井英光",
+      "horse_id": "2023103443"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レッドスカイ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "谷内貫太",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023104453"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マイネルホウセン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井宗形竹見",
+      "horse_id": "2023106487"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "マクシーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "大井福田真広",
+      "horse_id": "2023102420"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリムゾンバースト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉井章",
+      "stable": "大井立花伸",
+      "horse_id": "2023103415"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "グレートロッタリー",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "高橋優",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023107177"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "エトワールブルー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川駿介",
+      "stable": "大井松浦裕之",
+      "horse_id": "2023100389"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "櫻井光輔",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2023101217"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マツリ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023106215"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロイヤルドリーム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023100994"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ピッタンヌンムル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "大井市村誠",
+      "horse_id": "2023104819"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アリハム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井坂井英光",
+      "horse_id": "2023103443"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "レッドスカイ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "谷内貫太",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023104453"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マイネルホウセン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井宗形竹見",
+      "horse_id": "2023106487"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "マクシーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "大井福田真広",
+      "horse_id": "2023102420"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリムゾンバースト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "吉井章",
+      "stable": "大井立花伸",
+      "horse_id": "2023103415"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "グレートロッタリー",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "高橋優",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023107177"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "エトワールブルー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川駿介",
+      "stable": "大井松浦裕之",
+      "horse_id": "2023100389"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "櫻井光輔",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2023101217"
+    }
+  ]
+}

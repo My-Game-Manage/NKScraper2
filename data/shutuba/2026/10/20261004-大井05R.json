@@ -1,0 +1,197 @@
+{
+  "race_id": "202644100405",
+  "race_track": "大井",
+  "race_num": "5",
+  "target_date": "20261004",
+  "race_name": "C21819",
+  "race_grade": "",
+  "race_type": "(右) 1200m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ルビーギャラクシー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井米田英世",
+      "horse_id": "2022104153"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エンドレスバンカー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井須田和伸",
+      "horse_id": "2022102860"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アースフレンドリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "東原悠善",
+      "stable": "大井佐々木洋",
+      "horse_id": "2023100088"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジーティーウララ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2022102607"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ビューティフルベル",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "本橋孝太",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2020102812"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ザゴート",
+      "horse_age": "牝6",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2020101234"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グランドターギー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2022107308"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "カズノマリア",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井納谷和玖",
+      "horse_id": "2022106696"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジーティークィーン",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井佐々木忠",
+      "horse_id": "2023101628"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ルビーギャラクシー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井米田英世",
+      "horse_id": "2022104153"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エンドレスバンカー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井須田和伸",
+      "horse_id": "2022102860"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アースフレンドリー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "東原悠善",
+      "stable": "大井佐々木洋",
+      "horse_id": "2023100088"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ジーティーウララ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2022102607"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ビューティフルベル",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "本橋孝太",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2020102812"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ザゴート",
+      "horse_age": "牝6",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2020101234"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グランドターギー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2022107308"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "カズノマリア",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井納谷和玖",
+      "horse_id": "2022106696"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジーティークィーン",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井佐々木忠",
+      "horse_id": "2023101628"
+    }
+  ]
+}

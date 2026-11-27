@@ -1,0 +1,237 @@
+{
+  "race_id": "202642102301",
+  "race_track": "浦和",
+  "race_num": "1",
+  "target_date": "20261023",
+  "race_name": "3歳四選抜馬イ",
+  "race_grade": "",
+  "race_type": "(左) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ヨドノラヴ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和平山真希",
+      "horse_id": "2023101828"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グレイモカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "浦和小林真治",
+      "horse_id": "2023104126"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オーデンシェル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "岡田大",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2023101422"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレナイトテソーロ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "保園翔也",
+      "stable": "浦和小久保智",
+      "horse_id": "2023102842"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シェナノローマ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2023105166"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グロースフロイデ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2023101373"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ウィゾマニア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "見越彬央",
+      "stable": "浦和水上直人",
+      "horse_id": "2023100225"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "エクレールセイラ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和平山真希",
+      "horse_id": "2023103879"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シルキーグリーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "浦和川村守男",
+      "horse_id": "2023100003"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スタールル",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "所蛍",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2023104145"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シンプウミホノ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和宇野木博",
+      "horse_id": "2023104641"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ヨドノラヴ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "浦和平山真希",
+      "horse_id": "2023101828"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "グレイモカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "浦和小林真治",
+      "horse_id": "2023104126"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オーデンシェル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "岡田大",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2023101422"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレナイトテソーロ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "保園翔也",
+      "stable": "浦和小久保智",
+      "horse_id": "2023102842"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シェナノローマ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2023105166"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "グロースフロイデ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2023101373"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ウィゾマニア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "見越彬央",
+      "stable": "浦和水上直人",
+      "horse_id": "2023100225"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "エクレールセイラ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和平山真希",
+      "horse_id": "2023103879"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シルキーグリーン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "浦和川村守男",
+      "horse_id": "2023100003"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スタールル",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "所蛍",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2023104145"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シンプウミホノ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和宇野木博",
+      "horse_id": "2023104641"
+    }
+  ]
+}

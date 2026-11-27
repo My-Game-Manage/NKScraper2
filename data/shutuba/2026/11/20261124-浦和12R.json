@@ -1,0 +1,257 @@
+{
+  "race_id": "202642112412",
+  "race_track": "浦和",
+  "race_num": "12",
+  "target_date": "20261124",
+  "race_name": "小春空特別(C1C2)",
+  "race_grade": "",
+  "race_type": "(左) 2000m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フォーゲルヴァイデ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和川島豊",
+      "horse_id": "2021104488"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ベルルート",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和小林真治",
+      "horse_id": "2021101345"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サマーストーリー",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "及川烈",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2020104416"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "リケアオランジュ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "福原杏",
+      "stable": "浦和入口由美",
+      "horse_id": "2021106049"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オオタニズスマイル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和箕輪武",
+      "horse_id": "2021105132"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ゴールドキッド",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "古岡勇樹",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022103574"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "フォートウィリアム",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和吉田正美",
+      "horse_id": "2019104463"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "レーヌバンケット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "落合玄太",
+      "stable": "浦和小久保智",
+      "horse_id": "2022103817"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ポピーレッド",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "杉山海波",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2023100119"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ディセントラライズ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "保園翔也",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2021104001"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ライヴジントニック",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023106023"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ユメデアエタラ",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "岡村健司",
+      "stable": "浦和平山真希",
+      "horse_id": "2021100837"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フォーゲルヴァイデ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "半澤慶実",
+      "stable": "浦和川島豊",
+      "horse_id": "2021104488"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ベルルート",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和小林真治",
+      "horse_id": "2021101345"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サマーストーリー",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "及川烈",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2020104416"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "リケアオランジュ",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "福原杏",
+      "stable": "浦和入口由美",
+      "horse_id": "2021106049"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オオタニズスマイル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和箕輪武",
+      "horse_id": "2021105132"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ゴールドキッド",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "古岡勇樹",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022103574"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "フォートウィリアム",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和吉田正美",
+      "horse_id": "2019104463"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "レーヌバンケット",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "落合玄太",
+      "stable": "浦和小久保智",
+      "horse_id": "2022103817"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ポピーレッド",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "杉山海波",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2023100119"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ディセントラライズ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "保園翔也",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2021104001"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ライヴジントニック",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023106023"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ユメデアエタラ",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "岡村健司",
+      "stable": "浦和平山真希",
+      "horse_id": "2021100837"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "race_id": "202642101906",
+  "race_track": "浦和",
+  "race_num": "6",
+  "target_date": "20261019",
+  "race_name": "C2三四",
+  "race_grade": "",
+  "race_type": "(左) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マデイニスルー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "岡田大",
+      "stable": "浦和川村守男",
+      "horse_id": "2021106710"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シナノフラッシュ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "伊藤裕人",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2023106542"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エムティライカ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2023105471"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "グリンネル",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋伊藤滋規",
+      "horse_id": "2023100576"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "チェスナットドレス",
+      "horse_age": "牝9",
+      "weight_carried": "54.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2017106198"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "スタークイック",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和川村守男",
+      "horse_id": "2022104449"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デュオメーデス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "浦和小久保智",
+      "horse_id": "2023105581"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "バルカロール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "浦和藤原智行",
+      "horse_id": "2023100182"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "サンタアナウインド",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "浦和酒井一則",
+      "horse_id": "2022103219"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "サヨノビックアルマ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "及川烈",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023105101"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シタパンツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和野口孝",
+      "horse_id": "2022103299"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マデイニスルー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "岡田大",
+      "stable": "浦和川村守男",
+      "horse_id": "2021106710"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シナノフラッシュ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "伊藤裕人",
+      "stable": "川崎佐藤博紀",
+      "horse_id": "2023106542"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エムティライカ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2023105471"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "グリンネル",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋伊藤滋規",
+      "horse_id": "2023100576"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "チェスナットドレス",
+      "horse_age": "牝9",
+      "weight_carried": "54.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2017106198"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "スタークイック",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "木間塚龍",
+      "stable": "浦和川村守男",
+      "horse_id": "2022104449"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デュオメーデス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "浦和小久保智",
+      "horse_id": "2023105581"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "バルカロール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "浦和藤原智行",
+      "horse_id": "2023100182"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "サンタアナウインド",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "浦和酒井一則",
+      "horse_id": "2022103219"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "サヨノビックアルマ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "及川烈",
+      "stable": "浦和工藤伸輔",
+      "horse_id": "2023105101"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シタパンツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和野口孝",
+      "horse_id": "2022103299"
+    }
+  ]
+}

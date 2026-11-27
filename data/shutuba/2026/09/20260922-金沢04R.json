@@ -1,0 +1,257 @@
+{
+  "race_id": "202646092204",
+  "race_track": "金沢",
+  "race_num": "4",
+  "target_date": "20260922",
+  "race_name": "C16",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フィエールガール",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022100715"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ラースアルアイン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "田知弘久",
+      "stable": "金沢吉井一良",
+      "horse_id": "2022100263"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フォーユーランラン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2019101396"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イサムダイヤモンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022106098"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スマイルムーン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2019102374"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "チョウノヨウニマウ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢池田敦",
+      "horse_id": "2022102076"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジャンボリクイーン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢中川雅之",
+      "horse_id": "2022107230"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "マノンルージュ",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2019104061"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイショウメイボク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021103076"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メッチャハットリ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022100600"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アイルシャンス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022101474"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ブレードダンシング",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "鈴木太一",
+      "stable": "金沢加藤和義",
+      "horse_id": "2022100580"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "フィエールガール",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022100715"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ラースアルアイン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "田知弘久",
+      "stable": "金沢吉井一良",
+      "horse_id": "2022100263"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フォーユーランラン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2019101396"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イサムダイヤモンド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022106098"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スマイルムーン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2019102374"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "チョウノヨウニマウ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢池田敦",
+      "horse_id": "2022102076"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジャンボリクイーン",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢中川雅之",
+      "horse_id": "2022107230"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "マノンルージュ",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鋤田誠二",
+      "horse_id": "2019104061"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイショウメイボク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021103076"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メッチャハットリ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022100600"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アイルシャンス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2022101474"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ブレードダンシング",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "鈴木太一",
+      "stable": "金沢加藤和義",
+      "horse_id": "2022100580"
+    }
+  ]
+}

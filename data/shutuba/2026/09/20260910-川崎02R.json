@@ -1,0 +1,257 @@
+{
+  "race_id": "202645091002",
+  "race_track": "川崎",
+  "race_num": "2",
+  "target_date": "20260910",
+  "race_name": "C3一二",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マニーシーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2022102031"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "スマイルナゴミ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋函館一昭",
+      "horse_id": "2022107413"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "グリントレッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "川崎高橋宏征",
+      "horse_id": "2022100567"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ホーススピリット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤江渉",
+      "stable": "川崎山田正実",
+      "horse_id": "2022105606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "タイセイルシエル",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "櫻井光輔",
+      "stable": "川崎内田勝義",
+      "horse_id": "2022103281"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ルイーサ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎久保勇",
+      "horse_id": "2020102389"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジーティーケリー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "古岡勇樹",
+      "stable": "川崎村田順一",
+      "horse_id": "2022100173"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シェナチチカカ",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "川崎山田正実",
+      "horse_id": "2019101946"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "スウィープレジーナ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "吉原寛人",
+      "stable": "川崎山崎裕也",
+      "horse_id": "2022103972"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メガミリオン",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎田島寿一",
+      "horse_id": "2018102838"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "セイウンパイオニア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "山林堂信",
+      "stable": "川崎田辺陽一",
+      "horse_id": "2021106996"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイブリッジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2021105332"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マニーシーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2022102031"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "スマイルナゴミ",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋函館一昭",
+      "horse_id": "2022107413"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "グリントレッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "川崎高橋宏征",
+      "horse_id": "2022100567"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ホーススピリット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤江渉",
+      "stable": "川崎山田正実",
+      "horse_id": "2022105606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "タイセイルシエル",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "櫻井光輔",
+      "stable": "川崎内田勝義",
+      "horse_id": "2022103281"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ルイーサ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎久保勇",
+      "horse_id": "2020102389"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジーティーケリー",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "古岡勇樹",
+      "stable": "川崎村田順一",
+      "horse_id": "2022100173"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シェナチチカカ",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "川崎山田正実",
+      "horse_id": "2019101946"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "スウィープレジーナ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "吉原寛人",
+      "stable": "川崎山崎裕也",
+      "horse_id": "2022103972"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メガミリオン",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎田島寿一",
+      "horse_id": "2018102838"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "セイウンパイオニア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "山林堂信",
+      "stable": "川崎田辺陽一",
+      "horse_id": "2021106996"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイブリッジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2021105332"
+    }
+  ]
+}

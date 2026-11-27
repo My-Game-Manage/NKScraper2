@@ -1,0 +1,237 @@
+{
+  "race_id": "202648101502",
+  "race_track": "名古屋",
+  "race_num": "2",
+  "target_date": "20261015",
+  "race_name": "C19組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クワイエットエニフ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知井手上慎",
+      "horse_id": "2022107105"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "キタノタイキ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023104227"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナムラカメコ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤誓二",
+      "stable": "愛知服部功",
+      "horse_id": "2023106230"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラスターヴァース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "阪野学",
+      "stable": "愛知倉地学",
+      "horse_id": "2023104597"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オーブラボー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2021101613"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "パーフェクトスノー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知坂口義幸",
+      "horse_id": "2023106378"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ハウスオンファイア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023101172"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ガムピーリング",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2022106204"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "カイトアザリー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "尾崎章生",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102029"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヤタガラスマヒナ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "加藤利征",
+      "stable": "愛知倉地学",
+      "horse_id": "2021103991"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フクスケ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102281"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クワイエットエニフ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知井手上慎",
+      "horse_id": "2022107105"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "キタノタイキ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023104227"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナムラカメコ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤誓二",
+      "stable": "愛知服部功",
+      "horse_id": "2023106230"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラスターヴァース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "阪野学",
+      "stable": "愛知倉地学",
+      "horse_id": "2023104597"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オーブラボー",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2021101613"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "パーフェクトスノー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知坂口義幸",
+      "horse_id": "2023106378"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ハウスオンファイア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023101172"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ガムピーリング",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2022106204"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "カイトアザリー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "尾崎章生",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102029"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヤタガラスマヒナ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "加藤利征",
+      "stable": "愛知倉地学",
+      "horse_id": "2021103991"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フクスケ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102281"
+    }
+  ]
+}

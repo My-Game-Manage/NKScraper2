@@ -1,0 +1,257 @@
+{
+  "race_id": "202654091312",
+  "race_track": "高知",
+  "race_num": "12",
+  "target_date": "20260913",
+  "race_name": "ファイナルレース(C3)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シェルブールレイン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知嬉勝則",
+      "horse_id": "2021105189"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "レリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知別府真司",
+      "horse_id": "2021101385"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モトサン",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知東原己俊",
+      "horse_id": "2020100576"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クラールス",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2016105912"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボールドステート",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2020105583"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "マイネルバルビゾン",
+      "horse_age": "牡17",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2009105196"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キープインマインド",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021105053"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ナイトオブバンド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2020100435"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ビビットピンク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021102209"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "コムルヴァン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2021107168"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "エリジブル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中譲二",
+      "horse_id": "2022106403"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "スマイル",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知胡本友晴",
+      "horse_id": "2016104696"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シェルブールレイン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知嬉勝則",
+      "horse_id": "2021105189"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "レリッシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知別府真司",
+      "horse_id": "2021101385"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モトサン",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知東原己俊",
+      "horse_id": "2020100576"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クラールス",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2016105912"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボールドステート",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2020105583"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "マイネルバルビゾン",
+      "horse_age": "牡17",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2009105196"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キープインマインド",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021105053"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ナイトオブバンド",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2020100435"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ビビットピンク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021102209"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "コムルヴァン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2021107168"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "エリジブル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中譲二",
+      "horse_id": "2022106403"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "スマイル",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知胡本友晴",
+      "horse_id": "2016104696"
+    }
+  ]
+}

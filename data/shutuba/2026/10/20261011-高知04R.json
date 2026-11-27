@@ -1,0 +1,237 @@
+{
+  "race_id": "202654101104",
+  "race_track": "高知",
+  "race_num": "4",
+  "target_date": "20261011",
+  "race_name": "C3ー17",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ピコマーキス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中守",
+      "horse_id": "2023106098"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユイノナナフシギ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023105432"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サンシャインビーチ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023101738"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヴァルドルチャ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2021103000"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラヴィニアパーク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023106801"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ナチュラルスマイル",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022104863"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "スプレーフォール",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2021107266"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベアエクスプレス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知田中譲二",
+      "horse_id": "2023103052"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイジョウエナジー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知田中伸一",
+      "horse_id": "2023101075"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スズカローズキング",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023104930"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "カミイダイヤモンド",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103871"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ピコマーキス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中守",
+      "horse_id": "2023106098"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユイノナナフシギ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023105432"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サンシャインビーチ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023101738"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヴァルドルチャ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2021103000"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラヴィニアパーク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023106801"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ナチュラルスマイル",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022104863"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "スプレーフォール",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2021107266"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベアエクスプレス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知田中譲二",
+      "horse_id": "2023103052"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "メイジョウエナジー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知田中伸一",
+      "horse_id": "2023101075"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スズカローズキング",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023104930"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "カミイダイヤモンド",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103871"
+    }
+  ]
+}

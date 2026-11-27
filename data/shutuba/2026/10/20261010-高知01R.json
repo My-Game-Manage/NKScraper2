@@ -1,0 +1,197 @@
+{
+  "race_id": "202654101001",
+  "race_track": "高知",
+  "race_num": "1",
+  "target_date": "20261010",
+  "race_name": "C3ー13",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "キヨスリョウマ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023100109"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "フルフィルメント",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2023106464"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キープインマインド",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021105053"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "コスモアミュレット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知田中譲二",
+      "horse_id": "2023106489"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モズガネシア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知西山裕貴",
+      "horse_id": "2023105742"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ワイドアルバ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023106359"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クラールス",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2016105912"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "エンファサイズ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2020103007"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フウリンカザン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2023105564"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "キヨスリョウマ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023100109"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "フルフィルメント",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2023106464"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キープインマインド",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知胡本友晴",
+      "horse_id": "2021105053"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "コスモアミュレット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知田中譲二",
+      "horse_id": "2023106489"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モズガネシア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知西山裕貴",
+      "horse_id": "2023105742"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ワイドアルバ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023106359"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クラールス",
+      "horse_age": "牡10",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2016105912"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "エンファサイズ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2020103007"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フウリンカザン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知別府真司",
+      "horse_id": "2023105564"
+    }
+  ]
+}

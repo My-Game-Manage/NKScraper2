@@ -1,0 +1,237 @@
+{
+  "race_id": "202655091909",
+  "race_track": "佐賀",
+  "race_num": "9",
+  "target_date": "20260919",
+  "race_name": "SAGAリベンジャーズドリーム(C2)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ワカワカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023107503"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンブリッジルプス",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2023101688"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カゼノハゴロモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中純",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2023103073"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ダイメイミラクル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀大垣敏夫",
+      "horse_id": "2023101605"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ゼットクイン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "川島拓",
+      "stable": "佐賀土井道隆",
+      "horse_id": "2023106499"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ビーチボール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "小松丈二",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2023101732"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ダノンクラウディア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2023100181"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "テムホウサク",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀平山宏秀",
+      "horse_id": "2023100480"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "カーリーエンジェル",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "椿聡太",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2023105590"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヤヌステソーロ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2023101322"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "スワイメイク",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中直人",
+      "stable": "佐賀九日俊光",
+      "horse_id": "2023100249"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ワカワカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023107503"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケンブリッジルプス",
+      "horse_age": "牡3",
+      "weight_carried": "53.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2023101688"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カゼノハゴロモ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中純",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2023103073"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ダイメイミラクル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀大垣敏夫",
+      "horse_id": "2023101605"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ゼットクイン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "川島拓",
+      "stable": "佐賀土井道隆",
+      "horse_id": "2023106499"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ビーチボール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "小松丈二",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2023101732"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ダノンクラウディア",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2023100181"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "テムホウサク",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀平山宏秀",
+      "horse_id": "2023100480"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "カーリーエンジェル",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "椿聡太",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2023105590"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヤヌステソーロ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2023101322"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "スワイメイク",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中直人",
+      "stable": "佐賀九日俊光",
+      "horse_id": "2023100249"
+    }
+  ]
+}

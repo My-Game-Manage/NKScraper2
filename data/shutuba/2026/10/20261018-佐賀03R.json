@@ -1,0 +1,237 @@
+{
+  "race_id": "202655101803",
+  "race_track": "佐賀",
+  "race_num": "3",
+  "target_date": "20261018",
+  "race_name": "C2ー9組",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ヴィジュイイジャン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2023109113"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エボニードール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023102889"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シルバークラフト",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2023106340"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ベルゲンハート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "川島拓",
+      "stable": "佐賀石川浩文",
+      "horse_id": "2021100621"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ドリフトウッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "小松丈二",
+      "stable": "佐賀石川浩文",
+      "horse_id": "2022103317"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "シーメジャー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀真島正徳",
+      "horse_id": "2021105216"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "エスプラネード",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2022106535"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ポップサンダー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2023100172"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ニンマリ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "長田進仁",
+      "stable": "佐賀中野博",
+      "horse_id": "2022102329"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマートアクシオン",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀井樋明正",
+      "horse_id": "2019102527"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フィナルフェリス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2022102426"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ヴィジュイイジャン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2023109113"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エボニードール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2023102889"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シルバークラフト",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2023106340"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ベルゲンハート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "川島拓",
+      "stable": "佐賀石川浩文",
+      "horse_id": "2021100621"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ドリフトウッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "小松丈二",
+      "stable": "佐賀石川浩文",
+      "horse_id": "2022103317"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "シーメジャー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀真島正徳",
+      "horse_id": "2021105216"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "エスプラネード",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "後藤武蔵",
+      "stable": "佐賀手島勝利",
+      "horse_id": "2022106535"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ポップサンダー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀池田忠好",
+      "horse_id": "2023100172"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ニンマリ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "長田進仁",
+      "stable": "佐賀中野博",
+      "horse_id": "2022102329"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマートアクシオン",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀井樋明正",
+      "horse_id": "2019102527"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フィナルフェリス",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀柳井宏之",
+      "horse_id": "2022102426"
+    }
+  ]
+}

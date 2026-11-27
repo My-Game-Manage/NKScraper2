@@ -1,0 +1,137 @@
+{
+  "race_id": "202609040405",
+  "race_track": "阪神",
+  "race_num": "5",
+  "target_date": "20260913",
+  "race_name": "2歳新馬",
+  "race_grade": "",
+  "race_type": "右 A 2000m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マガスティール",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "亀田",
+      "stable": "栗東高柳大",
+      "horse_id": "2024104227"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アーデルプレミア",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "北村友",
+      "stable": "栗東宮本",
+      "horse_id": "2024106971"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キリマンジェロタフ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東橋口",
+      "horse_id": "2024102489"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "タガノフリアン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "角田和",
+      "stable": "栗東角田",
+      "horse_id": "2024103382"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ミスティビーコン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東橋田",
+      "horse_id": "2024104900"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マイネルグリモア",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "国分恭",
+      "stable": "栗東吉田",
+      "horse_id": "2024103609"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マガスティール",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "亀田",
+      "stable": "栗東高柳大",
+      "horse_id": "2024104227"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アーデルプレミア",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "北村友",
+      "stable": "栗東宮本",
+      "horse_id": "2024106971"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キリマンジェロタフ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東橋口",
+      "horse_id": "2024102489"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "タガノフリアン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "角田和",
+      "stable": "栗東角田",
+      "horse_id": "2024103382"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ミスティビーコン",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東橋田",
+      "horse_id": "2024104900"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マイネルグリモア",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "国分恭",
+      "stable": "栗東吉田",
+      "horse_id": "2024103609"
+    }
+  ]
+}
