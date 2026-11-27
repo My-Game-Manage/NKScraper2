@@ -16,6 +16,9 @@ from src.core.simulator import (
     PersonnelTrendAnalyzer,
     SimulationConfig,
 )
+from src.core.prediction_verifier import NkPredictionVerifier
+from src.core.writer import NkWriter
+from src.utils.date_utils import get_today_jst, get_yesterday_date
 
 
 def parse_list_arg(arg):
@@ -38,7 +41,7 @@ def convert_to_course_codes(input_list: list) -> list:
             print(f"Warning: 会場名 '{item}' が見つかりません。")
     return clean_codes
 
-def get_today_jst() -> str:
+def get_today_jst_str() -> str:
     return datetime.now(timezone(timedelta(hours=9), 'JST')).strftime('%Y%m%d')
 
 def normalize_date_format(date_val) -> str:
@@ -56,7 +59,7 @@ def load_shutuba_races(target_date: str, is_test: bool = False) -> list:
     指定日付の出馬表（Markdownファイル data/{YYYYMMDD}/{会場}/*.md または JSON）を全自動探索・パースする
     """
     base_dir = Path("data_test") if is_test else Path("data")
-    date_str = target_date or get_today_jst()
+    date_str = target_date or get_today_jst_str()
     date_dir = base_dir / date_str
 
     md_files = []
@@ -105,7 +108,7 @@ def load_shutuba_races(target_date: str, is_test: bool = False) -> list:
 
 def run_prediction_workflow(target_date: str, course_codes: list, race_nums: list, is_test: bool = False):
     """保存済みの出馬表データ（Markdown / JSON）から自動予想Markdown(note用)を生成する"""
-    target_date = target_date or get_today_jst()
+    target_date = target_date or get_today_jst_str()
     results_dir = Path("data_test/results") if is_test else Path("data/results")
     horses_dir = Path("data_test/horses") if is_test else Path("data/horses")
     out_dir = Path("data_test/predictions") if is_test else Path("data/predictions")
@@ -165,6 +168,42 @@ def run_prediction_workflow(target_date: str, course_codes: list, race_nums: lis
     logging.info(f"✅ 全 {generated_count} レースの予想Markdownを作成しました。 (出力先: {out_dir})")
 
 
+def run_verification_workflow(target_date: str = "", is_test: bool = False):
+    """スクレイピングを実行せず、既存の予想データとレース結果データから検証レポートのみを生成して保存する"""
+    base_dir = "data_test" if is_test else "data"
+    
+    # 対象日付が未指定の場合、結果ディレクトリから検索または昨日の日付を使用
+    if not target_date:
+        results_dir = Path(base_dir) / "results"
+        found_dates = []
+        if results_dir.exists():
+            for json_file in results_dir.glob("**/*.json"):
+                try:
+                    with open(json_file, "r", encoding="utf-8") as fp:
+                        data = json.load(fp)
+                        d = str(data.get("target_date", ""))
+                        if d and len(d) == 8 and d.isdigit():
+                            found_dates.append(d)
+                except Exception:
+                    pass
+        if found_dates:
+            target_date = max(found_dates)
+        else:
+            target_date = get_yesterday_date()
+
+    logging.info(f"【予想検証モード】対象日付 ({target_date}) の予想と結果の照合を開始します...")
+    
+    verifier = NkPredictionVerifier(base_dir=base_dir, test_base_dir="data_test")
+    verification_md = verifier.generate_verification_report(target_date, is_test=is_test)
+
+    writer = NkWriter(base_dir=base_dir)
+    verif_filename = f"prediction_verification_{target_date}.md"
+    save_path = writer.save_as_markdown(target_date, "reports", verif_filename, verification_md, is_test=is_test)
+
+    logging.info(f"✅ 検証レポートの出力が完了しました: {save_path}")
+    return save_path
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="NetKeiba Data Collector: 開催日トップから指定条件のレースデータを取得し、AI・note用予想を出力します。"
@@ -185,6 +224,9 @@ def main():
     parser.add_argument("--predict", action="store_true", dest="predict", help="出馬表データから自動予想(note投稿用MD)を生成")
     parser.set_defaults(predict=False)
 
+    parser.add_argument("--verify", action="store_true", dest="verify", help="既存の予想データとレース結果データから検証レポート(note用Markdown)のみを生成")
+    parser.set_defaults(verify=False)
+
     parser.add_argument("--only_race", action="store_true", dest="only_race", help="出馬表のみ取得する場合指定")
     parser.set_defaults(only_race=False)
 
@@ -203,7 +245,12 @@ def main():
     target_course_codes = convert_to_course_codes(args.course)
 
     try:
-        if args.predict:
+        if args.verify:
+            # 予想検証モード（スクレイピングなし・既存データ照合のみ）
+            logging.info("【検証モード】既存の予想MDおよび結果JSONから検証レポートのみを出力します...")
+            run_verification_workflow(target_date, is_test=args.test)
+
+        elif args.predict:
             # 自動予想出力モード
             logging.info("【予想生成モード】出馬表データから印・評価スコア・買い目Markdownを自動生成します...")
             run_prediction_workflow(target_date, target_course_codes, args.race_num, is_test=args.test)

@@ -5,6 +5,7 @@ simulator.py - 競馬予想ロジックのバックテスト・全頭100点満�
 2. 100点満点スコアリングに基づく全過去レースのシミュレーション（回収率・的中率の算出）
 3. 会場別データグループ化 ＆ 統計的条件パッチ（重馬場補正、枠順リスク等）の自動検出 (VenueRuleFinder)
 4. 出走全頭能力評価・100点満点スコアリング・予想印(◎○▲☆△)割り振りとnote用Markdown自動出力 (RacePredictor)
+5. Pace別展開 ＆ 隊列シナリオシミュレーション (NkPaceSimulator) の統合
 """
 
 import os
@@ -14,6 +15,16 @@ import re
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple, Union
 from dataclasses import dataclass, field
+
+# Pace展開シミュレーションモジュールのインポート
+try:
+    from src.core.pace_analyzer import NkPaceSimulator, format_pace_simulation_markdown
+except ImportError:
+    try:
+        from pace_analyzer import NkPaceSimulator, format_pace_simulation_markdown
+    except ImportError:
+        NkPaceSimulator = None
+        format_pace_simulation_markdown = None
 
 logger = logging.getLogger(__name__)
 
@@ -75,10 +86,10 @@ class SimulationConfig:
     prev_blowout_penalty: float = -10.0          # 前走10着以下大敗
     prev_blowout_mitigated_penalty: float = -5.0 # トップコンビ時大敗減点緩和
 
-    # ③ 騎手・鞍上・厩舎評価 (最大 15点)
-    s_jockey_score: float = 15.0       # S評価騎手（ルメール, 川田, 笹川, 岡部, 吉原, 吉村等）
-    a_jockey_score: float = 10.0       # A評価騎手（坂井, 武豊, 矢野, 本田, 下原等）
-    young_jockey_score: float = 5.0    # 減量・若手騎手 (☆, △, ▲)
+    # ③ 騎手・鞍上・厩舎評価 (乗算マルチプライヤー型)
+    s_jockey_mult: float = 1.08        # S評価騎手 (+8% 乗算)
+    a_jockey_mult: float = 1.04        # A評価騎手 (+4% 乗算)
+    young_jockey_mult: float = 1.02    # 減量・若手騎手 (+2% 乗算)
     top_stable_revival_score: float = 5.0 # トップコンビ巻き返し補正
 
     # ④ コース・枠順・脚質・馬体重適性 (最大 10点)
@@ -182,6 +193,13 @@ class RaceEvaluator:
     DEFAULT_A_JOCKEYS = ["坂井瑠星", "坂井", "松山弘平", "松山", "武豊", "バルザローナ", "矢野", "矢野貴之", "本田", "本田正重", "今井貴大", "下原理", "藤原幹生"]
     DEFAULT_TOP_STABLES = ["友道", "須貝", "中内田", "矢作", "池江", "杉山晴", "木村", "手塚", "国枝", "藤田", "小野", "新子", "角川"]
 
+    # 会場タイプ別のコースプロファイル
+    VENUE_PROFILES = {
+        "FRONT_RUNNER_SHORT": ["浦和", "川崎", "園田", "高知", "姫路", "笠松"],
+        "SPEED_LONG_STRAIGHT": ["大井", "門別", "盛岡", "東京", "阪神", "京都", "新潟"],
+        "STANDARD": ["金沢", "名古屋", "船橋", "佐賀", "小倉", "福島", "中京", "札幌", "函館"]
+    }
+
     def __init__(
         self,
         config: SimulationConfig,
@@ -213,6 +231,13 @@ class RaceEvaluator:
                 if runs >= 3 and rate >= 28.0:
                     self.top_stables.add(t_name)
 
+    def get_venue_profile_type(self, venue_name: str) -> str:
+        """開催会場のコース特性タイプを取得"""
+        for ptype, venues in self.VENUE_PROFILES.items():
+            if any(v in venue_name for v in venues):
+                return ptype
+        return "STANDARD"
+
     def evaluate_race(
         self,
         race_json: Dict[str, Any],
@@ -223,7 +248,9 @@ class RaceEvaluator:
         race_type = str(race_json.get("race_type", ""))
         race_class = str(race_json.get("race_class", ""))
 
-        is_dirt = ("ダ" in race_type or "ダート" in race_type or any(v in race_track for v in ["大井", "浦和", "園田", "名古屋", "金沢", "船橋", "川崎", "門別"]))
+        venue_profile_type = self.get_venue_profile_type(race_track)
+
+        is_dirt = ("ダ" in race_type or "ダート" in race_type or any(v in race_track for v in ["大井", "浦和", "園田", "名古屋", "金沢", "船橋", "川崎", "門別", "高知", "佐賀", "笠松", "姫路"]))
         is_turf = ("芝" in race_type)
 
         evaluated_horses = []
@@ -286,7 +313,7 @@ class RaceEvaluator:
 
                 if place_rate >= 60.0 or avg_rank <= 3.0:
                     score += self.config.ability_place_rate_high_score
-                    reasons.append(f"馬能力:近5走好走率高(複勝率{place_rate:.0f}%/平均{avg_rank:.1f}位) +{self.config.ability_place_rate_high_score:.0f}pt")
+                    reasons.append(f"馬能力:近5走好走率極高(複勝率{place_rate:.0f}%/平均{avg_rank:.1f}位) +{self.config.ability_place_rate_high_score:.0f}pt")
                 elif place_rate >= 40.0 or avg_rank <= 5.0:
                     score += self.config.ability_place_rate_mid_score
                     reasons.append(f"馬能力:近5走安定(複勝率{place_rate:.0f}%/平均{avg_rank:.1f}位) +{self.config.ability_place_rate_mid_score:.0f}pt")
@@ -330,6 +357,47 @@ class RaceEvaluator:
                 score += self.config.newcomer_base_ability_score
                 reasons.append(f"馬能力:新馬・データ未蓄積基本想定点 +{self.config.newcomer_base_ability_score:.0f}pt")
 
+            # --- 🌟【中央（JRA）転入馬キャリア格付け & 大敗免除ロジック】 ---
+            is_jra_transfer = False
+            last_was_jra = False
+            if history:
+                jra_tracks = ["東京", "中山", "阪神", "京都", "小倉", "新潟", "福島", "中京", "札幌", "函館"]
+                jra_races = [h for h in history if any(jt in str(h.get("開催", "")) for jt in jra_tracks)]
+                
+                if jra_races:
+                    is_jra_transfer = True
+                    # 直近前走がJRA戦かどうか
+                    first_track = str(history[0].get("開催", ""))
+                    if any(jt in first_track for jt in jra_tracks):
+                        last_was_jra = True
+
+                    # JRA時代の最高実績・タイム差評価
+                    jra_top3 = any(str(h.get("着順", "")).isdigit() and int(str(h.get("着順", ""))) <= 5 for h in jra_races)
+                    jra_class_upper = any("1勝" in str(h.get("レース名", "")) or "2勝" in str(h.get("レース名", "")) or "OP" in str(h.get("レース名", "")) or "重賞" in str(h.get("レース名", "")) for h in jra_races)
+                    
+                    jra_min_td = 99.0
+                    for jh in jra_races:
+                        td_str = str(jh.get("着差", "") or jh.get("タイム差", ""))
+                        try:
+                            td_val = float(re.sub(r"[^0-9.]", "", td_str))
+                            if td_val < jra_min_td:
+                                jra_min_td = td_val
+                        except ValueError:
+                            pass
+
+                    if jra_class_upper:
+                        score += 25.0
+                        reasons.append("中央キャリア格付け:JRA上級クラス出走歴あり +25pt")
+                    elif jra_top3 or jra_min_td <= 1.0:
+                        score += 20.0
+                        reasons.append(f"中央キャリア格付け:JRA戦で好走歴あり(着差{jra_min_td:.1f}s) +20pt")
+                    elif jra_min_td <= 2.0:
+                        score += 12.0
+                        reasons.append(f"中央キャリア格付け:JRA戦タイム差適性(着差{jra_min_td:.1f}s) +12pt")
+                    else:
+                        score += 10.0
+                        reasons.append("中央キャリア格付け:JRA出走歴あり基本補正 +10pt")
+
             # =========================================================
             # ② 【前走実績・ローテーション】(最大 20点)
             # =========================================================
@@ -348,49 +416,22 @@ class RaceEvaluator:
                         score += self.config.prev_4_5th_score
                         reasons.append(f"前走掲示板({pr}着) +{self.config.prev_4_5th_score:.0f}pt")
                     elif pr >= 10:
-                        is_s_jockey = any(sj in jockey for sj in self.s_jockeys)
-                        is_a_jockey = any(aj in jockey for aj in self.a_jockeys)
-                        is_top_stable = any(ts in stable for ts in self.top_stables)
-                        if is_top_stable and (is_s_jockey or is_a_jockey):
-                            score += self.config.prev_blowout_mitigated_penalty
-                            reasons.append(f"前走大敗(トップコンビ緩和) {self.config.prev_blowout_mitigated_penalty:.0f}pt")
+                        # JRA戦での大敗はクラス差によるものとして免除 (0点扱い)
+                        if last_was_jra:
+                            reasons.append(f"前走JRA戦大敗({pr}着)はクラスギャップ考慮によりペナルティ免除")
                         else:
-                            score += self.config.prev_blowout_penalty
-                            reasons.append(f"前走10着以下大敗 {self.config.prev_blowout_penalty:.0f}pt")
+                            is_s_jockey = any(sj in jockey for sj in self.s_jockeys)
+                            is_a_jockey = any(aj in jockey for aj in self.a_jockeys)
+                            is_top_stable = any(ts in stable for ts in self.top_stables)
+                            if is_top_stable and (is_s_jockey or is_a_jockey):
+                                score += self.config.prev_blowout_mitigated_penalty
+                                reasons.append(f"前走大敗(トップコンビ緩和) {self.config.prev_blowout_mitigated_penalty:.0f}pt")
+                            else:
+                                score += self.config.prev_blowout_penalty
+                                reasons.append(f"前走10着以下大敗 {self.config.prev_blowout_penalty:.0f}pt")
 
             # =========================================================
-            # ③ 【騎手・鞍上・厩舎評価】(最大 15点)
-            # =========================================================
-            is_s_jockey = any(sj in jockey for sj in self.s_jockeys)
-            is_a_jockey = any(aj in jockey for aj in self.a_jockeys)
-            is_top_stable = any(ts in stable for ts in self.top_stables)
-
-            if is_s_jockey:
-                score += self.config.s_jockey_score
-                reasons.append(f"S評価騎手({jockey}) +{self.config.s_jockey_score:.0f}pt")
-            elif is_a_jockey:
-                score += self.config.a_jockey_score
-                reasons.append(f"A評価騎手({jockey}) +{self.config.a_jockey_score:.0f}pt")
-
-            if any(yj in jockey for yj in ["☆", "△", "▲", "◇", "★"]):
-                score += self.config.young_jockey_score
-                reasons.append(f"減量騎手起用({jockey}) +{self.config.young_jockey_score:.0f}pt")
-
-            t_prof = self.trainer_profiles.get(stable, {})
-            if t_prof and t_prof.get("best_venue") == race_track:
-                score += 5.0
-                reasons.append(f"厩舎・コース得意相性({race_track}) +5pt")
-
-            if is_top_stable and (is_s_jockey or is_a_jockey):
-                if history and len(history) > 0:
-                    h_first = history[0]
-                    prev_rank = str(h_first.get("着順", ""))
-                    if prev_rank.isdigit() and int(prev_rank) >= 4:
-                        score += self.config.top_stable_revival_score
-                        reasons.append(f"トップコンビ巻き返し補正 +{self.config.top_stable_revival_score:.0f}pt")
-
-            # =========================================================
-            # ④ 【コース・枠順・脚質・馬体重適性】(最大 10点)
+            # ③ 【コース・枠順・脚質・馬体重適性】(会場特性タイプ連動)
             # =========================================================
             try:
                 b_num = int(bracket_num)
@@ -402,8 +443,12 @@ class RaceEvaluator:
                     score += self.config.dirt_outer_bracket_score
                     reasons.append(f"ダート外枠優位({b_num}枠) +{self.config.dirt_outer_bracket_score:.0f}pt")
                 elif 1 <= b_num <= 3:
-                    score += self.config.dirt_inner_bracket_penalty
-                    reasons.append(f"ダート内枠被せリスク({b_num}枠) {self.config.dirt_inner_bracket_penalty:.0f}pt")
+                    if venue_profile_type == "FRONT_RUNNER_SHORT":
+                        # 小回りコースでは内枠被せリスクを軽減
+                        reasons.append(f"小回りダート内枠({b_num}枠) 追走維持可")
+                    else:
+                        score += self.config.dirt_inner_bracket_penalty
+                        reasons.append(f"ダート内枠被せリスク({b_num}枠) {self.config.dirt_inner_bracket_penalty:.0f}pt")
 
                 try:
                     hw = float(re.sub(r"[^\d.]", "", horse_weight_str))
@@ -413,25 +458,50 @@ class RaceEvaluator:
                 except ValueError:
                     pass
 
-                if b_num in [7, 8] and any(yj in jockey for yj in ["☆", "△", "▲"]):
-                    score += self.config.dirt_apprentice_outer_boost
-                    reasons.append(f"ダート減量×外枠ブースト +{self.config.dirt_apprentice_outer_boost:.0f}pt")
+                # 小回り・先行タイプ会場でのポジション補正
+                if venue_profile_type == "FRONT_RUNNER_SHORT" and history:
+                    prev_passing = str(history[0].get("通過", ""))
+                    if prev_passing and re.search(r"^[1-3]-", prev_passing):
+                        score += 5.0
+                        reasons.append("小回りコース先行ポジション適性 +5pt")
 
             elif is_turf:
                 if b_num in [5, 7]:
                     score += self.config.turf_favorable_bracket_score
                     reasons.append(f"芝好走枠({b_num}枠) +{self.config.turf_favorable_bracket_score:.0f}pt")
 
-                if history:
-                    for h_row in history[:3]:
-                        last3f = str(h_row.get("上り", ""))
-                        try:
-                            if float(last3f) <= 33.5:
-                                score += self.config.turf_last3f_boost
-                                reasons.append(f"芝極限末脚({last3f}s) +{self.config.turf_last3f_boost:.0f}pt")
-                                break
-                        except ValueError:
-                            pass
+            # =========================================================
+            # ④ 【騎手・鞍上・厩舎評価】(乗算マルチプライヤー化)
+            # =========================================================
+            is_s_jockey = any(sj in jockey for sj in self.s_jockeys)
+            is_a_jockey = any(aj in jockey for aj in self.a_jockeys)
+            is_top_stable = any(ts in stable for ts in self.top_stables)
+
+            jockey_mult = 1.0
+            if is_s_jockey:
+                jockey_mult = self.config.s_jockey_mult
+                reasons.append(f"S評価騎手({jockey}) 乗算補正(x{jockey_mult:.2f})")
+            elif is_a_jockey:
+                jockey_mult = self.config.a_jockey_mult
+                reasons.append(f"A評価騎手({jockey}) 乗算補正(x{jockey_mult:.2f})")
+            elif any(yj in jockey for yj in ["☆", "△", "▲", "◇", "★"]):
+                jockey_mult = self.config.young_jockey_mult
+                reasons.append(f"減量騎手起用({jockey}) 乗算補正(x{jockey_mult:.2f})")
+
+            t_prof = self.trainer_profiles.get(stable, {})
+            if t_prof and t_prof.get("best_venue") == race_track:
+                score += 5.0
+                reasons.append(f"厩舎・コース得意相性({race_track}) +5pt")
+
+            if is_top_stable and (is_s_jockey or is_a_jockey):
+                if history and len(history) > 0:
+                    prev_rank = str(history[0].get("着順", ""))
+                    if prev_rank.isdigit() and int(prev_rank) >= 4:
+                        score += self.config.top_stable_revival_score
+                        reasons.append(f"トップコンビ巻き返し補正 +{self.config.top_stable_revival_score:.0f}pt")
+
+            # 騎手の乗算補正を馬のスコア全体に適用
+            score = score * jockey_mult
 
             final_score = min(100.0, max(0.0, round(score, 1)))
 
@@ -800,9 +870,7 @@ class RacePredictor:
                     b_num = cols[0]
                     h_num = cols[1]
                     h_name_raw = cols[2]
-                    h_name = re.sub(r"\[(.*?)\]\(.*?\)", r"\g<1>", h_name_raw)
-                    h_name = re.sub(r"<[^>]+>", "", h_name).replace("<br>", "").replace("<br/>", "").strip()
-                    h_name = re.sub(r"\[(.*?)\]\(.*?\)", r"\g<1>", h_name_raw)
+                    h_name = re.sub(r"\[(.*?)\]\(.*?\)", r"\1", h_name_raw)
                     h_name = re.sub(r"<[^>]+>", "", h_name).replace("<br>", "").replace("<br/>", "").strip()
                     age = cols[3]
                     weight = cols[4]
@@ -882,10 +950,20 @@ class RacePredictor:
                 other_himos = ", ".join([h['horse_num'] for h in predictions[3:6]]) if len(predictions) > 3 else f"{t_num},{a_num}"
                 bets["3連複"] = f"【3連複フォーメーション】 1頭目:{h_num} − 2頭目:{t_num},{a_num} − 3頭目:{other_himos}"
 
+        # Pace展開シミュレーションの統合
+        pace_scenarios = {}
+        if NkPaceSimulator is not None:
+            try:
+                pace_sim = NkPaceSimulator(venue_name=race_json.get("race_track", ""))
+                pace_scenarios = pace_sim.simulate(predictions, race_json, horse_master_dict)
+            except Exception as e:
+                logger.warning(f"展開シミュレーション実行中にエラーが発生しました: {e}")
+
         return {
             "race_info": race_json,
             "predictions": predictions,
-            "recommended_bets": bets
+            "recommended_bets": bets,
+            "pace_scenarios": pace_scenarios
         }
 
     def generate_note_markdown(self, prediction_result: Dict[str, Any]) -> str:
@@ -909,11 +987,15 @@ class RacePredictor:
 
         for p in preds:
             reasons_str = " / ".join(p.get("reasons", [])[:2]) if p.get("reasons") else "基本能力評価"
-            score_val = p["score"]
-            score_val = p["score"]
-            score_val = p["score"]
-            score_val = p["score"]
-            lines.append(f"| **{p['mark']}** | {p['horse_num']} | {p['bracket_num']} | **{p['horse_name']}** | {p['jockey']} | `{score_val:.1f}点` | {reasons_str} |")
+            score_str = f"{p['score']:.1f}点"
+            lines.append(f"| **{p['mark']}** | {p['horse_num']} | {p['bracket_num']} | **{p['horse_name']}** | {p['jockey']} | `{score_str}` | {reasons_str} |")
+
+        # ▼ 3. Pace別展開 ＆ 隊列シナリオシミュレーションの挿入
+        pace_scenarios = prediction_result.get("pace_scenarios", {})
+        if pace_scenarios and format_pace_simulation_markdown is not None:
+            lines.append("")
+            lines.append(format_pace_simulation_markdown(pace_scenarios))
+
         lines.extend([
             "",
             "## 💡 上位・注目馬の個別評価詳細解説",
