@@ -1,0 +1,257 @@
+{
+  "race_id": "202648112404",
+  "race_track": "名古屋",
+  "race_num": "4",
+  "target_date": "20261124",
+  "race_name": "C20組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "チェリカキング",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023100780"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ローズバラード",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "小笠原羚",
+      "stable": "愛知横井将人",
+      "horse_id": "2023100097"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コスモゼーリエ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "愛知井上哲",
+      "horse_id": "2023106450"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アライブテーラー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2023100684"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ミスデルマー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤利征",
+      "stable": "愛知原口次夫",
+      "horse_id": "2023106371"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "チョコブラウニー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デルマテイネ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "愛知竹下太",
+      "horse_id": "2023101361"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "クールロジック",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2022102862"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ミツカネルナ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023104527"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ウォーブレイク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023106642"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ムーヴザニードル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023101152"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ダディーズソード",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023103655"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "チェリカキング",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023100780"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ローズバラード",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "小笠原羚",
+      "stable": "愛知横井将人",
+      "horse_id": "2023100097"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コスモゼーリエ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "愛知井上哲",
+      "horse_id": "2023106450"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アライブテーラー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2023100684"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ミスデルマー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤利征",
+      "stable": "愛知原口次夫",
+      "horse_id": "2023106371"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "チョコブラウニー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023102387"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デルマテイネ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "愛知竹下太",
+      "horse_id": "2023101361"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "クールロジック",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2022102862"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ミツカネルナ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023104527"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ウォーブレイク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023106642"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ムーヴザニードル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023101152"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ダディーズソード",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023103655"
+    }
+  ]
+}

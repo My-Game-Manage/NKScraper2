@@ -1,0 +1,197 @@
+{
+  "race_id": "202646102003",
+  "race_track": "金沢",
+  "race_num": "3",
+  "target_date": "20261020",
+  "race_name": "C13",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベストイズアスク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021102319"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コウエツ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢池田敦",
+      "horse_id": "2021106922"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユメカナウケン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021109123"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "シャークシャイニー",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2017101202"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ギンザターゲット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "米倉知",
+      "stable": "金沢井樋一也",
+      "horse_id": "2021103229"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ウレシイゴサン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106583"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "インターシア",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢黒木豊",
+      "horse_id": "2021100644"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ソラムパレード",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022102344"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "グレイトムーン",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢高橋優子",
+      "horse_id": "2017104673"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベストイズアスク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "兼子千央",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021102319"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コウエツ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢池田敦",
+      "horse_id": "2021106922"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ユメカナウケン",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢川添明弘",
+      "horse_id": "2021109123"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "シャークシャイニー",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2017101202"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ギンザターゲット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "米倉知",
+      "stable": "金沢井樋一也",
+      "horse_id": "2021103229"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ウレシイゴサン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106583"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "インターシア",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢黒木豊",
+      "horse_id": "2021100644"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ソラムパレード",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022102344"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "グレイトムーン",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢高橋優子",
+      "horse_id": "2017104673"
+    }
+  ]
+}

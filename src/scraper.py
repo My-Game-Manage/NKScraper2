@@ -39,7 +39,7 @@ SELECTOR_RESULT_HP = ".ResultTableFrame"
 
 class NkScraper:
     """
-    競馬スクレイピング・分析処理を統制するオーケストレータークラス
+    競馬スクレイピング・分析処理を統制するオーケストレータークラス (JSONデータ管理・note成果物のみMD化)
     """
 
     def __init__(self, headless: bool = True, base_dir: str = DEFAULT_BASE_DIR):
@@ -118,7 +118,7 @@ class NkScraper:
         is_test: bool = False,
     ) -> None:
         """
-        出馬表データのスクレイピングおよび解析メイン処理
+        出馬表データのスクレイピングおよびJSON保存メイン処理 (個別のMarkdownファイル出力は全廃)
         """
         logger.info("出馬表のスクレイピングを開始します")
         target_date = self.determine_target_date(input_date)
@@ -136,20 +136,17 @@ class NkScraper:
             race_track = info.get("race_track", self.get_jyo_name(race_id))
             race_num = info.get("race_num", self.get_race_num_from_id(race_id))
 
-            shutuba_map = self.conv_race_shutuba_data_to_markdown_as_separate(target_date, race_info)
-            prefix_filename = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
+            # 出馬表データをJSON形式で保存 (data/shutuba/YYYY/MM/)
+            self.writer.save_shutuba_to_json(
+                race_info_dict=race_info,
+                race_id=race_id,
+                race_track=race_track,
+                race_num=race_num,
+                target_date=target_date,
+                is_test=is_test,
+            )
 
-            for key, content in shutuba_map.items():
-                if not content:
-                    continue
-                save_filename = f"{prefix_filename}-{key}"
-                venue_dir = f"{race_track}/{race_track}{race_num}"
-                self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
-
-            comb_content = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
-            comb_save_fname = f"{prefix_filename}.md"
-            self.writer.save_as_markdown(target_date, race_track, comb_save_fname, comb_content, is_test)
-
+            # 個別馬データマスターJSONの更新保存 (data/horses/{horse_id}.json)
             horse_infos = race_info.get("horse_infos", [])
             for h_info in horse_infos:
                 h_id = h_info.get("horse_id", "")
@@ -171,7 +168,7 @@ class NkScraper:
         is_test: bool = False,
     ) -> None:
         """
-        レース結果のスクレイピング・分析レポート生成メイン処理
+        レース結果のスクレイピングおよび成果物レポート生成メイン処理 (個別の結果Markdown出力は全廃)
         """
         logger.info("レース結果のスクレイピングを開始します")
         target_date = self.determine_target_date(input_date) if input_date else get_yesterday_date()
@@ -197,15 +194,13 @@ class NkScraper:
             results_by_venue[race_track][race_num] = result_info
             daily_venue_results[race_track].extend(result_info[2:])
 
-            markdown = self.conv_race_result_data_to_markdown(target_date, race_id, result_info)
+            # レース結果JSON保存 (data/results/YYYY/MM/)
             filename = self.formatter.get_filename_from_race_result(race_id, race_track, race_num)
-
-            self.writer.save_as_markdown(target_date, f"{race_track}-results", filename, markdown, is_test)
             self.writer.save_race_result_to_json(result_info, race_id, race_track, race_num, target_date, filename, is_test)
 
             self.wait_idle_time()
 
-        # 当日バイアスレポートの生成
+        # 当日バイアスレポートの生成 (data/{YYYYMMDD}/{会場}-results/)
         for venue, venue_results in results_by_venue.items():
             logger.info(f"【馬場バイアス解析】{venue} の当日傾向レポートを作成中...")
             bias_md = self.analyzer.generate_daily_bias_markdown(target_date, venue_results, target_date, venue)
@@ -216,7 +211,7 @@ class NkScraper:
         logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
 
-        # 予想検証レポート作成（事前に同日の予想が存在する場合）
+        # 予想検証レポート作成 (事前予想が存在する場合)
         logger.info(f"【予想検証レポート作成】{target_date} の予想・結果整合性レポートを作成中...")
         verifier = NkPredictionVerifier(base_dir=self.base_dir, test_base_dir="data_test")
         verification_md = verifier.generate_verification_report(target_date, is_test=is_test)
@@ -277,79 +272,6 @@ class NkScraper:
         target_url = self.race_result_url_from_race_id(race_id, is_nar)
         html_contents = fetch_js_html(target_url, SELECTOR_RESULT_HP)
         return self.fetcher.fetch_race_result(target_url, html_contents)
-
-    def conv_race_shutuba_data_to_markdown(self, target_date: str, race_info: Dict[str, Any]) -> str:
-        results = []
-        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info.get("race_info", {}))
-        results.append(race_base_info + "\n\n")
-
-        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info.get("shutuba_horses", []))
-        results.append(shutuba_info + "\n\n")
-
-        horse_infos = race_info.get("horse_infos", [])
-        for h_info in horse_infos:
-            h_id = h_info.get("horse_id", "")
-            h_name = h_info.get("horse_name", "")
-            h_prof = h_info.get("horse_prof", {})
-            h_hist = h_info.get("horse_history", [])
-            h_anal = h_info.get("analyzed_data", "")
-
-            prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
-            history = self.analyzer.refine_data_horse_history(h_hist) if h_hist else h_info.get("refine_history", "")
-
-            results.append(f"### 馬ID：{h_id}／馬名：{h_name}\n\n")
-            results.append("#### プロフィール\n\n" + prof + "\n\n")
-            results.append("#### 過去戦績\n\n" + history + "\n\n")
-            results.append("#### データ分析\n\n" + h_anal + "\n\n")
-
-        return "".join(results)
-
-    def conv_race_shutuba_data_to_markdown_as_separate(self, target_date: str, race_info: Dict[str, Any]) -> Dict[str, str]:
-        files_dict = {}
-
-        overview_results = []
-        race_base_info = self.formatter.conv_race_info_to_markdown(target_date, race_info.get("race_info", {}))
-        overview_results.append(race_base_info + "\n\n")
-
-        shutuba_info = self.formatter.conv_shutuba_to_markdown(race_info.get("shutuba_horses", []))
-        overview_results.append(shutuba_info + "\n\n")
-
-        files_dict["00_race_overview.md"] = "".join(overview_results)
-
-        horse_infos = race_info.get("horse_infos", [])
-        for idx, h_info in enumerate(horse_infos, start=1):
-            h_id = h_info.get("horse_id", "")
-            h_name = h_info.get("horse_name", "")
-            h_prof = h_info.get("horse_prof", {})
-            h_hist = h_info.get("horse_history", [])
-            h_anal = h_info.get("analyzed_data", "")
-
-            prof = self.formatter.conv_horse_profile_to_markdown(h_prof)
-            history = self.analyzer.refine_data_horse_history(h_hist) if h_hist else h_info.get("refine_history", "")
-
-            horse_results = [
-                f"# 馬番：{idx:02d}（馬ID：{h_id}）／馬名：{h_name}\n\n",
-                f"## プロフィール\n\n{prof}\n\n",
-                f"## 過去戦績\n\n{history}\n\n",
-                f"## データ分析\n\n{h_anal}\n\n",
-            ]
-
-            safe_horse_name = h_name.replace("/", "_").replace(" ", "_")
-            filename = f"horse_{idx:02d}_{safe_horse_name}.md"
-            files_dict[filename] = "".join(horse_results)
-
-        return files_dict
-
-    def conv_race_result_data_to_markdown(self, target_date: str, race_id: str, race_result: List[Dict[str, Any]]) -> str:
-        jyo_name = self.get_jyo_name(race_id)
-        race_num = self.get_race_num_from_id(race_id)
-
-        results = [
-            f"# レースID：{race_id}\n\n",
-            f"## レース：{jyo_name} - {race_num}R\n\n",
-            self.formatter.conv_race_result_to_markdown(target_date, race_result) + "\n\n",
-        ]
-        return "".join(results)
 
     def get_target_race_ids(
         self,

@@ -1,0 +1,257 @@
+{
+  "race_id": "202642112703",
+  "race_track": "浦和",
+  "race_num": "3",
+  "target_date": "20261127",
+  "race_name": "特選(C3)",
+  "race_grade": "",
+  "race_type": "(左) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "セイウンコチョウ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2019103947"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワンダーフィール",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "高橋哲也",
+      "stable": "浦和鈴木勝文",
+      "horse_id": "2021100571"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ヤマトカチドキ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "櫻井光輔",
+      "stable": "川崎山田質",
+      "horse_id": "2019101843"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マルノアンナ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和川村守男",
+      "horse_id": "2019101046"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "イチモクサン",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "中山遥人",
+      "stable": "浦和酒井一則",
+      "horse_id": "2020100854"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ケイティーユイ",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "藤江渉",
+      "stable": "浦和水野貴史",
+      "horse_id": "2018103714"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒロシゲクリスタル",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "船橋新井清重",
+      "horse_id": "2018103578"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "デルマプラクリティ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2021101985"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フローラルロマンス",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "七夕裕次",
+      "stable": "川崎八木正喜",
+      "horse_id": "2019109031"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スターハッスル",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "澤田龍哉",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2020104807"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ニシノミモザ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和吉田正美",
+      "horse_id": "2021107091"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "スピークオブデビル",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2022106895"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "セイウンコチョウ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "国分祐仁",
+      "stable": "浦和冨田敏男",
+      "horse_id": "2019103947"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワンダーフィール",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "高橋哲也",
+      "stable": "浦和鈴木勝文",
+      "horse_id": "2021100571"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ヤマトカチドキ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "櫻井光輔",
+      "stable": "川崎山田質",
+      "horse_id": "2019101843"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マルノアンナ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "室陽一朗",
+      "stable": "浦和川村守男",
+      "horse_id": "2019101046"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "イチモクサン",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "中山遥人",
+      "stable": "浦和酒井一則",
+      "horse_id": "2020100854"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ケイティーユイ",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "藤江渉",
+      "stable": "浦和水野貴史",
+      "horse_id": "2018103714"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒロシゲクリスタル",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "福原杏",
+      "stable": "船橋新井清重",
+      "horse_id": "2018103578"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "デルマプラクリティ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2021101985"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フローラルロマンス",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "七夕裕次",
+      "stable": "川崎八木正喜",
+      "horse_id": "2019109031"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スターハッスル",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "澤田龍哉",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2020104807"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ニシノミモザ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和吉田正美",
+      "horse_id": "2021107091"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "スピークオブデビル",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和長谷川忍",
+      "horse_id": "2022106895"
+    }
+  ]
+}

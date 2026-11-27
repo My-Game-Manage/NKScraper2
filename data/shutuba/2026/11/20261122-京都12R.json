@@ -1,0 +1,277 @@
+{
+  "race_id": "202608050612",
+  "race_track": "京都",
+  "race_num": "12",
+  "target_date": "20261122",
+  "race_name": "醍醐S",
+  "race_grade": "",
+  "race_type": "右 C 1200m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "トーラスシャイン",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "菅原明",
+      "stable": "栗東坂口",
+      "horse_id": "2021101654"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トーセントラム",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "秋山稔",
+      "stable": "美浦佐藤吉",
+      "horse_id": "2020102535"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シカゴスティング",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "吉田隼",
+      "stable": "栗東庄野",
+      "horse_id": "2021105242"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ミロワール",
+      "horse_age": "牝7",
+      "weight_carried": "56.0",
+      "jockey": "酒井",
+      "stable": "栗東柴田",
+      "horse_id": "2019100566"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "5",
+      "horse_name": "クリエープキー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "富田",
+      "stable": "美浦牧",
+      "horse_id": "2023103355"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ルーフ",
+      "horse_age": "牝6",
+      "weight_carried": "56.0",
+      "jockey": "吉村",
+      "stable": "栗東清水久",
+      "horse_id": "2020104194"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "7",
+      "horse_name": "ポエットリー",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "松若",
+      "stable": "栗東平田",
+      "horse_id": "2021105202"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "メルトユアハート",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "西村淳",
+      "stable": "栗東長谷川",
+      "horse_id": "2021100143"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "9",
+      "horse_name": "マリノトニトゥルス",
+      "horse_age": "牝4",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "美浦武市",
+      "horse_id": "2022101290"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ディアドコス",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "坂井",
+      "stable": "栗東羽月",
+      "horse_id": "2020105409"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "11",
+      "horse_name": "ルージュスプリヤ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "ルメール",
+      "stable": "栗東斉藤崇",
+      "horse_id": "2023105415"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ジョヴィアン",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "Ｃデムーロ",
+      "stable": "栗東井上",
+      "horse_id": "2020110127"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "13",
+      "horse_name": "ファビュラススター",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "モレイラ",
+      "stable": "栗東新谷",
+      "horse_id": "2021103478"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "トーラスシャイン",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "菅原明",
+      "stable": "栗東坂口",
+      "horse_id": "2021101654"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トーセントラム",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "秋山稔",
+      "stable": "美浦佐藤吉",
+      "horse_id": "2020102535"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シカゴスティング",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "吉田隼",
+      "stable": "栗東庄野",
+      "horse_id": "2021105242"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ミロワール",
+      "horse_age": "牝7",
+      "weight_carried": "56.0",
+      "jockey": "酒井",
+      "stable": "栗東柴田",
+      "horse_id": "2019100566"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "5",
+      "horse_name": "クリエープキー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "富田",
+      "stable": "美浦牧",
+      "horse_id": "2023103355"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ルーフ",
+      "horse_age": "牝6",
+      "weight_carried": "56.0",
+      "jockey": "吉村",
+      "stable": "栗東清水久",
+      "horse_id": "2020104194"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "7",
+      "horse_name": "ポエットリー",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "松若",
+      "stable": "栗東平田",
+      "horse_id": "2021105202"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "メルトユアハート",
+      "horse_age": "牝5",
+      "weight_carried": "56.0",
+      "jockey": "西村淳",
+      "stable": "栗東長谷川",
+      "horse_id": "2021100143"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "9",
+      "horse_name": "マリノトニトゥルス",
+      "horse_age": "牝4",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "美浦武市",
+      "horse_id": "2022101290"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ディアドコス",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "坂井",
+      "stable": "栗東羽月",
+      "horse_id": "2020105409"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "11",
+      "horse_name": "ルージュスプリヤ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "ルメール",
+      "stable": "栗東斉藤崇",
+      "horse_id": "2023105415"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ジョヴィアン",
+      "horse_age": "牡6",
+      "weight_carried": "58.0",
+      "jockey": "Ｃデムーロ",
+      "stable": "栗東井上",
+      "horse_id": "2020110127"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "13",
+      "horse_name": "ファビュラススター",
+      "horse_age": "牡5",
+      "weight_carried": "58.0",
+      "jockey": "モレイラ",
+      "stable": "栗東新谷",
+      "horse_id": "2021103478"
+    }
+  ]
+}

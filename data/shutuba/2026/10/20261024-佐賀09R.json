@@ -1,0 +1,237 @@
+{
+  "race_id": "202655102409",
+  "race_track": "佐賀",
+  "race_num": "9",
+  "target_date": "20261024",
+  "race_name": "アゲラタム賞",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コワン",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "青海大樹",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2021103234"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コマゼロワン",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀渡辺博文",
+      "horse_id": "2021101165"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オレノアイバ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2020105472"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ダノンリュラ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀東眞市",
+      "horse_id": "2022105138"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "テイエムタワードン",
+      "horse_age": "セ4",
+      "weight_carried": "55.0",
+      "jockey": "山口勲",
+      "stable": "佐賀平山宏秀",
+      "horse_id": "2022100329"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ジーティーレイナ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2022100015"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "タケノオーカン",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀松島壽",
+      "horse_id": "2022102359"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "サムシンググレート",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀松島壽",
+      "horse_id": "2020106760"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "オーケーエンジェル",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2022104553"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "サヨノハッピー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀松島壽",
+      "horse_id": "2019105007"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フェルサイト",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2021106060"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コワン",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "青海大樹",
+      "stable": "佐賀中川竜馬",
+      "horse_id": "2021103234"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コマゼロワン",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "竹吉徹",
+      "stable": "佐賀渡辺博文",
+      "horse_id": "2021101165"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オレノアイバ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "長谷川蓮",
+      "stable": "佐賀東眞市",
+      "horse_id": "2020105472"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ダノンリュラ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "飛田愛斗",
+      "stable": "佐賀東眞市",
+      "horse_id": "2022105138"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "テイエムタワードン",
+      "horse_age": "セ4",
+      "weight_carried": "55.0",
+      "jockey": "山口勲",
+      "stable": "佐賀平山宏秀",
+      "horse_id": "2022100329"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ジーティーレイナ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "石川慎将",
+      "stable": "佐賀真島元徳",
+      "horse_id": "2022100015"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "タケノオーカン",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "加茂飛翔",
+      "stable": "佐賀松島壽",
+      "horse_id": "2022102359"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "サムシンググレート",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "中山蓮王",
+      "stable": "佐賀松島壽",
+      "horse_id": "2020106760"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "オーケーエンジェル",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "出水拓人",
+      "stable": "佐賀古賀光範",
+      "horse_id": "2022104553"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "サヨノハッピー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山田義貴",
+      "stable": "佐賀松島壽",
+      "horse_id": "2019105007"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フェルサイト",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "山下裕貴",
+      "stable": "佐賀山田徹",
+      "horse_id": "2021106060"
+    }
+  ]
+}

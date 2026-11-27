@@ -1,0 +1,257 @@
+{
+  "race_id": "202654091301",
+  "race_track": "高知",
+  "race_num": "1",
+  "target_date": "20260913",
+  "race_name": "3歳ー8",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エビスディアーナ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023101659"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リアルパラダイス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知工藤真司",
+      "horse_id": "2023105411"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ヤマメナイト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023104854"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "グラデュエール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知別府真司",
+      "horse_id": "2023103225"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベンテンカグラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2023107419"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーアアグネス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103849"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヤマニンルーバス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023101864"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ナムラコハル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023106238"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ワンダーミューズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023100166"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "オセアスターライト",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2023100058"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "エーデルクラフト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103756"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "チアフルラン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2023104747"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エビスディアーナ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023101659"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リアルパラダイス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知工藤真司",
+      "horse_id": "2023105411"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ヤマメナイト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023104854"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "グラデュエール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知別府真司",
+      "horse_id": "2023103225"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベンテンカグラ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知細川忠義",
+      "horse_id": "2023107419"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーアアグネス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103849"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヤマニンルーバス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023101864"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ナムラコハル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023106238"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ワンダーミューズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023100166"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "オセアスターライト",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2023100058"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "エーデルクラフト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103756"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "チアフルラン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2023104747"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "race_id": "202654092206",
+  "race_track": "高知",
+  "race_num": "6",
+  "target_date": "20260922",
+  "race_name": "ヒガンバナ特別(C3)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コンジャンクション",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105182"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "サノノビスケッツ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100801"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビッグショータイム",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2021100626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アードラー",
+      "horse_age": "牡12",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2014104841"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セリオヴェローチェ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2022104706"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーケンクミー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022102177"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "イカホ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021101817"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ハンドレインジ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022107331"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ペタルビジュー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2022106153"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "フォトスフィア",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105773"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リバティフレイム",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022101645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "バンドネオン",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2020103520"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "コンジャンクション",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105182"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "サノノビスケッツ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "木村直輝",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100801"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビッグショータイム",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2021100626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アードラー",
+      "horse_age": "牡12",
+      "weight_carried": "57.0",
+      "jockey": "宮川実",
+      "stable": "高知打越勇児",
+      "horse_id": "2014104841"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セリオヴェローチェ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2022104706"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "トーケンクミー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022102177"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "イカホ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知西山裕貴",
+      "horse_id": "2021101817"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ハンドレインジ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022107331"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ペタルビジュー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2022106153"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "フォトスフィア",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105773"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "リバティフレイム",
+      "horse_age": "セ4",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知宮川浩一",
+      "horse_id": "2022101645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "バンドネオン",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知工藤真司",
+      "horse_id": "2020103520"
+    }
+  ]
+}

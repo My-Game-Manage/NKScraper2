@@ -1,0 +1,257 @@
+{
+  "race_id": "202647091109",
+  "race_track": "笠松",
+  "race_num": "9",
+  "target_date": "20260911",
+  "race_name": "西日本3歳優駿重賞",
+  "race_grade": "",
+  "race_type": "(右) 1900m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ツマミグイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "松本一心",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2023104136"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カトレアノクターン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "沖田明子",
+      "horse_id": "2023105181"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トシクン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2023105676"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カツテナイオイシサ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023105477"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ヨサリ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023100526"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "コンバットキャップ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023100829"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "アメリカンビッキー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023106509"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ゴコクホウジョウ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2023102600"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ミカエル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104955"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "エイシンリファイン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023105495"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ホワイトラビット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023100694"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "カワテンバッカス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知角田輝也",
+      "horse_id": "2023102001"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ツマミグイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "松本一心",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2023104136"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "カトレアノクターン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "沖田明子",
+      "horse_id": "2023105181"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トシクン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2023105676"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カツテナイオイシサ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023105477"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ヨサリ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023100526"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "コンバットキャップ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023100829"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "アメリカンビッキー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023106509"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ゴコクホウジョウ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2023102600"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ミカエル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104955"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "エイシンリファイン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023105495"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ホワイトラビット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "明星晴大",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023100694"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "カワテンバッカス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知角田輝也",
+      "horse_id": "2023102001"
+    }
+  ]
+}

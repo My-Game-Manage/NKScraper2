@@ -1,0 +1,237 @@
+{
+  "race_id": "202650111306",
+  "race_track": "園田",
+  "race_num": "6",
+  "target_date": "20261113",
+  "race_name": "C3二",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラロワイヤル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2018102239"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヒデガミクィーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2023100432"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "イヤーズストレイト",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2018105101"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレシャスストーン",
+      "horse_age": "牝6",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫三宅直之",
+      "horse_id": "2020105793"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アカノストロング",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫尾原強",
+      "horse_id": "2019104877"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジョイブラック",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2020105455"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "カリグラフィー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫尾原強",
+      "horse_id": "2019105936"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "テイケイヴィーノ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2020102967"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ユイノオトコヤマ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫土屋洋之",
+      "horse_id": "2020104734"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "イエローキャブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫徳本慶一",
+      "horse_id": "2018106754"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラロワイヤル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2018102239"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヒデガミクィーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2023100432"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "イヤーズストレイト",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2018105101"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレシャスストーン",
+      "horse_age": "牝6",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫三宅直之",
+      "horse_id": "2020105793"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アカノストロング",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫尾原強",
+      "horse_id": "2019104877"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ジョイブラック",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2020105455"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "カリグラフィー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫尾原強",
+      "horse_id": "2019105936"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "テイケイヴィーノ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2020102967"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ユイノオトコヤマ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫土屋洋之",
+      "horse_id": "2020104734"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "イエローキャブ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫徳本慶一",
+      "horse_id": "2018106754"
+    }
+  ]
+}

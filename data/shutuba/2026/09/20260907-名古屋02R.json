@@ -1,0 +1,177 @@
+{
+  "race_id": "202648090702",
+  "race_track": "名古屋",
+  "race_num": "2",
+  "target_date": "20260907",
+  "race_name": "3歳9組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランドサークル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2023105451"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ウインロズパレード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹之下昭",
+      "horse_id": "2023101078"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アルメーリス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知横井将人",
+      "horse_id": "2023103675"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アマビエ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "小笠原羚",
+      "stable": "愛知井上哲",
+      "horse_id": "2023103060"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アニゴザントス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2023105230"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "コパノルーカス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知宮下瞳",
+      "horse_id": "2023104972"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "センリョウヤクシャ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "阪野学",
+      "stable": "愛知倉地学",
+      "horse_id": "2023106124"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ウェイヴメカニクス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023105373"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランドサークル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大原浩司",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2023105451"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ウインロズパレード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹之下昭",
+      "horse_id": "2023101078"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アルメーリス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知横井将人",
+      "horse_id": "2023103675"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アマビエ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "小笠原羚",
+      "stable": "愛知井上哲",
+      "horse_id": "2023103060"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アニゴザントス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知錦見勇夫",
+      "horse_id": "2023105230"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "コパノルーカス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "stable": "愛知宮下瞳",
+      "horse_id": "2023104972"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "センリョウヤクシャ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "阪野学",
+      "stable": "愛知倉地学",
+      "horse_id": "2023106124"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ウェイヴメカニクス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023105373"
+    }
+  ]
+}

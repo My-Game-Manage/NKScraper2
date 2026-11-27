@@ -1,0 +1,217 @@
+{
+  "race_id": "202636092902",
+  "race_track": "水沢",
+  "race_num": "2",
+  "target_date": "20260929",
+  "race_name": "3歳C2八組",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ライブリピュア",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手西野直樹",
+      "horse_id": "2023102345"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユウアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手石川栄",
+      "horse_id": "2023102119"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コスモメイウェザー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2023105330"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アズサ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2023101052"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ユニベールクイーン",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手千葉博次",
+      "horse_id": "2023102758"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "メインテーマ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手陶文峰",
+      "horse_id": "2023103571"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "イケイケルノワール",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2023106244"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "メイヨシュア",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2023109076"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジュンレイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手及川裕一",
+      "horse_id": "2023101460"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ブルークレスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手木村暁",
+      "horse_id": "2023101888"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ライブリピュア",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手西野直樹",
+      "horse_id": "2023102345"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユウアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手石川栄",
+      "horse_id": "2023102119"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コスモメイウェザー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2023105330"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アズサ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2023101052"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ユニベールクイーン",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手千葉博次",
+      "horse_id": "2023102758"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "メインテーマ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手陶文峰",
+      "horse_id": "2023103571"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "イケイケルノワール",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2023106244"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "メイヨシュア",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2023109076"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジュンレイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手及川裕一",
+      "horse_id": "2023101460"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ブルークレスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手木村暁",
+      "horse_id": "2023101888"
+    }
+  ]
+}

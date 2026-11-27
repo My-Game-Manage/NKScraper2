@@ -1,0 +1,217 @@
+{
+  "race_id": "202650092403",
+  "race_track": "園田",
+  "race_num": "3",
+  "target_date": "20260924",
+  "race_name": "C3二",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワキノフラッシュ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫飯田良弘",
+      "horse_id": "2018102777"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カドサンガンバル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫石橋満",
+      "horse_id": "2021104264"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カシスオレンジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2021103671"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ユウバエ",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫平松徳彦",
+      "horse_id": "2018100004"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ケンシロウニセイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫寺地誠一",
+      "horse_id": "2023101538"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メタルメタリカ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2020109101"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベストオブキング",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫吉見真幸",
+      "horse_id": "2021103992"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "サトノグラン",
+      "horse_age": "セ12",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2014105991"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ウルティマン",
+      "horse_age": "牡7",
+      "weight_carried": "53.0",
+      "jockey": "塩津璃菜",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2019102036"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "クライオブジアース",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2020104403"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ワキノフラッシュ",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫飯田良弘",
+      "horse_id": "2018102777"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カドサンガンバル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫石橋満",
+      "horse_id": "2021104264"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カシスオレンジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2021103671"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ユウバエ",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫平松徳彦",
+      "horse_id": "2018100004"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ケンシロウニセイ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫寺地誠一",
+      "horse_id": "2023101538"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メタルメタリカ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "高畑皓一",
+      "stable": "兵庫茂崎正善",
+      "horse_id": "2020109101"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベストオブキング",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫吉見真幸",
+      "horse_id": "2021103992"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "サトノグラン",
+      "horse_age": "セ12",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2014105991"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ウルティマン",
+      "horse_age": "牡7",
+      "weight_carried": "53.0",
+      "jockey": "塩津璃菜",
+      "stable": "兵庫稻田彰宏",
+      "horse_id": "2019102036"
+    }
+  ]
+}

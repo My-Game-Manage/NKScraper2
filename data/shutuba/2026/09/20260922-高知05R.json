@@ -1,0 +1,217 @@
+{
+  "race_id": "202654092205",
+  "race_track": "高知",
+  "race_num": "5",
+  "target_date": "20260922",
+  "race_name": "C3ー2",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グッドフェイス",
+      "horse_age": "牡7",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2019106852"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケーニッヒブルート",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "小笠原羚",
+      "stable": "高知倉兼育康",
+      "horse_id": "2022102333"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナバロン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中譲二",
+      "horse_id": "2019102456"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ディクシーヴォーグ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "宮川実",
+      "stable": "高知細川忠義",
+      "horse_id": "2022102530"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エレガントウインク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知宮路洋一",
+      "horse_id": "2021105300"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アウゲンブリック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知那俄性哲",
+      "horse_id": "2019101531"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アンダーザスター",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2017105815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "アルトシュタット",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105449"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "マカオンドール",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018105293"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グッドフェイス",
+      "horse_age": "牡7",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知胡本友晴",
+      "horse_id": "2019106852"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ケーニッヒブルート",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "小笠原羚",
+      "stable": "高知倉兼育康",
+      "horse_id": "2022102333"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナバロン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中譲二",
+      "horse_id": "2019102456"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ディクシーヴォーグ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "宮川実",
+      "stable": "高知細川忠義",
+      "horse_id": "2022102530"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エレガントウインク",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知宮路洋一",
+      "horse_id": "2021105300"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "トーケンレナン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知宮川浩一",
+      "horse_id": "2021103509"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アウゲンブリック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知那俄性哲",
+      "horse_id": "2019101531"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アンダーザスター",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知那俄性哲",
+      "horse_id": "2017105815"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "アルトシュタット",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2019105449"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "マカオンドール",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知宮川浩一",
+      "horse_id": "2018105293"
+    }
+  ]
+}

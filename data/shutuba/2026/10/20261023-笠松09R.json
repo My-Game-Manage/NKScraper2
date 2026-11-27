@@ -1,0 +1,217 @@
+{
+  "race_id": "202647102309",
+  "race_track": "笠松",
+  "race_num": "9",
+  "target_date": "20261023",
+  "race_name": "C9組",
+  "race_grade": "",
+  "race_type": "(右) 1580m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ミュークトーマス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "細川智史",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023104666"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リトルエース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2023104458"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "マジョリー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2019101980"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "サートゥリア",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023104556"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ブッチギレ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023104671"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ドナドナ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2021102824"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エターナルチーム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023101189"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "レジョンデロル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2022107398"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ニシノステディミキ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2022100553"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヒルノエルニド",
+      "horse_age": "牝8",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松後藤正義",
+      "horse_id": "2018106364"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ミュークトーマス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "細川智史",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023104666"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リトルエース",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2023104458"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "マジョリー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松伊藤勝好",
+      "horse_id": "2019101980"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "サートゥリア",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023104556"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ブッチギレ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023104671"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ドナドナ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2021102824"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "エターナルチーム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松後藤正義",
+      "horse_id": "2023101189"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "レジョンデロル",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2022107398"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ニシノステディミキ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2022100553"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヒルノエルニド",
+      "horse_age": "牝8",
+      "weight_carried": "53.0",
+      "jockey": "深澤杏花",
+      "stable": "笠松後藤正義",
+      "horse_id": "2018106364"
+    }
+  ]
+}

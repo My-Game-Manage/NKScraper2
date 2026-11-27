@@ -1,0 +1,177 @@
+{
+  "race_id": "202646090808",
+  "race_track": "金沢",
+  "race_num": "8",
+  "target_date": "20260908",
+  "race_name": "B24",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スリーオウギ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021103244"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リプレット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021105046"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タントゥーム",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "鈴木太一",
+      "stable": "金沢井樋一也",
+      "horse_id": "2021106299"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カンナギ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2022106810"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カミノマジック",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2020101149"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アルマイナンナ",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2017102945"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ナギサノバルコニー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢金田一昌",
+      "horse_id": "2022103883"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ルーンファクター",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2020106552"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スリーオウギ",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021103244"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リプレット",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "魚住謙心",
+      "stable": "金沢高橋優子",
+      "horse_id": "2021105046"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "タントゥーム",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "鈴木太一",
+      "stable": "金沢井樋一也",
+      "horse_id": "2021106299"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "カンナギ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "沖静男",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2022106810"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カミノマジック",
+      "horse_age": "セ6",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2020101149"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アルマイナンナ",
+      "horse_age": "牝9",
+      "weight_carried": "55.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2017102945"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ナギサノバルコニー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢金田一昌",
+      "horse_id": "2022103883"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ルーンファクター",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2020106552"
+    }
+  ]
+}

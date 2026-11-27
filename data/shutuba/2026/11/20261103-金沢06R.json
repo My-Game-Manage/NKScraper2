@@ -1,0 +1,257 @@
+{
+  "race_id": "202646110306",
+  "race_track": "金沢",
+  "race_num": "6",
+  "target_date": "20261103",
+  "race_name": "かがやきスプリント【MRO金賞TR】重賞",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "パッションビート",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "筒井勇介",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023107490"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イズジョーアザヤカ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023100050"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ケーズコマクサ",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023103641"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スターキャンディ",
+      "horse_age": "牝3",
+      "weight_carried": "57.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106602"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベラジオスパーク",
+      "horse_age": "牡3",
+      "weight_carried": "58.0",
+      "jockey": "吉村智洋",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023102110"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "サルタラリンダ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023107027"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キャンパスレディ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤聡一",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2023101467"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "フェイスリフト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106605"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "モーモークローム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101836"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "エムティジーク",
+      "horse_age": "牡3",
+      "weight_carried": "58.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2023102638"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シャンパンスター",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2023100112"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ディープエフェクト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023105455"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "パッションビート",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "筒井勇介",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023107490"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イズジョーアザヤカ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023100050"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ケーズコマクサ",
+      "horse_age": "牝3",
+      "weight_carried": "56.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023103641"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スターキャンディ",
+      "horse_age": "牝3",
+      "weight_carried": "57.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106602"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベラジオスパーク",
+      "horse_age": "牡3",
+      "weight_carried": "58.0",
+      "jockey": "吉村智洋",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023102110"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "サルタラリンダ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023107027"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キャンパスレディ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "加藤聡一",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2023101467"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "フェイスリフト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106605"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "モーモークローム",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101836"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "エムティジーク",
+      "horse_age": "牡3",
+      "weight_carried": "58.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2023102638"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シャンパンスター",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉原寛人",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2023100112"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ディープエフェクト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "金沢井樋一也",
+      "horse_id": "2023105455"
+    }
+  ]
+}

@@ -18,7 +18,7 @@ from src.core.simulator import (
 )
 from src.core.prediction_verifier import NkPredictionVerifier
 from src.core.writer import NkWriter
-from src.utils.date_utils import get_today_jst, get_yesterday_date
+from src.utils.date_utils import get_today_jst, get_yesterday_date, extract_year_month
 
 
 def parse_list_arg(arg):
@@ -56,29 +56,52 @@ def normalize_date_format(date_val) -> str:
 
 def load_shutuba_races(target_date: str, is_test: bool = False) -> list:
     """
-    指定日付の出馬表（Markdownファイル data/{YYYYMMDD}/{会場}/*.md または JSON）を全自動探索・パースする
+    指定日付の出馬表（JSON data/shutuba/YYYY/MM/*.json 最優先、または従来のMarkdown）を全自動探索・パースする
     """
     base_dir = Path("data_test") if is_test else Path("data")
     date_str = target_date or get_today_jst_str()
-    date_dir = base_dir / date_str
 
+    races = []
+
+    # 1. 構造化出馬表JSON (data/shutuba/YYYY/MM/) を最優先検索
+    year, month = extract_year_month(date_str)
+    shutuba_dir = base_dir / "shutuba"
+    if year and month:
+        shutuba_dir = shutuba_dir / year / month
+
+    if shutuba_dir.exists():
+        json_files = list(shutuba_dir.glob(f"*{date_str}*.json"))
+        if not json_files:
+            json_files = list(shutuba_dir.glob("*.json"))
+        for jf in sorted(json_files):
+            try:
+                with open(jf, "r", encoding="utf-8") as fp:
+                    j_data = json.load(fp)
+                    if j_data.get("results") or j_data.get("shutuba_horses"):
+                        if not j_data.get("results") and j_data.get("shutuba_horses"):
+                            j_data["results"] = j_data["shutuba_horses"]
+                        races.append(j_data)
+            except Exception as e:
+                logging.error(f"出馬表JSONパースエラー ({jf}): {e}")
+
+    if races:
+        return races
+
+    # 2. 過去バージョンとの後方互換性：Markdown出馬表ファイルを探索
+    date_dir = base_dir / date_str
     md_files = []
 
-    # 1. 00_race_overview.md ファイルを最優先検索
     if date_dir.exists():
         md_files = list(date_dir.glob("**/*00_race_overview.md"))
         if not md_files:
-            # 見つからなければ会場直下の統合Markdownファイルを探索
             md_files = [
                 f for f in date_dir.glob("*/*.md")
                 if not f.name.startswith("logic-") and not f.name.endswith("-bias.md")
             ]
 
-    # 2. 日付ディレクトリで見つからない場合、全体から探索
     if not md_files and base_dir.exists():
         md_files = list(base_dir.glob("**/*00_race_overview.md"))
 
-    races = []
     for f in sorted(md_files):
         try:
             with open(f, "r", encoding="utf-8") as fp:
@@ -89,7 +112,7 @@ def load_shutuba_races(target_date: str, is_test: bool = False) -> list:
         except Exception as e:
             logging.error(f"Markdown出馬表パースエラー ({f}): {e}")
 
-    # 3. JSONファイルもバックアップ探索 (racesディレクトリ等)
+    # 3. バックアップ：races ディレクトリのJSON探索
     races_dir = Path("data_test/races") if is_test else Path("data/races")
     if races_dir.exists():
         json_files = list(races_dir.glob(f"**/{date_str}*.json"))
@@ -107,7 +130,7 @@ def load_shutuba_races(target_date: str, is_test: bool = False) -> list:
     return races
 
 def run_prediction_workflow(target_date: str, course_codes: list, race_nums: list, is_test: bool = False):
-    """保存済みの出馬表データ（Markdown / JSON）から自動予想Markdown(note用)を生成する"""
+    """保存済みの出馬表データ（JSON / Markdown）から自動予想Markdown(note用)を生成する"""
     target_date = target_date or get_today_jst_str()
     results_dir = Path("data_test/results") if is_test else Path("data/results")
     horses_dir = Path("data_test/horses") if is_test else Path("data/horses")
@@ -153,7 +176,7 @@ def run_prediction_workflow(target_date: str, course_codes: list, race_nums: lis
             r_date = str(race_data.get("target_date", target_date))
             save_dir = out_dir / r_date / track
             save_dir.mkdir(parents=True, exist_ok=True)
-            
+
             formatted_num = r_num.zfill(2)
             save_path = save_dir / f"{r_date}-{track}{formatted_num}R_prediction.md"
 
@@ -171,8 +194,7 @@ def run_prediction_workflow(target_date: str, course_codes: list, race_nums: lis
 def run_verification_workflow(target_date: str = "", is_test: bool = False):
     """スクレイピングを実行せず、既存の予想データとレース結果データから検証レポートのみを生成して保存する"""
     base_dir = "data_test" if is_test else "data"
-    
-    # 対象日付が未指定の場合、結果ディレクトリから検索または昨日の日付を使用
+
     if not target_date:
         results_dir = Path(base_dir) / "results"
         found_dates = []
@@ -192,7 +214,7 @@ def run_verification_workflow(target_date: str = "", is_test: bool = False):
             target_date = get_yesterday_date()
 
     logging.info(f"【予想検証モード】対象日付 ({target_date}) の予想と結果の照合を開始します...")
-    
+
     verifier = NkPredictionVerifier(base_dir=base_dir, test_base_dir="data_test")
     verification_md = verifier.generate_verification_report(target_date, is_test=is_test)
 
@@ -246,17 +268,14 @@ def main():
 
     try:
         if args.verify:
-            # 予想検証モード（スクレイピングなし・既存データ照合のみ）
             logging.info("【検証モード】既存の予想MDおよび結果JSONから検証レポートのみを出力します...")
             run_verification_workflow(target_date, is_test=args.test)
 
         elif args.predict:
-            # 自動予想出力モード
             logging.info("【予想生成モード】出馬表データから印・評価スコア・買い目Markdownを自動生成します...")
             run_prediction_workflow(target_date, target_course_codes, args.race_num, is_test=args.test)
 
         elif args.update_logic:
-            # ロジック更新モード
             scraper = NkScraper(headless=args.headless)
             logging.info("【ロジック更新モード】既存の蓄積データから会場別予想プロトコルを更新します...")
             saved_paths = scraper.update_logic_protocols(target_date=target_date, is_test=args.test)
@@ -264,7 +283,6 @@ def main():
                 logging.info(f"プロトコル作成完了 ({venue}): {path}")
 
         elif args.result:
-            # 結果取得
             scraper = NkScraper(headless=args.headless)
             scraper.scraping_results(
                 input_date=target_date,
@@ -273,7 +291,6 @@ def main():
                 is_test=args.test,
             )
         else:
-            # レース・出馬情報取得（直後に自動予想作成も連動）
             scraper = NkScraper(headless=args.headless)
             scraper.scraping_races(
                 input_date=target_date,

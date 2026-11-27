@@ -1,0 +1,217 @@
+{
+  "race_id": "202650112608",
+  "race_track": "園田",
+  "race_num": "8",
+  "target_date": "20261126",
+  "race_name": "オッズパーク杯C1二",
+  "race_grade": "",
+  "race_type": "(右) 1230m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スマートイデアル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫松平幸秀",
+      "horse_id": "2023101236"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズタイシソウシ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫新子雅司",
+      "horse_id": "2023105728"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アメジストハート",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2023103249"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "テッシン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2023104064"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モズヴイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "小牧太",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023105739"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "チーフインザスカイ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2020105417"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ブレッティレディ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "渡辺竜也",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2023101092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アップップ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山本屋太",
+      "stable": "兵庫南弘樹",
+      "horse_id": "2022102645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ロケットバディー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2022101235"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レベッカレインボー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "服部茂史",
+      "stable": "兵庫石橋満",
+      "horse_id": "2022101069"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スマートイデアル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫松平幸秀",
+      "horse_id": "2023101236"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズタイシソウシ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "笹田知宏",
+      "stable": "兵庫新子雅司",
+      "horse_id": "2023105728"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アメジストハート",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2023103249"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "テッシン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2023104064"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "モズヴイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "小牧太",
+      "stable": "兵庫田中一巧",
+      "horse_id": "2023105739"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "チーフインザスカイ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2020105417"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ブレッティレディ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "渡辺竜也",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2023101092"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アップップ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山本屋太",
+      "stable": "兵庫南弘樹",
+      "horse_id": "2022102645"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ロケットバディー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2022101235"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "レベッカレインボー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "服部茂史",
+      "stable": "兵庫石橋満",
+      "horse_id": "2022101069"
+    }
+  ]
+}

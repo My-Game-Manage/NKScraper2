@@ -1,0 +1,157 @@
+{
+  "race_id": "202608050506",
+  "race_track": "京都",
+  "race_num": "6",
+  "target_date": "20261121",
+  "race_name": "2歳新馬",
+  "race_grade": "",
+  "race_type": "右 1200m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンダージョー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "菱田",
+      "stable": "栗東岡田",
+      "horse_id": "2024101119"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジェルモーリオ",
+      "horse_age": "牝2",
+      "weight_carried": "53.0",
+      "jockey": "◇今村",
+      "stable": "栗東寺島",
+      "horse_id": "2024104740"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コパノハーバード",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "古川吉",
+      "stable": "栗東宮",
+      "horse_id": "2024104802"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オートドライブ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "藤懸",
+      "stable": "栗東渡辺",
+      "horse_id": "2024103215"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セレクトルビー",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "☆田山",
+      "stable": "栗東牧浦",
+      "horse_id": "2024100470"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ファルディルーチェ",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "高杉",
+      "stable": "栗東寺島",
+      "horse_id": "2024101170"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロゼフレイバー",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東中村",
+      "horse_id": "2024102198"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンダージョー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "菱田",
+      "stable": "栗東岡田",
+      "horse_id": "2024101119"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジェルモーリオ",
+      "horse_age": "牝2",
+      "weight_carried": "53.0",
+      "jockey": "◇今村",
+      "stable": "栗東寺島",
+      "horse_id": "2024104740"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "コパノハーバード",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "古川吉",
+      "stable": "栗東宮",
+      "horse_id": "2024104802"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オートドライブ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "藤懸",
+      "stable": "栗東渡辺",
+      "horse_id": "2024103215"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セレクトルビー",
+      "horse_age": "牝2",
+      "weight_carried": "54.0",
+      "jockey": "☆田山",
+      "stable": "栗東牧浦",
+      "horse_id": "2024100470"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ファルディルーチェ",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "高杉",
+      "stable": "栗東寺島",
+      "horse_id": "2024101170"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ロゼフレイバー",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東中村",
+      "horse_id": "2024102198"
+    }
+  ]
+}

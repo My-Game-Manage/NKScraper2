@@ -1,0 +1,217 @@
+{
+  "race_id": "202636112404",
+  "race_track": "水沢",
+  "race_num": "4",
+  "target_date": "20261124",
+  "race_name": "C2一組",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ボビネット",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2023102368"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "メイショウタダツグ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2023105042"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エクスペクタント",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2023105579"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "エスカルチャ",
+      "horse_age": "牡5",
+      "weight_carried": "52.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2021101673"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マッシブショット",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手村上実",
+      "horse_id": "2023101845"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "イネスティマブル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2023104188"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アドマイヤパープル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2023106879"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ゴールドオリス",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手及川良春",
+      "horse_id": "2021104055"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フェズカズマ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手佐藤雅彦",
+      "horse_id": "2019105218"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ユマハム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023103372"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ボビネット",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2023102368"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "メイショウタダツグ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2023105042"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エクスペクタント",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2023105579"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "エスカルチャ",
+      "horse_age": "牡5",
+      "weight_carried": "52.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2021101673"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マッシブショット",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手村上実",
+      "horse_id": "2023101845"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "イネスティマブル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2023104188"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アドマイヤパープル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2023106879"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ゴールドオリス",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "佐々木志",
+      "stable": "岩手及川良春",
+      "horse_id": "2021104055"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "フェズカズマ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手佐藤雅彦",
+      "horse_id": "2019105218"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ユマハム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023103372"
+    }
+  ]
+}

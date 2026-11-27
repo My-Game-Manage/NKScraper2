@@ -1,0 +1,177 @@
+{
+  "race_id": "202647100603",
+  "race_track": "笠松",
+  "race_num": "3",
+  "target_date": "20261006",
+  "race_name": "好きです笠松競馬(C)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ケファロニア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "高木健",
+      "stable": "笠松藤田正治",
+      "horse_id": "2023107274"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コンダクトヲハラエ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤津和希",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104763"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モナート",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "笠松藤田正治",
+      "horse_id": "2023105895"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スティルアイライズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2023100991"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボッチョ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2023101001"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "カスタニャッチョ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023103259"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "フロステリオン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023102266"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "イニシオ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023105869"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ケファロニア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "高木健",
+      "stable": "笠松藤田正治",
+      "horse_id": "2023107274"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コンダクトヲハラエ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤津和希",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104763"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モナート",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "笠松藤田正治",
+      "horse_id": "2023105895"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スティルアイライズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2023100991"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボッチョ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "笠松川嶋弘吉",
+      "horse_id": "2023101001"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "カスタニャッチョ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松栗本陽一",
+      "horse_id": "2023103259"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "フロステリオン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松後藤佑耶",
+      "horse_id": "2023102266"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "イニシオ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松笹野博司",
+      "horse_id": "2023105869"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "race_id": "202645101606",
+  "race_track": "川崎",
+  "race_num": "6",
+  "target_date": "20261016",
+  "race_name": "C3一二",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マニーシーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2022102031"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ソウ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "實川純一",
+      "stable": "船橋佐々木功",
+      "horse_id": "2021101323"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "マロンフエルテ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "川崎久保勇",
+      "horse_id": "2019106532"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バリクパパン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "西村栄喜",
+      "stable": "船橋佐々木清",
+      "horse_id": "2021107299"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セイウンパイオニア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "山林堂信",
+      "stable": "川崎田辺陽一",
+      "horse_id": "2021106996"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ブルードラゴン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "新原周馬",
+      "stable": "川崎安池成実",
+      "horse_id": "2022106749"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヴェントフォルテ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "田中涼",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2022104377"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "エーテルノカゼ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎八木正喜",
+      "horse_id": "2020102635"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ルイーサ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "木間塚龍",
+      "stable": "川崎久保勇",
+      "horse_id": "2020102389"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ルジュウェール",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎村田順一",
+      "horse_id": "2022103578"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "マサノプレジオーソ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "船橋斉藤敏",
+      "horse_id": "2022104229"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイブリッジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2021105332"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マニーシーン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "川崎鈴木義久",
+      "horse_id": "2022102031"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ソウ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "實川純一",
+      "stable": "船橋佐々木功",
+      "horse_id": "2021101323"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "マロンフエルテ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "川崎久保勇",
+      "horse_id": "2019106532"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バリクパパン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "西村栄喜",
+      "stable": "船橋佐々木清",
+      "horse_id": "2021107299"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "セイウンパイオニア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "山林堂信",
+      "stable": "川崎田辺陽一",
+      "horse_id": "2021106996"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ブルードラゴン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "新原周馬",
+      "stable": "川崎安池成実",
+      "horse_id": "2022106749"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヴェントフォルテ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "田中涼",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2022104377"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "エーテルノカゼ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎八木正喜",
+      "horse_id": "2020102635"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ルイーサ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "木間塚龍",
+      "stable": "川崎久保勇",
+      "horse_id": "2020102389"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ルジュウェール",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "池谷匠翔",
+      "stable": "川崎村田順一",
+      "horse_id": "2022103578"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "マサノプレジオーソ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "船橋斉藤敏",
+      "horse_id": "2022104229"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイブリッジ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "川崎吉橋淳一",
+      "horse_id": "2021105332"
+    }
+  ]
+}

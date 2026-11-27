@@ -1,0 +1,217 @@
+{
+  "race_id": "202644091607",
+  "race_track": "大井",
+  "race_num": "7",
+  "target_date": "20260916",
+  "race_name": "C1六七八(C1七)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サイカンサンユウ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "安藤洋一",
+      "stable": "大井坂井英光",
+      "horse_id": "2023100616"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リコーブルーアイ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井真島大輔",
+      "horse_id": "2023101621"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エスプリワールド",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井澤佳宏",
+      "horse_id": "2022106026"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スペイスフォース",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2019101883"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マニス",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2022101517"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラバテラリュージュ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "大井佐野謙二",
+      "horse_id": "2020102386"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グレイテストワーク",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井藤田輝信",
+      "horse_id": "2019104887"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アルピニスト",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "谷内貫太",
+      "stable": "大井米田英世",
+      "horse_id": "2021106296"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウイングウインド",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "田中洸多",
+      "stable": "大井橋本和馬",
+      "horse_id": "2018106575"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ビリーヴアンドラン",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "御神本訓",
+      "stable": "大井高橋清顕",
+      "horse_id": "2022104251"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サイカンサンユウ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "安藤洋一",
+      "stable": "大井坂井英光",
+      "horse_id": "2023100616"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "リコーブルーアイ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "澤田龍哉",
+      "stable": "大井真島大輔",
+      "horse_id": "2023101621"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エスプリワールド",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井澤佳宏",
+      "horse_id": "2022106026"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "スペイスフォース",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2019101883"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マニス",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2022101517"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ラバテラリュージュ",
+      "horse_age": "牡6",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "大井佐野謙二",
+      "horse_id": "2020102386"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "グレイテストワーク",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "大井藤田輝信",
+      "horse_id": "2019104887"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "アルピニスト",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "谷内貫太",
+      "stable": "大井米田英世",
+      "horse_id": "2021106296"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ウイングウインド",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "田中洸多",
+      "stable": "大井橋本和馬",
+      "horse_id": "2018106575"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ビリーヴアンドラン",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "御神本訓",
+      "stable": "大井高橋清顕",
+      "horse_id": "2022104251"
+    }
+  ]
+}

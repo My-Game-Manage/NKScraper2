@@ -1,0 +1,217 @@
+{
+  "race_id": "202647111810",
+  "race_track": "笠松",
+  "race_num": "10",
+  "target_date": "20261118",
+  "race_name": "雪待月特別(B)",
+  "race_grade": "",
+  "race_type": "(右) 1580m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンセットベリー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "森島貴之",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2020104204"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ミカエル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104955"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "セイウォリアー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023104812"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ピンネシリ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2021106304"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "トレパーク",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松後藤正義",
+      "horse_id": "2022106710"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "インティパイロ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2022102137"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウフフトルンナ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2021101193"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ハヤイモノガチ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2021102445"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エコロタイタン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松藤田正治",
+      "horse_id": "2019100424"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "チュウワエース",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2019102395"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "サンセットベリー",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "森島貴之",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2020104204"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ミカエル",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "井口裕貴",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2023104955"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "セイウォリアー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2023104812"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ピンネシリ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "渡辺竜也",
+      "stable": "笠松伊藤強一",
+      "horse_id": "2021106304"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "トレパーク",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "赤津和希",
+      "stable": "笠松後藤正義",
+      "horse_id": "2022106710"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "インティパイロ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "東川慎",
+      "stable": "笠松田口輝彦",
+      "horse_id": "2022102137"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウフフトルンナ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "塚本征吾",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2021101193"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ハヤイモノガチ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "藤原幹生",
+      "stable": "笠松大橋敬永",
+      "horse_id": "2021102445"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エコロタイタン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "丸野勝虎",
+      "stable": "笠松藤田正治",
+      "horse_id": "2019100424"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "チュウワエース",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "加藤聡一",
+      "stable": "笠松加藤幸保",
+      "horse_id": "2019102395"
+    }
+  ]
+}

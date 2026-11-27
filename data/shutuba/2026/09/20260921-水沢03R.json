@@ -1,0 +1,237 @@
+{
+  "race_id": "202636092103",
+  "race_track": "水沢",
+  "race_num": "3",
+  "target_date": "20260921",
+  "race_name": "C2八組",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グレースアイリス",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手酒井仁",
+      "horse_id": "2021102704"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユニークカラー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2022102556"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モズゴールドメダル",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手佐々木由",
+      "horse_id": "2019101929"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハッサク",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "岩本怜",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2022109001"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アルヴィエンヌ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2020103225"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホウオウルバン",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手石川栄",
+      "horse_id": "2018103540"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "スペキュレーター",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2019102792"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マルケイアロー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手石川栄",
+      "horse_id": "2019103314"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ラスダシャン",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手木村暁",
+      "horse_id": "2021104509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ロッキータイタン",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2020101164"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サトノアヴァロン",
+      "horse_age": "セ7",
+      "weight_carried": "55.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手新田守",
+      "horse_id": "2019105200"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グレースアイリス",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手酒井仁",
+      "horse_id": "2021102704"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユニークカラー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手佐藤敏彦",
+      "horse_id": "2022102556"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モズゴールドメダル",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手佐々木由",
+      "horse_id": "2019101929"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハッサク",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "岩本怜",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2022109001"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "アルヴィエンヌ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2020103225"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホウオウルバン",
+      "horse_age": "牡8",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手石川栄",
+      "horse_id": "2018103540"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "スペキュレーター",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2019102792"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "マルケイアロー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手石川栄",
+      "horse_id": "2019103314"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ラスダシャン",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手木村暁",
+      "horse_id": "2021104509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ロッキータイタン",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2020101164"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サトノアヴァロン",
+      "horse_age": "セ7",
+      "weight_carried": "55.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手新田守",
+      "horse_id": "2019105200"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "race_id": "202654091207",
+  "race_track": "高知",
+  "race_num": "7",
+  "target_date": "20260912",
+  "race_name": "C3ー8",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アクロポリス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知平和人",
+      "horse_id": "2021103247"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ブランカアンヘル",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022105945"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エターナルライズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知嬉勝則",
+      "horse_id": "2022105626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イニシャルティー",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2021102099"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グッドエクスプレス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知宮川真衣",
+      "horse_id": "2021106062"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アップルキャンディ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2020104641"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クールジャーマン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100055"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スレイラー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023102207"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ライトスリー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知宮川真衣",
+      "horse_id": "2022110058"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ルナヴェローチェ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知細川忠義",
+      "horse_id": "2022103001"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アクロポリス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知平和人",
+      "horse_id": "2021103247"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ブランカアンヘル",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2022105945"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "エターナルライズ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知嬉勝則",
+      "horse_id": "2022105626"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "イニシャルティー",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2021102099"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "グッドエクスプレス",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知宮川真衣",
+      "horse_id": "2021106062"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アップルキャンディ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知平和人",
+      "horse_id": "2020104641"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "クールジャーマン",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知胡本友晴",
+      "horse_id": "2020100055"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スレイラー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023102207"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ライトスリー",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知宮川真衣",
+      "horse_id": "2022110058"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ルナヴェローチェ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知細川忠義",
+      "horse_id": "2022103001"
+    }
+  ]
+}

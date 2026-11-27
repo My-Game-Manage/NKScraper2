@@ -1,0 +1,257 @@
+{
+  "race_id": "202642112407",
+  "race_track": "浦和",
+  "race_num": "7",
+  "target_date": "20261124",
+  "race_name": "C2三四",
+  "race_grade": "",
+  "race_type": "(左) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ジーティームテキ",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "浦和小久保智",
+      "horse_id": "2021106683"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "マイネルメテオーラ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笠野雄大",
+      "stable": "浦和平山真希",
+      "horse_id": "2023106448"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オカシダイスキマン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "及川烈",
+      "stable": "浦和水上直人",
+      "horse_id": "2023104735"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バトルホッパー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "澤田龍哉",
+      "stable": "浦和横山保",
+      "horse_id": "2019105894"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ディープオーキッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2022109009"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "シェナスーパー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山中悠希",
+      "stable": "船橋石井勝男",
+      "horse_id": "2023104790"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ランボー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2022106674"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "オーデンミカ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2020106468"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エアシャロウ",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "中山遥人",
+      "stable": "浦和箕輪武",
+      "horse_id": "2019105100"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "マイカグラ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田中涼",
+      "stable": "川崎武井和実",
+      "horse_id": "2020101509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シタパンツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和野口孝",
+      "horse_id": "2022103299"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アプレイザー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "町田直希",
+      "stable": "浦和宇野木博",
+      "horse_id": "2020100394"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ジーティームテキ",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "浦和小久保智",
+      "horse_id": "2021106683"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "マイネルメテオーラ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "笠野雄大",
+      "stable": "浦和平山真希",
+      "horse_id": "2023106448"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "オカシダイスキマン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "及川烈",
+      "stable": "浦和水上直人",
+      "horse_id": "2023104735"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "バトルホッパー",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "澤田龍哉",
+      "stable": "浦和横山保",
+      "horse_id": "2019105894"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ディープオーキッド",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "吉留孝司",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2022109009"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "シェナスーパー",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山中悠希",
+      "stable": "船橋石井勝男",
+      "horse_id": "2023104790"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ランボー",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "浦和野口寛仁",
+      "horse_id": "2022106674"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "オーデンミカ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和小澤宏次",
+      "horse_id": "2020106468"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エアシャロウ",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "中山遥人",
+      "stable": "浦和箕輪武",
+      "horse_id": "2019105100"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "マイカグラ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田中涼",
+      "stable": "川崎武井和実",
+      "horse_id": "2020101509"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シタパンツ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "七夕裕次",
+      "stable": "浦和野口孝",
+      "horse_id": "2022103299"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アプレイザー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "町田直希",
+      "stable": "浦和宇野木博",
+      "horse_id": "2020100394"
+    }
+  ]
+}

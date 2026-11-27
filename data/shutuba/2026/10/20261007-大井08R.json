@@ -1,0 +1,197 @@
+{
+  "race_id": "202644100708",
+  "race_track": "大井",
+  "race_num": "8",
+  "target_date": "20261007",
+  "race_name": "メキシカン賞(C1八)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アクアジェット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "戸崎圭太",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022104076"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ボラボラフレイバー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "達城龍次",
+      "stable": "大井月岡健二",
+      "horse_id": "2020100768"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "バーナードハンサム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田正重",
+      "stable": "大井真島大輔",
+      "horse_id": "2023102114"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハイアップグレード",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "望月洵輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2022101326"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハルイチバン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井小野寺晋",
+      "horse_id": "2023101130"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "バレアレス",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "大井阪本一栄",
+      "horse_id": "2022105709"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウエストリーダー",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井福永敏",
+      "horse_id": "2021104070"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マウリノ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2021101440"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エヌケイサイボウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "佐野遥久",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2023100192"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アクアジェット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "戸崎圭太",
+      "stable": "大井宗形竹見",
+      "horse_id": "2022104076"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ボラボラフレイバー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "達城龍次",
+      "stable": "大井月岡健二",
+      "horse_id": "2020100768"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "バーナードハンサム",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "本田正重",
+      "stable": "大井真島大輔",
+      "horse_id": "2023102114"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハイアップグレード",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "望月洵輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2022101326"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハルイチバン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井小野寺晋",
+      "horse_id": "2023101130"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "バレアレス",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "福原杏",
+      "stable": "大井阪本一栄",
+      "horse_id": "2022105709"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウエストリーダー",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井福永敏",
+      "horse_id": "2021104070"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マウリノ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2021101440"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エヌケイサイボウ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "佐野遥久",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2023100192"
+    }
+  ]
+}

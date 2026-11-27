@@ -1,0 +1,237 @@
+{
+  "race_id": "202648101903",
+  "race_track": "名古屋",
+  "race_num": "3",
+  "target_date": "20261019",
+  "race_name": "C6組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ブルージェネシス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2023101798"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホウオウサンサール",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2022103502"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビップジョワ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023102511"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フークベルエ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "友森翔太",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2021102208"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボスコヴェローチェ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大原浩司",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2021105847"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マサハヤルージュ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "愛知今津博之",
+      "horse_id": "2023103357"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヘヴンリースカイ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知川西毅",
+      "horse_id": "2023106515"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ゴーゴーゴウト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知井上哲",
+      "horse_id": "2022102371"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シャルメイビス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知角田輝也",
+      "horse_id": "2022101740"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴィクトリアランド",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "丸山真一",
+      "stable": "愛知植松則幸",
+      "horse_id": "2022105451"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ナラティヴハーピー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "今井貴大",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023100886"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ブルージェネシス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柿原翔",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2023101798"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホウオウサンサール",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知今津博之",
+      "horse_id": "2022103502"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ビップジョワ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "stable": "愛知榎屋充",
+      "horse_id": "2023102511"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フークベルエ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "友森翔太",
+      "stable": "愛知瀬戸口悟",
+      "horse_id": "2021102208"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ボスコヴェローチェ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大原浩司",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2021105847"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マサハヤルージュ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丸野勝虎",
+      "stable": "愛知今津博之",
+      "horse_id": "2023103357"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヘヴンリースカイ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知川西毅",
+      "horse_id": "2023106515"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ゴーゴーゴウト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知井上哲",
+      "horse_id": "2022102371"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シャルメイビス",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "村上弘樹",
+      "stable": "愛知角田輝也",
+      "horse_id": "2022101740"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴィクトリアランド",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "丸山真一",
+      "stable": "愛知植松則幸",
+      "horse_id": "2022105451"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ナラティヴハーピー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "今井貴大",
+      "stable": "愛知沖田明子",
+      "horse_id": "2023100886"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "race_id": "202646112605",
+  "race_track": "金沢",
+  "race_num": "5",
+  "target_date": "20261126",
+  "race_name": "C26",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リバージュエル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023102560"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トンデトンデトンデ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101914"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウバリスタ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田知弘久",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023102069"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マジックスクロール",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "服部大地",
+      "stable": "金沢宗綱泰彦",
+      "horse_id": "2022103320"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラブリーネイティブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023101520"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ローズライズ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023102570"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ナックキャンドル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023104621"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ストロボエッジ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023103270"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リバージュエル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2023102560"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "トンデトンデトンデ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2023101914"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "メイショウバリスタ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田知弘久",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023102069"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マジックスクロール",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "服部大地",
+      "stable": "金沢宗綱泰彦",
+      "horse_id": "2022103320"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ラブリーネイティブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松戸政也",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023101520"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ローズライズ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "浅野登生",
+      "stable": "金沢加藤和義",
+      "horse_id": "2023102570"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ナックキャンドル",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "青柳正義",
+      "stable": "金沢中川雅之",
+      "horse_id": "2023104621"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ストロボエッジ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2023103270"
+    }
+  ]
+}

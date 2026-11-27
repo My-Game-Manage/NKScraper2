@@ -1,0 +1,217 @@
+{
+  "race_id": "202654091202",
+  "race_track": "高知",
+  "race_num": "2",
+  "target_date": "20260912",
+  "race_name": "3歳ー3",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "プリティスーチャン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103039"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ハルウタ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2023101981"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クレセントゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2023104797"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ソヴァージュ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023101410"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファーストシーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023100624"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ソレユケカツコ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知平和人",
+      "horse_id": "2023104530"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "キーゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023104785"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリュメノス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023102107"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジョウショーレーヴ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023104088"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ナイトスナイパー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2023106659"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "プリティスーチャン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "井上瑛太",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103039"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ハルウタ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2023101981"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "クレセントゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2023104797"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ソヴァージュ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023101410"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファーストシーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "多田羅誠",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023100624"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ソレユケカツコ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "新庄海誠",
+      "stable": "高知平和人",
+      "horse_id": "2023104530"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "キーゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023104785"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリュメノス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知西川敏弘",
+      "horse_id": "2023102107"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ジョウショーレーヴ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023104088"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ナイトスナイパー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知中西達也",
+      "horse_id": "2023106659"
+    }
+  ]
+}

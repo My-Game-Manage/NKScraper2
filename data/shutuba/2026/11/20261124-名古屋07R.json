@@ -1,0 +1,257 @@
+{
+  "race_id": "202648112407",
+  "race_track": "名古屋",
+  "race_num": "7",
+  "target_date": "20261124",
+  "race_name": "C17組",
+  "race_grade": "",
+  "race_type": "(右) 1500m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ミヤザキムスメ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023109146"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホレキタヤレキタ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "近藤颯羽",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2023104821"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "イヌボウノサザナミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "阪野学",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2023103094"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "メイショウハネウマ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "渡辺竜也",
+      "stable": "愛知服部功",
+      "horse_id": "2023101937"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "イニシオ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知横井将人",
+      "horse_id": "2023105869"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "シーガルワールド",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知今津博之",
+      "horse_id": "2023102424"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デュアルブレイド",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "愛知沖田明子",
+      "horse_id": "2021103400"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ミヤムーブメント",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知井手上慎",
+      "horse_id": "2023101657"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シュガームーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹之下昭",
+      "horse_id": "2023100031"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "クロムハーツガール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "愛知井上哲",
+      "horse_id": "2023103972"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ウォーターハクビ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023101665"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイネルアルゴー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知迫田清美",
+      "horse_id": "2023106462"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ミヤザキムスメ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "細川智史",
+      "stable": "愛知戸部尚実",
+      "horse_id": "2023109146"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホレキタヤレキタ",
+      "horse_age": "牡3",
+      "weight_carried": "55.0",
+      "jockey": "近藤颯羽",
+      "stable": "愛知藤ヶ崎一",
+      "horse_id": "2023104821"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "イヌボウノサザナミ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "阪野学",
+      "stable": "愛知櫻井今朝",
+      "horse_id": "2023103094"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "メイショウハネウマ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "渡辺竜也",
+      "stable": "愛知服部功",
+      "horse_id": "2023101937"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "イニシオ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "塚本征吾",
+      "stable": "愛知横井将人",
+      "horse_id": "2023105869"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "シーガルワールド",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "愛知今津博之",
+      "horse_id": "2023102424"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "デュアルブレイド",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "筒井勇介",
+      "stable": "愛知沖田明子",
+      "horse_id": "2021103400"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ミヤムーブメント",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大畑慧悟",
+      "stable": "愛知井手上慎",
+      "horse_id": "2023101657"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シュガームーン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "丹羽克輝",
+      "stable": "愛知竹之下昭",
+      "horse_id": "2023100031"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "クロムハーツガール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "松本一心",
+      "stable": "愛知井上哲",
+      "horse_id": "2023103972"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ウォーターハクビ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "友森翔太",
+      "stable": "愛知塚田隆男",
+      "horse_id": "2023101665"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "マイネルアルゴー",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "大畑雅章",
+      "stable": "愛知迫田清美",
+      "horse_id": "2023106462"
+    }
+  ]
+}

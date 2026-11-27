@@ -1,0 +1,257 @@
+{
+  "race_id": "202654101111",
+  "race_track": "高知",
+  "race_num": "11",
+  "target_date": "20261011",
+  "race_name": "ファイナルレース(C3)",
+  "race_grade": "",
+  "race_type": "(右) 1300m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エアロノート",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023102534"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズラストセール",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023100178"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ウィギル",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023102825"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キンデアポチャン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023106679"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "パウラメロディーア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大澤誠志",
+      "stable": "高知田中譲二",
+      "horse_id": "2023102040"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ジョウショーレーヴ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023104088"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キーゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023104785"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トーアイクタチ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103850"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シデレウス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023100872"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ラブペイトー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023105611"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "チェラブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023101263"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ミアソレイユ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023104112"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "エアロノート",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023102534"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "モズラストセール",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023100178"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ウィギル",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "石本純也",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023102825"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キンデアポチャン",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "城野慈尚",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023106679"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "パウラメロディーア",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "大澤誠志",
+      "stable": "高知田中譲二",
+      "horse_id": "2023102040"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ジョウショーレーヴ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023104088"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "キーゴールド",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "塚本直之",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023104785"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トーアイクタチ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2023103850"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "シデレウス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "山崎雅由",
+      "stable": "高知嬉勝則",
+      "horse_id": "2023100872"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ラブペイトー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西森将司",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023105611"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "チェラブ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知雑賀正光",
+      "horse_id": "2023101263"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ミアソレイユ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2023104112"
+    }
+  ]
+}

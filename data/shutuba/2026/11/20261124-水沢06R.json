@@ -1,0 +1,217 @@
+{
+  "race_id": "202636112406",
+  "race_track": "水沢",
+  "race_num": "6",
+  "target_date": "20261124",
+  "race_name": "C1",
+  "race_grade": "",
+  "race_type": "(右) 850m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シャラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手橘友和",
+      "horse_id": "2022107336"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シノブデスティーノ",
+      "horse_age": "牝5",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2021104253"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ファストパスキー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2022105274"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クレナイノヒメ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2021107246"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オーケースマイル",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手高橋純",
+      "horse_id": "2022101574"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ネオアンコーラ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2019105999"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ピンクノバラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手新田守",
+      "horse_id": "2022103942"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "カールルイコ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手木村暁",
+      "horse_id": "2022102830"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エーデルムート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2022101092"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アークエタニティ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2022102011"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シャラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手橘友和",
+      "horse_id": "2022107336"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シノブデスティーノ",
+      "horse_age": "牝5",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2021104253"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ファストパスキー",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手板垣吉則",
+      "horse_id": "2022105274"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "クレナイノヒメ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2021107246"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "オーケースマイル",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手高橋純",
+      "horse_id": "2022101574"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ネオアンコーラ",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2019105999"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ピンクノバラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手新田守",
+      "horse_id": "2022103942"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "カールルイコ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手木村暁",
+      "horse_id": "2022102830"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "エーデルムート",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手及川良春",
+      "horse_id": "2022101092"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "アークエタニティ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2022102011"
+    }
+  ]
+}

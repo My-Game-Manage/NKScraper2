@@ -1,0 +1,217 @@
+{
+  "race_id": "202645101608",
+  "race_track": "川崎",
+  "race_num": "8",
+  "target_date": "20261016",
+  "race_name": "C2七",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ジャルダンデュロワ",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "古岡勇樹",
+      "stable": "船橋矢内博",
+      "horse_id": "2022102233"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ウォニョン",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋石井勝男",
+      "horse_id": "2023101548"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ダンガリー",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "小杉亮",
+      "stable": "船橋林正人",
+      "horse_id": "2021103489"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ホーススピリット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤江渉",
+      "stable": "川崎山田正実",
+      "horse_id": "2022105606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ドーサンドーサン",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "川崎加藤誠一",
+      "horse_id": "2022104028"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ノーサイドガール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "川崎山田質",
+      "horse_id": "2023106543"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "タントレーベル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "川崎高月賢一",
+      "horse_id": "2023101201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "イクノオリンピア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "増田充宏",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2021107318"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ゴームズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2022103701"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クォリティショコラ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "川崎内田勝義",
+      "horse_id": "2023107391"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ジャルダンデュロワ",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "古岡勇樹",
+      "stable": "船橋矢内博",
+      "horse_id": "2022102233"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ウォニョン",
+      "horse_age": "牝3",
+      "weight_carried": "51.0",
+      "jockey": "菅原吏久",
+      "stable": "船橋石井勝男",
+      "horse_id": "2023101548"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ダンガリー",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "小杉亮",
+      "stable": "船橋林正人",
+      "horse_id": "2021103489"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ホーススピリット",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤江渉",
+      "stable": "川崎山田正実",
+      "horse_id": "2022105606"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ドーサンドーサン",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "川崎加藤誠一",
+      "horse_id": "2022104028"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ノーサイドガール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "Ｆ．ゴン",
+      "stable": "川崎山田質",
+      "horse_id": "2023106543"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "タントレーベル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "野畑凌",
+      "stable": "川崎高月賢一",
+      "horse_id": "2023101201"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "イクノオリンピア",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "増田充宏",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2021107318"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ゴームズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "藤本現暉",
+      "stable": "川崎佐々木仁",
+      "horse_id": "2022103701"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "クォリティショコラ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "川崎内田勝義",
+      "horse_id": "2023107391"
+    }
+  ]
+}

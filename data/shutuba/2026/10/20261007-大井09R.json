@@ -1,0 +1,197 @@
+{
+  "race_id": "202644100709",
+  "race_track": "大井",
+  "race_num": "9",
+  "target_date": "20261007",
+  "race_name": "トゥインクルダートスター賞(C1八)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リノカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井米田英世",
+      "horse_id": "2023101896"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ライペニング",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井藤田輝信",
+      "horse_id": "2021102010"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スペイスフォース",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2019101883"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ワイドモヒート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "吉原寛人",
+      "stable": "大井福永敏",
+      "horse_id": "2021102919"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エスプリワールド",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井澤佳宏",
+      "horse_id": "2022106026"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ピルゴスアイトス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "中村尚平",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100274"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ベルオーシャン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井的場直之",
+      "horse_id": "2023104980"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マニス",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2022101517"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "コブラツイスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023105538"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リノカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井米田英世",
+      "horse_id": "2023101896"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ライペニング",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "矢野貴之",
+      "stable": "大井藤田輝信",
+      "horse_id": "2021102010"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スペイスフォース",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井橋本和馬",
+      "horse_id": "2019101883"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ワイドモヒート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "吉原寛人",
+      "stable": "大井福永敏",
+      "horse_id": "2021102919"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エスプリワールド",
+      "horse_age": "牡4",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井澤佳宏",
+      "horse_id": "2022106026"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ピルゴスアイトス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "中村尚平",
+      "stable": "大井井上弘之",
+      "horse_id": "2023100274"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ベルオーシャン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "吉井章",
+      "stable": "大井的場直之",
+      "horse_id": "2023104980"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "マニス",
+      "horse_age": "牝4",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2022101517"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "コブラツイスト",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井渡部則夫",
+      "horse_id": "2023105538"
+    }
+  ]
+}

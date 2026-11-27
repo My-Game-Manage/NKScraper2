@@ -1,0 +1,217 @@
+{
+  "race_id": "202636112405",
+  "race_track": "水沢",
+  "race_num": "5",
+  "target_date": "20261124",
+  "race_name": "C1",
+  "race_grade": "",
+  "race_type": "(右) 850m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランクリュ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2022101414"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ディフューズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岩本怜",
+      "stable": "岩手新田守",
+      "horse_id": "2022101087"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キタノルシール",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2022104523"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キタノフローラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2022100821"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "コウバイ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手陶文峰",
+      "horse_id": "2022106919"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ポケットフルコイン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2022105510"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アグリオ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手三野宮通",
+      "horse_id": "2021102169"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "チャーミングアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023101227"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "シャトーボビー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2020101434"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ノースショアガール",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手吉田司",
+      "horse_id": "2019105758"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "グランクリュ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2022101414"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ディフューズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "岩本怜",
+      "stable": "岩手新田守",
+      "horse_id": "2022101087"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "キタノルシール",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2022104523"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キタノフローラ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小林凌",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2022100821"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "コウバイ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手陶文峰",
+      "horse_id": "2022106919"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ポケットフルコイン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "鈴木祐",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2022105510"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アグリオ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "関本玲花",
+      "stable": "岩手三野宮通",
+      "horse_id": "2021102169"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "チャーミングアイ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2023101227"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "シャトーボビー",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "大坪慎",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2020101434"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ノースショアガール",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手吉田司",
+      "horse_id": "2019105758"
+    }
+  ]
+}

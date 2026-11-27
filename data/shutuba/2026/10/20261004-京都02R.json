@@ -1,0 +1,197 @@
+{
+  "race_id": "202608040202",
+  "race_track": "京都",
+  "race_num": "2",
+  "target_date": "20261004",
+  "race_name": "2歳未勝利",
+  "race_grade": "",
+  "race_type": "右 A 1600m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "レインボースター",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東加藤公",
+      "horse_id": "2024106942"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アイルエクラ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "☆田山",
+      "stable": "栗東新谷",
+      "horse_id": "2024105099"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ブロッサムスピア",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "Ｍデムーロ",
+      "stable": "栗東藤岡健",
+      "horse_id": "2024107052"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キシゲヒーロー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "角田和",
+      "stable": "栗東中尾",
+      "horse_id": "2024104614"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "テムスピード",
+      "horse_age": "牡2",
+      "weight_carried": "52.0",
+      "jockey": "★河原田",
+      "stable": "栗東鈴木孝",
+      "horse_id": "2024100948"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ジョン",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "小崎",
+      "stable": "栗東小崎",
+      "horse_id": "2024105038"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ジャンゴッド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "栗東杉山晴",
+      "horse_id": "2024106624"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "レイクイーン",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東中村",
+      "horse_id": "2024105648"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ラッキーハナコ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "鮫島駿",
+      "stable": "栗東浜田",
+      "horse_id": "2024104655"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "レインボースター",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東加藤公",
+      "horse_id": "2024106942"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アイルエクラ",
+      "horse_age": "牡2",
+      "weight_carried": "55.0",
+      "jockey": "☆田山",
+      "stable": "栗東新谷",
+      "horse_id": "2024105099"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ブロッサムスピア",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "Ｍデムーロ",
+      "stable": "栗東藤岡健",
+      "horse_id": "2024107052"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "キシゲヒーロー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "角田和",
+      "stable": "栗東中尾",
+      "horse_id": "2024104614"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "テムスピード",
+      "horse_age": "牡2",
+      "weight_carried": "52.0",
+      "jockey": "★河原田",
+      "stable": "栗東鈴木孝",
+      "horse_id": "2024100948"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ジョン",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "小崎",
+      "stable": "栗東小崎",
+      "horse_id": "2024105038"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ジャンゴッド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "栗東杉山晴",
+      "horse_id": "2024106624"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "レイクイーン",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松山",
+      "stable": "栗東中村",
+      "horse_id": "2024105648"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ラッキーハナコ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "鮫島駿",
+      "stable": "栗東浜田",
+      "horse_id": "2024104655"
+    }
+  ]
+}

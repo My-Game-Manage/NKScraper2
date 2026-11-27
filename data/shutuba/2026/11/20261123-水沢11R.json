@@ -1,0 +1,217 @@
+{
+  "race_id": "202636112311",
+  "race_track": "水沢",
+  "race_num": "11",
+  "target_date": "20261123",
+  "race_name": "ラナンキュラス賞(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ロッソ",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2020102534"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ナーシリーヤ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手畠山信一",
+      "horse_id": "2023101142"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サバイバルリベラル",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2021101365"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ナズドゥラヴィ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023104354"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ツキノワ",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022101010"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レライタム",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2021104379"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アニマルクィーン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手石川栄",
+      "horse_id": "2021100269"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ストロングフーヴス",
+      "horse_age": "牡9",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2017100328"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ポジティブスピン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2021103516"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "タイキモンストル",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手伊藤和",
+      "horse_id": "2019106847"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ロッソ",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2020102534"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ナーシリーヤ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手畠山信一",
+      "horse_id": "2023101142"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サバイバルリベラル",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手瀬戸幸一",
+      "horse_id": "2021101365"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ナズドゥラヴィ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023104354"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ツキノワ",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022101010"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "レライタム",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2021104379"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アニマルクィーン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手石川栄",
+      "horse_id": "2021100269"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ストロングフーヴス",
+      "horse_age": "牡9",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2017100328"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ポジティブスピン",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手小林俊彦",
+      "horse_id": "2021103516"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "タイキモンストル",
+      "horse_age": "セ7",
+      "weight_carried": "56.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手伊藤和",
+      "horse_id": "2019106847"
+    }
+  ]
+}

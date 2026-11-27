@@ -1,0 +1,257 @@
+{
+  "race_id": "202644111704",
+  "race_track": "大井",
+  "race_num": "4",
+  "target_date": "20261117",
+  "race_name": "3歳三四",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ディアギレフ",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023102579"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロックイットダウン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井中道啓二",
+      "horse_id": "2023104584"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "チャオグラッド",
+      "horse_age": "セ3",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023101991"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "トゥーナルビーズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "増田充宏",
+      "stable": "大井高野毅",
+      "horse_id": "2023104709"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カフジライオル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "瀬川将輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2023101842"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ヤマジュンハッピ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "大井小野寺晋",
+      "horse_id": "2023103014"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ルカドリーマー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "中山遥人",
+      "stable": "大井朝倉実",
+      "horse_id": "2023103147"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "アフリカンブラック",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023100329"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "スズノグレイス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "阿部龍",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2023102138"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "レモンクォーツ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2023104097"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "コンプレックス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "高野誠毅",
+      "stable": "大井岡野尚光",
+      "horse_id": "2023102552"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ポロリス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井朝倉実",
+      "horse_id": "2023106672"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ディアギレフ",
+      "horse_age": "セ3",
+      "weight_carried": "56.0",
+      "jockey": "野畑凌",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023102579"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロックイットダウン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "和田譲治",
+      "stable": "大井中道啓二",
+      "horse_id": "2023104584"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "チャオグラッド",
+      "horse_age": "セ3",
+      "weight_carried": "53.0",
+      "jockey": "西優哉",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023101991"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "トゥーナルビーズ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "増田充宏",
+      "stable": "大井高野毅",
+      "horse_id": "2023104709"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "カフジライオル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "瀬川将輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2023101842"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ヤマジュンハッピ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "大井小野寺晋",
+      "horse_id": "2023103014"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ルカドリーマー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "中山遥人",
+      "stable": "大井朝倉実",
+      "horse_id": "2023103147"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "アフリカンブラック",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "安藤洋一",
+      "stable": "大井荒井朋弘",
+      "horse_id": "2023100329"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "スズノグレイス",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "阿部龍",
+      "stable": "大井栗田泰昌",
+      "horse_id": "2023102138"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "レモンクォーツ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井蛯名雄太",
+      "horse_id": "2023104097"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "コンプレックス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "高野誠毅",
+      "stable": "大井岡野尚光",
+      "horse_id": "2023102552"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ポロリス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井朝倉実",
+      "horse_id": "2023106672"
+    }
+  ]
+}

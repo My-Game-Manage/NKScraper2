@@ -1,0 +1,197 @@
+{
+  "race_id": "202608041110",
+  "race_track": "京都",
+  "race_num": "10",
+  "target_date": "20261101",
+  "race_name": "古都S",
+  "race_grade": "",
+  "race_type": "右 外 B 3000m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ファームツエンティ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "酒井",
+      "stable": "栗東北出",
+      "horse_id": "2020104491"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アスクデッドヒート",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "古川奈",
+      "stable": "栗東矢作",
+      "horse_id": "2022105839"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ディヴァインスター",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "池添",
+      "stable": "美浦林",
+      "horse_id": "2022105984"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレシャスデイ",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "鮫島駿",
+      "stable": "美浦伊坂",
+      "horse_id": "2022104859"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エコロレイズ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "菊沢",
+      "stable": "美浦岩戸",
+      "horse_id": "2021103976"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ダカラフェスティヴ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "藤懸",
+      "stable": "美浦奥平",
+      "horse_id": "2022104378"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウイナーズナイン",
+      "horse_age": "牡3",
+      "weight_carried": "51.0",
+      "jockey": "田山",
+      "stable": "栗東小栗",
+      "horse_id": "2023102820"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ウィープディライト",
+      "horse_age": "セ5",
+      "weight_carried": "54.0",
+      "jockey": "西塚",
+      "stable": "栗東池添",
+      "horse_id": "2021105412"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "タイセイフェリーク",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田口",
+      "stable": "美浦青木",
+      "horse_id": "2020103713"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ファームツエンティ",
+      "horse_age": "セ6",
+      "weight_carried": "56.0",
+      "jockey": "酒井",
+      "stable": "栗東北出",
+      "horse_id": "2020104491"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アスクデッドヒート",
+      "horse_age": "牡4",
+      "weight_carried": "54.0",
+      "jockey": "古川奈",
+      "stable": "栗東矢作",
+      "horse_id": "2022105839"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ディヴァインスター",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "池添",
+      "stable": "美浦林",
+      "horse_id": "2022105984"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "プレシャスデイ",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "鮫島駿",
+      "stable": "美浦伊坂",
+      "horse_id": "2022104859"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エコロレイズ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "菊沢",
+      "stable": "美浦岩戸",
+      "horse_id": "2021103976"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ダカラフェスティヴ",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "藤懸",
+      "stable": "美浦奥平",
+      "horse_id": "2022104378"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ウイナーズナイン",
+      "horse_age": "牡3",
+      "weight_carried": "51.0",
+      "jockey": "田山",
+      "stable": "栗東小栗",
+      "horse_id": "2023102820"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "ウィープディライト",
+      "horse_age": "セ5",
+      "weight_carried": "54.0",
+      "jockey": "西塚",
+      "stable": "栗東池添",
+      "horse_id": "2021105412"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "タイセイフェリーク",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "田口",
+      "stable": "美浦青木",
+      "horse_id": "2020103713"
+    }
+  ]
+}

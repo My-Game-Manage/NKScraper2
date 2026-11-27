@@ -1,0 +1,237 @@
+{
+  "race_id": "202654090612",
+  "race_track": "高知",
+  "race_num": "12",
+  "target_date": "20260906",
+  "race_name": "ファイナルレース(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イナズマテーラー",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知宮路洋一",
+      "horse_id": "2018103229"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イエデゴロゴロ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知東原己俊",
+      "horse_id": "2021103701"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ディープカインズ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2022101097"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ニヨドスマイル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2018101020"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ノイヤー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知平和人",
+      "horse_id": "2021101064"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホッコーハナミチ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2018100220"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ディオスバリエンテ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知雑賀正光",
+      "horse_id": "2018105147"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ダノンマカルー",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知細川忠義",
+      "horse_id": "2021105965"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フクノルッカ",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2018100299"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴァルタリ",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2021106753"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サンダーアリュール",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中譲二",
+      "horse_id": "2021109069"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "イナズマテーラー",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "城野慈尚",
+      "stable": "高知宮路洋一",
+      "horse_id": "2018103229"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イエデゴロゴロ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "石本純也",
+      "stable": "高知東原己俊",
+      "horse_id": "2021103701"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ディープカインズ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "多田羅誠",
+      "stable": "高知工藤真司",
+      "horse_id": "2022101097"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ニヨドスマイル",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "西森将司",
+      "stable": "高知別府真司",
+      "horse_id": "2018101020"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ノイヤー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "上田将司",
+      "stable": "高知平和人",
+      "horse_id": "2021101064"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ホッコーハナミチ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知打越勇児",
+      "horse_id": "2018100220"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ディオスバリエンテ",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知雑賀正光",
+      "horse_id": "2018105147"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ダノンマカルー",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知細川忠義",
+      "horse_id": "2021105965"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "フクノルッカ",
+      "horse_age": "牝8",
+      "weight_carried": "55.0",
+      "jockey": "山崎雅由",
+      "stable": "高知西川敏弘",
+      "horse_id": "2018100299"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ヴァルタリ",
+      "horse_age": "牡5",
+      "weight_carried": "55.0",
+      "jockey": "濱尚美",
+      "stable": "高知那俄性哲",
+      "horse_id": "2021106753"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "サンダーアリュール",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中譲二",
+      "horse_id": "2021109069"
+    }
+  ]
+}

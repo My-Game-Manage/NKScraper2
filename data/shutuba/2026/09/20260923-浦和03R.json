@@ -1,0 +1,257 @@
+{
+  "race_id": "202642092303",
+  "race_track": "浦和",
+  "race_num": "3",
+  "target_date": "20260923",
+  "race_name": "C3三四五(C3四)",
+  "race_grade": "",
+  "race_type": "(左) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラフォンターナ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎山田正実",
+      "horse_id": "2021103474"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ルラクソント",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和箕輪武",
+      "horse_id": "2022106795"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジャヌウブ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和小久保智",
+      "horse_id": "2020104249"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オンネア",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "浦和入口由美",
+      "horse_id": "2021102022"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エーアイキリシマ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "保園翔也",
+      "stable": "浦和川村守男",
+      "horse_id": "2021104083"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ニシノエルサ",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "西村栄喜",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2018104000"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "イエスユイキャン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022106595"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シェナチチカカ",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "川崎山田正実",
+      "horse_id": "2019101946"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "アシレ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和川島豊",
+      "horse_id": "2022101755"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "セイダンシング",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "高橋利幸",
+      "stable": "船橋玉井昇",
+      "horse_id": "2019103118"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ダイユウルージュ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2022107169"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "プライムクオリティ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "浦和藤原智行",
+      "horse_id": "2022102863"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ラフォンターナ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "岡村裕基",
+      "stable": "川崎山田正実",
+      "horse_id": "2021103474"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ルラクソント",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "中山遥人",
+      "stable": "浦和箕輪武",
+      "horse_id": "2022106795"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジャヌウブ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "見越彬央",
+      "stable": "浦和小久保智",
+      "horse_id": "2020104249"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "オンネア",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "杉山海波",
+      "stable": "浦和入口由美",
+      "horse_id": "2021102022"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エーアイキリシマ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "保園翔也",
+      "stable": "浦和川村守男",
+      "horse_id": "2021104083"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ニシノエルサ",
+      "horse_age": "牝8",
+      "weight_carried": "54.0",
+      "jockey": "西村栄喜",
+      "stable": "船橋渋谷信博",
+      "horse_id": "2018104000"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "イエスユイキャン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "及川烈",
+      "stable": "浦和鹿沼良和",
+      "horse_id": "2022106595"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "シェナチチカカ",
+      "horse_age": "牝7",
+      "weight_carried": "52.0",
+      "jockey": "神尾香澄",
+      "stable": "川崎山田正実",
+      "horse_id": "2019101946"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "アシレ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "中島良美",
+      "stable": "浦和川島豊",
+      "horse_id": "2022101755"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "セイダンシング",
+      "horse_age": "牡7",
+      "weight_carried": "56.0",
+      "jockey": "高橋利幸",
+      "stable": "船橋玉井昇",
+      "horse_id": "2019103118"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "ダイユウルージュ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "秋元耕成",
+      "stable": "浦和藪口一麻",
+      "horse_id": "2022107169"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "プライムクオリティ",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "西啓太",
+      "stable": "浦和藤原智行",
+      "horse_id": "2022102863"
+    }
+  ]
+}

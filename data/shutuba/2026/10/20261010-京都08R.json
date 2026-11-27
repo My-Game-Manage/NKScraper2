@@ -1,0 +1,137 @@
+{
+  "race_id": "202608040308",
+  "race_track": "京都",
+  "race_num": "8",
+  "target_date": "20261010",
+  "race_name": "紫菊賞",
+  "race_grade": "",
+  "race_type": "右 A 2000m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ニシノフランケン",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "栗東北出",
+      "horse_id": "2024103936"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホウオウワールド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "松山",
+      "stable": "栗東池江",
+      "horse_id": "2024106491"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ポルトブルー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "西村淳",
+      "stable": "栗東浜田",
+      "horse_id": "2024103455"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ゴーイントゥノヴァ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東新谷",
+      "horse_id": "2024104681"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ビップヴィーナス",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松若",
+      "stable": "美浦田島",
+      "horse_id": "2024106124"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ドラゴンバルド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "栗東福永",
+      "horse_id": "2024106649"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ニシノフランケン",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "幸",
+      "stable": "栗東北出",
+      "horse_id": "2024103936"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ホウオウワールド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "松山",
+      "stable": "栗東池江",
+      "horse_id": "2024106491"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ポルトブルー",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "西村淳",
+      "stable": "栗東浜田",
+      "horse_id": "2024103455"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ゴーイントゥノヴァ",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東新谷",
+      "horse_id": "2024104681"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ビップヴィーナス",
+      "horse_age": "牝2",
+      "weight_carried": "55.0",
+      "jockey": "松若",
+      "stable": "美浦田島",
+      "horse_id": "2024106124"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ドラゴンバルド",
+      "horse_age": "牡2",
+      "weight_carried": "56.0",
+      "jockey": "川田",
+      "stable": "栗東福永",
+      "horse_id": "2024106649"
+    }
+  ]
+}

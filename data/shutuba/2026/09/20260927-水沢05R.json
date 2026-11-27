@@ -1,0 +1,237 @@
+{
+  "race_id": "202636092705",
+  "race_track": "水沢",
+  "race_num": "5",
+  "target_date": "20260927",
+  "race_name": "3歳C2四組",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スパンキーウェーブ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2023106385"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヴィーナスキック",
+      "horse_age": "牝3",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2023109051"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サンアイディール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手菅原勲",
+      "horse_id": "2023100846"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ファビュラスベガス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手小林義明",
+      "horse_id": "2023103545"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "コシタンタン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手高橋純",
+      "horse_id": "2023100977"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リトルエンジェル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手千葉博次",
+      "horse_id": "2023101264"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ララムーティエ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "岩本怜",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023103209"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ヒャクギマル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023105890"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "アンジュリオ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2023103145"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ターコイズテソーロ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023106729"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "トーセンアミューズ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手佐藤浩一",
+      "horse_id": "2023105959"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "スパンキーウェーブ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山本政聡",
+      "stable": "岩手永田幸宏",
+      "horse_id": "2023106385"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ヴィーナスキック",
+      "horse_age": "牝3",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手千葉幸喜",
+      "horse_id": "2023109051"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "サンアイディール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐々木志",
+      "stable": "岩手菅原勲",
+      "horse_id": "2023100846"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ファビュラスベガス",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "村上忍",
+      "stable": "岩手小林義明",
+      "horse_id": "2023103545"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "コシタンタン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手高橋純",
+      "horse_id": "2023100977"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リトルエンジェル",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手千葉博次",
+      "horse_id": "2023101264"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ララムーティエ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "岩本怜",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023103209"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ヒャクギマル",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手伊藤和忍",
+      "horse_id": "2023105890"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "アンジュリオ",
+      "horse_age": "牝3",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手飯田弘道",
+      "horse_id": "2023103145"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ターコイズテソーロ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2023106729"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "トーセンアミューズ",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "山本聡哉",
+      "stable": "岩手佐藤浩一",
+      "horse_id": "2023105959"
+    }
+  ]
+}

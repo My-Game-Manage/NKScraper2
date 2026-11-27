@@ -1,0 +1,257 @@
+{
+  "race_id": "202609040411",
+  "race_track": "阪神",
+  "race_num": "11",
+  "target_date": "20260913",
+  "race_name": "ローズS",
+  "race_grade": "",
+  "race_type": "右 外 A 1800m  / 芝",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アンジュドジョワ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "北村友",
+      "stable": "栗東福永",
+      "horse_id": "2023103807"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エンネ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東吉岡",
+      "horse_id": "2023102102"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スマートプリエール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田山",
+      "stable": "栗東大久保",
+      "horse_id": "2023107079"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アンディムジーク",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "古川吉",
+      "stable": "栗東渡辺",
+      "horse_id": "2023103797"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファストフォワード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "小崎",
+      "stable": "栗東小林",
+      "horse_id": "2023106362"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "イクシード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "ルメール",
+      "stable": "美浦木村",
+      "horse_id": "2023107030"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "モンローウォーク",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "戸崎圭",
+      "stable": "栗東上村",
+      "horse_id": "2023106859"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ミリタリータトゥー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西塚",
+      "stable": "栗東藤岡健",
+      "horse_id": "2023101180"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ナムラコスモス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田口",
+      "stable": "栗東大橋",
+      "horse_id": "2023106227"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スウィートハピネス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東北出",
+      "horse_id": "2023104475"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "レイクラシック",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東新谷",
+      "horse_id": "2023103906"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "タイセイボーグ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西村淳",
+      "stable": "栗東松下",
+      "horse_id": "2023106900"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "アンジュドジョワ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "北村友",
+      "stable": "栗東福永",
+      "horse_id": "2023103807"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エンネ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "坂井",
+      "stable": "栗東吉岡",
+      "horse_id": "2023102102"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "スマートプリエール",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田山",
+      "stable": "栗東大久保",
+      "horse_id": "2023107079"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アンディムジーク",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "古川吉",
+      "stable": "栗東渡辺",
+      "horse_id": "2023103797"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファストフォワード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "小崎",
+      "stable": "栗東小林",
+      "horse_id": "2023106362"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "イクシード",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "ルメール",
+      "stable": "美浦木村",
+      "horse_id": "2023107030"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "モンローウォーク",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "戸崎圭",
+      "stable": "栗東上村",
+      "horse_id": "2023106859"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ミリタリータトゥー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西塚",
+      "stable": "栗東藤岡健",
+      "horse_id": "2023101180"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ナムラコスモス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田口",
+      "stable": "栗東大橋",
+      "horse_id": "2023106227"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "スウィートハピネス",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "佐々木",
+      "stable": "栗東北出",
+      "horse_id": "2023104475"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "レイクラシック",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "吉村",
+      "stable": "栗東新谷",
+      "horse_id": "2023103906"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "タイセイボーグ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "西村淳",
+      "stable": "栗東松下",
+      "horse_id": "2023106900"
+    }
+  ]
+}

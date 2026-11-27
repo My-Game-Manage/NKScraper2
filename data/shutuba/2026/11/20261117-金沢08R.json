@@ -1,0 +1,237 @@
+{
+  "race_id": "202646111708",
+  "race_track": "金沢",
+  "race_num": "8",
+  "target_date": "20261117",
+  "race_name": "B23",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マイラブジャック",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2020100738"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アンクローシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢中川雅之",
+      "horse_id": "2021104838"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トウショウクラウド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022104194"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ミラコロヴァーグ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022109004"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エスティメート",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢金田一昌",
+      "horse_id": "2019102648"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リュウノレッドアイ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "平瀬城久",
+      "stable": "金沢加藤和義",
+      "horse_id": "2020100556"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ハートロック",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "米倉知",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2018102268"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "タンジェントアーク",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢吉井一良",
+      "horse_id": "2018100752"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "マーキュリーセブン",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2017105829"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "セッカチケーン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢中川雅之",
+      "horse_id": "2019102613"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "キタノダイヤ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022103223"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "マイラブジャック",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "中島龍也",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2020100738"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アンクローシュ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢中川雅之",
+      "horse_id": "2021104838"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "トウショウクラウド",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "栗原大河",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022104194"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ミラコロヴァーグ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢堀場裕充",
+      "horse_id": "2022109004"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エスティメート",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢金田一昌",
+      "horse_id": "2019102648"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "リュウノレッドアイ",
+      "horse_age": "牝6",
+      "weight_carried": "55.0",
+      "jockey": "平瀬城久",
+      "stable": "金沢加藤和義",
+      "horse_id": "2020100556"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ハートロック",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "米倉知",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2018102268"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "タンジェントアーク",
+      "horse_age": "セ8",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢吉井一良",
+      "horse_id": "2018100752"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "マーキュリーセブン",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "沖静男",
+      "stable": "金沢川添明弘",
+      "horse_id": "2017105829"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "セッカチケーン",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "松戸政也",
+      "stable": "金沢中川雅之",
+      "horse_id": "2019102613"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "キタノダイヤ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢鈴木正也",
+      "horse_id": "2022103223"
+    }
+  ]
+}

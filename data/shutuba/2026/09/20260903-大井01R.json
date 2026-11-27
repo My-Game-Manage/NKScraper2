@@ -1,0 +1,217 @@
+{
+  "race_id": "202644090301",
+  "race_track": "大井",
+  "race_num": "1",
+  "target_date": "20260903",
+  "race_name": "C3一二",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メロパール",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "大井中道啓二",
+      "horse_id": "2020105237"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードオブキング",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2022101471"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アフリカンビート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井井上弘之",
+      "horse_id": "2021107235"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フィリピーヌ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井福永敏",
+      "horse_id": "2020101596"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファインデイ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "瀬川将輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2021101392"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ベイデンフラッシュ",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2022103858"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アイアムイブシギン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井澤佳宏",
+      "horse_id": "2021102897"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ガニュメデスレイ",
+      "horse_age": "牡9",
+      "weight_carried": "53.0",
+      "jockey": "高橋優",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2017106649"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "イケノギャルチャン",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井岡野尚光",
+      "horse_id": "2019101304"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ソニックサンライズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "中村尚平",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2022101390"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メロパール",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "西啓太",
+      "stable": "大井中道啓二",
+      "horse_id": "2020105237"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードオブキング",
+      "horse_age": "牡4",
+      "weight_carried": "56.0",
+      "jockey": "藤田凌",
+      "stable": "大井上杉昌宏",
+      "horse_id": "2022101471"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "アフリカンビート",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "藤本現暉",
+      "stable": "大井井上弘之",
+      "horse_id": "2021107235"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フィリピーヌ",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "矢野貴之",
+      "stable": "大井福永敏",
+      "horse_id": "2020101596"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ファインデイ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "瀬川将輝",
+      "stable": "大井松浦裕之",
+      "horse_id": "2021101392"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ベイデンフラッシュ",
+      "horse_age": "セ4",
+      "weight_carried": "56.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2022103858"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "アイアムイブシギン",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "鷹見陸",
+      "stable": "大井澤佳宏",
+      "horse_id": "2021102897"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ガニュメデスレイ",
+      "horse_age": "牡9",
+      "weight_carried": "53.0",
+      "jockey": "高橋優",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2017106649"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "イケノギャルチャン",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "石川駿介",
+      "stable": "大井岡野尚光",
+      "horse_id": "2019101304"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "ソニックサンライズ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "中村尚平",
+      "stable": "大井渡辺和雄",
+      "horse_id": "2022101390"
+    }
+  ]
+}

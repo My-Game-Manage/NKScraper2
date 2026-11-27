@@ -1,0 +1,177 @@
+{
+  "race_id": "202630091604",
+  "race_track": "門別",
+  "race_num": "4",
+  "target_date": "20260916",
+  "race_name": "3歳以上 C4ー3",
+  "race_grade": "",
+  "race_type": "(右) 1700m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シャンアリーズ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "藤田凌駕",
+      "stable": "北海道桧森邦夫",
+      "horse_id": "2021100340"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ダークディザイア",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "松井伸也",
+      "stable": "北海道五十嵐冬",
+      "horse_id": "2023107492"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シャア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "黒澤愛斗",
+      "stable": "北海道森山雄大",
+      "horse_id": "2023107459"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アースウルフ",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "坂下秀樹",
+      "stable": "北海道岡島玉一",
+      "horse_id": "2017104550"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "バブリーダッシュ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "阿部龍",
+      "stable": "北海道角川秀樹",
+      "horse_id": "2017103923"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アクティブテーラー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "亀井洋司",
+      "stable": "北海道岡島玉一",
+      "horse_id": "2019100699"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メイショウヤマフジ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "落合玄太",
+      "stable": "北海道田中淳司",
+      "horse_id": "2023102240"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "フジノアルファ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "渡辺準己",
+      "stable": "北海道米川昇",
+      "horse_id": "2023103924"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シャンアリーズ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "藤田凌駕",
+      "stable": "北海道桧森邦夫",
+      "horse_id": "2021100340"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ダークディザイア",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "松井伸也",
+      "stable": "北海道五十嵐冬",
+      "horse_id": "2023107492"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "シャア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "黒澤愛斗",
+      "stable": "北海道森山雄大",
+      "horse_id": "2023107459"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アースウルフ",
+      "horse_age": "セ9",
+      "weight_carried": "57.0",
+      "jockey": "坂下秀樹",
+      "stable": "北海道岡島玉一",
+      "horse_id": "2017104550"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "バブリーダッシュ",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "阿部龍",
+      "stable": "北海道角川秀樹",
+      "horse_id": "2017103923"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "アクティブテーラー",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "亀井洋司",
+      "stable": "北海道岡島玉一",
+      "horse_id": "2019100699"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メイショウヤマフジ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "落合玄太",
+      "stable": "北海道田中淳司",
+      "horse_id": "2023102240"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "フジノアルファ",
+      "horse_age": "牡3",
+      "weight_carried": "54.0",
+      "jockey": "渡辺準己",
+      "stable": "北海道米川昇",
+      "horse_id": "2023103924"
+    }
+  ]
+}

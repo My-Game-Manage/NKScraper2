@@ -1,0 +1,257 @@
+{
+  "race_id": "202636091310",
+  "race_track": "水沢",
+  "race_num": "10",
+  "target_date": "20260913",
+  "race_name": "四十八坂賞(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リュウノメディナ",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2021103979"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コスモベラエステラ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2021105861"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナムラゴロフキン",
+      "horse_age": "牡9",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手新田守",
+      "horse_id": "2017102802"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヒロシゲウェーブ",
+      "horse_age": "セ10",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手酒井仁",
+      "horse_id": "2016105886"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハッピーグローリー",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022100610"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ビッグサララルーフ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "高松亮",
+      "stable": "岩手伊藤和",
+      "horse_id": "2021103514"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "リアルモハメド",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "山本政聡",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2021100486"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トレベルフィーユ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手高橋純",
+      "horse_id": "2022105425"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ヘクトプリンセス",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手菅原勲",
+      "horse_id": "2021103185"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "カニフ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "大坪慎",
+      "stable": "岩手橘友和",
+      "horse_id": "2019106283"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アフタービート",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2020101602"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "クイーンオブソウル",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手橘友和",
+      "horse_id": "2020102995"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "リュウノメディナ",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "塚本涼人",
+      "stable": "岩手酒井仁",
+      "horse_id": "2021103979"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コスモベラエステラ",
+      "horse_age": "牡5",
+      "weight_carried": "56.0",
+      "jockey": "阿部英俊",
+      "stable": "岩手工藤裕孝",
+      "horse_id": "2021105861"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ナムラゴロフキン",
+      "horse_age": "牡9",
+      "weight_carried": "56.0",
+      "jockey": "村上忍",
+      "stable": "岩手新田守",
+      "horse_id": "2017102802"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ヒロシゲウェーブ",
+      "horse_age": "セ10",
+      "weight_carried": "56.0",
+      "jockey": "小林凌",
+      "stable": "岩手酒井仁",
+      "horse_id": "2016105886"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ハッピーグローリー",
+      "horse_age": "牝4",
+      "weight_carried": "50.0",
+      "jockey": "斉藤友香",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2022100610"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ビッグサララルーフ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "高松亮",
+      "stable": "岩手伊藤和",
+      "horse_id": "2021103514"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "リアルモハメド",
+      "horse_age": "セ5",
+      "weight_carried": "56.0",
+      "jockey": "山本政聡",
+      "stable": "岩手斉藤雄一",
+      "horse_id": "2021100486"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トレベルフィーユ",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "山本聡紀",
+      "stable": "岩手高橋純",
+      "horse_id": "2022105425"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "ヘクトプリンセス",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "坂井瑛音",
+      "stable": "岩手菅原勲",
+      "horse_id": "2021103185"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "カニフ",
+      "horse_age": "牝7",
+      "weight_carried": "54.0",
+      "jockey": "大坪慎",
+      "stable": "岩手橘友和",
+      "horse_id": "2019106283"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "アフタービート",
+      "horse_age": "牡6",
+      "weight_carried": "56.0",
+      "jockey": "菅原辰徳",
+      "stable": "岩手菅原右吉",
+      "horse_id": "2020101602"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "クイーンオブソウル",
+      "horse_age": "牝6",
+      "weight_carried": "54.0",
+      "jockey": "高橋悠里",
+      "stable": "岩手橘友和",
+      "horse_id": "2020102995"
+    }
+  ]
+}

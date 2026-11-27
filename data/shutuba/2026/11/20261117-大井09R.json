@@ -1,0 +1,237 @@
+{
+  "race_id": "202644111709",
+  "race_track": "大井",
+  "race_num": "9",
+  "target_date": "20261117",
+  "race_name": "ひいらぎ特別競走(C1)",
+  "race_grade": "",
+  "race_type": "(右) 1600m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "トップエアデール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023100721"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジャストリアン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "大井市村誠",
+      "horse_id": "2022107064"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "リノカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井米田英世",
+      "horse_id": "2023101896"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アキミューミュー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2021105344"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベルオーシャン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井的場直之",
+      "horse_id": "2023104980"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ディアモアー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "大井納谷和玖",
+      "horse_id": "2023100821"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒンナ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "杉山海波",
+      "stable": "大井赤嶺亮",
+      "horse_id": "2021103660"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベネメレンティ",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井高野毅",
+      "horse_id": "2021106648"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エリザベートバディ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山中悠希",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102191"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スズノアリマール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2023102136"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フェスティヴハート",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "達城龍次",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023104526"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "トップエアデール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "田中洸多",
+      "stable": "大井橋本和馬",
+      "horse_id": "2023100721"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ジャストリアン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "張田昂",
+      "stable": "大井市村誠",
+      "horse_id": "2022107064"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "リノカ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "安藤洋一",
+      "stable": "大井米田英世",
+      "horse_id": "2023101896"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "アキミューミュー",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "岡村健司",
+      "stable": "大井高岩孝敏",
+      "horse_id": "2021105344"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ベルオーシャン",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "本田正重",
+      "stable": "大井的場直之",
+      "horse_id": "2023104980"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ディアモアー",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "佐野遥久",
+      "stable": "大井納谷和玖",
+      "horse_id": "2023100821"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "ヒンナ",
+      "horse_age": "牝5",
+      "weight_carried": "52.0",
+      "jockey": "杉山海波",
+      "stable": "大井赤嶺亮",
+      "horse_id": "2021103660"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベネメレンティ",
+      "horse_age": "牝5",
+      "weight_carried": "51.0",
+      "jockey": "西優哉",
+      "stable": "大井高野毅",
+      "horse_id": "2021106648"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "エリザベートバディ",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "山中悠希",
+      "stable": "大井中道啓二",
+      "horse_id": "2023102191"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スズノアリマール",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "笹川翼",
+      "stable": "大井福田真広",
+      "horse_id": "2023102136"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "フェスティヴハート",
+      "horse_age": "牝3",
+      "weight_carried": "54.0",
+      "jockey": "達城龍次",
+      "stable": "大井堀千亜樹",
+      "horse_id": "2023104526"
+    }
+  ]
+}

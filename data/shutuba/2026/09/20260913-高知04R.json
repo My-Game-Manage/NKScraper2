@@ -1,0 +1,257 @@
+{
+  "race_id": "202654091304",
+  "race_track": "高知",
+  "race_num": "4",
+  "target_date": "20260913",
+  "race_name": "3歳ー5",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "モズラストセール",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023100178"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードベルファスト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023102476"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ピコマーキス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2023106098"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラヴィニアパーク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023106801"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エナジーアユ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023105737"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "カミイダイヤモンド",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103871"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "セントポールヒロ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023100863"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ウィギル",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023102825"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "レンジシ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中守",
+      "horse_id": "2023101249"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メイジョウエナジー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知田中伸一",
+      "horse_id": "2023101075"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "テンサラ",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "岡村健司",
+      "stable": "高知田中譲二",
+      "horse_id": "2023105442"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アカリボーイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中守",
+      "horse_id": "2023103077"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "モズラストセール",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "永森大智",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023100178"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ロードベルファスト",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上瑛太",
+      "stable": "高知別府真司",
+      "horse_id": "2023102476"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ピコマーキス",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "赤岡修次",
+      "stable": "高知田中守",
+      "horse_id": "2023106098"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ラヴィニアパーク",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "岡村卓弥",
+      "stable": "高知川野勇馬",
+      "horse_id": "2023106801"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "エナジーアユ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "木村直輝",
+      "stable": "高知田中伸一",
+      "horse_id": "2023105737"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "カミイダイヤモンド",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "近藤翔月",
+      "stable": "高知国澤輝幸",
+      "horse_id": "2023103871"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "セントポールヒロ",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "塚本直之",
+      "stable": "高知目迫大輔",
+      "horse_id": "2023100863"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "ウィギル",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "大澤誠志",
+      "stable": "高知胡本友晴",
+      "horse_id": "2023102825"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "レンジシ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "新庄海誠",
+      "stable": "高知田中守",
+      "horse_id": "2023101249"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "メイジョウエナジー",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "畑中信司",
+      "stable": "高知田中伸一",
+      "horse_id": "2023101075"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "テンサラ",
+      "horse_age": "セ3",
+      "weight_carried": "57.0",
+      "jockey": "岡村健司",
+      "stable": "高知田中譲二",
+      "horse_id": "2023105442"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "アカリボーイ",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "郷間勇太",
+      "stable": "高知田中守",
+      "horse_id": "2023103077"
+    }
+  ]
+}

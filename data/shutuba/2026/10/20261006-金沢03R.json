@@ -1,0 +1,217 @@
+{
+  "race_id": "202646100603",
+  "race_track": "金沢",
+  "race_num": "3",
+  "target_date": "20261006",
+  "race_name": "C16",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ロット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106586"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アドバンスドリーム",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2019110087"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カフジウヴァ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢池田敦",
+      "horse_id": "2022110050"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フィエールガール",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022100715"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スペシャルサンデー",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢池田敦",
+      "horse_id": "2018106570"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マオノブリージー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021102534"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ルルーディ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2022100883"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベストベルシック",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2021101437"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ピアレイジレディ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021105159"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマイルムーン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2019102374"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ロット",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "望月洵輝",
+      "stable": "金沢金田一昌",
+      "horse_id": "2023106586"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "アドバンスドリーム",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "柴田勇真",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2019110087"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "カフジウヴァ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "青柳正義",
+      "stable": "金沢池田敦",
+      "horse_id": "2022110050"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "フィエールガール",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉田晃浩",
+      "stable": "金沢佐藤茂",
+      "horse_id": "2022100715"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "スペシャルサンデー",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "加藤翔馬",
+      "stable": "金沢池田敦",
+      "horse_id": "2018106570"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "マオノブリージー",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "甲賀弘隆",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021102534"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ルルーディ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "田知弘久",
+      "stable": "金沢田嶋弘幸",
+      "horse_id": "2022100883"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ベストベルシック",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "栗原大河",
+      "stable": "金沢菅原欣也",
+      "horse_id": "2021101437"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "ピアレイジレディ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "筒井勇介",
+      "stable": "金沢藤田弘治",
+      "horse_id": "2021105159"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "スマイルムーン",
+      "horse_age": "牝7",
+      "weight_carried": "55.0",
+      "jockey": "中島龍也",
+      "stable": "金沢加藤和宏",
+      "horse_id": "2019102374"
+    }
+  ]
+}

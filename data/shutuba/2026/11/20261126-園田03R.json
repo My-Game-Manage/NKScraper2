@@ -1,0 +1,217 @@
+{
+  "race_id": "202650112603",
+  "race_track": "園田",
+  "race_num": "3",
+  "target_date": "20261126",
+  "race_name": "C3一",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベビーヴァギー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2022107168"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コカボムショット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫西村守幸",
+      "horse_id": "2023100984"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フルリミット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫碇清次郎",
+      "horse_id": "2023104004"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "チャンピオンセーラ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫徳本慶一",
+      "horse_id": "2022106290"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウガイフウ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2021106247"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "キャバリエクエスト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "服部茂史",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022107159"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "チビアーサー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫西村守幸",
+      "horse_id": "2022100446"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スカイライズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫寺地誠一",
+      "horse_id": "2023101783"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "テクノドラゴン",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫高本友芳",
+      "horse_id": "2021105277"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "オセアビシャイン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫田中学",
+      "horse_id": "2023100052"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ベビーヴァギー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2022107168"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "コカボムショット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫西村守幸",
+      "horse_id": "2023100984"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "フルリミット",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫碇清次郎",
+      "horse_id": "2023104004"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "チャンピオンセーラ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫徳本慶一",
+      "horse_id": "2022106290"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "メイショウガイフウ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2021106247"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "キャバリエクエスト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "服部茂史",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2022107159"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "チビアーサー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫西村守幸",
+      "horse_id": "2022100446"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "スカイライズ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫寺地誠一",
+      "horse_id": "2023101783"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "テクノドラゴン",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫高本友芳",
+      "horse_id": "2021105277"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "オセアビシャイン",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫田中学",
+      "horse_id": "2023100052"
+    }
+  ]
+}

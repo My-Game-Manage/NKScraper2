@@ -1,0 +1,177 @@
+{
+  "race_id": "202650100801",
+  "race_track": "園田",
+  "race_num": "1",
+  "target_date": "20261008",
+  "race_name": "C2三",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "セレナリス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫土屋洋之",
+      "horse_id": "2023104459"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イングリッドローズ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2021104746"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジュンオーズ",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫渡瀬寛彰",
+      "horse_id": "2019109145"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マーブルティスワ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "川原正一",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2023102484"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ジーベローチェ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2023101515"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "エイシンウィキッド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2023105531"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メイショウガイフウ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2021106247"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "スティールソニック",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫野田忍",
+      "horse_id": "2023101550"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "セレナリス",
+      "horse_age": "牝3",
+      "weight_carried": "52.0",
+      "jockey": "高橋洸佑",
+      "stable": "兵庫土屋洋之",
+      "horse_id": "2023104459"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "イングリッドローズ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "土方颯太",
+      "stable": "兵庫盛本信春",
+      "horse_id": "2021104746"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジュンオーズ",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫渡瀬寛彰",
+      "horse_id": "2019109145"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "マーブルティスワ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "川原正一",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2023102484"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ジーベローチェ",
+      "horse_age": "牝3",
+      "weight_carried": "55.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫田中道夫",
+      "horse_id": "2023101515"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "エイシンウィキッド",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2023105531"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "メイショウガイフウ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "下原理",
+      "stable": "兵庫保利幸作",
+      "horse_id": "2021106247"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "8",
+      "horse_name": "スティールソニック",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫野田忍",
+      "horse_id": "2023101550"
+    }
+  ]
+}

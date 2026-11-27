@@ -1,0 +1,217 @@
+{
+  "race_id": "202650112506",
+  "race_track": "園田",
+  "race_num": "6",
+  "target_date": "20261125",
+  "race_name": "C3二",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メイショウテンテン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2022105939"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シェナキング",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "山本屋太",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2018102743"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モデルチャン",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2021107093"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハッピーモンスター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2021100056"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マジカルフェイス",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫田中範雄",
+      "horse_id": "2017109042"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ナリタセレーノ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2021101480"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "カドサンガンバル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2021104264"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ナリタボニー",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2022101488"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "キャスパインパクト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "永井孝典",
+      "stable": "兵庫大塚信次",
+      "horse_id": "2022100963"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "エイシングリュック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2019103457"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "メイショウテンテン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫有馬澄男",
+      "horse_id": "2022105939"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "シェナキング",
+      "horse_age": "牡8",
+      "weight_carried": "57.0",
+      "jockey": "山本屋太",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2018102743"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "モデルチャン",
+      "horse_age": "牝5",
+      "weight_carried": "53.0",
+      "jockey": "佐々木世",
+      "stable": "兵庫長南和宏",
+      "horse_id": "2021107093"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "ハッピーモンスター",
+      "horse_age": "セ5",
+      "weight_carried": "57.0",
+      "jockey": "廣瀬航",
+      "stable": "兵庫諏訪貴正",
+      "horse_id": "2021100056"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "マジカルフェイス",
+      "horse_age": "牡9",
+      "weight_carried": "57.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫田中範雄",
+      "horse_id": "2017109042"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ナリタセレーノ",
+      "horse_age": "牝5",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2021101480"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "カドサンガンバル",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "山本咲希",
+      "stable": "兵庫石橋満",
+      "horse_id": "2021104264"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "ナリタボニー",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "南部楓馬",
+      "stable": "兵庫坂本和也",
+      "horse_id": "2022101488"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "キャスパインパクト",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "永井孝典",
+      "stable": "兵庫大塚信次",
+      "horse_id": "2022100963"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "エイシングリュック",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "小谷周平",
+      "stable": "兵庫溝橋利喜",
+      "horse_id": "2019103457"
+    }
+  ]
+}

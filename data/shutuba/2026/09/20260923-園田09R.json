@@ -1,0 +1,217 @@
+{
+  "race_id": "202650092309",
+  "race_track": "園田",
+  "race_num": "9",
+  "target_date": "20260923",
+  "race_name": "元宝塚 彩羽真矢☆来場記念C2一",
+  "race_grade": "",
+  "race_type": "(右) 1400m  / ダ",
+  "race_distance": "",
+  "weather": "",
+  "condition": "",
+  "race_class": "",
+  "shutuba_horses": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ララテロワール",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫碇清次郎",
+      "horse_id": "2020101571"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エコロアテナ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫尾原強",
+      "horse_id": "2022105526"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "テイケイホロムア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2023105205"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "タイシン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "小牧太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2023107473"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ワイドオルデン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫新子雅司",
+      "horse_id": "2022107333"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ヴラマンク",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2019106202"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ゼットヒーロ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫田中範雄",
+      "horse_id": "2022100687"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリノエニシ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫橋本忠明",
+      "horse_id": "2022101147"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "スイートフェアリー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫長倉功",
+      "horse_id": "2022106655"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "セイパレル",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2021102971"
+    }
+  ],
+  "results": [
+    {
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "ララテロワール",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "杉浦健太",
+      "stable": "兵庫碇清次郎",
+      "horse_id": "2020101571"
+    },
+    {
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "エコロアテナ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "大山真吾",
+      "stable": "兵庫尾原強",
+      "horse_id": "2022105526"
+    },
+    {
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "テイケイホロムア",
+      "horse_age": "牡3",
+      "weight_carried": "57.0",
+      "jockey": "竹村達也",
+      "stable": "兵庫山口浩幸",
+      "horse_id": "2023105205"
+    },
+    {
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "タイシン",
+      "horse_age": "牡3",
+      "weight_carried": "56.0",
+      "jockey": "小牧太",
+      "stable": "兵庫藤川純",
+      "horse_id": "2023107473"
+    },
+    {
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "ワイドオルデン",
+      "horse_age": "牝4",
+      "weight_carried": "54.0",
+      "jockey": "小谷哲平",
+      "stable": "兵庫新子雅司",
+      "horse_id": "2022107333"
+    },
+    {
+      "bracket_num": "6",
+      "horse_num": "6",
+      "horse_name": "ヴラマンク",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "渡瀬和幸",
+      "stable": "兵庫黒田隆男",
+      "horse_id": "2019106202"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "7",
+      "horse_name": "ゼットヒーロ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "井上幹太",
+      "stable": "兵庫田中範雄",
+      "horse_id": "2022100687"
+    },
+    {
+      "bracket_num": "7",
+      "horse_num": "8",
+      "horse_name": "クリノエニシ",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "長尾翼玖",
+      "stable": "兵庫橋本忠明",
+      "horse_id": "2022101147"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "9",
+      "horse_name": "スイートフェアリー",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "吉村智洋",
+      "stable": "兵庫長倉功",
+      "horse_id": "2022106655"
+    },
+    {
+      "bracket_num": "8",
+      "horse_num": "10",
+      "horse_name": "セイパレル",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "田野豊三",
+      "stable": "兵庫柏原誠路",
+      "horse_id": "2021102971"
+    }
+  ]
+}
