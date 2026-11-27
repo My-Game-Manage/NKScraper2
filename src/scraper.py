@@ -14,6 +14,7 @@ from src.client.all_html_dump import fetch_js_html
 from src.core.generate_personnel_report import generate_daily_personnel_reports
 from src.core.simulator import SimulationEngine, VenueRuleFinder
 from src.core.logic_generator import NkLogicGenerator
+from src.core.prediction_verifier import NkPredictionVerifier
 
 from src.utils.date_utils import (
     get_today_jst,
@@ -84,7 +85,6 @@ class NkScraper:
                 detected_patches=data["patches"],
             )
 
-            # 1. 日付スタンプ付きファイル名 (例: logic-浦和-20261126.md)
             date_filename = f"logic-{venue_name}-{date_str}.md"
             venue_dir = f"protocols/{venue_name}"
             saved_date_path = self.writer.save_as_markdown(
@@ -95,7 +95,6 @@ class NkScraper:
                 is_test=is_test,
             )
 
-            # 2. 最新参照用固定ファイル名 (例: logic-浦和-latest.md)
             if save_latest_copy:
                 latest_filename = f"logic-{venue_name}-latest.md"
                 self.writer.save_as_markdown(
@@ -137,7 +136,6 @@ class NkScraper:
             race_track = info.get("race_track", self.get_jyo_name(race_id))
             race_num = info.get("race_num", self.get_race_num_from_id(race_id))
 
-            # 分割保存
             shutuba_map = self.conv_race_shutuba_data_to_markdown_as_separate(target_date, race_info)
             prefix_filename = self.formatter.get_filename_prefix_from_id_track_num(race_id, race_track, race_num)
 
@@ -148,12 +146,10 @@ class NkScraper:
                 venue_dir = f"{race_track}/{race_track}{race_num}"
                 self.writer.save_as_markdown(target_date, venue_dir, save_filename, content, is_test)
 
-            # 統合ファイル保存
             comb_content = self.conv_race_shutuba_data_to_markdown(target_date, race_info)
             comb_save_fname = f"{prefix_filename}.md"
             self.writer.save_as_markdown(target_date, race_track, comb_save_fname, comb_content, is_test)
 
-            # 個別馬データJSON保存
             horse_infos = race_info.get("horse_infos", [])
             for h_info in horse_infos:
                 h_id = h_info.get("horse_id", "")
@@ -219,6 +215,15 @@ class NkScraper:
         # 騎手・厩舎レポート作成
         logger.info(f"【人事レポート作成】{target_date} 全場の騎手・厩舎レポートを作成中...")
         generate_daily_personnel_reports(target_date, is_test)
+
+        # 予想検証レポート作成（事前に同日の予想が存在する場合）
+        logger.info(f"【予想検証レポート作成】{target_date} の予想・結果整合性レポートを作成中...")
+        verifier = NkPredictionVerifier(base_dir=self.base_dir, test_base_dir="data_test")
+        verification_md = verifier.generate_verification_report(target_date, is_test=is_test)
+        if "⚠️" not in verification_md:
+            verif_filename = f"prediction_verification_{target_date}.md"
+            self.writer.save_as_markdown(target_date, "reports", verif_filename, verification_md, is_test)
+            logger.info(f"✅ 予想検証レポートを作成しました: {verif_filename}")
 
         # 最新蓄積データに基づく会場別プロトコルの自動更新
         logger.info("【プロトコル自動更新】最新結果データに基づく会場別プロトコルを更新中...")
