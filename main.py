@@ -277,8 +277,11 @@ def main():
         print(f"致命的なエラーが発生しました: {e}")
         sys.exit(1)
     finally:
-        if 'scraper' in locals() and hasattr(scraper, 'fetcher'):
-            scraper.fetcher.client.quit()
+        if 'scraper' in locals():
+            if hasattr(scraper, 'close'):
+                scraper.close()
+            if hasattr(scraper, 'fetcher') and hasattr(scraper.fetcher, 'client') and hasattr(scraper.fetcher.client, 'quit'):
+                scraper.fetcher.client.quit()
 
 if __name__ == "__main__":
     main()
