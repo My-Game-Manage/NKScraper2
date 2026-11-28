@@ -2,8 +2,8 @@ name: Scheduled Horse Racing Scraping
 
 on:
   schedule:
-#    - cron: '0 8 * * *' # 日本時間19:00：翌日の出馬表(fetch_data.py)を取得
-    - cron: '0 18 * * *' # 日本時間3:00：当日の出馬表(fetch_data.py)を取得
+    # UTC 18:13（日本時間 3:13頃）に少しズラす：当日の出馬表(fetch_data.py)を取得
+    - cron: '13 18 * * *'
   workflow_dispatch: # 手動実行ボタンも残しておく
 
 jobs:
