@@ -1,15 +1,15 @@
 {
   "race_id": "202650112708",
   "race_track": "園田",
-  "race_num": "8",
+  "race_num": "08",
   "target_date": "20261127",
   "race_name": "B2",
-  "race_grade": "",
-  "race_type": "(右) 1700m  / ダ",
-  "race_distance": "",
-  "weather": "",
-  "condition": "",
-  "race_class": "",
+  "race_grade": "B2",
+  "race_type": "ダ",
+  "race_distance": "1700m",
+  "weather": "曇",
+  "condition": "稍",
+  "race_class": "サラ系３歳以上 B",
   "shutuba_horses": [
     {
       "bracket_num": "1",
@@ -18,8 +18,11 @@
       "horse_age": "牡4",
       "weight_carried": "57.0",
       "jockey": "高畑皓一",
+      "jockey_id": "a0259",
       "stable": "兵庫黒田隆男",
-      "horse_id": "2022105051"
+      "stable_id": "05470",
+      "horse_id": "2022105051",
+      "horse_url": "https://db.netkeiba.com/horse/2022105051"
     },
     {
       "bracket_num": "2",
@@ -28,8 +31,11 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "下原理",
+      "jockey_id": "05328",
       "stable": "兵庫山口浩幸",
-      "horse_id": "2023101921"
+      "stable_id": "05466",
+      "horse_id": "2023101921",
+      "horse_url": "https://db.netkeiba.com/horse/2023101921"
     },
     {
       "bracket_num": "3",
@@ -38,8 +44,11 @@
       "horse_age": "牡7",
       "weight_carried": "57.0",
       "jockey": "杉浦健太",
+      "jockey_id": "05530",
       "stable": "兵庫保利良平",
-      "horse_id": "2019106722"
+      "stable_id": "05774",
+      "horse_id": "2019106722",
+      "horse_url": "https://db.netkeiba.com/horse/2019106722"
     },
     {
       "bracket_num": "4",
@@ -48,8 +57,11 @@
       "horse_age": "牝4",
       "weight_carried": "55.0",
       "jockey": "山本屋太",
+      "jockey_id": "05672",
       "stable": "兵庫田村彰啓",
-      "horse_id": "2022103788"
+      "stable_id": "a029e",
+      "horse_id": "2022103788",
+      "horse_url": "https://db.netkeiba.com/horse/2022103788"
     },
     {
       "bracket_num": "5",
@@ -58,8 +70,11 @@
       "horse_age": "牡4",
       "weight_carried": "57.0",
       "jockey": "廣瀬航",
+      "jockey_id": "05639",
       "stable": "兵庫保利良平",
-      "horse_id": "2022100362"
+      "stable_id": "05774",
+      "horse_id": "2022100362",
+      "horse_url": "https://db.netkeiba.com/horse/2022100362"
     },
     {
       "bracket_num": "6",
@@ -68,8 +83,11 @@
       "horse_age": "牝4",
       "weight_carried": "55.0",
       "jockey": "小牧太",
+      "jockey_id": "00894",
       "stable": "兵庫柏原誠路",
-      "horse_id": "2022105729"
+      "stable_id": "05586",
+      "horse_id": "2022105729",
+      "horse_url": "https://db.netkeiba.com/horse/2022105729"
     },
     {
       "bracket_num": "7",
@@ -78,8 +96,11 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "田野豊三",
+      "jockey_id": "05544",
       "stable": "兵庫坂本和也",
-      "horse_id": "2023100593"
+      "stable_id": "05718",
+      "horse_id": "2023100593",
+      "horse_url": "https://db.netkeiba.com/horse/2023100593"
     },
     {
       "bracket_num": "8",
@@ -88,8 +109,11 @@
       "horse_age": "牡5",
       "weight_carried": "57.0",
       "jockey": "吉村智洋",
+      "jockey_id": "",
       "stable": "兵庫北野真弘",
-      "horse_id": "2021102715"
+      "stable_id": "05715",
+      "horse_id": "2021102715",
+      "horse_url": "https://db.netkeiba.com/horse/2021102715"
     }
   ],
   "results": [
@@ -100,8 +124,11 @@
       "horse_age": "牡4",
       "weight_carried": "57.0",
       "jockey": "高畑皓一",
+      "jockey_id": "a0259",
       "stable": "兵庫黒田隆男",
-      "horse_id": "2022105051"
+      "stable_id": "05470",
+      "horse_id": "2022105051",
+      "horse_url": "https://db.netkeiba.com/horse/2022105051"
     },
     {
       "bracket_num": "2",
@@ -110,8 +137,11 @@
       "horse_age": "牡3",
       "weight_carried": "57.0",
       "jockey": "下原理",
+      "jockey_id": "05328",
       "stable": "兵庫山口浩幸",
-      "horse_id": "2023101921"
+      "stable_id": "05466",
+      "horse_id": "2023101921",
+      "horse_url": "https://db.netkeiba.com/horse/2023101921"
     },
     {
       "bracket_num": "3",
@@ -120,8 +150,11 @@
       "horse_age": "牡7",
       "weight_carried": "57.0",
       "jockey": "杉浦健太",
+      "jockey_id": "05530",
       "stable": "兵庫保利良平",
-      "horse_id": "2019106722"
+      "stable_id": "05774",
+      "horse_id": "2019106722",
+      "horse_url": "https://db.netkeiba.com/horse/2019106722"
     },
     {
       "bracket_num": "4",
@@ -130,8 +163,11 @@
       "horse_age": "牝4",
       "weight_carried": "55.0",
       "jockey": "山本屋太",
+      "jockey_id": "05672",
       "stable": "兵庫田村彰啓",
-      "horse_id": "2022103788"
+      "stable_id": "a029e",
+      "horse_id": "2022103788",
+      "horse_url": "https://db.netkeiba.com/horse/2022103788"
     },
     {
       "bracket_num": "5",
@@ -140,8 +176,11 @@
       "horse_age": "牡4",
       "weight_carried": "57.0",
       "jockey": "廣瀬航",
+      "jockey_id": "05639",
       "stable": "兵庫保利良平",
-      "horse_id": "2022100362"
+      "stable_id": "05774",
+      "horse_id": "2022100362",
+      "horse_url": "https://db.netkeiba.com/horse/2022100362"
     },
     {
       "bracket_num": "6",
@@ -150,8 +189,11 @@
       "horse_age": "牝4",
       "weight_carried": "55.0",
       "jockey": "小牧太",
+      "jockey_id": "00894",
       "stable": "兵庫柏原誠路",
-      "horse_id": "2022105729"
+      "stable_id": "05586",
+      "horse_id": "2022105729",
+      "horse_url": "https://db.netkeiba.com/horse/2022105729"
     },
     {
       "bracket_num": "7",
@@ -160,8 +202,11 @@
       "horse_age": "牝3",
       "weight_carried": "55.0",
       "jockey": "田野豊三",
+      "jockey_id": "05544",
       "stable": "兵庫坂本和也",
-      "horse_id": "2023100593"
+      "stable_id": "05718",
+      "horse_id": "2023100593",
+      "horse_url": "https://db.netkeiba.com/horse/2023100593"
     },
     {
       "bracket_num": "8",
@@ -170,8 +215,11 @@
       "horse_age": "牡5",
       "weight_carried": "57.0",
       "jockey": "吉村智洋",
+      "jockey_id": "",
       "stable": "兵庫北野真弘",
-      "horse_id": "2021102715"
+      "stable_id": "05715",
+      "horse_id": "2021102715",
+      "horse_url": "https://db.netkeiba.com/horse/2021102715"
     }
   ]
 }
