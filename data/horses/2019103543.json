@@ -18,7 +18,31 @@
     "獲得賞金 (地方)": "1,936万円",
     "通算成績": "53戦10勝 [10-1-7-35]",
     "主な勝鞍": "23'4歳以上1勝クラス",
-    "近親馬": "コスモコラッジョ、シークザトゥルース"
+    "近親馬": "コスモコラッジョ、シークザトゥルース",
+    "sire": {
+      "name": "シンボリクリスエス",
+      "url": "https://db.netkeiba.com/horse/ped/1999110099/"
+    },
+    "sire_sire": {
+      "name": "Kris S.",
+      "url": "https://db.netkeiba.com/horse/ped/000a0016f2/"
+    },
+    "sire_dam": {
+      "name": "Tee Kay",
+      "url": "https://db.netkeiba.com/horse/ped/000a00b2b6/"
+    },
+    "dam": {
+      "name": "マイネフェリックス",
+      "url": "https://db.netkeiba.com/horse/ped/2007104909/"
+    },
+    "dam_sire": {
+      "name": "アグネスデジタル",
+      "url": "https://db.netkeiba.com/horse/ped/1997110025/"
+    },
+    "dam_dam": {
+      "name": "マイネカレッシュ",
+      "url": "https://db.netkeiba.com/horse/ped/2002105158/"
+    }
   },
   "horse_history": [
     [

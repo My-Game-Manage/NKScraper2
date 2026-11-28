@@ -18,7 +18,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "13戦2勝 [2-1-0-10]",
     "主な勝鞍": "24'札幌2歳S(G3)",
-    "近親馬": "コナコースト、コナブラック"
+    "近親馬": "コナコースト、コナブラック",
+    "sire": {
+      "name": "キズナ",
+      "url": "https://db.netkeiba.com/horse/ped/2010105827/"
+    },
+    "sire_sire": {
+      "name": "ディープインパクト",
+      "url": "https://db.netkeiba.com/horse/ped/2002100816/"
+    },
+    "sire_dam": {
+      "name": "キャットクイル",
+      "url": "https://db.netkeiba.com/horse/ped/000a00646f/"
+    },
+    "dam": {
+      "name": "コナブリュワーズ",
+      "url": "https://db.netkeiba.com/horse/ped/2010104036/"
+    },
+    "dam_sire": {
+      "name": "キングカメハメハ",
+      "url": "https://db.netkeiba.com/horse/ped/2001103460/"
+    },
+    "dam_dam": {
+      "name": "アンブロワーズ",
+      "url": "https://db.netkeiba.com/horse/ped/2002101007/"
+    }
   },
   "horse_history": [
     [

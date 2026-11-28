@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "3戦0勝 [0-0-0-3]",
     "主な勝鞍": "",
-    "近親馬": ""
+    "近親馬": "",
+    "sire": {
+      "name": "ケープブランコ",
+      "url": "https://db.netkeiba.com/horse/ped/000a011b06/"
+    },
+    "sire_sire": {
+      "name": "Galileo",
+      "url": "https://db.netkeiba.com/horse/ped/000a00232b/"
+    },
+    "sire_dam": {
+      "name": "Laurel Delight",
+      "url": "https://db.netkeiba.com/horse/ped/000a012302/"
+    },
+    "dam": {
+      "name": "スカイウィッチ",
+      "url": "https://db.netkeiba.com/horse/ped/2019105699/"
+    },
+    "dam_sire": {
+      "name": "シルバーステート",
+      "url": "https://db.netkeiba.com/horse/ped/2013105903/"
+    },
+    "dam_dam": {
+      "name": "ニジノムコウ",
+      "url": "https://db.netkeiba.com/horse/ped/2005110160/"
+    }
   },
   "horse_history": [
     [

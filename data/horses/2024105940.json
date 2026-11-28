@@ -18,7 +18,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "1戦0勝 [0-0-0-1]",
     "主な勝鞍": "",
-    "近親馬": "ワセダインブルー、ダイワチャーチル"
+    "近親馬": "ワセダインブルー、ダイワチャーチル",
+    "sire": {
+      "name": "ロゴタイプ",
+      "url": "https://db.netkeiba.com/horse/ped/2010103783/"
+    },
+    "sire_sire": {
+      "name": "ローエングリン",
+      "url": "https://db.netkeiba.com/horse/ped/1999106738/"
+    },
+    "sire_dam": {
+      "name": "ステレオタイプ",
+      "url": "https://db.netkeiba.com/horse/ped/2002100573/"
+    },
+    "dam": {
+      "name": "ダノンフローラ",
+      "url": "https://db.netkeiba.com/horse/ped/2004103267/"
+    },
+    "dam_sire": {
+      "name": "アグネスタキオン",
+      "url": "https://db.netkeiba.com/horse/ped/1998101516/"
+    },
+    "dam_dam": {
+      "name": "ファンジカ",
+      "url": "https://db.netkeiba.com/horse/ped/000a006776/"
+    }
   },
   "horse_history": [
     [

@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "206万円",
     "通算成績": "37戦3勝 [3-3-3-28]",
     "主な勝鞍": "C2ー20組",
-    "近親馬": "カマクラ、ローズパルファン"
+    "近親馬": "カマクラ、ローズパルファン",
+    "sire": {
+      "name": "モーニン",
+      "url": "https://db.netkeiba.com/horse/ped/2012110091/"
+    },
+    "sire_sire": {
+      "name": "ヘニーヒューズ",
+      "url": "https://db.netkeiba.com/horse/ped/000a011155/"
+    },
+    "sire_dam": {
+      "name": "Giggly",
+      "url": "https://db.netkeiba.com/horse/ped/000a011f24/"
+    },
+    "dam": {
+      "name": "フロイラインローゼ",
+      "url": "https://db.netkeiba.com/horse/ped/2005102467/"
+    },
+    "dam_sire": {
+      "name": "アドマイヤベガ",
+      "url": "https://db.netkeiba.com/horse/ped/1996107396/"
+    },
+    "dam_dam": {
+      "name": "アルバローズ",
+      "url": "https://db.netkeiba.com/horse/ped/2000101690/"
+    }
   },
   "horse_history": [
     [

@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "6戦1勝 [1-1-0-4]",
     "主な勝鞍": "26'3歳未勝利",
-    "近親馬": "レーヴブリリアント、リリレフアの2026"
+    "近親馬": "レーヴブリリアント、リリレフアの2026",
+    "sire": {
+      "name": "アドマイヤマーズ",
+      "url": "https://db.netkeiba.com/horse/ped/2016104422/"
+    },
+    "sire_sire": {
+      "name": "ダイワメジャー",
+      "url": "https://db.netkeiba.com/horse/ped/2001103114/"
+    },
+    "sire_dam": {
+      "name": "ヴィアメディチ",
+      "url": "https://db.netkeiba.com/horse/ped/000a012fc1/"
+    },
+    "dam": {
+      "name": "リリレフア",
+      "url": "https://db.netkeiba.com/horse/ped/2017105624/"
+    },
+    "dam_sire": {
+      "name": "ロードカナロア",
+      "url": "https://db.netkeiba.com/horse/ped/2008103552/"
+    },
+    "dam_dam": {
+      "name": "リリサイド",
+      "url": "https://db.netkeiba.com/horse/ped/000a011a19/"
+    }
   },
   "horse_history": [
     [

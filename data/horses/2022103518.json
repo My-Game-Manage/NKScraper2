@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "200万円",
     "通算成績": "15戦3勝 [3-0-2-10]",
     "主な勝鞍": "26'4歳以上1勝クラス",
-    "近親馬": "プラティクレール、レボルシオン"
+    "近親馬": "プラティクレール、レボルシオン",
+    "sire": {
+      "name": "ブリックスアンドモルタル",
+      "url": "https://db.netkeiba.com/horse/ped/000a014377/"
+    },
+    "sire_sire": {
+      "name": "Giant's Causeway",
+      "url": "https://db.netkeiba.com/horse/ped/000a0022e1/"
+    },
+    "sire_dam": {
+      "name": "Beyond the Waves",
+      "url": "https://db.netkeiba.com/horse/ped/000a014376/"
+    },
+    "dam": {
+      "name": "シルヴァーコード",
+      "url": "https://db.netkeiba.com/horse/ped/2012103628/"
+    },
+    "dam_sire": {
+      "name": "スウェプトオーヴァーボード",
+      "url": "https://db.netkeiba.com/horse/ped/000a00fa34/"
+    },
+    "dam_dam": {
+      "name": "クラックコード",
+      "url": "https://db.netkeiba.com/horse/ped/2004103297/"
+    }
   },
   "horse_history": [
     [

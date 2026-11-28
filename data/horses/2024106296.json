@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "2戦0勝 [0-0-0-2]",
     "主な勝鞍": "",
-    "近親馬": "アッチャゴーラ、パワーストローク"
+    "近親馬": "アッチャゴーラ、パワーストローク",
+    "sire": {
+      "name": "ルヴァンスレーヴ",
+      "url": "https://db.netkeiba.com/horse/ped/2015104189/"
+    },
+    "sire_sire": {
+      "name": "シンボリクリスエス",
+      "url": "https://db.netkeiba.com/horse/ped/1999110099/"
+    },
+    "sire_dam": {
+      "name": "マエストラーレ",
+      "url": "https://db.netkeiba.com/horse/ped/2006102778/"
+    },
+    "dam": {
+      "name": "グラッブユアコート",
+      "url": "https://db.netkeiba.com/horse/ped/2012104210/"
+    },
+    "dam_sire": {
+      "name": "ゴールドアリュール",
+      "url": "https://db.netkeiba.com/horse/ped/1999106689/"
+    },
+    "dam_dam": {
+      "name": "グラッブユアハート",
+      "url": "https://db.netkeiba.com/horse/ped/2000110237/"
+    }
   },
   "horse_history": [
     [

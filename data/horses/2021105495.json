@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "549万円",
     "通算成績": "45戦1勝 [1-7-6-31]",
     "主な勝鞍": "C3一",
-    "近親馬": "アカネサス、クルークヴァール"
+    "近親馬": "アカネサス、クルークヴァール",
+    "sire": {
+      "name": "ブリックスアンドモルタル",
+      "url": "https://db.netkeiba.com/horse/ped/000a014377/"
+    },
+    "sire_sire": {
+      "name": "Giant's Causeway",
+      "url": "https://db.netkeiba.com/horse/ped/000a0022e1/"
+    },
+    "sire_dam": {
+      "name": "Beyond the Waves",
+      "url": "https://db.netkeiba.com/horse/ped/000a014376/"
+    },
+    "dam": {
+      "name": "クィーンズバーン",
+      "url": "https://db.netkeiba.com/horse/ped/2008103175/"
+    },
+    "dam_sire": {
+      "name": "スペシャルウィーク",
+      "url": "https://db.netkeiba.com/horse/ped/1995103211/"
+    },
+    "dam_dam": {
+      "name": "シンコウエンジェル",
+      "url": "https://db.netkeiba.com/horse/ped/1993109901/"
+    }
   },
   "horse_history": [
     [

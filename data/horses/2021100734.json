@@ -18,7 +18,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "19戦3勝 [3-1-1-14]",
     "主な勝鞍": "25'天ケ瀬特別()",
-    "近親馬": "ワンダーブレット、ハヤテノツバサ"
+    "近親馬": "ワンダーブレット、ハヤテノツバサ",
+    "sire": {
+      "name": "ヘニーヒューズ",
+      "url": "https://db.netkeiba.com/horse/ped/000a011155/"
+    },
+    "sire_sire": {
+      "name": "ヘネシー",
+      "url": "https://db.netkeiba.com/horse/ped/000a000178/"
+    },
+    "sire_dam": {
+      "name": "Meadow Flyer",
+      "url": "https://db.netkeiba.com/horse/ped/000a01117d/"
+    },
+    "dam": {
+      "name": "フジインザスカイ",
+      "url": "https://db.netkeiba.com/horse/ped/2011103176/"
+    },
+    "dam_sire": {
+      "name": "ディープスカイ",
+      "url": "https://db.netkeiba.com/horse/ped/2005101358/"
+    },
+    "dam_dam": {
+      "name": "ホーマンキュート",
+      "url": "https://db.netkeiba.com/horse/ped/1999105540/"
+    }
   },
   "horse_history": [
     [

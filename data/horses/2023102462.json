@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "8戦1勝 [1-1-1-5]",
     "主な勝鞍": "26'3歳未勝利",
-    "近親馬": "ガウラスパーク、ガウラサンダー"
+    "近親馬": "ガウラスパーク、ガウラサンダー",
+    "sire": {
+      "name": "クリソベリル",
+      "url": "https://db.netkeiba.com/horse/ped/2016104458/"
+    },
+    "sire_sire": {
+      "name": "ゴールドアリュール",
+      "url": "https://db.netkeiba.com/horse/ped/1999106689/"
+    },
+    "sire_dam": {
+      "name": "クリソプレーズ",
+      "url": "https://db.netkeiba.com/horse/ped/2002100840/"
+    },
+    "dam": {
+      "name": "ガウラミディ",
+      "url": "https://db.netkeiba.com/horse/ped/2015105520/"
+    },
+    "dam_sire": {
+      "name": "フリオーソ",
+      "url": "https://db.netkeiba.com/horse/ped/2004106867/"
+    },
+    "dam_dam": {
+      "name": "ロメラ",
+      "url": "https://db.netkeiba.com/horse/ped/2007105251/"
+    }
   },
   "horse_history": [
     [

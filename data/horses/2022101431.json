@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "164万円",
     "通算成績": "18戦2勝 [2-2-0-14]",
     "主な勝鞍": "25'3歳未勝利",
-    "近親馬": "マウンテンバローズ、エイダンバローズ"
+    "近親馬": "マウンテンバローズ、エイダンバローズ",
+    "sire": {
+      "name": "アメリカンファラオ",
+      "url": "https://db.netkeiba.com/horse/ped/000a012aad/"
+    },
+    "sire_sire": {
+      "name": "Pioneerof the Nile",
+      "url": "https://db.netkeiba.com/horse/ped/000a0122f5/"
+    },
+    "sire_dam": {
+      "name": "Littleprincessemma",
+      "url": "https://db.netkeiba.com/horse/ped/000a012ab6/"
+    },
+    "dam": {
+      "name": "ターフウォー",
+      "url": "https://db.netkeiba.com/horse/ped/000a01bea9/"
+    },
+    "dam_sire": {
+      "name": "War Front",
+      "url": "https://db.netkeiba.com/horse/ped/000a011d00/"
+    },
+    "dam_dam": {
+      "name": "Starstruck",
+      "url": "https://db.netkeiba.com/horse/ped/000a01bd50/"
+    }
   },
   "horse_history": [
     [

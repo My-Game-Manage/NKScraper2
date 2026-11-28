@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "1,804万円",
     "通算成績": "30戦4勝 [4-2-4-20]",
     "主な勝鞍": "ハイビスカスデビュー",
-    "近親馬": "テーオーコンドル、フジマサヒーロー"
+    "近親馬": "テーオーコンドル、フジマサヒーロー",
+    "sire": {
+      "name": "エスポワールシチー",
+      "url": "https://db.netkeiba.com/horse/ped/2005102837/"
+    },
+    "sire_sire": {
+      "name": "ゴールドアリュール",
+      "url": "https://db.netkeiba.com/horse/ped/1999106689/"
+    },
+    "sire_dam": {
+      "name": "エミネントシチー",
+      "url": "https://db.netkeiba.com/horse/ped/1998106179/"
+    },
+    "dam": {
+      "name": "レッドガナドーラ",
+      "url": "https://db.netkeiba.com/horse/ped/2009110038/"
+    },
+    "dam_sire": {
+      "name": "Bernardini",
+      "url": "https://db.netkeiba.com/horse/ped/000a0111fe/"
+    },
+    "dam_dam": {
+      "name": "Zophie",
+      "url": "https://db.netkeiba.com/horse/ped/000a01194f/"
+    }
   },
   "horse_history": [
     [

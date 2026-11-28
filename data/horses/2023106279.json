@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "136万円",
     "通算成績": "12戦2勝 [2-0-1-9]",
     "主な勝鞍": "引退競走馬に寄り添うビールサガンエクリ",
-    "近親馬": "ミッキーホーリー、ミッキーキャンディ"
+    "近親馬": "ミッキーホーリー、ミッキーキャンディ",
+    "sire": {
+      "name": "ミッキースワロー",
+      "url": "https://db.netkeiba.com/horse/ped/2014106160/"
+    },
+    "sire_sire": {
+      "name": "トーセンホマレボシ",
+      "url": "https://db.netkeiba.com/horse/ped/2009106092/"
+    },
+    "sire_dam": {
+      "name": "マドレボニータ",
+      "url": "https://db.netkeiba.com/horse/ped/2005102581/"
+    },
+    "dam": {
+      "name": "ミッキークルソラ",
+      "url": "https://db.netkeiba.com/horse/ped/2014105894/"
+    },
+    "dam_sire": {
+      "name": "ダイワメジャー",
+      "url": "https://db.netkeiba.com/horse/ped/2001103114/"
+    },
+    "dam_dam": {
+      "name": "クルソラ",
+      "url": "https://db.netkeiba.com/horse/ped/000a01118f/"
+    }
   },
   "horse_history": [
     [

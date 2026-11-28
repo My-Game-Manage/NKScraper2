@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "352万円",
     "通算成績": "27戦0勝 [0-1-4-22]",
     "主な勝鞍": "",
-    "近親馬": "トシギャングスター、サトノデプロマット"
+    "近親馬": "トシギャングスター、サトノデプロマット",
+    "sire": {
+      "name": "バーディバーディ",
+      "url": "https://db.netkeiba.com/horse/ped/2007100567/"
+    },
+    "sire_sire": {
+      "name": "ブライアンズタイム",
+      "url": "https://db.netkeiba.com/horse/ped/000a000082/"
+    },
+    "sire_dam": {
+      "name": "ホームスイートホーム",
+      "url": "https://db.netkeiba.com/horse/ped/000a0105cc/"
+    },
+    "dam": {
+      "name": "ピサノバーキン",
+      "url": "https://db.netkeiba.com/horse/ped/2001104260/"
+    },
+    "dam_sire": {
+      "name": "サンデーサイレンス",
+      "url": "https://db.netkeiba.com/horse/ped/000a00033a/"
+    },
+    "dam_dam": {
+      "name": "ビバムール",
+      "url": "https://db.netkeiba.com/horse/ped/1992110230/"
+    }
   },
   "horse_history": [
     [

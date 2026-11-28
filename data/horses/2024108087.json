@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "9万円",
     "通算成績": "5戦0勝 [0-0-0-5]",
     "主な勝鞍": "",
-    "近親馬": "ニシノウィクトル、ニシノオリーブの2025"
+    "近親馬": "ニシノウィクトル、ニシノオリーブの2025",
+    "sire": {
+      "name": "ネロ",
+      "url": "https://db.netkeiba.com/horse/ped/2011103722/"
+    },
+    "sire_sire": {
+      "name": "ヨハネスブルグ",
+      "url": "https://db.netkeiba.com/horse/ped/000a0103b9/"
+    },
+    "sire_dam": {
+      "name": "ニシノタカラヅカ",
+      "url": "https://db.netkeiba.com/horse/ped/2003103151/"
+    },
+    "dam": {
+      "name": "ニシノオリーブ",
+      "url": "https://db.netkeiba.com/horse/ped/2015105199/"
+    },
+    "dam_sire": {
+      "name": "リーチザクラウン",
+      "url": "https://db.netkeiba.com/horse/ped/2006102923/"
+    },
+    "dam_dam": {
+      "name": "ニシノキミヨ",
+      "url": "https://db.netkeiba.com/horse/ped/2008104130/"
+    }
   },
   "horse_history": [
     [

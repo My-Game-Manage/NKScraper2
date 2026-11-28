@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "248万円",
     "通算成績": "33戦3勝 [3-1-3-26]",
     "主な勝鞍": "B5組",
-    "近親馬": "ハイタッチマドンナ、サイモングリーマン"
+    "近親馬": "ハイタッチマドンナ、サイモングリーマン",
+    "sire": {
+      "name": "エピカリス",
+      "url": "https://db.netkeiba.com/horse/ped/2014103121/"
+    },
+    "sire_sire": {
+      "name": "ゴールドアリュール",
+      "url": "https://db.netkeiba.com/horse/ped/1999106689/"
+    },
+    "sire_dam": {
+      "name": "スターペスミツコ",
+      "url": "https://db.netkeiba.com/horse/ped/2002102806/"
+    },
+    "dam": {
+      "name": "ピーエムルッカ",
+      "url": "https://db.netkeiba.com/horse/ped/2013106159/"
+    },
+    "dam_sire": {
+      "name": "キンシャサノキセキ",
+      "url": "https://db.netkeiba.com/horse/ped/2003110212/"
+    },
+    "dam_dam": {
+      "name": "ルカダンス",
+      "url": "https://db.netkeiba.com/horse/ped/1996107359/"
+    }
   },
   "horse_history": [
     [

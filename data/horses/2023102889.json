@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "69万円",
     "通算成績": "15戦1勝 [1-1-2-11]",
     "主な勝鞍": "C2ー5組",
-    "近親馬": "タイセイポジション、ネイビー"
+    "近親馬": "タイセイポジション、ネイビー",
+    "sire": {
+      "name": "キタサンブラック",
+      "url": "https://db.netkeiba.com/horse/ped/2012102013/"
+    },
+    "sire_sire": {
+      "name": "ブラックタイド",
+      "url": "https://db.netkeiba.com/horse/ped/2001103312/"
+    },
+    "sire_dam": {
+      "name": "シュガーハート",
+      "url": "https://db.netkeiba.com/horse/ped/2005106935/"
+    },
+    "dam": {
+      "name": "ヴィクタシア",
+      "url": "https://db.netkeiba.com/horse/ped/2009110044/"
+    },
+    "dam_sire": {
+      "name": "Bluegrass Cat",
+      "url": "https://db.netkeiba.com/horse/ped/000a01173d/"
+    },
+    "dam_dam": {
+      "name": "Toroca",
+      "url": "https://db.netkeiba.com/horse/ped/000a01158e/"
+    }
   },
   "horse_history": [
     [

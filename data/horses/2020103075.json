@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "21戦3勝 [3-0-1-17]",
     "主な勝鞍": "23'NHKマイルC(G1)",
-    "近親馬": "シャンパンマーク、シャンパンライフ"
+    "近親馬": "シャンパンマーク、シャンパンライフ",
+    "sire": {
+      "name": "ドゥラメンテ",
+      "url": "https://db.netkeiba.com/horse/ped/2012104511/"
+    },
+    "sire_sire": {
+      "name": "キングカメハメハ",
+      "url": "https://db.netkeiba.com/horse/ped/2001103460/"
+    },
+    "sire_dam": {
+      "name": "アドマイヤグルーヴ",
+      "url": "https://db.netkeiba.com/horse/ped/2000107542/"
+    },
+    "dam": {
+      "name": "メモリアルライフ",
+      "url": "https://db.netkeiba.com/horse/ped/2015110048/"
+    },
+    "dam_sire": {
+      "name": "Reckless Abandon",
+      "url": "https://db.netkeiba.com/horse/ped/000a0136f5/"
+    },
+    "dam_dam": {
+      "name": "Baldovina",
+      "url": "https://db.netkeiba.com/horse/ped/000a0136ff/"
+    }
   },
   "horse_history": [
     [

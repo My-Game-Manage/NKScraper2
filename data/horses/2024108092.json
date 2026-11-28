@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "2戦0勝 [0-0-0-2]",
     "主な勝鞍": "",
-    "近親馬": "カシノサスケ、カシノピアレスの2025"
+    "近親馬": "カシノサスケ、カシノピアレスの2025",
+    "sire": {
+      "name": "ネロ",
+      "url": "https://db.netkeiba.com/horse/ped/2011103722/"
+    },
+    "sire_sire": {
+      "name": "ヨハネスブルグ",
+      "url": "https://db.netkeiba.com/horse/ped/000a0103b9/"
+    },
+    "sire_dam": {
+      "name": "ニシノタカラヅカ",
+      "url": "https://db.netkeiba.com/horse/ped/2003103151/"
+    },
+    "dam": {
+      "name": "カシノピアレス",
+      "url": "https://db.netkeiba.com/horse/ped/2017109144/"
+    },
+    "dam_sire": {
+      "name": "エスケンデレヤ",
+      "url": "https://db.netkeiba.com/horse/ped/000a012cc0/"
+    },
+    "dam_dam": {
+      "name": "カシノエスケイプ",
+      "url": "https://db.netkeiba.com/horse/ped/2003103517/"
+    }
   },
   "horse_history": [
     [

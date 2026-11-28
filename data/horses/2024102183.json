@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "184万円",
     "通算成績": "7戦0勝 [0-1-1-5]",
     "主な勝鞍": "",
-    "近親馬": "シロイヤツ、ニグレッド"
+    "近親馬": "シロイヤツ、ニグレッド",
+    "sire": {
+      "name": "ビーチパトロール",
+      "url": "https://db.netkeiba.com/horse/ped/000a0141f9/"
+    },
+    "sire_sire": {
+      "name": "Lemon Drop Kid",
+      "url": "https://db.netkeiba.com/horse/ped/000a0022d0/"
+    },
+    "sire_dam": {
+      "name": "Bashful Bertie",
+      "url": "https://db.netkeiba.com/horse/ped/000a0141f8/"
+    },
+    "dam": {
+      "name": "ブラックバカラ",
+      "url": "https://db.netkeiba.com/horse/ped/2011105376/"
+    },
+    "dam_sire": {
+      "name": "ロージズインメイ",
+      "url": "https://db.netkeiba.com/horse/ped/000a010a10/"
+    },
+    "dam_dam": {
+      "name": "センティーレ",
+      "url": "https://db.netkeiba.com/horse/ped/2002100986/"
+    }
   },
   "horse_history": [
     [

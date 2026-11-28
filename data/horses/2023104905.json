@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "15戦0勝 [0-0-2-13]",
     "主な勝鞍": "",
-    "近親馬": "エルナーニ、ミーハ"
+    "近親馬": "エルナーニ、ミーハ",
+    "sire": {
+      "name": "ダノンプレミアム",
+      "url": "https://db.netkeiba.com/horse/ped/2015102367/"
+    },
+    "sire_sire": {
+      "name": "ディープインパクト",
+      "url": "https://db.netkeiba.com/horse/ped/2002100816/"
+    },
+    "sire_dam": {
+      "name": "インディアナギャル",
+      "url": "https://db.netkeiba.com/horse/ped/000a011a94/"
+    },
+    "dam": {
+      "name": "ダークマレイン",
+      "url": "https://db.netkeiba.com/horse/ped/2009110071/"
+    },
+    "dam_sire": {
+      "name": "サブミーカー",
+      "url": "https://db.netkeiba.com/horse/ped/2005102676/"
+    },
+    "dam_dam": {
+      "name": "スターマレイン",
+      "url": "https://db.netkeiba.com/horse/ped/1997110273/"
+    }
   },
   "horse_history": [
     [

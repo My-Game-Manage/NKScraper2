@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "63万円",
     "通算成績": "3戦0勝 [0-1-1-1]",
     "主な勝鞍": "",
-    "近親馬": "フラワーストリーム、ネオストーリー"
+    "近親馬": "フラワーストリーム、ネオストーリー",
+    "sire": {
+      "name": "ステルヴィオ",
+      "url": "https://db.netkeiba.com/horse/ped/2015105064/"
+    },
+    "sire_sire": {
+      "name": "ロードカナロア",
+      "url": "https://db.netkeiba.com/horse/ped/2008103552/"
+    },
+    "sire_dam": {
+      "name": "ラルケット",
+      "url": "https://db.netkeiba.com/horse/ped/2005102452/"
+    },
+    "dam": {
+      "name": "シープシャンクス",
+      "url": "https://db.netkeiba.com/horse/ped/2010103968/"
+    },
+    "dam_sire": {
+      "name": "ディープインパクト",
+      "url": "https://db.netkeiba.com/horse/ped/2002100816/"
+    },
+    "dam_dam": {
+      "name": "ラスリングカプス",
+      "url": "https://db.netkeiba.com/horse/ped/1993109739/"
+    }
   },
   "horse_history": [
     [

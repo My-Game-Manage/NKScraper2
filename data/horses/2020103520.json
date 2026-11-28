@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "510万円",
     "通算成績": "42戦4勝 [4-5-5-28]",
     "主な勝鞍": "ファイナルレース",
-    "近親馬": "ニューポート、ハッピーバレー"
+    "近親馬": "ニューポート、ハッピーバレー",
+    "sire": {
+      "name": "バンドワゴン",
+      "url": "https://db.netkeiba.com/horse/ped/2011104010/"
+    },
+    "sire_sire": {
+      "name": "ホワイトマズル",
+      "url": "https://db.netkeiba.com/horse/ped/1990109700/"
+    },
+    "sire_dam": {
+      "name": "ピラミマ",
+      "url": "https://db.netkeiba.com/horse/ped/2005110048/"
+    },
+    "dam": {
+      "name": "ハッピーパレード",
+      "url": "https://db.netkeiba.com/horse/ped/2006103394/"
+    },
+    "dam_sire": {
+      "name": "ネオユニヴァース",
+      "url": "https://db.netkeiba.com/horse/ped/2000101426/"
+    },
+    "dam_dam": {
+      "name": "メインスルー",
+      "url": "https://db.netkeiba.com/horse/ped/000a00668a/"
+    }
   },
   "horse_history": [
     [

@@ -18,7 +18,31 @@
     "獲得賞金 (地方)": "1,563万円",
     "通算成績": "17戦4勝 [4-6-2-5]",
     "主な勝鞍": "2歳ー3",
-    "近親馬": "ナイフレスト、スペースコロニー"
+    "近親馬": "ナイフレスト、スペースコロニー",
+    "sire": {
+      "name": "タイセイレジェンド",
+      "url": "https://db.netkeiba.com/horse/ped/2007103199/"
+    },
+    "sire_sire": {
+      "name": "キングカメハメハ",
+      "url": "https://db.netkeiba.com/horse/ped/2001103460/"
+    },
+    "sire_dam": {
+      "name": "シャープキック",
+      "url": "https://db.netkeiba.com/horse/ped/1996107399/"
+    },
+    "dam": {
+      "name": "スターリーオレンジ",
+      "url": "https://db.netkeiba.com/horse/ped/2011101445/"
+    },
+    "dam_sire": {
+      "name": "サウスヴィグラス",
+      "url": "https://db.netkeiba.com/horse/ped/1996110138/"
+    },
+    "dam_dam": {
+      "name": "ゲイングローリー",
+      "url": "https://db.netkeiba.com/horse/ped/2000110185/"
+    }
   },
   "horse_history": [
     [

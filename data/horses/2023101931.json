@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "223万円",
     "通算成績": "26戦0勝 [0-0-3-23]",
     "主な勝鞍": "",
-    "近親馬": "ジョーヌカレラ、ジオパークミューズの2020"
+    "近親馬": "ジョーヌカレラ、ジオパークミューズの2020",
+    "sire": {
+      "name": "デクラレーションオブウォー",
+      "url": "https://db.netkeiba.com/horse/ped/000a0136f6/"
+    },
+    "sire_sire": {
+      "name": "War Front",
+      "url": "https://db.netkeiba.com/horse/ped/000a011d00/"
+    },
+    "sire_dam": {
+      "name": "Tempo West",
+      "url": "https://db.netkeiba.com/horse/ped/000a01370f/"
+    },
+    "dam": {
+      "name": "ジオパークミューズ",
+      "url": "https://db.netkeiba.com/horse/ped/2015102779/"
+    },
+    "dam_sire": {
+      "name": "キングズベスト",
+      "url": "https://db.netkeiba.com/horse/ped/000a0022d2/"
+    },
+    "dam_dam": {
+      "name": "キュウナス",
+      "url": "https://db.netkeiba.com/horse/ped/000a011421/"
+    }
   },
   "horse_history": [
     [

@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "195万円",
     "通算成績": "44戦0勝 [0-2-8-34]",
     "主な勝鞍": "",
-    "近親馬": "ゴールデンドラゴン、ブラックデコ"
+    "近親馬": "ゴールデンドラゴン、ブラックデコ",
+    "sire": {
+      "name": "ワールドエース",
+      "url": "https://db.netkeiba.com/horse/ped/2009106353/"
+    },
+    "sire_sire": {
+      "name": "ディープインパクト",
+      "url": "https://db.netkeiba.com/horse/ped/2002100816/"
+    },
+    "sire_dam": {
+      "name": "マンデラ",
+      "url": "https://db.netkeiba.com/horse/ped/000a011190/"
+    },
+    "dam": {
+      "name": "デコラス",
+      "url": "https://db.netkeiba.com/horse/ped/2014106230/"
+    },
+    "dam_sire": {
+      "name": "タートルボウル",
+      "url": "https://db.netkeiba.com/horse/ped/000a012045/"
+    },
+    "dam_dam": {
+      "name": "ルミナスハッピー",
+      "url": "https://db.netkeiba.com/horse/ped/2005102707/"
+    }
   },
   "horse_history": [
     [

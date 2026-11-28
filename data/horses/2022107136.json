@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "257万円",
     "通算成績": "43戦2勝 [2-6-6-29]",
     "主な勝鞍": "3歳ー5組",
-    "近親馬": "ブンブンマル、ゴーツウキリシマ"
+    "近親馬": "ブンブンマル、ゴーツウキリシマ",
+    "sire": {
+      "name": "ノーブルミッション",
+      "url": "https://db.netkeiba.com/horse/ped/000a0126a3/"
+    },
+    "sire_sire": {
+      "name": "Galileo",
+      "url": "https://db.netkeiba.com/horse/ped/000a00232b/"
+    },
+    "sire_dam": {
+      "name": "Kind",
+      "url": "https://db.netkeiba.com/horse/ped/000a0123ae/"
+    },
+    "dam": {
+      "name": "エイシンドナウ",
+      "url": "https://db.netkeiba.com/horse/ped/2011105568/"
+    },
+    "dam_sire": {
+      "name": "グラスワンダー",
+      "url": "https://db.netkeiba.com/horse/ped/1995108676/"
+    },
+    "dam_dam": {
+      "name": "エイシンビーナス",
+      "url": "https://db.netkeiba.com/horse/ped/1993109237/"
+    }
   },
   "horse_history": [
     [

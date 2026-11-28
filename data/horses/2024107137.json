@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "32万円",
     "通算成績": "6戦0勝 [0-0-0-6]",
     "主な勝鞍": "",
-    "近親馬": "セイカヒカワザカ、ブロットキャスター"
+    "近親馬": "セイカヒカワザカ、ブロットキャスター",
+    "sire": {
+      "name": "サンダースノー",
+      "url": "https://db.netkeiba.com/horse/ped/000a013a06/"
+    },
+    "sire_sire": {
+      "name": "Helmet",
+      "url": "https://db.netkeiba.com/horse/ped/000a013a0e/"
+    },
+    "sire_dam": {
+      "name": "Eastern Joy",
+      "url": "https://db.netkeiba.com/horse/ped/000a013d7d/"
+    },
+    "dam": {
+      "name": "チャームアップ",
+      "url": "https://db.netkeiba.com/horse/ped/2006105986/"
+    },
+    "dam_sire": {
+      "name": "シルバーチャーム",
+      "url": "https://db.netkeiba.com/horse/ped/000a00227c/"
+    },
+    "dam_dam": {
+      "name": "ペニーアップ",
+      "url": "https://db.netkeiba.com/horse/ped/000a006485/"
+    }
   },
   "horse_history": [
     [

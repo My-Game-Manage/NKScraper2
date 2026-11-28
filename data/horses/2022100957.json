@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "815万円",
     "通算成績": "30戦5勝 [5-1-1-23]",
     "主な勝鞍": "アジサイデビュー",
-    "近親馬": "ディストワルビー、ビナダラット"
+    "近親馬": "ディストワルビー、ビナダラット",
+    "sire": {
+      "name": "ベストウォーリア",
+      "url": "https://db.netkeiba.com/horse/ped/2010110127/"
+    },
+    "sire_sire": {
+      "name": "マジェスティックウォリアー",
+      "url": "https://db.netkeiba.com/horse/ped/000a011e9c/"
+    },
+    "sire_dam": {
+      "name": "フラーテイシャスミス",
+      "url": "https://db.netkeiba.com/horse/ped/000a011eaf/"
+    },
+    "dam": {
+      "name": "スカイホークアイ",
+      "url": "https://db.netkeiba.com/horse/ped/2008103905/"
+    },
+    "dam_sire": {
+      "name": "バブルガムフェロー",
+      "url": "https://db.netkeiba.com/horse/ped/1993109219/"
+    },
+    "dam_dam": {
+      "name": "グレースオブダイヤモンド",
+      "url": "https://db.netkeiba.com/horse/ped/000a0065a4/"
+    }
   },
   "horse_history": [
     [

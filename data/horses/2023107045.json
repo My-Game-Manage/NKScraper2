@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "5戦1勝 [1-0-1-3]",
     "主な勝鞍": "26'3歳未勝利",
-    "近親馬": "シンハナーダ、シンハリング"
+    "近親馬": "シンハナーダ、シンハリング",
+    "sire": {
+      "name": "フィエールマン",
+      "url": "https://db.netkeiba.com/horse/ped/2015105075/"
+    },
+    "sire_sire": {
+      "name": "ディープインパクト",
+      "url": "https://db.netkeiba.com/horse/ped/2002100816/"
+    },
+    "sire_dam": {
+      "name": "リュヌドール",
+      "url": "https://db.netkeiba.com/horse/ped/2001190001/"
+    },
+    "dam": {
+      "name": "シンハディーパ",
+      "url": "https://db.netkeiba.com/horse/ped/2010104152/"
+    },
+    "dam_sire": {
+      "name": "ウォーエンブレム",
+      "url": "https://db.netkeiba.com/horse/ped/000a00fa35/"
+    },
+    "dam_dam": {
+      "name": "シンハリーズ",
+      "url": "https://db.netkeiba.com/horse/ped/000a011191/"
+    }
   },
   "horse_history": [
     [

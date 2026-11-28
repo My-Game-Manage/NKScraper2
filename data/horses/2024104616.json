@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "0万円",
     "通算成績": "2戦0勝 [0-0-0-2]",
     "主な勝鞍": "",
-    "近親馬": "テーオーアルアイン、グシチャンノホシ"
+    "近親馬": "テーオーアルアイン、グシチャンノホシ",
+    "sire": {
+      "name": "シュヴァルグラン",
+      "url": "https://db.netkeiba.com/horse/ped/2012104759/"
+    },
+    "sire_sire": {
+      "name": "ハーツクライ",
+      "url": "https://db.netkeiba.com/horse/ped/2001103038/"
+    },
+    "sire_dam": {
+      "name": "ハルーワスウィート",
+      "url": "https://db.netkeiba.com/horse/ped/2001103409/"
+    },
+    "dam": {
+      "name": "シードラゴン",
+      "url": "https://db.netkeiba.com/horse/ped/2016110035/"
+    },
+    "dam_sire": {
+      "name": "Siyouni",
+      "url": "https://db.netkeiba.com/horse/ped/000a012056/"
+    },
+    "dam_dam": {
+      "name": "Diyakalanie",
+      "url": "https://db.netkeiba.com/horse/ped/000a013ade/"
+    }
   },
   "horse_history": [
     [

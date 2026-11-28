@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "313万円",
     "通算成績": "16戦2勝 [2-1-5-8]",
     "主な勝鞍": "2歳ー5組",
-    "近親馬": "キャプテンペリー、グレイスフルマーチ"
+    "近親馬": "キャプテンペリー、グレイスフルマーチ",
+    "sire": {
+      "name": "サンダースノー",
+      "url": "https://db.netkeiba.com/horse/ped/000a013a06/"
+    },
+    "sire_sire": {
+      "name": "Helmet",
+      "url": "https://db.netkeiba.com/horse/ped/000a013a0e/"
+    },
+    "sire_dam": {
+      "name": "Eastern Joy",
+      "url": "https://db.netkeiba.com/horse/ped/000a013d7d/"
+    },
+    "dam": {
+      "name": "メイグレイス",
+      "url": "https://db.netkeiba.com/horse/ped/2007103016/"
+    },
+    "dam_sire": {
+      "name": "ネオユニヴァース",
+      "url": "https://db.netkeiba.com/horse/ped/2000101426/"
+    },
+    "dam_dam": {
+      "name": "サンシャインステラ",
+      "url": "https://db.netkeiba.com/horse/ped/1990104519/"
+    }
   },
   "horse_history": [
     [

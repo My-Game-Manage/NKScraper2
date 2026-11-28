@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "3,779万円",
     "通算成績": "62戦11勝 [11-10-7-34]",
     "主な勝鞍": "18'2歳未勝利()",
-    "近親馬": "フラップシグナス、ザイデルバスト"
+    "近親馬": "フラップシグナス、ザイデルバスト",
+    "sire": {
+      "name": "サウスヴィグラス",
+      "url": "https://db.netkeiba.com/horse/ped/1996110138/"
+    },
+    "sire_sire": {
+      "name": "エンドスウィープ",
+      "url": "https://db.netkeiba.com/horse/ped/000a00010f/"
+    },
+    "sire_dam": {
+      "name": "ダーケストスター",
+      "url": "https://db.netkeiba.com/horse/ped/000a0000d6/"
+    },
+    "dam": {
+      "name": "ウララカ",
+      "url": "https://db.netkeiba.com/horse/ped/2006103084/"
+    },
+    "dam_sire": {
+      "name": "ワイルドラッシュ",
+      "url": "https://db.netkeiba.com/horse/ped/000a0003a1/"
+    },
+    "dam_dam": {
+      "name": "マルカサワヤカ",
+      "url": "https://db.netkeiba.com/horse/ped/1998101556/"
+    }
   },
   "horse_history": [
     [

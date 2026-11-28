@@ -17,7 +17,31 @@
     "獲得賞金 (地方)": "965万円",
     "通算成績": "35戦10勝 [10-7-3-15]",
     "主な勝鞍": "キョウチクトウ賞",
-    "近親馬": "ライラボンド、ソスピタ"
+    "近親馬": "ライラボンド、ソスピタ",
+    "sire": {
+      "name": "ホッコータルマエ",
+      "url": "https://db.netkeiba.com/horse/ped/2009100921/"
+    },
+    "sire_sire": {
+      "name": "キングカメハメハ",
+      "url": "https://db.netkeiba.com/horse/ped/2001103460/"
+    },
+    "sire_dam": {
+      "name": "マダムチェロキー",
+      "url": "https://db.netkeiba.com/horse/ped/2001105650/"
+    },
+    "dam": {
+      "name": "ベガグレシヤス",
+      "url": "https://db.netkeiba.com/horse/ped/2007100183/"
+    },
+    "dam_sire": {
+      "name": "アドマイヤドン",
+      "url": "https://db.netkeiba.com/horse/ped/1999107052/"
+    },
+    "dam_dam": {
+      "name": "ハヤテグレシャス",
+      "url": "https://db.netkeiba.com/horse/ped/1992102670/"
+    }
   },
   "horse_history": [
     [
