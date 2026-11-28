@@ -1,0 +1,391 @@
+{
+  "race_id": "202648112712",
+  "race_track": "名古屋",
+  "race_num": "12",
+  "target_date": "20261127",
+  "race_name": "金シャチ最終戦(C)",
+  "race_grade": "C",
+  "race_type": "ダ",
+  "race_distance": "1500m",
+  "weather": "晴",
+  "condition": "稍",
+  "race_class": "サラ系一般 C",
+  "results": [
+    {
+      "rank": "1",
+      "bracket_num": "8",
+      "horse_num": "12",
+      "horse_name": "ヤモリアツマレ",
+      "horse_age": "牡5",
+      "weight_carried": "57.0",
+      "jockey": "加藤利征",
+      "jockey_id": "a0032",
+      "stable": "愛知錦見勇夫",
+      "stable_id": "00823",
+      "time": "1:38.8",
+      "margin": "",
+      "popularity": "4",
+      "odds": "6.8",
+      "last3f": "38.9",
+      "passing_order": "1-1",
+      "horse_weight": "449",
+      "weight_diff": "+7",
+      "horse_id": "2021100925",
+      "horse_url": "https://db.netkeiba.com/horse/2021100925/"
+    },
+    {
+      "rank": "2",
+      "bracket_num": "5",
+      "horse_num": "6",
+      "horse_name": "ポケッティーノ",
+      "horse_age": "牡6",
+      "weight_carried": "57.0",
+      "jockey": "細川智史",
+      "jockey_id": "05602",
+      "stable": "愛知植松則幸",
+      "stable_id": "05357",
+      "time": "1:40.1",
+      "margin": "6",
+      "popularity": "6",
+      "odds": "9.8",
+      "last3f": "39.8",
+      "passing_order": "8-5-3",
+      "horse_weight": "494",
+      "weight_diff": "-2",
+      "horse_id": "2020100592",
+      "horse_url": "https://db.netkeiba.com/horse/2020100592/"
+    },
+    {
+      "rank": "3",
+      "bracket_num": "4",
+      "horse_num": "4",
+      "horse_name": "サンマイル",
+      "horse_age": "セ7",
+      "weight_carried": "57.0",
+      "jockey": "今井貴大",
+      "jockey_id": "05489",
+      "stable": "愛知井手上慎",
+      "stable_id": "05287",
+      "time": "1:40.3",
+      "margin": "1",
+      "popularity": "2",
+      "odds": "4.1",
+      "last3f": "40.2",
+      "passing_order": "4-3-2",
+      "horse_weight": "441",
+      "weight_diff": "-2",
+      "horse_id": "2019106953",
+      "horse_url": "https://db.netkeiba.com/horse/2019106953/"
+    },
+    {
+      "rank": "4",
+      "bracket_num": "8",
+      "horse_num": "11",
+      "horse_name": "シャイニングウェイ",
+      "horse_age": "牝5",
+      "weight_carried": "55.0",
+      "jockey": "阪野学",
+      "jockey_id": "05512",
+      "stable": "愛知塚田隆男",
+      "stable_id": "05281",
+      "time": "1:40.4",
+      "margin": "クビ",
+      "popularity": "12",
+      "odds": "89.2",
+      "last3f": "39.3",
+      "passing_order": "12-12-11",
+      "horse_weight": "457",
+      "weight_diff": "+4",
+      "horse_id": "2021100484",
+      "horse_url": "https://db.netkeiba.com/horse/2021100484/"
+    },
+    {
+      "rank": "5",
+      "bracket_num": "6",
+      "horse_num": "7",
+      "horse_name": "チャコワールド",
+      "horse_age": "牡7",
+      "weight_carried": "57.0",
+      "jockey": "大畑雅章",
+      "jockey_id": "05370",
+      "stable": "愛知井手上慎",
+      "stable_id": "05287",
+      "time": "1:40.5",
+      "margin": "1/2",
+      "popularity": "9",
+      "odds": "45.4",
+      "last3f": "39.6",
+      "passing_order": "10-10-9",
+      "horse_weight": "449",
+      "weight_diff": "+1",
+      "horse_id": "2019102953",
+      "horse_url": "https://db.netkeiba.com/horse/2019102953/"
+    },
+    {
+      "rank": "6",
+      "bracket_num": "7",
+      "horse_num": "9",
+      "horse_name": "スパルタンワールド",
+      "horse_age": "牡4",
+      "weight_carried": "55.0",
+      "jockey": "△近藤颯羽",
+      "jockey_id": "a06c6",
+      "stable": "愛知井上哲",
+      "stable_id": "05131",
+      "time": "1:40.5",
+      "margin": "クビ",
+      "popularity": "1",
+      "odds": "3.2",
+      "last3f": "40.4",
+      "passing_order": "7-4-4",
+      "horse_weight": "481",
+      "weight_diff": "-5",
+      "horse_id": "2022102603",
+      "horse_url": "https://db.netkeiba.com/horse/2022102603/"
+    },
+    {
+      "rank": "7",
+      "bracket_num": "3",
+      "horse_num": "3",
+      "horse_name": "ジオパークコハク",
+      "horse_age": "牝4",
+      "weight_carried": "53.0",
+      "jockey": "木之前葵",
+      "jockey_id": "a02bb",
+      "stable": "愛知井上哲",
+      "stable_id": "05131",
+      "time": "1:40.6",
+      "margin": "クビ",
+      "popularity": "8",
+      "odds": "23.1",
+      "last3f": "40.3",
+      "passing_order": "6-7-5",
+      "horse_weight": "475",
+      "weight_diff": "-1",
+      "horse_id": "2022102973",
+      "horse_url": "https://db.netkeiba.com/horse/2022102973/"
+    },
+    {
+      "rank": "8",
+      "bracket_num": "6",
+      "horse_num": "8",
+      "horse_name": "トークダウン",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "友森翔太",
+      "jockey_id": "a023e",
+      "stable": "愛知安部幸夫",
+      "stable_id": "a030a",
+      "time": "1:40.7",
+      "margin": "1/2",
+      "popularity": "10",
+      "odds": "52.4",
+      "last3f": "39.6",
+      "passing_order": "11-11-10",
+      "horse_weight": "447",
+      "weight_diff": "+6",
+      "horse_id": "2022106254",
+      "horse_url": "https://db.netkeiba.com/horse/2022106254/"
+    },
+    {
+      "rank": "9",
+      "bracket_num": "2",
+      "horse_num": "2",
+      "horse_name": "ユメミ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "大畑慧悟",
+      "jockey_id": "05648",
+      "stable": "愛知戸部尚実",
+      "stable_id": "a048d",
+      "time": "1:40.8",
+      "margin": "1/2",
+      "popularity": "7",
+      "odds": "15.5",
+      "last3f": "40.1",
+      "passing_order": "9-9-6",
+      "horse_weight": "411",
+      "weight_diff": "+1",
+      "horse_id": "2022101798",
+      "horse_url": "https://db.netkeiba.com/horse/2022101798/"
+    },
+    {
+      "rank": "10",
+      "bracket_num": "1",
+      "horse_num": "1",
+      "horse_name": "シャンドネージュ",
+      "horse_age": "牝4",
+      "weight_carried": "55.0",
+      "jockey": "丹羽克輝",
+      "jockey_id": "05324",
+      "stable": "愛知沖田明子",
+      "stable_id": "05794",
+      "time": "1:40.9",
+      "margin": "1/2",
+      "popularity": "11",
+      "odds": "85.3",
+      "last3f": "40.9",
+      "passing_order": "2-2",
+      "horse_weight": "484",
+      "weight_diff": "+1",
+      "horse_id": "2022101816",
+      "horse_url": "https://db.netkeiba.com/horse/2022101816/"
+    },
+    {
+      "rank": "11",
+      "bracket_num": "7",
+      "horse_num": "10",
+      "horse_name": "ゼーブルージュ",
+      "horse_age": "牝4",
+      "weight_carried": "52.0",
+      "jockey": "▲小笠原羚",
+      "jockey_id": "a05dc",
+      "stable": "愛知櫻井今朝",
+      "stable_id": "05368",
+      "time": "1:41.2",
+      "margin": "1.1/2",
+      "popularity": "5",
+      "odds": "7.4",
+      "last3f": "40.8",
+      "passing_order": "5-8-8",
+      "horse_weight": "443",
+      "weight_diff": "+3",
+      "horse_id": "2022106274",
+      "horse_url": "https://db.netkeiba.com/horse/2022106274/"
+    },
+    {
+      "rank": "12",
+      "bracket_num": "5",
+      "horse_num": "5",
+      "horse_name": "シャインモノリス",
+      "horse_age": "牡4",
+      "weight_carried": "57.0",
+      "jockey": "村上弘樹",
+      "jockey_id": "a02e0",
+      "stable": "愛知沖田明子",
+      "stable_id": "05794",
+      "time": "1:41.5",
+      "margin": "1.1/2",
+      "popularity": "3",
+      "odds": "6.8",
+      "last3f": "41.2",
+      "passing_order": "3-6-7",
+      "horse_weight": "466",
+      "weight_diff": "+3",
+      "horse_id": "2022104417",
+      "horse_url": "https://db.netkeiba.com/horse/2022104417/"
+    }
+  ],
+  "payouts": {
+    "単勝": {
+      "results": [
+        "12"
+      ],
+      "payouts": [
+        "680円"
+      ],
+      "popularity": [
+        "4人気"
+      ]
+    },
+    "複勝": {
+      "results": [
+        "12",
+        "6",
+        "4"
+      ],
+      "payouts": [
+        "220円",
+        "250円",
+        "160円"
+      ],
+      "popularity": [
+        "4人気",
+        "6人気",
+        "2人気"
+      ]
+    },
+    "枠連": {
+      "results": [
+        "5",
+        "8"
+      ],
+      "payouts": [
+        "1,190円"
+      ],
+      "popularity": [
+        "6人気"
+      ]
+    },
+    "馬連": {
+      "results": [
+        "6",
+        "12"
+      ],
+      "payouts": [
+        "2,490円"
+      ],
+      "popularity": [
+        "14人気"
+      ]
+    },
+    "ワイド": {
+      "results": [
+        "6",
+        "12",
+        "4",
+        "12",
+        "4",
+        "6"
+      ],
+      "payouts": [
+        "830円",
+        "450円",
+        "630円"
+      ],
+      "popularity": [
+        "14人気",
+        "2人気",
+        "8人気"
+      ]
+    },
+    "馬単": {
+      "results": [
+        "12",
+        "6"
+      ],
+      "payouts": [
+        "5,190円"
+      ],
+      "popularity": [
+        "26人気"
+      ]
+    },
+    "3連複": {
+      "results": [
+        "4",
+        "6",
+        "12"
+      ],
+      "payouts": [
+        "3,080円"
+      ],
+      "popularity": [
+        "10人気"
+      ]
+    },
+    "3連単": {
+      "results": [
+        "12",
+        "6",
+        "4"
+      ],
+      "payouts": [
+        "19,310円"
+      ],
+      "popularity": [
+        "58人気"
+      ]
+    }
+  }
+}
