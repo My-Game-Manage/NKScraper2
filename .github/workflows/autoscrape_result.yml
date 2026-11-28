@@ -2,7 +2,7 @@ name: Scheduled Horse Racing Scraping (Result)
 
 on:
   schedule:
-    - cron: '0 19 * * *' # 毎日 UTC 19:00 (JST 翌朝 4:00) に実行
+    - cron: '13 19 * * *' # 毎日 UTC 19:13 (JST 翌朝 4:13) に実行
   workflow_dispatch: # 手動実行ボタンも残しておく
 
 jobs:
